@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="task_079" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+  <title>079 (Local System Control Number: OCLC)</title>
+  <shortdesc>Control number of a system other than the one whose control number is contained in field 001 (Control Number), field 010 (Library of Congress Control Number) or field 016 (National Bibliographic Agency Control Number).</shortdesc>
+  <taskbody>
+    <context>
+      <data name="usage" value="8095400"/>
+      <p>Usage: ~8 million values.</p>
+      <table>
+        <tgroup cols="7">
+          <thead>
+            <row>
+              <entry>Tag</entry>
+              <entry>Tag Label</entry>
+              <entry>First Indicator</entry>
+              <entry>Second Indicator</entry>
+              <entry>Subfield</entry>
+              <entry>Subfield Label</entry>
+              <entry>Repeatable</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>079</entry>
+              <entry>Local System Control Number: OCLC</entry>
+              <entry>Undefined</entry>
+              <entry>Undefined</entry>
+              <entry>a</entry>
+              <entry>Local system control number</entry>
+              <entry>F</entry>
+            </row>           
+          </tbody>
+        </tgroup>
+      </table>
+      <codeblock><![CDATA[
+---
+examples:
+  # Voyager BIB IDs for testing
+  - [907208]
+input:
+  - 079$a
+trim:
+  - whitespace  
+                    ]]></codeblock>
+    </context>
+
+
+    <steps>      
+      <step>   
+        <cmd>Process <codeph>079$a</codeph>.</cmd>
+        <substeps>
+          <substep>
+            <cmd><codeph>079$a</codeph>: trim whitespace.</cmd>
+          </substep>
+          <substep>
+            <cmd>Normalize <codeph>079$a</codeph> (lower case and remove punctuation characters) to test the value.</cmd>
+          </substep>
+          <substep>
+            <cmd>If the normalized value of <codeph>079$a</codeph> starts with "oc", return the original (whitespace-trimmed) value.</cmd>
+          </substep>
+          <substep>
+            <cmd>Else, skip.</cmd>
+          </substep>
+        </substeps>
+      </step>      
+      <step>
+        <cmd>Output JSON with values for OCLC number.</cmd>
+      </step>
+    </steps>
+    <result>
+      BIB ID: <keyword>907208</keyword>
+      <codeblock><![CDATA[
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "ocm36682480",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404621",
+          "type": "Type",
+          "_label": "Owner-Assigned Number"
+        }
+      ],
+      "attributed_by": [
+        {
+          "type": "AttributeAssignment",
+          "carried_out_by": [
+            {
+              "type": "Group",
+              "_label": "OCLC"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+                        ]]></codeblock>
+    </result>
+  </taskbody>
+</task>

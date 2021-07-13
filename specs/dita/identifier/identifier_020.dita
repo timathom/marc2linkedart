@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="task_020" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+  <title>020 (ISBN)</title>
+  <shortdesc>The International Standard Book Number (ISBN) is a publisher-assigned commercial book identifier that is intended to be unique. May appear in 10- or 13-digit formats.</shortdesc>
+  <taskbody>
+    <context>
+      <data name="usage" value="8873469"/>
+      <p>Usage: ~9 million values.</p>
+      <table>
+        <tgroup cols="7">
+          <thead>
+            <row>
+              <entry>Tag</entry>
+              <entry>Tag Label</entry>
+              <entry>First Indicator</entry>
+              <entry>Second Indicator</entry>
+              <entry>Subfield</entry>
+              <entry>Subfield Label</entry>
+              <entry>Repeatable</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>020</entry>
+              <entry>ISBN</entry>
+              <entry>Undefined</entry>
+              <entry>Undefined</entry>
+              <entry>a</entry>
+              <entry>ISBN</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>020</entry>
+              <entry>ISBN</entry>
+              <entry>Undefined</entry>
+              <entry>Undefined</entry>
+              <entry>q</entry>
+              <entry>Qualifying information</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>020</entry>
+              <entry>ISBN</entry>
+              <entry>Undefined</entry>
+              <entry>Undefined</entry>
+              <entry>z</entry>
+              <entry>Canceled/invalid ISBN</entry>
+              <entry>T</entry>
+            </row>            
+          </tbody>
+        </tgroup>
+      </table>
+      <codeblock><![CDATA[
+---
+examples:
+  # Voyager BIB IDs for testing
+  - [693, 8827, 3802857, 13101718]
+input:
+  - 020$a
+  - 020$q
+  - 020$z
+trim:
+  - whitespace  
+                    ]]></codeblock>
+    </context>
+    <steps>      
+      <step>
+        <cmd>Do not capture <codeph>020$z</codeph> (canceled/invalid ISBN).</cmd>        
+      </step>
+      <step>   
+        <cmd>Process <codeph>020$a</codeph>.</cmd>
+        <substeps>
+          <substep>
+            <cmd><codeph>020$a</codeph>: trim whitespace.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Process any <codeph>020$q</codeph> (qualifying information) values.</cmd>
+        <substeps>
+          <substep>
+            <cmd>For each <codeph>020$q</codeph>: trim whitespace.</cmd>            
+          </substep>  
+          <substep>
+            <cmd>If 2 or more <codeph>020$q</codeph>: join values with a whitespace character.</cmd>
+          </substep>
+          <substep>
+            <cmd>If the value extracted from <codeph>020$q</codeph> begins and ends with open/closing parentheses, return the value.</cmd>
+          </substep>
+          <substep>
+            <cmd>Else, concatenate the value with open/closing parentheses.</cmd>
+          </substep>
+          <substep>
+            <cmd>Join the values extracted from <codeph>020$a</codeph> and <codeph>020$q</codeph> with a whitespace character.</cmd>
+          </substep>
+        </substeps>                    
+      </step>  
+      <step>
+        <cmd>Output JSON with values for ISBN.</cmd>
+      </step>
+    </steps>
+    <result>      
+      BIB ID: <keyword>13101718</keyword>
+      <codeblock><![CDATA[
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "9780227904787 (e-book)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300417443",
+          "type": "Type",
+          "_label": "ISBN Identifier"
+        }
+      ]
+    }
+  ]
+                        ]]></codeblock>
+    </result>
+  </taskbody>
+</task>
