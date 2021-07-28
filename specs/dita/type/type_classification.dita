@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="topic_type_classification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>Classification Numbers</title>
+    <body>
+        <section>
+            <title>Top-Level Resources</title>
+            <p>For top-level resources, variable values are supplied for: <ul>
+                    <li><codeph>root -> id</codeph> [concept IRI]</li>
+                    <li><codeph>root -> _label</codeph></li>
+                    <li><codeph>root -> identified_by -> content</codeph></li>
+                </ul>
+            </p>
+            <p>Top-level Type (Concept) entity for classification number: <codeblock><![CDATA[
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/8331ccf4-f0d5-42b0-ac2f-f50fb4c5e871",
+  "type": "Type",
+  "_label": "BT825",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "BT825"
+    }
+  ]
+}
+      ]]></codeblock>
+            </p>
+        </section>
+        <section>
+            <title>Embedded References</title>
+            <p>The embedded reference must follow the <term>supertype</term><indexterm>supertype</indexterm> classification of the resource in the same <codeph>classified_as</codeph> array.</p>
+            <p>For embedded references, variable values are supplied for: <ul>
+                    <li><codeph>root -> classified_as -> id</codeph>
+                        <b>[must match the <codeph>id</codeph> of the top-level resource]</b>.</li>
+                    <li><codeph>root -> classified_as -> _label</codeph>
+                        <b>[must match the <codeph>_label</codeph> of the top-level resource]</b>.</li>
+                </ul>
+            </p>
+            <p>Embedded Type (Concept) entity for classification number: <codeblock><![CDATA[
+"classified_as": [
+  {
+    "id": "http://vocab.getty.edu/aat/300263751",
+    "type": "Type",
+    "_label": "Textual Works",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300435443",
+        "type": "Type",
+        "_label": "Type of Work"
+      }
+    ]
+  },
+  {
+    "id": "https://lux.collections.yale.edu/data/concept/8331ccf4-f0d5-42b0-ac2f-f50fb4c5e871",
+    "type": "Type",
+    "_label": "BT825"
+  }
+]
+      ]]></codeblock>
+            </p>
+        </section>
+    </body>
+</topic>

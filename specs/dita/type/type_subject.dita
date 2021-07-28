@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="topic_type_subject" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>Subject Headings</title>
+    <body>
+        <section>
+            <title>Top-Level Resources</title>
+            <p>For top-level resources, variable values are supplied for: <ul>
+                    <li><codeph>root -> id</codeph> [concept IRI]</li>
+                    <li><codeph>root -> type</codeph></li>
+                    <li><codeph>root -> _label</codeph> [label of precoordinated subject heading, joined with double hyphens]</li>
+                    <li><codeph>root -> identified_by -> content</codeph> [same as <codeph>_label</codeph>]</li>
+                    <li><codeph>root -> influenced_by -> id</codeph> [concept IRI for facet concept]</li>
+                    <li><codeph>root -> influenced_by -> type</codeph></li>
+                    <li><codeph>root -> influenced_by -> _label</codeph></li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <title>Embedded References</title>
+            <p>For embedded references, variable values are supplied for: <ul>
+                    <li><codeph>root -> about -> id</codeph>
+                        <b>[must match the <codeph>id</codeph> of the top-level resource]</b>.</li>
+                    <li><codeph>root -> about -> type</codeph>
+                        <b>[must match the <codeph>type</codeph> of the top-level resource]</b>.</li>
+                    <li><codeph>root -> about -> _label</codeph>
+                        <b>[must match the <codeph>_label</codeph> of the top-level resource]</b>.</li>
+                </ul>
+            </p>
+            <p>Top-level Type (Concept) entity for subject heading: <codeblock><![CDATA[
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/24f1b754-9566-4f38-8c61-9ce4082606aa",
+  "type": "Type",
+  "_label": "Death--Religious aspects--Christianity--History--2nd century",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Death--Religious aspects--Christianity--History--2nd century"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/c54ba0ac-c106-4afe-8007-cb4a34cf0bd7",
+        "type": "Type",
+        "_label": "Death"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/b273c64d-a9bb-4c2e-bb3f-5c13a6825a55",
+        "type": "Type",
+        "_label": "Religious aspects"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/33a05e84-57bc-4f1d-a792-0de7758bd0d8",
+        "type": "Type",
+        "_label": "Christianity"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/d43ab750-6e8d-4f7c-b3e2-d5a8dc134a37",
+        "type": "Type",
+        "_label": "History"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/event/92a599a2-2117-43f9-be3e-6e07f36cb2a5",
+        "type": "Period",
+        "_label": "2nd century"
+      }
+    ]
+  }
+}               
+                ]]></codeblock>
+            </p>
+            <p>Embedded Type (Concept) entity for subject heading: <codeblock><![CDATA[
+"about": [
+  {
+    "id": "https://lux.collections.yale.edu/data/concept/c5ba671b-c41d-40f5-983f-beb38b75b5b2",
+    "type": "Type",
+    "_label": "Death--Religious aspects--Christianity"
+  },
+  {
+    "id": "https://lux.collections.yale.edu/data/concept/24f1b754-9566-4f38-8c61-9ce4082606aa",
+    "type": "Type",
+    "_label": "Death--Religious aspects--Christianity--History--2nd century"
+  }
+]               
+                ]]></codeblock>
+            </p>
+        </section>
+    </body>
+</topic>
