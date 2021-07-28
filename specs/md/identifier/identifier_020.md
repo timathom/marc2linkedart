@@ -50,19 +50,19 @@ BIB ID: 13101718
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "9780227904787 (e-book)",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300417443",
-          "type": "Type",
-          "_label": "ISBN Identifier"
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "9780227904787 (e-book)",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300417443",
+        "type": "Type",
+        "_label": "ISBN Identifier"
+      }
+    ]
+  }
+]
                         
 ```
 

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:map.xsd">
     <title>LUX Entities</title>
-    <topicref href="identifier/identifier.dita">
-        <topicref href="identifier/identifier_001.dita"/>
-        <topicref href="identifier/identifier_010.dita"/>
-        <topicref href="identifier/identifier_020.dita"/>
-        <topicref href="identifier/identifier_022.dita"/>
-        <topicref href="identifier/identifier_028.dita"/>
-        <topicref href="identifier/identifier_035.dita"/>
-        <topicref href="identifier/identifier_079.dita"/>
+    <topicref href="identifier/identifier.dita" type="topic">
+        <topicref href="identifier/identifier_001.dita" type="task"/>
+        <topicref href="identifier/identifier_010.dita" type="task"/>
+        <topicref href="identifier/identifier_020.dita" type="task"/>
+        <topicref href="identifier/identifier_022.dita" type="task"/>
+        <topicref href="identifier/identifier_028.dita" type="task"/>
+        <topicref href="identifier/identifier_035.dita" type="task"/>
+        <topicref href="identifier/identifier_079.dita" type="task"/>
+    </topicref>
+    <topicref href="type/type.dita" type="topic">
+        <topicref href="type/type_classification.dita" type="topic"/>
+        <topicref href="type/type_subject.dita" type="topic"/>
     </topicref>
 </map>

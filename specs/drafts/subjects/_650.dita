@@ -1,0 +1,214 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="task_650" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+  <title>650 (Subject Added Entry-Topical Term)</title>
+  <shortdesc>Subject added entry in which the entry element is a topical term.</shortdesc>
+  <taskbody>
+    <context>
+      <data name="usage" value=""/>
+      <p>
+        <!-- Usage: ~... values -->
+      </p>
+      <table>
+        <tgroup cols="7">
+          <thead>
+            <row>
+              <entry>Tag</entry>
+              <entry>Tag Label</entry>
+              <entry>First Indicator</entry>
+              <entry>Second Indicator</entry>
+              <entry>Subfield</entry>
+              <entry>Subfield Label</entry>
+              <entry>Repeatable</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>a</entry>
+              <entry>Topical term or geographic name entry element</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>b</entry>
+              <entry>Topical term following geographic name entry element</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>c</entry>
+              <entry>Location of event</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>d</entry>
+              <entry>Active dates</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>e</entry>
+              <entry>Relator term</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>g</entry>
+              <entry>Miscellaneous information</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>4</entry>
+              <entry>Relationship</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>v</entry>
+              <entry>Form subdivision</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>x</entry>
+              <entry>General subdivision</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>y</entry>
+              <entry>Chronological subdivision</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>z</entry>
+              <entry>Geographic subdivision</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>0</entry>
+              <entry>Authority record control number or standard number</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>1</entry>
+              <entry>Real World Object URI</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>2</entry>
+              <entry>Source of heading or term</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>3</entry>
+              <entry>Materials specified</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>6</entry>
+              <entry>Linkage</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>650</entry>
+              <entry>Subject Added Entry-Topical Term</entry>
+              <entry>#-2</entry>
+              <entry>0-7</entry>
+              <entry>8</entry>
+              <entry>Field link and sequence number</entry>
+              <entry>T</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <codeblock>
+              ---
+              examples:
+                # Voyager BIB IDs for testing
+                - []
+              input:
+                - 
+              trim:
+                - whitespace  
+            </codeblock>
+    </context>
+    <steps>
+      <step>
+        <cmd/>
+      </step>
+      <step>
+        <cmd/>
+        <substeps>
+          <substep>
+            <cmd/>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd/>
+      </step>
+    </steps>
+    <result>
+            BIB ID: <keyword/>
+      <codeblock>
+       
+            </codeblock>
+    </result>
+  </taskbody>
+</task>

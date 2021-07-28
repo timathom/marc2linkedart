@@ -82,19 +82,19 @@ trim:
     <result>      
       BIB ID: <keyword>464630</keyword>
       <codeblock><![CDATA[
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "0161-4223",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300417430",
-          "type": "Type",
-          "_label": "ISSN Identifier"
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "0161-4223",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300417430",
+        "type": "Type",
+        "_label": "ISSN Identifier"
+      }
+    ]
+  }
+]
                         ]]></codeblock>
     </result>
   </taskbody>

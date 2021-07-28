@@ -16,37 +16,37 @@
 
 Variable values are supplied for:
 
--   `identified_by -> content`
--   `identified_by -> classified_as -> id`
--   `identified_by -> classified_as -> _label`
--   `identified_by -> attributed_by -> carried_out_by -> _label` \[optional depending on identifier type\]
+-   `root -> identified_by -> content`
+-   `root -> identified_by -> classified_as -> id`
+-   `root -> identified_by -> classified_as -> _label`
+-   `root -> identified_by -> attributed_by -> carried_out_by -> _label` \[optional depending on identifier type\]
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "(OCoLC)ocn702057138",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "(OCoLC)ocn702057138",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  }
+]
     
 ```
 

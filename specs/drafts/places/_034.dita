@@ -1,0 +1,304 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="task_034" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+  <title>034 (Coded Cartographic Mathematical Data)</title>
+  <shortdesc>Contains cartographic mathematical data, including scale, projection, and/or coordinates
+               in coded form. For digital items, the coordinates can represent a bounding rectangle,
+               the outline of the area covered and/or the outline of an interior area not covered.
+               For
+               celestial charts, it may also contain zone, declination data, and/or right ascension
+               data, and/or equinox. There should be an 034 field corresponding to each 255 field
+               in a
+               record.
+             For relief models and other three-dimensional items,
+            if a single set of scales is used in field 255 (i.e., one horizontal and one vertical
+            scale), the first indicator position in field 034 contains value 1, the denominator of
+            the representative fraction for the horizontal scale is recorded in subfield
+            $b, and the denominator of the representative fraction for the vertical scale
+            is recorded in subfield $c. If multiple or varying sets of scales are
+            recorded as a range, the smaller and larger denominators for the horizontal scales are
+            recorded in the first and second subfield $b respectively, the smaller and
+            larger denominators for the vertical scales are recorded in the first and second
+            subfield $c, respectively, and the first indicator position contains value 3.
+            </shortdesc>
+  <taskbody>
+    <context>
+      <data name="usage" value=""/>
+      <p>
+        <!-- Usage: ~... values -->
+      </p>
+      <table>
+        <tgroup cols="7">
+          <thead>
+            <row>
+              <entry>Tag</entry>
+              <entry>Tag Label</entry>
+              <entry>First Indicator</entry>
+              <entry>Second Indicator</entry>
+              <entry>Subfield</entry>
+              <entry>Subfield Label</entry>
+              <entry>Repeatable</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>a</entry>
+              <entry>Category of scale</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>b</entry>
+              <entry>Constant ratio linear horizontal scale</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>c</entry>
+              <entry>Constant ratio linear vertical scale</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>d</entry>
+              <entry>Coordinates - westernmost longitude</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>e</entry>
+              <entry>Coordinates - easternmost longitude</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>f</entry>
+              <entry>Coordinates - northernmost latitude</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>g</entry>
+              <entry>Coordinates - southernmost latitude</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>h</entry>
+              <entry>Angular scale</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>j</entry>
+              <entry>Declination - northern limit</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>k</entry>
+              <entry>Declination - southern limit</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>m</entry>
+              <entry>Right ascension - eastern limit</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>n</entry>
+              <entry>Right ascension - western limit</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>p</entry>
+              <entry>Equinox</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>r</entry>
+              <entry>Distance from earth</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>s</entry>
+              <entry>G-ring latitude</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>t</entry>
+              <entry>G-ring longitude</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>x</entry>
+              <entry>Beginning date</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>y</entry>
+              <entry>Ending date</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>z</entry>
+              <entry>Name of extraterrestrial body</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>0</entry>
+              <entry>Authority record control number or standard number</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>1</entry>
+              <entry>Real World Object URI</entry>
+              <entry>T</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>2</entry>
+              <entry>Source</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>3</entry>
+              <entry>Materials specified</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>6</entry>
+              <entry>Linkage</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>034</entry>
+              <entry>Coded Cartographic Mathematical Data</entry>
+              <entry>0-3</entry>
+              <entry>#-1</entry>
+              <entry>8</entry>
+              <entry>Field link and sequence number</entry>
+              <entry>T</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <codeblock>
+              ---
+              examples:
+                # Voyager BIB IDs for testing
+                - []
+              input:
+                - 
+              trim:
+                - whitespace  
+            </codeblock>
+    </context>
+    <steps>
+      <step>
+        <cmd/>
+      </step>
+      <step>
+        <cmd/>
+        <substeps>
+          <substep>
+            <cmd/>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd/>
+      </step>
+    </steps>
+    <result>
+            BIB ID: <keyword/>
+      <codeblock>
+       
+            </codeblock>
+    </result>
+  </taskbody>
+</task>

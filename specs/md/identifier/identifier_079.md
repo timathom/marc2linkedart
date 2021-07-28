@@ -38,30 +38,30 @@ BIB ID: 907208
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "ocm36682480",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "ocm36682480",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  }
+]
                         
 ```
 

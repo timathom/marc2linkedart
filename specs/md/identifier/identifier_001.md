@@ -32,19 +32,19 @@ BIB ID: 2
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "ils:yul:2",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300435704",
-          "type": "Type",
-          "_label": "System-Assigned Number"
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "ils:yul:2",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300435704",
+        "type": "Type",
+        "_label": "System-Assigned Number"
+      }
+    ]
+  }
+]
                         
 ```
 

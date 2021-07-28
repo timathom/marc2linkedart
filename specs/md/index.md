@@ -8,4 +8,7 @@
     -   [028 \(Publisher or Distributor Number\)](identifier/identifier_028.md)
     -   [035 \(System Control Number: OCLC\)](identifier/identifier_035.md)
     -   [079 \(Local System Control Number: OCLC\)](identifier/identifier_079.md)
+-   [Type Entity \(Concept\)](type/type.md)
+    -   [Classification Numbers](type/type_classification.md)
+    -   [Subject Headings](type/type_subject.md)
 

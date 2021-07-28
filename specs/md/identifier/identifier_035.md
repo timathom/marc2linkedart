@@ -42,74 +42,74 @@ BIB ID: 2395
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "(OCoLC)ocm00213132",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "Identifier",
-      "content": "(OCoLC)ocn687654227",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "Identifier",
-      "content": "(OCoLC)213132",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "(OCoLC)ocm00213132",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Identifier",
+    "content": "(OCoLC)ocn687654227",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Identifier",
+    "content": "(OCoLC)213132",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  }
+]
                         
 ```
 

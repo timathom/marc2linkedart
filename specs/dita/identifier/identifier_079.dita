@@ -43,8 +43,6 @@ trim:
   - whitespace  
                     ]]></codeblock>
     </context>
-
-
     <steps>      
       <step>   
         <cmd>Process <codeph>079$a</codeph>.</cmd>
@@ -70,30 +68,30 @@ trim:
     <result>
       BIB ID: <keyword>907208</keyword>
       <codeblock><![CDATA[
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "ocm36682480",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "ocm36682480",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  }
+]
                         ]]></codeblock>
     </result>
   </taskbody>

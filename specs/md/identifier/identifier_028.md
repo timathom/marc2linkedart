@@ -58,19 +58,19 @@ BIB ID: 1730032
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "M301356 (MGM/UA Home Video)",
-      "classified_as": [
-        {
-          "id": "TBD",
-          "type": "Type",
-          "_label": "Publisher/Distributor Number"
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "M301356 (MGM/UA Home Video)",
+    "classified_as": [
+      {
+        "id": "TBD",
+        "type": "Type",
+        "_label": "Publisher/Distributor Number"
+      }
+    ]
+  }
+]
                         
 ```
 

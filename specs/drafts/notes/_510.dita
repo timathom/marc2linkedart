@@ -1,0 +1,135 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="task_510" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+  <title>510 (Citation/References Note)</title>
+  <shortdesc>Citations or references to published bibliographic descriptions, reviews, abstracts, or
+               indexes of the content of the described item.
+            </shortdesc>
+  <taskbody>
+    <context>
+      <data name="usage" value=""/>
+      <p>
+        <!-- Usage: ~... values -->
+      </p>
+      <table>
+        <tgroup cols="7">
+          <thead>
+            <row>
+              <entry>Tag</entry>
+              <entry>Tag Label</entry>
+              <entry>First Indicator</entry>
+              <entry>Second Indicator</entry>
+              <entry>Subfield</entry>
+              <entry>Subfield Label</entry>
+              <entry>Repeatable</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>a</entry>
+              <entry>Name of source (NR)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>b</entry>
+              <entry>Coverage of source (NR)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>c</entry>
+              <entry>Location within source (NR)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>u</entry>
+              <entry>Uniform Resource Identifier (R)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>x</entry>
+              <entry>International Standard Serial Number (NR)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>3</entry>
+              <entry>Materials specified (NR)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>6</entry>
+              <entry>Linkage (NR)</entry>
+              <entry>F</entry>
+            </row>
+            <row>
+              <entry>510</entry>
+              <entry>Citation/References Note</entry>
+              <entry>0-4</entry>
+              <entry>#</entry>
+              <entry>8</entry>
+              <entry>Field link and sequence number (R)</entry>
+              <entry>F</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <codeblock>
+              ---
+              examples:
+                # Voyager BIB IDs for testing
+                - []
+              input:
+                - 
+              trim:
+                - whitespace  
+            </codeblock>
+    </context>
+    <steps>
+      <step>
+        <cmd/>
+      </step>
+      <step>
+        <cmd/>
+        <substeps>
+          <substep>
+            <cmd/>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd/>
+      </step>
+    </steps>
+    <result>
+            BIB ID: <keyword/>
+      <codeblock>
+       
+            </codeblock>
+    </result>
+  </taskbody>
+</task>

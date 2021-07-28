@@ -38,19 +38,19 @@ BIB ID: 464630
 
 ```
 
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "0161-4223",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300417430",
-          "type": "Type",
-          "_label": "ISSN Identifier"
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "0161-4223",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300417430",
+        "type": "Type",
+        "_label": "ISSN Identifier"
+      }
+    ]
+  }
+]
                         
 ```
 

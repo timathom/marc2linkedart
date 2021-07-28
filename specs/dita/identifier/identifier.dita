@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<topic id="topic_rfz_mdh_fqb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+<topic id="topic_identifier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
     <title>Identifier Entity</title>
     <body>
         <section>
@@ -94,46 +94,39 @@
             </p>
         </section>
         <section>
-            <title>JSON Structure</title>
-            <!--
-            <p>Identifiers are represented as objects in an array with the key <codeph>identified_by</codeph>. Identifer objects are qualified by: <ol>
-                    <li>a required array with the key <codeph>classified_by</codeph> to specify the type of identifier</li>
-                    <li>an optional nested array with the key <codeph>attributed_by</codeph> to specify the source of the identifier</li>
-                </ol>
-            </p>
-            -->
+            <title>JSON Structure</title>            
             <p>Variable values are supplied for: <ul>
-                    <li><codeph>identified_by -> content</codeph></li>
-                    <li><codeph>identified_by -> classified_as -> id</codeph></li>
-                    <li><codeph>identified_by -> classified_as -> _label</codeph></li>
-                    <li importance="optional"><codeph>identified_by -> attributed_by -> carried_out_by -> _label</codeph> [optional depending on identifier type]</li>
+                    <li><codeph>root -> identified_by -> content</codeph></li>
+                    <li><codeph>root -> identified_by -> classified_as -> id</codeph></li>
+                    <li><codeph>root -> identified_by -> classified_as -> _label</codeph></li>
+                    <li importance="optional"><codeph>root -> identified_by -> attributed_by -> carried_out_by -> _label</codeph> [optional depending on identifier type]</li>
                 </ul>
             </p>            
             <codeblock><![CDATA[
-  "identified_by": [
-    {
-      "type": "Identifier",
-      "content": "(OCoLC)ocn702057138",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300404621",
-          "type": "Type",
-          "_label": "Owner-Assigned Number"
-        }
-      ],
-      "attributed_by": [
-        {
-          "type": "AttributeAssignment",
-          "carried_out_by": [
-            {
-              "type": "Group",
-              "_label": "OCLC"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"identified_by": [
+  {
+    "type": "Identifier",
+    "content": "(OCoLC)ocn702057138",
+    "classified_as": [
+      {
+        "id": "http://vocab.getty.edu/aat/300404621",
+        "type": "Type",
+        "_label": "Owner-Assigned Number"
+      }
+    ],
+    "attributed_by": [
+      {
+        "type": "AttributeAssignment",
+        "carried_out_by": [
+          {
+            "type": "Group",
+            "_label": "OCLC"
+          }
+        ]
+      }
+    ]
+  }
+]
     ]]></codeblock>
         </section>
 
