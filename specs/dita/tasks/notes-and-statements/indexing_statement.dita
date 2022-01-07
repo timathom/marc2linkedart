@@ -1,0 +1,118 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="indexing_statement" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Indexing statement</title>
+  <shortdesc>Cumulative Index/Finding Aids Note</shortdesc>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-28"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-29T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context id="context_jyx_ryh_krb">
+      <table id="table_kyx_ryh_krb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section id="section_lyx_ryh_krb">
+      <title>Source data</title>
+      <codeblock id="codeblock_myx_ryh_krb">---
+name: IndexingStatement
+sampleBibs:
+  - 8010777
+fieldSpec:
+  - 555abc
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section id="section_nyx_ryh_krb">
+      <title>Processing steps and output</title>
+    </section>
+    <steps id="steps_oyx_ryh_krb">
+      <step>
+        <cmd>Process the indexing statement values (MARC<codeph>555abc</codeph>).</cmd>
+        <choices id="choices_pyx_ryh_krb">
+          <choice>If two or more subfields (<codeph>555abc</codeph>) are present, join them with a whitespace character.</choice>
+          <choice>Else, output the string value of<codeph>555a</codeph>or<codeph>555b</codeph>.</choice>
+        </choices>
+        <stepresult>
+          <note>This example is meant to illustrate an indexing statement and does not represent a complete JSON-LD document.</note>
+          <yulbibid>8010777</yulbibid>
+          <codeblock id="codeblock_bmw_hth_krb">{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Finding aid available in the archives : folder level control.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300054640",
+          "type": "Type",
+          "_label": "Indexes Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Cumulative Index/Finding Aids Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

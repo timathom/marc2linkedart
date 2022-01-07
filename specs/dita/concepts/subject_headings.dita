@@ -1,0 +1,471 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="subject_headings" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Subject headings</title>
+  <shortdesc>Resources extracted from MARC 6XX entries.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value="2021-10-05T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: SubjectHeadings
+sampleBibs:
+  - 9564880
+  - 13146411
+# Source data fields
+fieldSpec:
+  - 60004abcdegjqvxyz
+  - 61004abcdegvxyz
+  - 61104acdegjnquvxyz
+  - 6300adfhklmnoprstvxyz
+  - 65004abcdegvxyz
+  - 65104abcdfghvxyz
+  - 65504abcvxyz
+  - 69004abcdegvxyz
+  - 69104abcdfgh
+  - 69204abcdegjq
+  - 69304abcdeg
+  - 69404acdegjnqu
+  - 6950adfhklmnoprst
+  - 75104abcdfgh
+  - 75204abcdfghvxyz
+trimPunctuation: true
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Generate and store the top-level concept resources, each identified by an IRI.</cmd>
+      </step>
+      <step>
+        <cmd>Create top-level concepts by normalizing and merging the string value of each complete subject heading (6XX field plus all subfields).</cmd>
+        <info>
+          <table>
+            <title>Variable values for subjects</title>
+            <tgroup cols="2">
+              <thead>
+                <row>
+                  <entry>JSON structure</entry>
+                  <entry>Description</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry>
+                    <codeph>root → id</codeph>
+                  </entry>
+                  <entry>Concept IRI</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → type</codeph>
+                  </entry>
+                  <entry>Semantic type of concept. Default value:<codeph>Type</codeph>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → _label</codeph>
+                  </entry>
+                  <entry>Label of precoordinated subject heading, joined with double hyphens</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → equivalent → id</codeph>
+                  </entry>
+                  <entry>Reference to IRI from<codeph>$0</codeph>, if applicable</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → equivalent → type</codeph>
+                  </entry>
+                  <entry>Reference to resource type from<codeph>$0</codeph>, if applicable</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → identified_by → content</codeph>
+                  </entry>
+                  <entry>Same as<codeph>root → _label</codeph>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → created_by → influenced_by → id</codeph>
+                  </entry>
+                  <entry>Concept IRI for facet concept</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → created_by → influenced_by → type</codeph>
+                  </entry>
+                  <entry>Semantic type of concept facet. See the<xref keyref="facet-types/facet_types_table">facet type mapping</xref>below.</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → created_by → influenced_by → _label</codeph>
+                  </entry>
+                  <entry>Facet label</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </info>
+      </step>
+      <step>
+        <cmd>Within the top-level resource for the full subject heading, model each subdivision in the heading as a facet.</cmd>
+      </step>
+      <step>
+        <cmd>Generate a top-level resource for each unique facet.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Create facets by normalizing and merging the string value (label) of each facet resource according to the facet value mapping table below.</cmd>
+          </substep>
+          <substep>
+            <cmd>For rows with multiple subfields, join the subfields with a whitespace character.</cmd>
+            <info>
+              <table id="facet_values_table">
+                <title>Facet value mapping</title>
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>MARC tag</entry>
+                      <entry>Subfields</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>v</entry>
+                    </row>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>x</entry>
+                    </row>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>y</entry>
+                    </row>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>z</entry>
+                    </row>
+                    <row>
+                      <entry>600</entry>
+                      <entry>abcdgjq</entry>
+                    </row>
+                    <row>
+                      <entry>610</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>611</entry>
+                      <entry>acdegnqu</entry>
+                    </row>
+                    <row>
+                      <entry>630</entry>
+                      <entry>adfhklmnoprst</entry>
+                    </row>
+                    <row>
+                      <entry>650</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>651</entry>
+                      <entry>abcdfgh</entry>
+                    </row>
+                    <row>
+                      <entry>690</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>691</entry>
+                      <entry>abcdfgh</entry>
+                    </row>
+                    <row>
+                      <entry>692</entry>
+                      <entry>abcdgjq</entry>
+                    </row>
+                    <row>
+                      <entry>693</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>694</entry>
+                      <entry>acdgnqu</entry>
+                    </row>
+                    <row>
+                      <entry>695</entry>
+                      <entry>adfhklmnoprst</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Determine the<codeph>type</codeph>value for each facet from the tag and subfield values in MARC according to the facet type mapping table below.</cmd>
+            <info>
+              <table id="facet_types_table">
+                <title>Facet type mapping</title>
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>MARC values</entry>
+                      <entry>Type</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>6XXvx</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>6XXy</entry>
+                      <entry>Period</entry>
+                    </row>
+                    <row>
+                      <entry>6XXz</entry>
+                      <entry>Place</entry>
+                    </row>
+                    <row>
+                      <entry>600abcdgjq</entry>
+                      <entry>Person</entry>
+                    </row>
+                    <row>
+                      <entry>610abcdg</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>611acdegnqu</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>630adfhklmnoprst</entry>
+                      <entry>LinguisticObject</entry>
+                    </row>
+                    <row>
+                      <entry>650abcdg</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>651abcdfgh</entry>
+                      <entry>Place</entry>
+                    </row>
+                    <row>
+                      <entry>690abcdg</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>691abcdfgh</entry>
+                      <entry>Place</entry>
+                    </row>
+                    <row>
+                      <entry>692abcdgjq</entry>
+                      <entry>Person</entry>
+                    </row>
+                    <row>
+                      <entry>693abcdg</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>694acdegnqu</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>695adfhklmnoprst</entry>
+                      <entry>LinguisticObject</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+        </substeps>
+        <stepresult>
+          <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/event/92a599a2-2117-43f9-be3e-6e07f36cb2a5",
+  "type": "Period",
+  "_label": "2nd century",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "2nd century"
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Join the string values of the facets with double hyphens (<codeph>--</codeph>) to output the<codeph>_label</codeph>and<codeph>content</codeph>values of the full precoordinated heading.</cmd>
+      </step>
+      <step>
+        <cmd>Add an embedded reference to the facet resources within the top-level resource for the full heading.</cmd>
+        <stepresult>
+          <yulbibid>9564880</yulbibid>
+          <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/24f1b754-9566-4f38-8c61-9ce4082606aa",
+  "type": "Type",
+  "_label": "Death--Religious aspects--Christianity--History--2nd century",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Death--Religious aspects--Christianity--History--2nd century"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/c54ba0ac-c106-4afe-8007-cb4a34cf0bd7",
+        "type": "Type",
+        "_label": "Death"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/b273c64d-a9bb-4c2e-bb3f-5c13a6825a55",
+        "type": "Type",
+        "_label": "Religious aspects"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/33a05e84-57bc-4f1d-a792-0de7758bd0d8",
+        "type": "Type",
+        "_label": "Christianity"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/d43ab750-6e8d-4f7c-b3e2-d5a8dc134a37",
+        "type": "Type",
+        "_label": "History"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/event/92a599a2-2117-43f9-be3e-6e07f36cb2a5",
+        "type": "Period",
+        "_label": "2nd century"
+      }
+    ]
+  }
+}</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>If a 6XX field in MARC includes a<codeph>$0</codeph>with an IRI, output an<codeph>equivalent</codeph>reference.</cmd>
+        <stepresult>
+          <yulbibid>13146411</yulbibid>
+          <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/2dba70e6-3702-4bbc-953c-1fdee7460594",
+  "type": "Type",
+  "_label": "Earth (Planet)--Maps",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Earth (Planet)--Maps",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh2013000103",
+      "type": "Type"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/place/f0c5212e-e671-4c59-a745-581b350f191d",
+        "type": "Place",
+        "_label": "Earth (Planet)"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/c5974fce-ed0d-4556-a2f6-bd98965ffc50",
+        "type": "Type",
+        "_label": "Maps"
+      }
+    ]
+  }
+}</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>In each referring record-level resource (<codeph>LinguisticObject</codeph>,<codeph>VisualItem</codeph>, or<codeph>DigitalObject</codeph>), add an embedded reference to the Concept entity.</cmd>
+        <info>
+          <table>
+            <title>Variable values for embedded subject references</title>
+            <tgroup cols="2">
+              <thead>
+                <row>
+                  <entry>JSON structure</entry>
+                  <entry>Description</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry>
+                    <codeph>root → about → id</codeph>
+                  </entry>
+                  <entry>Must match the<codeph>id</codeph>of the top-level resource</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → about → type</codeph>
+                  </entry>
+                  <entry>Must match the<codeph>type</codeph>of the top-level resource</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → about → _label</codeph>
+                  </entry>
+                  <entry>Must match the<codeph>_label</codeph>of the top-level resource</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </info>
+        <stepresult>
+          <yulbibid>9564880</yulbibid>
+          <codeblock>{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/c5ba671b-c41d-40f5-983f-beb38b75b5b2",
+      "type": "Type",
+      "_label": "Death--Religious aspects--Christianity"
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/24f1b754-9566-4f38-8c61-9ce4082606aa",
+      "type": "Type",
+      "_label": "Death--Religious aspects--Christianity--History--2nd century"
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

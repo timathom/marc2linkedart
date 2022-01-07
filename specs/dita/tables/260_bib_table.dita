@@ -1,0 +1,112 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_260_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>260 (Publication, Distribution, etc. )</title>
+  <shortdesc>Information relating to the publication, printing, distribution, issue, release, or production of a work.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd260.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd260.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_260">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd260.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>Place of publication, distribution, etc.</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>b</entry>
+            <entry>Name of publisher, distributor, etc.</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>c</entry>
+            <entry>Date of publication, distribution, etc.</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>e</entry>
+            <entry>Place of manufacture</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>f</entry>
+            <entry>Manufacturer</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>g</entry>
+            <entry>Date of manufacture</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>260</entry>
+            <entry>Publication, Distribution, etc. </entry>
+            <entry>#-3</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>F</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

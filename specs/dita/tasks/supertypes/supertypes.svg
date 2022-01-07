@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="1851px" preserveAspectRatio="none" style="width:774px;height:1851px;" version="1.1" viewBox="0 0 774 1851" width="774px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify">
+  <defs>
+    <filter height="300%" id="f1snh7w3gypei2" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="42" x="10" y="913.1914"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="22" x="20" y="934.793">LUX</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="94" x="102" y="101.1992"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="74" x="112" y="122.8008">DigitalObject</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="246" y="74.1328"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="256" y="95.7344">Datasets</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="366" y="74.1328"/>
+    <a href="dataandfiles.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Data and Files format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="82" x="376" y="95.7344">Data and Files</text></a>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="518" y="20"/>
+    <a href="geospatialdata.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Geospatial Data format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="92" x="528" y="41.6016">Geospatial Data</text></a>
+    <path d="M468,91.1992 L478,91.1992 C493,91.1992 493,37.0664 508,37.0664 L518,37.0664 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="518" y="74.1328"/>
+    <a href="imagedata.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Image Data format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="528" y="95.7344">Image Data</text></a>
+    <path d="M468,91.1992 L478,91.1992 C493,91.1992 493,91.1992 508,91.1992 L518,91.1992 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="94" x="518" y="128.2656"/>
+    <a href="textualdata.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Textual Data format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="74" x="528" y="149.8672">Textual Data</text></a>
+    <path d="M468,91.1992 L478,91.1992 C493,91.1992 493,145.332 508,145.332 L518,145.332 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M316,91.1992 L326,91.1992 C341,91.1992 341,91.1992 356,91.1992 L366,91.1992 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M196,118.2656 L206,118.2656 C221,118.2656 221,91.1992 236,91.1992 L246,91.1992 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="193" x="246" y="182.3984"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="173" x="256" y="204">Software and Electronic Media</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="143" x="489" y="182.3984"/>
+    <a href="softwareapplications.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Software Applications format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="123" x="499" y="204">Software Applications</text></a>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="81" x="682" y="182.3984"/>
+    <a href="databases.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Databases format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="61" x="692" y="204">Databases</text></a>
+    <path d="M632,199.4648 L642,199.4648 C657,199.4648 657,199.4648 672,199.4648 L682,199.4648 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M439,199.4648 L449,199.4648 C464,199.4648 464,199.4648 479,199.4648 L489,199.4648 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M196,118.2656 L206,118.2656 C221,118.2656 221,199.4648 236,199.4648 L246,199.4648 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M52,930.2578 L62,930.2578 C77,930.2578 77,118.2656 92,118.2656 L102,118.2656 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="102" y="317.7305"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="111" x="112" y="339.332">HumanMadeObject</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="64" x="283" y="317.7305"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="293" y="339.332">Objects</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="60" x="397" y="236.5313"/>
+    <a href="globes.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Globes format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="40" x="407" y="258.1328">Globes</text></a>
+    <path d="M347,334.7969 L357,334.7969 C372,334.7969 372,253.5977 387,253.5977 L397,253.5977 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="397" y="290.6641"/>
+    <a href="models.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Models format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="41" x="407" y="312.2656">Models</text></a>
+    <path d="M347,334.7969 L357,334.7969 C372,334.7969 372,307.7305 387,307.7305 L397,307.7305 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="55" x="397" y="344.7969"/>
+    <a href="realia.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Realia format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="35" x="407" y="366.3984">Realia</text></a>
+    <path d="M347,334.7969 L357,334.7969 C372,334.7969 372,361.8633 387,361.8633 L397,361.8633 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="397" y="398.9297"/>
+    <a href="toysandgames.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Toys and Games format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="97" x="407" y="420.5313">Toys and Games</text></a>
+    <path d="M347,334.7969 L357,334.7969 C372,334.7969 372,415.9961 387,415.9961 L397,415.9961 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M233,334.7969 L243,334.7969 C258,334.7969 258,334.7969 273,334.7969 L283,334.7969 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M52,930.2578 L62,930.2578 C77,930.2578 77,334.7969 92,334.7969 L102,334.7969 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="110" x="102" y="696.6602"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="112" y="718.2617">LinguisticObject</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="53" x="262" y="480.1289"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="272" y="501.7305">Audio</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="365" y="453.0625"/>
+    <a href="music.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Music format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="32" x="375" y="474.6641">Music</text></a>
+    <path d="M315,497.1953 L325,497.1953 C340,497.1953 340,470.1289 355,470.1289 L365,470.1289 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="55" x="365" y="507.1953"/>
+    <a href="sound.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Sound format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="35" x="375" y="528.7969">Sound</text></a>
+    <path d="M315,497.1953 L325,497.1953 C340,497.1953 340,524.2617 355,524.2617 L365,524.2617 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M212,713.7266 L222,713.7266 C237,713.7266 237,497.1953 252,497.1953 L262,497.1953 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="105" x="262" y="561.3281"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="272" y="582.9297">Moving Images</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="417" y="561.3281"/>
+    <a href="motionpictures.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Motion Pictures format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="87" x="427" y="582.9297">Motion Pictures</text></a>
+    <path d="M367,578.3945 L377,578.3945 C392,578.3945 392,578.3945 407,578.3945 L417,578.3945 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M212,713.7266 L222,713.7266 C237,713.7266 237,578.3945 252,578.3945 L262,578.3945 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="135" x="262" y="642.5273"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="115" x="272" y="664.1289">Scores and Notation</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="129" x="447" y="615.4609"/>
+    <a href="notatedmovement.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Notated Movement format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="109" x="457" y="637.0625">Notated Movement</text></a>
+    <path d="M397,659.5938 L407,659.5938 C422,659.5938 422,632.5273 437,632.5273 L447,632.5273 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="447" y="669.5938"/>
+    <a href="notatedmusic.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Notated Music format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="82" x="457" y="691.1953">Notated Music</text></a>
+    <path d="M397,659.5938 L407,659.5938 C422,659.5938 422,686.6602 437,686.6602 L447,686.6602 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M212,713.7266 L222,713.7266 C237,713.7266 237,659.5938 252,659.5938 L262,659.5938 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="262" y="831.9922"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="272" y="853.5938">Textual Works</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="54" x="414" y="723.7266"/>
+    <a href="books.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Books format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="34" x="424" y="745.3281">Books</text></a>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="518" y="723.7266"/>
+    <a href="atlases.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Atlases format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="41" x="528" y="745.3281">Atlases</text></a>
+    <path d="M468,740.793 L478,740.793 C493,740.793 493,740.793 508,740.793 L518,740.793 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M364,849.0586 L374,849.0586 C389,849.0586 389,740.793 404,740.793 L414,740.793 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="414" y="777.8594"/>
+    <a href="broadsides.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Broadsides format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="64" x="424" y="799.4609">Broadsides</text></a>
+    <path d="M364,849.0586 L374,849.0586 C389,849.0586 389,794.9258 404,794.9258 L414,794.9258 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="165" x="414" y="831.9922"/>
+    <a href="dissertationsandtheses.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Dissertations and Theses format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="145" x="424" y="853.5938">Dissertations and Theses</text></a>
+    <path d="M364,849.0586 L374,849.0586 C389,849.0586 389,849.0586 404,849.0586 L414,849.0586 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="414" y="886.125"/>
+    <a href="journalsandperiodicals.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Journals and Periodicals format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="138" x="424" y="907.7266">Journals and Periodicals</text></a>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="92" x="622" y="886.125"/>
+    <a href="newspapers.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Newspapers format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="72" x="632" y="907.7266">Newspapers</text></a>
+    <path d="M572,903.1914 L582,903.1914 C597,903.1914 597,903.1914 612,903.1914 L622,903.1914 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M364,849.0586 L374,849.0586 C389,849.0586 389,903.1914 404,903.1914 L414,903.1914 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="94" x="414" y="940.2578"/>
+    <a href="textualdata.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Textual Data format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="74" x="424" y="961.8594">Textual Data</text></a>
+    <path d="M364,849.0586 L374,849.0586 C389,849.0586 389,957.3242 404,957.3242 L414,957.3242 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M212,713.7266 L222,713.7266 C237,713.7266 237,849.0586 252,849.0586 L262,849.0586 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M52,930.2578 L62,930.2578 C77,930.2578 77,713.7266 92,713.7266 L102,713.7266 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="37" x="102" y="1021.457"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="17" x="112" y="1043.0586">Set</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="81" x="189" y="1021.457"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61" x="199" y="1043.0586">Collections</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="214" x="320" y="994.3906"/>
+    <a href="archivalandmanuscriptmaterials.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Archival and Manuscript Materials format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="194" x="330" y="1015.9922">Archival and Manuscript Materials</text></a>
+    <path d="M270,1038.5234 L280,1038.5234 C295,1038.5234 295,1011.457 310,1011.457 L320,1011.457 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="41" x="320" y="1048.5234"/>
+    <a href="kits.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Kits format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="21" x="330" y="1070.125">Kits</text></a>
+    <path d="M270,1038.5234 L280,1038.5234 C295,1038.5234 295,1065.5898 310,1065.5898 L320,1065.5898 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M139,1038.5234 L149,1038.5234 C164,1038.5234 164,1038.5234 179,1038.5234 L189,1038.5234 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M52,930.2578 L62,930.2578 C77,930.2578 77,1038.5234 92,1038.5234 L102,1038.5234 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="79" x="102" y="1454.5195"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59" x="112" y="1476.1211">VisualItem</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="91" x="231" y="1183.8555"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="241" y="1205.457">Cartography</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="372" y="1102.6563"/>
+    <a href="atlases.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Atlases format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="41" x="382" y="1124.2578">Atlases</text></a>
+    <path d="M322,1200.9219 L332,1200.9219 C347,1200.9219 347,1119.7227 362,1119.7227 L372,1119.7227 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="372" y="1156.7891"/>
+    <a href="geospatialdata.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Geospatial Data format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="92" x="382" y="1178.3906">Geospatial Data</text></a>
+    <path d="M322,1200.9219 L332,1200.9219 C347,1200.9219 347,1173.8555 362,1173.8555 L372,1173.8555 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="60" x="372" y="1210.9219"/>
+    <a href="globes.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Globes format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="40" x="382" y="1232.5234">Globes</text></a>
+    <path d="M322,1200.9219 L332,1200.9219 C347,1200.9219 347,1227.9883 362,1227.9883 L372,1227.9883 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="51" x="372" y="1265.0547"/>
+    <a href="maps.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Maps format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="31" x="382" y="1286.6563">Maps</text></a>
+    <path d="M322,1200.9219 L332,1200.9219 C347,1200.9219 347,1282.1211 362,1282.1211 L372,1282.1211 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M181,1471.5859 L191,1471.5859 C206,1471.5859 206,1200.9219 221,1200.9219 L231,1200.9219 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="93" x="231" y="1562.7852"/>
+    <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="241" y="1584.3867">Visual Works</text>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="68" x="374" y="1319.1875"/>
+    <a href="collages.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Collages format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="48" x="384" y="1340.7891">Collages</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1336.2539 364,1336.2539 L374,1336.2539 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="73" x="374" y="1373.3203"/>
+    <a href="drawings.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Drawings format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="53" x="384" y="1394.9219">Drawings</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1390.3867 364,1390.3867 L374,1390.3867 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="374" y="1427.4531"/>
+    <a href="imagedata.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Image Data format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="66" x="384" y="1449.0547">Image Data</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1444.5195 364,1444.5195 L374,1444.5195 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="51" x="374" y="1481.5859"/>
+    <a href="maps.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Maps format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="31" x="384" y="1503.1875">Maps</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1498.6523 364,1498.6523 L374,1498.6523 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="71" x="374" y="1535.7188"/>
+    <a href="paintings.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Paintings format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="51" x="384" y="1557.3203">Paintings</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1552.7852 364,1552.7852 L374,1552.7852 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="92" x="374" y="1589.8516"/>
+    <a href="photographs.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Photographs format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="72" x="384" y="1611.4531">Photographs</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1606.918 364,1606.918 L374,1606.918 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="65" x="374" y="1643.9844"/>
+    <a href="pictures.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Pictures format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="45" x="384" y="1665.5859">Pictures</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1661.0508 364,1661.0508 L374,1661.0508 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="62" x="374" y="1698.1172"/>
+    <a href="posters.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Posters format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="42" x="384" y="1719.7188">Posters</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1715.1836 364,1715.1836 L374,1715.1836 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="52" x="374" y="1752.25"/>
+    <a href="prints.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Prints format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="32" x="384" y="1773.8516">Prints</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1769.3164 364,1769.3164 L374,1769.3164 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <rect fill="#FEFECE" filter="url(#f1snh7w3gypei2)" height="34.1328" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="53" x="374" y="1806.3828"/>
+    <a href="slides.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="Slides format" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="33" x="384" y="1827.9844">Slides</text></a>
+    <path d="M324,1579.8516 L334,1579.8516 C349,1579.8516 349,1823.4492 364,1823.4492 L374,1823.4492 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M181,1471.5859 L191,1471.5859 C206,1471.5859 206,1579.8516 221,1579.8516 L231,1579.8516 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <path d="M52,930.2578 L62,930.2578 C77,930.2578 77,1471.5859 92,1471.5859 L102,1471.5859 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <!--
+@startmindmap
+* LUX
+** DigitalObject
+*** Datasets
+**** [[dataandfiles.html{Data and Files format} Data and Files]]
+***** [[geospatialdata.html{Geospatial Data format} Geospatial Data]]
+***** [[imagedata.html{Image Data format} Image Data]]
+***** [[textualdata.html{Textual Data format} Textual Data]]
+*** Software and Electronic Media
+**** [[softwareapplications.html{Software Applications format} Software Applications]]
+***** [[databases.html{Databases format} Databases]]
+** HumanMadeObject
+*** Objects
+**** [[globes.html{Globes format} Globes]]
+**** [[models.html{Models format} Models]]
+**** [[realia.html{Realia format} Realia]]
+**** [[toysandgames.html{Toys and Games format} Toys and Games]]
+** LinguisticObject
+*** Audio
+**** [[music.html{Music format} Music]]
+**** [[sound.html{Sound format} Sound]]
+*** Moving Images
+**** [[motionpictures.html{Motion Pictures format} Motion Pictures]]
+*** Scores and Notation
+**** [[notatedmovement.html{Notated Movement format} Notated Movement]]
+**** [[notatedmusic.html{Notated Music format} Notated Music]]
+*** Textual Works
+**** [[books.html{Books format} Books]]
+***** [[atlases.html{Atlases format} Atlases]]
+**** [[broadsides.html{Broadsides format} Broadsides]]
+**** [[dissertationsandtheses.html{Dissertations and Theses format} Dissertations and Theses]]
+**** [[journalsandperiodicals.html{Journals and Periodicals format} Journals and Periodicals]]
+***** [[newspapers.html{Newspapers format} Newspapers]]
+**** [[textualdata.html{Textual Data format} Textual Data]]
+** Set
+*** Collections
+**** [[archivalandmanuscriptmaterials.html{Archival and Manuscript Materials format} Archival and Manuscript Materials]]
+**** [[kits.html{Kits format} Kits]]
+** VisualItem
+*** Cartography
+**** [[atlases.html{Atlases format} Atlases]]
+**** [[geospatialdata.html{Geospatial Data format} Geospatial Data]]
+**** [[globes.html{Globes format} Globes]]
+**** [[maps.html{Maps format} Maps]]
+*** Visual Works
+**** [[collages.html{Collages format} Collages]]
+**** [[drawings.html{Drawings format} Drawings]]
+**** [[imagedata.html{Image Data format} Image Data]]
+**** [[maps.html{Maps format} Maps]]
+**** [[paintings.html{Paintings format} Paintings]]
+**** [[photographs.html{Photographs format} Photographs]]
+**** [[pictures.html{Pictures format} Pictures]]
+**** [[posters.html{Posters format} Posters]]
+**** [[prints.html{Prints format} Prints]]
+**** [[slides.html{Slides format} Slides]]
+@endmindmap
+
+PlantUML version 1.2019.08(Sat Jul 13 15:25:14 EDT 2019)
+(APACHE source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_202-b08
+Operating System: Mac OS X
+OS Version: 10.16
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

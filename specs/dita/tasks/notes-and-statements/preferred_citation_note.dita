@@ -1,0 +1,120 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="preferred_citation_note" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Preferred citation note</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-11-02"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-30T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_hzf_25j_3rb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: Abstract
+sampleBibs:
+  - 72947
+fieldSpec:
+  - 524a
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process the preferred citation note values (MARC<codeph>524a</codeph>).</cmd>
+        <stepresult>
+          <note>This example is meant to illustrate a preferred citation note and does not represent a complete JSON-LD document.</note>
+          <yulbibid>72947</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Kamoinge Inc., Kamoinge Workshop Portfolio No. 1. James Weldon Johnson Collection in the Yale Collection of American Literature, Beinecke Rare Book and Manuscript Library.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311705",
+          "type": "Type",
+          "_label": "Preferred Citation Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Preferred Citation of Described Materials Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

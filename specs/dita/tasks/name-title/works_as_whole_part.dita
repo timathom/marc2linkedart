@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="works_as_whole_part" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Works in whole/part relationships</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-12-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-08"/>
+    </critdates>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Record-level resources can be part of a work cluster through a relationship to a work entity.</p>
+      <p>These <codeph>part_of</codeph> relationships apply to the following source data fields: <sl>
+          <sli><codeph>1XX</codeph> followed by <codeph>240</codeph></sli>
+          <sli><codeph>130</codeph>, <codeph>730</codeph>, and <codeph>830</codeph></sli>
+          <sli><codeph>700</codeph>, <codeph>710</codeph>, <codeph>711</codeph>, <codeph>800</codeph>, <codeph>810</codeph>, or <codeph>811</codeph> with subfield <codeph>t</codeph>.</sli>
+        </sl></p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Add an embedded reference to the work entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the <codeph>_label</codeph> of the work entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process simple work references.</cmd>
+            <info>
+              <note>Work entity derived from <codeph>130</codeph>.</note>
+            </info>
+            <stepresult>
+              <yulbibid>2035</yulbibid>
+              <codeblock><![CDATA[{
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/work3",
+      "type": "LinguisticObject",
+      "_label": "Jourdain de Blaye"      
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process complex work references.</cmd>
+            <info>
+              <note>Work entity derived from <codeph>100 + 240</codeph>.</note>
+            </info>
+            <stepresult>
+              <yulbibid>67759</yulbibid>
+              <codeblock><![CDATA[{
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/work1",
+      "type": "LinguisticObject",
+      "_label": "Afrique en marche. English"      
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+
+  </taskbody>
+</task>

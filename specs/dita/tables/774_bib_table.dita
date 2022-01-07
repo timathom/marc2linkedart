@@ -1,0 +1,238 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_774_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>774 (Constituent Unit Entry)</title>
+  <shortdesc>Information concerning a constituent unit associated with a larger bibliographic unit (vertical relationship). When a note is generated from this field, the introductory termConstituent unit:may be generated based on the field tag for display.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd774.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd774.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_774">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd774.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>a</entry>
+            <entry>Main entry heading</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>b</entry>
+            <entry>Edition</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>c</entry>
+            <entry>Qualifying information</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>d</entry>
+            <entry>Place, publisher, and date of publication</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>g</entry>
+            <entry>Related parts</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>h</entry>
+            <entry>Physical description</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>i</entry>
+            <entry>Relationship information</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>k</entry>
+            <entry>Series data for related item</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>m</entry>
+            <entry>Material-specific details</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>n</entry>
+            <entry>Note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>o</entry>
+            <entry>Other item identifier</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>r</entry>
+            <entry>Report number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>s</entry>
+            <entry>Uniform title</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>t</entry>
+            <entry>Title</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>u</entry>
+            <entry>Standard Technical Report Number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>w</entry>
+            <entry>Record control number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>x</entry>
+            <entry>International Standard Serial Number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>y</entry>
+            <entry>CODEN designation</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>z</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>4</entry>
+            <entry>Relationship</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>7</entry>
+            <entry>Control subfield</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>774</entry>
+            <entry>Constituent Unit Entry</entry>
+            <entry>0-1</entry>
+            <entry>#-8</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

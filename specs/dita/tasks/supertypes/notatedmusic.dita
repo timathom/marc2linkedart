@@ -1,0 +1,78 @@
+<task id="supertype_NotatedMusic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Notated Music</title>
+  <shortdesc/>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-23"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-16T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: NotatedMusic
+sampleBibs:
+  - 786701
+fieldSpec:
+  - ldr[6]
+  - 006[0]
+  - 336a
+  - 336b</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+      <codeblock>---
+# Notated Music mapping
+conditions:
+  OR:
+    # Notated music
+    - - ldr[6]
+      - c
+    # Manuscript notated music
+    - - ldr[6]
+      - d
+    # Printed music
+    - - 006[0]
+      - c
+    # Manuscript music
+    - - 006[d]
+      - d
+    # Notated music
+    - - 336a
+      - notated music
+    - - 336b
+      - ntm</codeblock>
+    </section>
+    <result>
+      <codeblock>{
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300417622",
+      "type": "Type",
+      "_label": "Notated Music",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300226816",
+          "type": "Type",
+          "_label": "Format"
+        }
+      ]
+    }
+  ]    		
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

@@ -1,0 +1,285 @@
+Type,Source,Code,Target
+translations,acteur,,actor
+translations,architects,,architect
+translations,auteur,,author
+translations,auth,,author
+translations,authors,,author
+translations,binders,,binder
+translations,binding designers,,binding designer
+translations,bookjacket designer,,book jacket designer
+translations,cast,,actor
+translations,cast member,,actor
+translations,co-author,,author
+translations,collaborator,,contributor
+translations,colourist,,colorist
+translations,comp,,composer
+translations,defendent,,defendant
+translations,director of photography,,cinematographer
+translations,ed,,editor
+translations,honouree,,honoree
+translations,ill,,illustrator
+translations,illus,,illustrator
+translations,illustrations,,illustrator
+translations,main author,,author
+translations,maker,,creator
+translations,metal engraver,,metal-engraver
+translations,onscreen participant,,on-screen participant
+translations,onscreen presenter,,on-screen presenter
+translations,prin,,printer
+translations,printers,,printer
+translations,ptr,,printer
+translations,pub,,publisher
+translations,publishers,,publisher
+translations,respondant,,respondent
+translations,tr,,translator
+translations,trad,,translator
+translations,traducteur,,translator
+translations,trans,,translator
+translations,wen zi zuo zhe,,author
+translations,wood engraver,,wood-engraver
+translations,writer,,author
+translations,主编,,editor in chief
+translations,原着,,author
+translations,撰,,author
+translations,编,,editor
+translations,编校,,editor
+translations,编纂,,compiler
+translations,编著,,editor
+translations,编译,,compiler
+translations,编辑,,editor
+translations,编选,,compiler
+translations,译,,translator
+translations,译述,,translator
+translations,辑,,editor
+production,abridger,abr,aat:300440753
+production,adapter,adp,aat:300410355
+production,after,,
+production,animator,anm,aat:300025646
+production,architect,arc,aat:300024987
+production,architect_GROUP,,aat:300312082
+production,arranger,arr,aat:300025667
+production,artist,art,aat:300025103
+production,author,aut,aat:300025492
+production,binder,bnd,aat:300025704
+production,binding designer,bdd,http://id.loc.gov/vocabulary/relators/bdd
+production,book artist,,aat:300386346
+production,book designer,bkd,http://id.loc.gov/vocabulary/relators/bkd
+production,book jacket designer,,
+production,book producer,bkp,http://id.loc.gov/vocabulary/relators/bkp
+production,bookbinder,,aat:300025704
+production,bookplate designer,bpd,http://id.loc.gov/vocabulary/relators/bpd
+production,calligrapher,cll,aat:300025107
+production,cartographer,ctg,aat:300025593
+production,carver,,aat:300025256
+production,casemaker,,
+production,chromo-lithographer,,aat:300251177
+production,clockmaker,,aat:300025397
+production,collotyper,clt,http://id.loc.gov/vocabulary/relators/clt
+production,colorist,clr,aat:300435165
+production,compiler,com,aat:300121766
+production,composer,cmp,aat:300025671
+production,compositor,cmt,aat:300025708
+production,contributor,ctb,aat:300403974
+production,copyist,,aat:300025189
+production,cover artist,,
+production,cover designer,cov,http://id.loc.gov/vocabulary/relators/cov
+production,creator,cre,aat:300386174
+production,decorator,,aat:300435238
+production,designer,dsr,aat:300025190
+production,diesinker,,aat:300386327
+production,draftsman,drm,aat:300112172
+production,editor,edt,aat:300025526
+production,editor in chief,,
+production,electrotyper,elt,http://id.loc.gov/vocabulary/relators/elt
+production,engraver,egr,aat:300239410
+production,etcher,etr,aat:300025174
+production,fabricator,,aat:300251917
+production,fore-edge painter,,
+production,gilder,,aat:300025261
+production,illuminator,ilu,aat:300025122
+production,illustrator,ill,aat:300025123
+production,inker,,
+production,inscriber,ins,aat:300121785
+production,inventor,inv,aat:300025845
+production,letterer,,aat:300025115
+production,lithographer,ltg,aat:300025175
+production,lyricist,lyr,aat:300025675
+production,manufacturer,mfr,aat:300025230
+production,metal-engraver,mte,http://id.loc.gov/vocabulary/relators/mte
+production,mint,,aat:300205362
+production,modeler,,aat:300025417
+production,mounter,,
+production,organizer,orm,http://id.loc.gov/vocabulary/relators/orm
+production,originator,org,aat:300386177
+production,paper engineer,,
+production,paper maker,,aat:300025344
+production,papermaker,ppm,aat:300025344
+production,penciller,,
+production,photographer,pht,aat:300025687
+production,playing card maker,,
+production,potter,,aat:300025414
+production,printer,prt,aat:300025732
+production,printer of plates,pop,aat:300025733
+production,printer_GROUP,,aat:300386347
+production,printmaker,prm,aat:300025164
+production,printmaker_GROUP,,aat:300312299
+production,proofreader,pfr,aat:300418027v
+production,repairer,,
+production,screenwriter,aus,aat:300025515
+production,scribe,scr,aat:300025580
+production,sculptor,scl,aat:300025181
+production,series editor,,
+production,stereotyper,str,aat:300025743
+production,transcriber,trc,aat:300440751
+production,translator,trl,aat:300025601
+production,type designer,tyd,aat:300417840
+production,typesetter,,aat:300025744
+production,typographer,tyg,aat:300025745
+production,wood-engraver,wde,aat:300025167
+production,woodcutter,wdc,aat:300025178
+sponsor,commissioned by,,aat:300400903
+sponsor,commissioning body,,aat:300400903
+sponsor,degree granting institution,dgg,http://id.loc.gov/vocabulary/relators/dgg
+sponsor,degree supervisor,dgs,http://id.loc.gov/vocabulary/relators/dgs
+sponsor,funder,fnd,aat:300188572
+sponsor,funder/sponsor,,aat:300188572
+sponsor,host institution,his,http://id.loc.gov/vocabulary/relators/his
+sponsor,sponsor,spn,aat:300188572
+sponsor,sponsoring body,,aat:300400903
+sponsor,sponsoring institution,,aat:300188572
+publication,bank,,
+publication,bookseller,bsl,aat:300025244
+publication,broadcaster,brd,aat:300025502
+publication,distributor,dst,aat:300404885
+publication,enacting jurisdiction,enj,http://id.loc.gov/vocabulary/relators/enj
+publication,film distributor,fds,http://id.loc.gov/vocabulary/relators/fds
+publication,issuer,,
+publication,issuing body,isb,aat:300386627
+publication,publisher,pbl,aat:300025574
+publication,publisher_GROUP,,aat:300386627
+publication,retailer,,aat:300025246
+performance,actor,act,aat:300025658
+performance,bass,,aat:300206743
+performance,boy soprano,,
+performance,camera,,
+performance,choreographer,chr,aat:300025649
+performance,cinematographer,cng,aat:300025650
+performance,clarinet,,
+performance,conductor,cnd,aat:300025672
+performance,costume designer,cst,aat:300163428
+performance,dancer,dnc,aat:300025653
+performance,direction,,
+performance,director,drt,aat:300025654
+performance,film director,fmd,aat:300312209
+performance,film editor,flm,aat:300386237
+performance,film producer,fmp,aat:300312211
+performance,filmmaker,fmk,aat:300075154
+performance,guitarist,,aat:300235042
+performance,hornist,,
+performance,instrumentalist,itr,aat:300162131
+performance,interpreter,,
+performance,interviewee,ive,http://id.loc.gov/vocabulary/relators/ive
+performance,interviewer,ivr,http://id.loc.gov/vocabulary/relators/ivr
+performance,librettist,lbt,aat:300025674
+performance,lighting designer,lgd,aat:300386275
+performance,music,,
+performance,musician,mus,aat:300025666
+performance,narrator,nrt,aat:300417254
+performance,on-screen participant,,
+performance,on-screen presenter,,
+performance,orchestra,,aat:300025666
+performance,organist,,aat:300235015
+performance,performer,prf,aat:300068931
+performance,pianist,,aat:300235018
+performance,praeses,pra,http://id.loc.gov/vocabulary/relators/pra
+performance,producer,pro,aat:300197742
+performance,production,,
+performance,production company,prn,aat:300419391
+performance,production designer,prs,aat:300435129
+performance,production personnel,prd,http://id.loc.gov/vocabulary/relators/prd
+performance,recording engineer,rce,http://id.loc.gov/vocabulary/relators/rce
+performance,saxophonist,,
+performance,script,,
+performance,set designer,std,aat:300435127
+performance,singer,sng,aat:300025684
+performance,soprano,,aat:300206741
+performance,stage director,sgd,aat:300312210
+performance,stage manager,stm,http://id.loc.gov/vocabulary/relators/stm
+performance,television director,tld,http://id.loc.gov/vocabulary/relators/tld
+performance,television producer,tlp,http://id.loc.gov/vocabulary/relators/tlp
+performance,tenor,,aat:300206746
+performance,trombonist,,
+performance,trumpet player,,aat:300235064
+performance,video designer,,
+performance,videographer,vdg,aat:300263895
+performance,violist,,aat:300235045
+performance,violoncellist,,aat:300235047
+performance,vocalist,,aat:300025684
+performance,voice actor,vac,http://id.loc.gov/vocabulary/relators/vac
+encounter,art collector,,
+encounter,collector,col,aat:300025234
+encounter,discoverer,,
+encounter,expedition,,
+provenance,auctioneer,auc,aat:300025208
+provenance,client,cli,aat:300025833
+provenance,commissaire-priseur,,aat:300412173
+provenance,copyright holder,cph,http://id.loc.gov/vocabulary/relators/cph
+provenance,current owner,,
+provenance,donor,dnr,aat:300025240
+provenance,exchanger,,
+provenance,former owner,fmo,http://id.loc.gov/vocabulary/relators/fmo
+provenance,land owner,,
+provenance,licensee,lse,http://id.loc.gov/vocabulary/relators/lse
+provenance,licensor,lso,http://id.loc.gov/vocabulary/relators/lso
+provenance,owner,own,aat:300203630
+provenance,patron,pat,aat:300115251
+provenance,previous owner,,
+provenance,purchaser,,aat:300025211
+provenance,source,,
+provenance,vendor,,aat:300150791
+exhibition,borrower,,aat:300311675
+exhibition,exhibition,,
+exhibition,lender,len,http://id.loc.gov/vocabulary/relators/len
+other,addressee,rcp,http://id.loc.gov/vocabulary/relators/rcp
+other,advertiser,,aat:300252554
+other,annotator,ann,http://id.loc.gov/vocabulary/relators/ann
+other,appellant,apl,http://id.loc.gov/vocabulary/relators/apl
+other,appellee,ape,http://id.loc.gov/vocabulary/relators/ape
+other,assignee,asg,http://id.loc.gov/vocabulary/relators/asg
+other,associated name,asn,http://id.loc.gov/vocabulary/relators/asn
+other,auxilium,,
+other,claimant,,
+other,commentator,cmm,http://id.loc.gov/vocabulary/relators/cmm
+other,complainant,cpl,http://id.loc.gov/vocabulary/relators/cpl
+other,conservator,con,aat:300102842
+other,correspondent,crp,aat:300225705
+other,court reporter,crt,aat:300136440
+other,curator,cur,aat:300025633
+other,dedicatee,dte,aat:300121765
+other,defendant,dfd,http://id.loc.gov/vocabulary/relators/dfd
+other,digitiser,,
+other,editor and translator,,
+other,honoree,hnr,aat:300404867
+other,judge,jud,aat:300025625
+other,magistrate,,aat:300025467
+other,moderator,mod,http://id.loc.gov/vocabulary/relators/mod
+other,other,oth,http://id.loc.gov/vocabulary/relators/oth
+other,panelist,pan,http://id.loc.gov/vocabulary/relators/pan
+other,petitioner,,
+other,plaintiff,ptf,aat:300440758
+other,presenter,pre,http://id.loc.gov/vocabulary/relators/pre
+other,pressman,,aat:300025731
+other,proprietor,,aat:300025241
+other,pseud,,aat:300404657
+other,recipient,,
+other,reporter,rpt,aat:300025508
+other,respondent,rsp,http://id.loc.gov/vocabulary/relators/rsp
+other,reviewer,rev,aat:300440750
+other,sender,,
+other,signer,sgn,aat:300137375
+other,speaker,spk,aat:300136462
+other,subject of parody,,
+other,surveyor,srv,aat:300025100
+other,teacher,tch,aat:300025529
+other,user,,
+other,witness,wit,http://id.loc.gov/vocabulary/relators/wit

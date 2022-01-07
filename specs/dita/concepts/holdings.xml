@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record>
+    <leader>00264cv  a2200121z  4500</leader>
+    <controlfield tag="001">9770</controlfield>
+    <controlfield tag="004">5324</controlfield>
+    <controlfield tag="005">20100729204213.0</controlfield>
+    <controlfield tag="008">0205144u    0   0001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AAA5394YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000010238</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">lsfksl</subfield>
+      <subfield code="h">QC175</subfield>
+      <subfield code="i">S35+</subfield>
+      <subfield code="m">Oversize</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">pt.1-pt.2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00215cx  a22000974  4500</leader>
+    <controlfield tag="001">8394246</controlfield>
+    <controlfield tag="004">31686</controlfield>
+    <controlfield tag="005">20081219114658.0</controlfield>
+    <controlfield tag="008">0709054u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">smlmic</subfield>
+      <subfield code="h">Fiche</subfield>
+      <subfield code="i">B874</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">smlmic</subfield>
+      <subfield code="h">pt.2 (190 fiche)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00264cv  a2200121z  4500</leader>
+    <controlfield tag="001">9770</controlfield>
+    <controlfield tag="004">5324</controlfield>
+    <controlfield tag="005">20100729204213.0</controlfield>
+    <controlfield tag="008">0205144u    0   0001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AAA5394YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000010238</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">lsfksl</subfield>
+      <subfield code="h">QC175</subfield>
+      <subfield code="i">S35+</subfield>
+      <subfield code="m">Oversize</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">pt.1-pt.2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00215cx  a22000974  4500</leader>
+    <controlfield tag="001">8394246</controlfield>
+    <controlfield tag="004">31686</controlfield>
+    <controlfield tag="005">20081219114658.0</controlfield>
+    <controlfield tag="008">0709054u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">smlmic</subfield>
+      <subfield code="h">Fiche</subfield>
+      <subfield code="i">B874</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">smlmic</subfield>
+      <subfield code="h">pt.2 (190 fiche)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00266cx  a2200121z  4500</leader>
+    <controlfield tag="001">179599</controlfield>
+    <controlfield tag="004">146640</controlfield>
+    <controlfield tag="005">20110429204050.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AAQ7496YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000182975</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">lsfkslr</subfield>
+      <subfield code="h">Q171</subfield>
+      <subfield code="i">H8 1893</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="h">Q171</subfield>
+      <subfield code="i">H8 1893 c.2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00429cx  a22001454  4500</leader>
+    <controlfield tag="001">8897329</controlfield>
+    <controlfield tag="004">464460</controlfield>
+    <controlfield tag="005">20081203133555.0</controlfield>
+    <controlfield tag="008">0812034u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">withdrawn</subfield>
+      <subfield code="k">Suppressed</subfield>
+      <subfield code="x">fes: withdrawn 12/08; sci/sb</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.58(1985)-no.69(1986),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.72(1986)-no.74(1986),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.76(1987)-no.93(1988),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.96(1988)-no.107(1989),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.114(1990)-no.124(1991)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>01819cx  a22002534  4500</leader>
+    <controlfield tag="001">13895231</controlfield>
+    <controlfield tag="004">466357</controlfield>
+    <controlfield tag="005">20210624081650.0</controlfield>
+    <controlfield tag="008">1812114u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfr</subfield>
+      <subfield code="t">2</subfield>
+      <subfield code="h">A21</subfield>
+      <subfield code="i">040 III.1-VIII.16</subfield>
+      <subfield code="x">OCLC RECON</subfield>
+      <subfield code="x">DGI/Yale Class Project</subfield>
+      <subfield code="z">For circulation information about volumes not linked here, or to place requests, please search by individual title, author or call number A21  040</subfield>
+      <subfield code="x">CMU</subfield>
+      <subfield code="x">06/23/2021;ar</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfr</subfield>
+      <subfield code="h">A21</subfield>
+      <subfield code="i">040</subfield>
+      <subfield code="x">DGI/Yale Class Project</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.4:anno 285:v.5(1888),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.5:anno 290:v.1(1893),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.5:anno 293:v.4(1897),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.5:anno 312:v.15(1915),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.5:anno 317:v.16(1920)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.6:v.6:1/4,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.6:v.8:5,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">ser.6:v.9:1</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfr</subfield>
+      <subfield code="t">2</subfield>
+      <subfield code="h">A21</subfield>
+      <subfield code="i">040 III.1-VIII.16</subfield>
+      <subfield code="x">OCLC RECON</subfield>
+      <subfield code="x">DGI/Yale Class Project</subfield>
+      <subfield code="z">For circulation information about volumes not linked here, or to place requests, please search by individual title, author or call number A21  040</subfield>
+      <subfield code="x">CMU</subfield>
+      <subfield code="x">06/23/2021;ar</subfield>
+    </datafield>
+    <datafield tag="583" ind1="0" ind2=" ">
+      <subfield code="3">ser.6:anno 317:v.1-v.2(1937)</subfield>
+      <subfield code="a">housed</subfield>
+      <subfield code="b">a30f5856-968f-4671-8652-daba043da9b0</subfield>
+      <subfield code="c">20190329</subfield>
+      <subfield code="h">YUL Preservation Dept</subfield>
+      <subfield code="j">Brooklyn, NY</subfield>
+      <subfield code="k">Talas</subfield>
+      <subfield code="l">Brittle paper</subfield>
+      <subfield code="2">pda</subfield>
+      <subfield code="5">CtY</subfield>
+    </datafield>
+    <datafield tag="583" ind1="0" ind2=" ">
+      <subfield code="3">ser.6:anno 317:v.1-v.2(1937)</subfield>
+      <subfield code="a">transferred to optimal storage</subfield>
+      <subfield code="b">a30f5856-968f-4671-8652-daba043da9b0</subfield>
+      <subfield code="c">20190329</subfield>
+      <subfield code="h">YUL Preservation Dept</subfield>
+      <subfield code="j">New Haven, Conn.</subfield>
+      <subfield code="k">Library Shelving Facility</subfield>
+      <subfield code="l">Brittle paper</subfield>
+      <subfield code="x">SML</subfield>
+      <subfield code="2">pda</subfield>
+      <subfield code="5">CtY</subfield>
+    </datafield>
+    <datafield tag="583" ind1="0" ind2=" ">
+      <subfield code="3">ser.6:anno 8:v.5, ser.6:anno 9:v.1</subfield>
+      <subfield code="a">housed</subfield>
+      <subfield code="b">a30f5856-968f-4671-8652-daba043da9b0</subfield>
+      <subfield code="c">20190404</subfield>
+      <subfield code="h">YUL Preservation Dept</subfield>
+      <subfield code="j">Brooklyn, NY</subfield>
+      <subfield code="k">Talas</subfield>
+      <subfield code="l">Brittle paper</subfield>
+      <subfield code="2">pda</subfield>
+      <subfield code="5">CtY</subfield>
+    </datafield>
+    <datafield tag="583" ind1="0" ind2=" ">
+      <subfield code="3">ser.6:anno 8:v.5, ser.6:anno 9:v.1</subfield>
+      <subfield code="a">transferred to optimal storage</subfield>
+      <subfield code="b">a30f5856-968f-4671-8652-daba043da9b0</subfield>
+      <subfield code="c">20190404</subfield>
+      <subfield code="h">YUL Preservation Dept</subfield>
+      <subfield code="j">New Haven, Conn</subfield>
+      <subfield code="k">Library Shelving Facility</subfield>
+      <subfield code="l">Brittle paper</subfield>
+      <subfield code="x">SML</subfield>
+      <subfield code="2">pda</subfield>
+      <subfield code="5">CtY</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00320cy  a22001214  4500</leader>
+    <controlfield tag="001">537721</controlfield>
+    <controlfield tag="004">469516</controlfield>
+    <controlfield tag="005">20100714160524.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||ger</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ABZ1698YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000555919</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">sml</subfield>
+      <subfield code="k">Suppressed</subfield>
+      <subfield code="h">BR302</subfield>
+      <subfield code="i">R4 110- (LC)  anlyz</subfield>
+      <subfield code="x">CANCELLED PER SSO PROJECT 7/2010</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Bd.152-Bd.155</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>01128cx  a22003254  4500</leader>
+    <controlfield tag="001">13183211</controlfield>
+    <controlfield tag="004">473483</controlfield>
+    <controlfield tag="005">20170406222403.0</controlfield>
+    <controlfield tag="008">1704044u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">artref</subfield>
+      <subfield code="h">HD87.5</subfield>
+      <subfield code="i">A46x (LC)</subfield>
+      <subfield code="m">Oversize</subfield>
+      <subfield code="z">Current issues on Display Shelves.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="b">v.81(2015)-v.82(2016)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 83, no. 1 (2017 Winter)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 83, no. 2 (2017 Spring)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 83, no. 3 (2017 Summer)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 83, no. 4 (2017 Autumn)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 84, no. 1 (2018 Winter)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 84, no. 2 (2018 Spring)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 84, no. 3-4 (2018 Summer-Autumn)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 85, no. 1 (2019 Jan.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 85, no. 2 (2019 Apr.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 85, no. 3 (2019 July)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 85, no. 4 (2019 Oct.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 86, no. 1 (2020 Jan.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 86, no. 2 (2020 Apr.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 86, no. 3 (2020 July)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 86, no. 4 (2020 Oct.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 87, no. 1 (2021 Jan.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 87, no. 2 (2021 Apr.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 87, no. 3 (2021 July)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v. 87, no. 4 (2021 Oct.)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00627cy  a22002294  4500</leader>
+    <controlfield tag="001">545591</controlfield>
+    <controlfield tag="004">475455</controlfield>
+    <controlfield tag="005">20130618162337.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||pol</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ABZ7786YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000564233</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsf</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="h">Nk10</subfield>
+      <subfield code="i">P72M</subfield>
+      <subfield code="x">OCLC RECON</subfield>
+      <subfield code="x">DGI</subfield>
+      <subfield code="x">part anlyz</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.14(1957)-nr.15:2(1960),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.27(1957),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.33(1957),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.35(1957),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.41(1959)-nr.42(1960),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.56(1956),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.58(1962),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.69(1965),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.71(1965)-nr.72(1966),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">nr.74(1967)-nr.111(1990)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00528cy  a2200193z  4500</leader>
+    <controlfield tag="001">548579</controlfield>
+    <controlfield tag="004">477741</controlfield>
+    <controlfield tag="005">20190130130045.0</controlfield>
+    <controlfield tag="008">0205144u    0   0001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACA0108YL003</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000567349</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">lsfcsssi</subfield>
+      <subfield code="h">HC110 E5</subfield>
+      <subfield code="i">+E595 (LC)</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.1(1970:Mar.)-no.9(1972:May),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.12(1972:Nov.)-no.16(1973:May),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.22(1974:Dec.),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.24(1976:July),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.29(1978:Oct.),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.33(1980:July),</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.36(1982:Apr.)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00557cx  a22001934  4500</leader>
+    <controlfield tag="001">9046169</controlfield>
+    <controlfield tag="004">479512</controlfield>
+    <controlfield tag="005">20101217204101.0</controlfield>
+    <controlfield tag="008">0903304u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="3" ind2="1">
+      <subfield code="b">lsfgdc</subfield>
+      <subfield code="h">E 3.1:</subfield>
+      <subfield code="x">DGI</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1(1977)-v.3(1981)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.2:Executive summ.(1977)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.3:summ. (1980)</subfield>
+    </datafield>
+    <datafield tag="867" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.2:app.(1977)</subfield>
+    </datafield>
+    <datafield tag="867" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.3:suppl.1-suppl.2 (1978)</subfield>
+    </datafield>
+    <datafield tag="867" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.2:synopsis (1979)-v.3:synopsis (1979)</subfield>
+    </datafield>
+    <datafield tag="867" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.2:synopsis (1980)-v.3:synopsis (1980)</subfield>
+    </datafield>
+    <datafield tag="867" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">synopsis (1981)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1982-1985</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00227cx  a22000974  4500</leader>
+    <controlfield tag="001">8836447</controlfield>
+    <controlfield tag="004">480896</controlfield>
+    <controlfield tag="005">20081120154732.0</controlfield>
+    <controlfield tag="008">0810204u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">lsffes</subfield>
+      <subfield code="h">SD391</subfield>
+      <subfield code="i">I57 (LC)+</subfield>
+      <subfield code="m">Oversize</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">no.102:ed.2(1992)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00348cy  a22001454  4500</leader>
+    <controlfield tag="001">556125</controlfield>
+    <controlfield tag="004">483976</controlfield>
+    <controlfield tag="005">20200413180157.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||fre</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACA6422YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000575230</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">sml</subfield>
+      <subfield code="h">P2</subfield>
+      <subfield code="i">L353 (LC)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1(1981)-v.15(1997),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.19(2009)-v.20(2010)</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="k">Suppressed</subfield>
+      <subfield code="x">Cancalled</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00683cy  a22002534  4500</leader>
+    <controlfield tag="001">556875</controlfield>
+    <controlfield tag="004">484578</controlfield>
+    <controlfield tag="005">20050803152814.0</controlfield>
+    <controlfield tag="008">010924||    |   |   |||||</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACA7030YL002</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000576025</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">smlaob</subfield>
+      <subfield code="k">Rollins</subfield>
+      <subfield code="h">X127</subfield>
+      <subfield code="i">Am35k</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">68,</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">smly</subfield>
+      <subfield code="h">X127</subfield>
+      <subfield code="i">G98K 5-96</subfield>
+      <subfield code="x">OCLC RECON</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">5(1927)-8(1928),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">10(1929)-12(1930),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">14(1930)-33(1939),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">35(1940)-37(1940),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">[41](1948)-[46](1950),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">48(1951)-66(1958),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">71(1963),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">73(1964)-76[n.d.],</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">78(1966)-85(1968),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">87(1970)-96(1973)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00246cx  a22000974  4500</leader>
+    <controlfield tag="001">13069860</controlfield>
+    <controlfield tag="004">487799</controlfield>
+    <controlfield tag="005">20161121135720.0</controlfield>
+    <controlfield tag="008">1611214u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfbeir</subfield>
+      <subfield code="t">2</subfield>
+      <subfield code="h">1991</subfield>
+      <subfield code="i">+S4</subfield>
+      <subfield code="z">Copies 1-2 housed together</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">r.1:4(1983:jesień)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00456cy  a22001334  4500</leader>
+    <controlfield tag="001">562038</controlfield>
+    <controlfield tag="004">488949</controlfield>
+    <controlfield tag="005">20140404095108.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACB1437YL003</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000581427</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">withdrawn</subfield>
+      <subfield code="k">Suppressed</subfield>
+      <subfield code="t">2</subfield>
+      <subfield code="h">QE75</subfield>
+      <subfield code="i">C5 (LC)</subfield>
+      <subfield code="x">geo: No longer needed, withdrawn 04/14, sci/rh</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">geoper</subfield>
+      <subfield code="h">QE75</subfield>
+      <subfield code="i">C5 (LC)</subfield>
+      <subfield code="z">For microfiche and computer disks, ask at service desk.</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="z">** For vols. not in ORBIS, see card catalog.</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00265cx  a2200121z  4500</leader>
+    <controlfield tag="001">653464</controlfield>
+    <controlfield tag="004">572867</controlfield>
+    <controlfield tag="005">20111019204132.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACK5893YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000675518</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">lsfssl</subfield>
+      <subfield code="h">7F/UV HA37.3</subfield>
+      <subfield code="i">B87 1986</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1-2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00445cy  a22001694  4500</leader>
+    <controlfield tag="001">657219</controlfield>
+    <controlfield tag="004">576020</controlfield>
+    <controlfield tag="005">20110311204055.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACK9094YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000679559</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">lsfssl</subfield>
+      <subfield code="h">HJ2051</subfield>
+      <subfield code="i">G84 (LC)</subfield>
+      <subfield code="z">Latest volume in reference.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="x">2000 is latest pub.Publ date of future vols. is unknown.</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1984-1989,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1992-1996,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1998,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">2000</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00306cy  a22001454  4500</leader>
+    <controlfield tag="001">658647</controlfield>
+    <controlfield tag="004">577155</controlfield>
+    <controlfield tag="005">20070827204023.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACL0241YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000681101</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">lsfstat</subfield>
+      <subfield code="h">QA76</subfield>
+      <subfield code="i">A37 (LC)</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.2,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.10,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.23</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00346cx  a22001214  4500</leader>
+    <controlfield tag="001">13326008</controlfield>
+    <controlfield tag="004">577966</controlfield>
+    <controlfield tag="005">20180509104555.0</controlfield>
+    <controlfield tag="008">1708294u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfcsssi</subfield>
+      <subfield code="h">5G HA37.6</subfield>
+      <subfield code="i">D453</subfield>
+      <subfield code="x">DGI</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">annex vol. 3:no.246(1983/1984)</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Blad no.92:1(984/1985)-Blad no.94:3(1984/1985),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Blad no.208(1986/1987)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00281cx  a2200121z  4500</leader>
+    <controlfield tag="001">686744</controlfield>
+    <controlfield tag="004">599357</controlfield>
+    <controlfield tag="005">20040826160742.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACN2516YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000709456</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">beinycgl</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="h">Zg20 Z921</subfield>
+      <subfield code="i">913</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">beinycgl</subfield>
+      <subfield code="t">2</subfield>
+      <subfield code="h">Zg20 Z921</subfield>
+      <subfield code="i">913</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00288cx  a2200121z  4500</leader>
+    <controlfield tag="001">733145</controlfield>
+    <controlfield tag="004">639326</controlfield>
+    <controlfield tag="005">20210107145547.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ACS2833YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000756480</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">medhs</subfield>
+      <subfield code="k">Hist</subfield>
+      <subfield code="h">RC183</subfield>
+      <subfield code="i">J46 1978 (LC)</subfield>
+      <subfield code="m">Oversize</subfield>
+    </datafield>
+    <datafield tag="852" ind1="7" ind2="0">
+      <subfield code="b">medhsl</subfield>
+      <subfield code="h">Inoc</subfield>
+      <subfield code="i">vacc</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00338cy  a22001334  4500</leader>
+    <controlfield tag="001">824276</controlfield>
+    <controlfield tag="004">719506</controlfield>
+    <controlfield tag="005">20150116125749.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADE3792YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000851707</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">sml</subfield>
+      <subfield code="h">GN1</subfield>
+      <subfield code="i">A555 (LC)</subfield>
+      <subfield code="z">cancelled end of 2014</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">yulint</subfield>
+      <subfield code="h">Print &amp; Online format</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1(1972)-v.42(2013)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00655cy  a22002054  4500</leader>
+    <controlfield tag="001">835801</controlfield>
+    <controlfield tag="004">728872</controlfield>
+    <controlfield tag="005">20131105101451.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADF7994YL002</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfmed</subfield>
+      <subfield code="h">Shelved by title.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="a">000863891</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.3(1984)-v.4:no.2(1985),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.4:no.4(1985)-v.4:no.9(1985),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.4:no.11(1985)-v.4:no.12(1985),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.5:no.2(1986)-v.5:no.8(1986),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.5:no.10(1986)-v.12:no.6(1993),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.12:no.8(1993)-v.17(1998),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.18:no.4(1999:Apr.)-v.25:no.4(2006:Apr.),</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.25:no.6(2006:June)-v.26:no.12(2007:Dec.)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00432cy  a22001454  4500</leader>
+    <controlfield tag="001">836515</controlfield>
+    <controlfield tag="004">729519</controlfield>
+    <controlfield tag="005">20190218113251.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADF8652YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000864774</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">lsfmed</subfield>
+      <subfield code="h">RD34</subfield>
+      <subfield code="i">S875</subfield>
+      <subfield code="x">949</subfield>
+      <subfield code="z">Cancelled with v.87(2007)</subfield>
+      <subfield code="x">Index 1956-1958 is a gift from Freshwater</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="b"/>
+      <subfield code="x">Index 1956-1958 is a gift from Freshwater</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1(1917)-v.87(2007)</subfield>
+    </datafield>
+    <datafield tag="868" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1956-1958</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00821cy  a22002414  4500</leader>
+    <controlfield tag="001">6673296</controlfield>
+    <controlfield tag="004">739001</controlfield>
+    <controlfield tag="005">20210423104448.0</controlfield>
+    <controlfield tag="008">020702||    |   |   ||chi</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADH1189YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000874809</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">sml</subfield>
+      <subfield code="h">PL2513</subfield>
+      <subfield code="i">L73+ (LC)</subfield>
+      <subfield code="m">Oversize</subfield>
+      <subfield code="x">CNPIEC standing order</subfield>
+      <subfield code="z">Current unbound issues in 344 Winchester.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">2001:no.1-2008:no.1=no.136-no.178,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">2008:no.3-2019:no.6=no.180-no.262</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2008, no. 2 (no. 179)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2020, no. 1 (no. 263)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2020, no. 2 (no. 263)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2020, no. 3 (no. 264)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2020, no. 4 (no. 265)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2020, no. 5 (no. 266)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2020, no. 6 (no. 267)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2021, no. 1 (no. 268)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">(*) 2021, no. 2 (no. 269)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00880cy  a22002054  4500</leader>
+    <controlfield tag="001">12965101</controlfield>
+    <controlfield tag="004">752566</controlfield>
+    <controlfield tag="005">20210824091650.0</controlfield>
+    <controlfield tag="008">160720||    |   |   ||ger</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADJ7537YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000891271</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">div</subfield>
+      <subfield code="h">ZP</subfield>
+      <subfield code="i">Oe5</subfield>
+      <subfield code="z">Current issues in Periodical Reading Room</subfield>
+      <subfield code="x">Available in print only</subfield>
+      <subfield code="x">2017 and 2018 ready for binding, Guio.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Jahrg.70:Heft 1(2021:Jan./Marz)-Jahrg.70:Heft 3(2021:Juli/Sept.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2=" ">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Jahrg.69:Heft 1(2020:Jan./Marz)-Jahrg.69:Heft 4(2020:Okt./Dez.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2=" ">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Jahrg.68:Heft 1(2019:Jan./Marz)-Jahrg.68:Heft 4(2019:Juli/Sept.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2=" ">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Jahrg.67:Heft 1(2018:Jan./Mar.)-Jahrg.67:Heft 4(2018:Oct./Dec.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1=" " ind2=" ">
+      <subfield code="8">0</subfield>
+      <subfield code="a">Jahrg.66:Heft 1(2017:Jan./Mar.)-Jahrg.66:Heft 4(2017:Oct./Dec.)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.64(2015)-v.65(2016)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.63(2014)</subfield>
+      <subfield code="z">Missing v.63:no.3</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.49(2000)-v.62(2013)</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00265cx  a2200121z  4500</leader>
+    <controlfield tag="001">867319</controlfield>
+    <controlfield tag="004">756729</controlfield>
+    <controlfield tag="005">20110317204055.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADK2195YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000896399</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">lsfssl</subfield>
+      <subfield code="h">9D HA37.17 1980</subfield>
+      <subfield code="i">L36</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1-v.2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00302cy  a22001334  4500</leader>
+    <controlfield tag="001">870719</controlfield>
+    <controlfield tag="004">759058</controlfield>
+    <controlfield tag="005">20180511120204.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">ADK4570YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000900085</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfssl</subfield>
+      <subfield code="h">8T HA37.6</subfield>
+      <subfield code="i">P3451</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1980-1981</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1990/1991-2001/2002</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00392cy  a22001694  4500</leader>
+    <controlfield tag="001">878232</controlfield>
+    <controlfield tag="004">765645</controlfield>
+    <controlfield tag="005">20110509151703.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AEB8626YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000907984</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfssl</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="h">7T HA37.1</subfield>
+      <subfield code="i">E3</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1952/1973</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1952/1985,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1952/1987-1952/1992,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1990/1995,</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1993/1999</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00293cy  a22001334  4500</leader>
+    <controlfield tag="001">878481</controlfield>
+    <controlfield tag="004">765810</controlfield>
+    <controlfield tag="005">20131104110419.0</controlfield>
+    <controlfield tag="008">930724||    |   |   ||fre</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AEB8793YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000908235</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">lsfssl</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="h">7P/Ma HA37.91</subfield>
+      <subfield code="i">M32</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1967,</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1969-1985</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00274cx  a2200121z  4500</leader>
+    <controlfield tag="001">939009</controlfield>
+    <controlfield tag="004">820341</controlfield>
+    <controlfield tag="005">20090609092121.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AES2153YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">000973016</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">beinwa</subfield>
+      <subfield code="h">Zc72</subfield>
+      <subfield code="i">850ja</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">beinwa</subfield>
+      <subfield code="k">BrSides</subfield>
+      <subfield code="h">Zc72</subfield>
+      <subfield code="i">850ja</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00270cx  a2200121z  4500</leader>
+    <controlfield tag="001">1196720</controlfield>
+    <controlfield tag="004">1067245</controlfield>
+    <controlfield tag="005">20120822132251.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AGY8868YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">001264944</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">lsf</subfield>
+      <subfield code="k">Folio</subfield>
+      <subfield code="h">BM520.8</subfield>
+      <subfield code="i">.S43 1952 (LC)</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="a">v. 1-2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00271cx  a2200121z  4500</leader>
+    <controlfield tag="001">1202662</controlfield>
+    <controlfield tag="004">1073144</controlfield>
+    <controlfield tag="005">20210107152417.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">AHA4705YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">001271979</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">sml</subfield>
+      <subfield code="h">BM504.2</subfield>
+      <subfield code="i">R3 1994 (LC)</subfield>
+      <subfield code="m">Oversize</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="8">0</subfield>
+      <subfield code="a">1-2</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00537cv  a2200229z  4500</leader>
+    <controlfield tag="001">5843282</controlfield>
+    <controlfield tag="004">1133943</controlfield>
+    <controlfield tag="005">20150624143151.0</controlfield>
+    <controlfield tag="008">0205144u    0   0001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">PAT2270YL002</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">006023016</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="1">
+      <subfield code="b">sml</subfield>
+      <subfield code="t">2</subfield>
+      <subfield code="h">BQ670</subfield>
+      <subfield code="i">D35 (LC)</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1-v.2</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.17</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.28</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">withdrawn</subfield>
+      <subfield code="x">icss:v.32 missing, withdrawn 06/15, sml/yt</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.35-v.41</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.45-v.51</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.99</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.105</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.116</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.127</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00354cx  a22000974  4500</leader>
+    <controlfield tag="001">7056011</controlfield>
+    <controlfield tag="004">1143630</controlfield>
+    <controlfield tag="005">20031023095053.0</controlfield>
+    <controlfield tag="008">0310234u    8   1001uu   0901128</controlfield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">smljud</subfield>
+      <subfield code="h">DS110 B3</subfield>
+      <subfield code="i">A71</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">smljud</subfield>
+      <subfield code="k">Guest</subfield>
+      <subfield code="h">DS110 B3</subfield>
+      <subfield code="i">A71</subfield>
+      <subfield code="z">The following titles are bound together: Shivṭe ha-Beduʾim bi-meḥoz Beʾer Shevaʻ -- Toldot Beʾer Shevaʻ ṿe-shivtṭeha</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00285cx  a2200121z  4500</leader>
+    <controlfield tag="001">1292994</controlfield>
+    <controlfield tag="004">1161575</controlfield>
+    <controlfield tag="005">20110812204315.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">CAB4226YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">001365542</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2="0">
+      <subfield code="b">lsfmus</subfield>
+      <subfield code="h">ML3800</subfield>
+      <subfield code="i">P898</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="a">sml</subfield>
+      <subfield code="h">On Order</subfield>
+      <subfield code="x">LC Office, New Delhi.</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00394cx  a2200121z  4500</leader>
+    <controlfield tag="001">1342107</controlfield>
+    <controlfield tag="004">1198084</controlfield>
+    <controlfield tag="005">20090629142807.0</controlfield>
+    <controlfield tag="008">0205142u    0   1001uu   0000000</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">CAF2333YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">001414730</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="0">
+      <subfield code="b">beinycal</subfield>
+      <subfield code="h">Za</subfield>
+      <subfield code="i">Zb83 1</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="2">
+      <subfield code="u">http://orbis.library.yale.edu/cgi-bin/Pwebrecon.cgi?BBID=3425180</subfield>
+      <subfield code="z">Bound in 1 vol. with other issues from v. 1. Click here for circulation status.</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00470cy  a22001334  4500</leader>
+    <controlfield tag="001">1349246</controlfield>
+    <controlfield tag="004">1203307</controlfield>
+    <controlfield tag="005">20170608102159.0</controlfield>
+    <controlfield tag="008">960222||    |   |   ||eng</controlfield>
+    <datafield tag="014" ind1="1" ind2=" ">
+      <subfield code="a">CAF7645YL001</subfield>
+    </datafield>
+    <datafield tag="014" ind1="0" ind2=" ">
+      <subfield code="9">001421874</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2="1">
+      <subfield code="b">beinycal</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="h">Za B437</subfield>
+      <subfield code="i">Zz890H</subfield>
+    </datafield>
+    <datafield tag="866" ind1="4" ind2="1">
+      <subfield code="8">0</subfield>
+      <subfield code="a">v.1-v.2</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2="2">
+      <subfield code="u">http://hdl.handle.net/10079/bibid/1174006</subfield>
+      <subfield code="z">To expedite request for use in the Beinecke Reading Room, click here and request "Epistolae Ho-elianae" [housed with "Our presidents in verse"]</subfield>
+    </datafield>
+  </record>
+</collection>

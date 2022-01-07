@@ -1,0 +1,306 @@
+<concept id="supertypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>LUX supertype taxonomy</title>
+  <shortdesc>Taxonomy of content types and related formats for classifying record-level resources in LUX.</shortdesc>
+  <prolog>
+    <critdates>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-02"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-13"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>MARC-to-Linked Art supertype mappings are done at the level of the most specific format, with type and broader format relations inferred from the hierarchy.</p>
+    <p>The supertype of a resource is used to determine its base class or document type in the Linked Art model.</p>
+    <note>For supertypes that map to more than one base class, the primary class is indicated as <b>[primary]</b> in the base class column.</note>
+    <table id="table_wmw_tjc_5rb">
+      <title>Linked Art base class to supertype mapping</title>
+      <tgroup cols="4">
+        <colspec colname="c1" colnum="1"/>
+        <colspec colname="c2" colnum="2"/>
+        <colspec colname="c3" colnum="3"/>
+        <colspec colname="c4" colnum="4"/>
+        <thead>
+          <row>
+            <entry>Base class</entry>
+            <entry>Content type</entry>
+            <entry>Format level one</entry>
+            <entry>Format level two</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>DigitalObject <b>[primary]</b></entry>
+            <entry>Datasets</entry>
+            <entry><xref href="dataandfiles.dita">Data and Files</xref></entry>
+            <entry><xref href="geospatialdata.dita">Geospatial Data</xref></entry>
+          </row>
+          <row>
+            <entry>DigitalObject <b>[primary]</b></entry>
+            <entry>Datasets</entry>
+            <entry><xref href="dataandfiles.dita">Data and Files</xref></entry>
+            <entry><xref href="imagedata.dita">Image Data</xref></entry>
+          </row>
+          <row>
+            <entry>DigitalObject <b>[primary]</b></entry>
+            <entry>Datasets</entry>
+            <entry><xref href="dataandfiles.dita">Data and Files</xref></entry>
+            <entry><xref href="textualdata.dita">Textual Data</xref></entry>
+          </row>
+          <row>
+            <entry>DigitalObject</entry>
+            <entry>Software and Electronic Media</entry>
+            <entry><xref href="softwareapplications.dita">Software Applications</xref></entry>
+            <entry><xref href="databases.dita">Databases</xref></entry>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Objects</entry>
+            <entry><xref href="globes.dita">Globes</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Objects</entry>
+            <entry><xref href="models.dita">Models</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Objects</entry>
+            <entry><xref href="realia.dita">Realia</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Objects</entry>
+            <entry><xref href="toysandgames.dita">Toys and Games</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Audio</entry>
+            <entry><xref href="music.dita">Music</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Audio</entry>
+            <entry><xref href="sound.dita">Sound</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Moving Images</entry>
+            <entry><xref href="motionpictures.dita">Motion Pictures</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Scores and Notation</entry>
+            <entry><xref href="notatedmovement.dita">Notated Movement</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Scores and Notation</entry>
+            <entry><xref href="notatedmusic.dita">Notated Music</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Textual Works</entry>
+            <entry><xref href="books.dita">Books</xref></entry>
+            <entry><xref href="atlases.dita">Atlases</xref></entry>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Textual Works</entry>
+            <entry><xref href="broadsides.dita">Broadsides</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Textual Works</entry>
+            <entry><xref href="dissertationsandtheses.dita">Dissertations and Theses</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Textual Works</entry>
+            <entry><xref href="journalsandperiodicals.dita">Journals and Periodicals</xref></entry>
+            <entry><xref href="newspapers.dita">Newspapers</xref></entry>
+          </row>
+          <row>
+            <entry>LinguisticObject</entry>
+            <entry>Textual Works</entry>
+            <entry><xref href="textualdata.dita">Textual Data</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>Set</entry>
+            <entry>Collections</entry>
+            <entry><xref href="archivalandmanuscriptmaterials.dita">Archival and Manuscript Materials</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>Set</entry>
+            <entry>Collections</entry>
+            <entry><xref href="kits.dita">Kits</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem <b>[primary]</b></entry>
+            <entry>Cartography</entry>
+            <entry><xref href="atlases.dita">Atlases</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Cartography</entry>
+            <entry><xref href="geospatialdata.dita">Geospatial Data</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem <b>[primary]</b></entry>
+            <entry>Cartography</entry>
+            <entry><xref href="globes.dita">Globes</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Cartography</entry>
+            <entry><xref href="maps.dita">Maps</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="collages.dita">Collages</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="drawings.dita">Drawings</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="imagedata.dita">Image Data</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="maps.dita">Maps</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="drawings.dita">Paintings</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="photographs.dita">Photographs</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="pictures.dita">Pictures</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="posters.dita">Posters</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="prints.dita">Prints</xref></entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>VisualItem</entry>
+            <entry>Visual Works</entry>
+            <entry><xref href="slides.dita">Slides</xref></entry>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>
+      <foreign outputclass="embed-plant-uml">@startmindmap
+* LUX
+** DigitalObject
+*** Datasets
+**** [[dataandfiles.html{Data and Files format} Data and Files]]
+***** [[geospatialdata.html{Geospatial Data format} Geospatial Data]]
+***** [[imagedata.html{Image Data format} Image Data]]
+***** [[textualdata.html{Textual Data format} Textual Data]]
+*** Software and Electronic Media
+**** [[softwareapplications.html{Software Applications format} Software Applications]]
+***** [[databases.html{Databases format} Databases]]
+** HumanMadeObject
+*** Objects
+**** [[globes.html{Globes format} Globes]]
+**** [[models.html{Models format} Models]]
+**** [[realia.html{Realia format} Realia]]
+**** [[toysandgames.html{Toys and Games format} Toys and Games]]
+** LinguisticObject
+*** Audio
+**** [[music.html{Music format} Music]]
+**** [[sound.html{Sound format} Sound]]
+*** Moving Images
+**** [[motionpictures.html{Motion Pictures format} Motion Pictures]]
+*** Scores and Notation
+**** [[notatedmovement.html{Notated Movement format} Notated Movement]]
+**** [[notatedmusic.html{Notated Music format} Notated Music]]
+*** Textual Works
+**** [[books.html{Books format} Books]]
+***** [[atlases.html{Atlases format} Atlases]]
+**** [[broadsides.html{Broadsides format} Broadsides]]
+**** [[dissertationsandtheses.html{Dissertations and Theses format} Dissertations and Theses]]
+**** [[journalsandperiodicals.html{Journals and Periodicals format} Journals and Periodicals]]
+***** [[newspapers.html{Newspapers format} Newspapers]]
+**** [[textualdata.html{Textual Data format} Textual Data]]
+** Set
+*** Collections
+**** [[archivalandmanuscriptmaterials.html{Archival and Manuscript Materials format} Archival and Manuscript Materials]]
+**** [[kits.html{Kits format} Kits]]
+** VisualItem
+*** Cartography
+**** [[atlases.html{Atlases format} Atlases]]
+**** [[geospatialdata.html{Geospatial Data format} Geospatial Data]]
+**** [[globes.html{Globes format} Globes]]
+**** [[maps.html{Maps format} Maps]]
+*** Visual Works
+**** [[collages.html{Collages format} Collages]]
+**** [[drawings.html{Drawings format} Drawings]]
+**** [[imagedata.html{Image Data format} Image Data]]
+**** [[maps.html{Maps format} Maps]]
+**** [[paintings.html{Paintings format} Paintings]]
+**** [[photographs.html{Photographs format} Photographs]]
+**** [[pictures.html{Pictures format} Pictures]]
+**** [[posters.html{Posters format} Posters]]
+**** [[prints.html{Prints format} Prints]]
+**** [[slides.html{Slides format} Slides]]
+@endmindmap</foreign>
+    </p>
+  </conbody>
+</concept>

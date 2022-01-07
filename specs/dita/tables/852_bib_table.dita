@@ -1,0 +1,256 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_852_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>852 (Location)</title>
+  <shortdesc>Identifies the organization holding the item or from which it is available. May also contain detailed information about how to locate the item in a collection.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd852.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd852.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_852">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd852.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>a</entry>
+            <entry>Location</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>b</entry>
+            <entry>Sublocation or collection</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>c</entry>
+            <entry>Shelving location</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>d</entry>
+            <entry>Former shelving location</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>e</entry>
+            <entry>Address</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>f</entry>
+            <entry>Coded location qualifier</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>g</entry>
+            <entry>Non-coded location qualifier</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>h</entry>
+            <entry>Classification part</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>i</entry>
+            <entry>Item part</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>j</entry>
+            <entry>Shelving control number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>k</entry>
+            <entry>Call number prefix</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>l</entry>
+            <entry>Shelving form of title</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>m</entry>
+            <entry>Call number suffix</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>n</entry>
+            <entry>Country code</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>p</entry>
+            <entry>Piece designation</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>q</entry>
+            <entry>Piece physical condition</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>s</entry>
+            <entry>Copyright article-fee code</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>t</entry>
+            <entry>Copy number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>u</entry>
+            <entry>Uniform Resource Identifier</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>x</entry>
+            <entry>Nonpublic note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>z</entry>
+            <entry>Public note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>2</entry>
+            <entry>Source of classification or shelving scheme</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>852</entry>
+            <entry>Location</entry>
+            <entry>#-8</entry>
+            <entry>#-2</entry>
+            <entry>8</entry>
+            <entry>Sequence number</entry>
+            <entry>F</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

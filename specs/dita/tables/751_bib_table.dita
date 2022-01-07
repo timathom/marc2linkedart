@@ -1,0 +1,121 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_751_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>751 (Added Entry-Geographic Name)</title>
+  <shortdesc>Added entry in which the entry element is a geographic name that is related to a particular attribute of the described item, e.g., the place of publication for a rare book, place of distribution, place of a university to which a dissertation is submitted, place of an event such as a conference, etc.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd751.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd751.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_751">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd751.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>Geographic name</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>e</entry>
+            <entry>Relator term</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>g</entry>
+            <entry>Miscellaneous information</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>0</entry>
+            <entry>Authority record control number or standard number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>1</entry>
+            <entry>Real World Object URI</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>2</entry>
+            <entry>Source of heading or term</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>4</entry>
+            <entry>Relationship</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>751</entry>
+            <entry>Added Entry-Geographic Name</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

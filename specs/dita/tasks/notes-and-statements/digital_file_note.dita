@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="digital_file_note" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Digital file note</title>
+  <shortdesc/>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-29T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context id="context_plw_hth_krb">
+      <table id="table_qlw_hth_krb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section id="section_rlw_hth_krb">
+      <title>Source data</title>
+      <codeblock id="codeblock_slw_hth_krb"><![CDATA[---
+name: DigitalFileNote
+sampleBibs:
+  - 756337
+fieldSpec:
+  - 516a
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section id="section_tlw_hth_krb">
+      <title>Processing steps and output</title>
+    </section>
+    <steps id="steps_ulw_hth_krb">
+      <step>
+        <cmd>Process the digital file note value (MARC <codeph>516a</codeph>).</cmd>
+        <stepresult>
+          <note>This example is meant to illustrate a digital file note and does not represent a complete JSON-LD document.</note>
+          <yulbibid>756337</yulbibid>
+          <codeblock id="codeblock_bmw_hth_krb"><![CDATA[{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Dataset in DAT file format.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300266011",
+          "type": "Type",
+          "_label": "Digital Characteristics Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Type of Computer File or Data Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

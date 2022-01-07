@@ -1,0 +1,38 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="root_label" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Root label</title>
+  <shortdesc>Root label of the top-level entity.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin,Maggie Yue"/>
+    <data name="completed" value="2021-11-18T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Each top-level entity must have a root<codeph>_label</codeph>property.</p>
+      <p>The root<codeph>_label</codeph>of a resource generally mirrors the<codeph>root → identified_by → Name → content</codeph>value.</p>
+      <note>For MARC<codeph>245</codeph>content, when a parallel<codeph>880</codeph>non-Latin script title is present, that title is used as the value of the root<codeph>_label</codeph>.</note>
+    </context>
+    <result>
+      <note>This example is meant to illustrate the root<codeph>_label</codeph>value and does not represent a complete JSON-LD document.</note>
+      <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/8e0bdbff-ebb1-4f9b-b98b-e97d64a01ff9",
+  "type": "HumanMadeObject",
+  "_label": "麗澤論說集錄 : [十卷]",
+  "carries": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/416165c2-1108-4acd-b7ab-008f773a2ba3",
+      "type": "LinguisticObject",
+      "_label": "麗澤論說集錄 : [十卷]"
+    }
+  ]
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

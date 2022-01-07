@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="places_from_fixed_field_008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Places from fixed field 008</title>
+  <shortdesc>Place entities derived from <codeph>MARC 008</codeph>.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-11-24"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-24"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-15"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: PlacesFrom008
+sampleBibs:
+  - 404281 # 008, published
+  - 2744420 # 008, created
+  - 3906934 # 008, published
+  - 11167038 # 008, located
+# Source data fields
+fieldSpec:
+  - 008[15-17]
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <context>
+      <p><codeph>008[15-17]</codeph> contains a two- or three-letter code representing a country- or state-level place entity.</p>
+      <p>The code represents a place of publication, production, execution, or sometimes location (in the case of manuscript holdings).</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Generate and store the top-level place resource, identified by an IRI.</cmd>
+        <substeps id="substeps_y2j_lcy_rrb">
+          <substep>
+            <cmd>Normalize whitespace to test for null values and eliminate trailing whitespace after two-letter codes.</cmd>
+          </substep>
+          <substep>
+            <cmd>Match the two- or three-letter code against the Library of Congress's <xref format="html" href="https://id.loc.gov/vocabulary/countries.html" scope="external">MARC List for Countries</xref>, which is available as a <xref format="html" href="http://id.loc.gov/vocabulary/countries.tsv" scope="external">tab-delimited file</xref>, and add the corresponding URI as an <codeph>equivalent</codeph> reference, as shown below.</cmd>
+          </substep>
+          <substep>
+            <cmd>Use the place name from the Library of Congress file as a key to match against and merge with equivalent place entities.</cmd>
+            <stepxmp>For example, references to "France" should point to the same entity IRI, regardless of the data source in MARC. <codeph><![CDATA[008 850723s1984 fr a b 00100 fre d]]></codeph> and <codeph><![CDATA[650 0 $a Opera $z France.]]></codeph> should both result in a link to the same place entity representing France.</stepxmp>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>3906934</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/3dcbc9fa-ca9c-4fa1-bd0e-d25e93f461e5",
+  "type": "Place",
+  "_label": "France",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "France",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/vocabulary/countries/fr",
+      "type": "Place"
+    }
+  ]
+}]]> </codeblock></stepresult>
+      </step>
+      <step>
+        <cmd>Use the supertype value of the record-level resource to determine the type of place represented by the <codeph>008[15-17]</codeph> value.</cmd>
+        <choices id="choices_ej1_rtf_trb">
+          <choice>If the record-level supertype is one of the following: <ul id="ul_ews_stf_trb">
+              <li>Any <codeph>Objects</codeph> format</li>
+              <li>Any <codeph>Visual Works</codeph> format</li>
+              <li><codeph>Dissertations and Theses</codeph></li>
+            </ul> then the type of place is <codeph>creation</codeph>.</choice>
+          <choice>If the record-level supertype is equal to <codeph>Archival and Manuscript Materials</codeph>, then the type of place is <codeph>location</codeph>.</choice>
+          <choice>Else, the type of place is <codeph>publication</codeph>.</choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Add an embedded reference to the place entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the <codeph>_label</codeph> of the place entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process <codeph>creation</codeph> places.</cmd>
+            <stepresult>
+              <yulbibid>2744420</yulbibid>
+              <codeblock><![CDATA[{
+  "created_by": {
+    "type": "Creation",
+    "part": [
+      {
+        "type": "Creation",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/6694afea-e43b-4d8d-9005-03b63540e8b5",
+            "type": "Person",
+            "_label": "Wu, Shengwu"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
+            "type": "Type",
+            "_label": "creator"
+          }
+        ]
+      }
+    ],
+    "took_place_at": [
+      {
+        "id": "https://lux.collections.yale.edu/data/place/3dcbc9fa-ca9c-4fa1-bd0e-d25e93f461e5",
+        "type": "Place",
+        "_label": "France"
+      }
+    ]
+  }
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process <codeph>location</codeph> places</cmd>
+            <stepresult>
+              <yulbibid>11167038</yulbibid>
+              <codeblock><![CDATA[{
+  "attributed_by": [
+    {
+      "type": "AttributeAssignment",
+      "_label": "location",
+      "assigned": {
+        "id": "https://lux.collections.yale.edu/data/place/1585b6fe-6613-49fb-b254-3b911d5796bf",
+        "type": "Place",
+        "_label": "Connecticut"
+      }
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process <codeph>publication</codeph> places.</cmd>
+            <stepresult>
+              <yulbibid>404281</yulbibid>
+              <codeblock><![CDATA[{
+  "used_for": [
+    {
+      "type": "Activity",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300054686",
+          "type": "Type",
+          "_label": "Publishing"
+        }
+      ],
+      "took_place_at": [
+        {
+          "id": "https://lux.collections.yale.edu/data/place/3dcbc9fa-ca9c-4fa1-bd0e-d25e93f461e5",
+          "type": "Place",
+          "_label": "France"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>           
+    </steps>
+  </taskbody>
+</task>

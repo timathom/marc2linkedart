@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subjectScheme collection-type="sequence" processing-role="normal" toc="yes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:spec:classification:xsd:subjectScheme.xsd">
+  <title>MARC-to-Linked Art mapping</title>
+  <topicmeta>
+    <author>timothy.thompson@yale.edu </author>
+    <!--<author>timothy.thompson@yale.edu</author>-->
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-09-27"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-10-05"/>
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--tt434-->
+      <revised modified="2021-10-07"/>
+      <!--tt434-->
+      <revised modified="2021-10-11"/>
+      <!--tt434-->
+      <revised modified="2021-10-14"/>
+      <!--tt434-->
+      <revised modified="2021-10-18"/>
+      <!--tt434-->
+      <revised modified="2021-10-21"/>
+      <!--tt434-->
+      <revised modified="2021-10-27"/>
+      <!--tt434-->
+      <revised modified="2021-11-02"/>
+      <!--tt434-->
+      <revised modified="2021-11-03"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-23"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-08"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-10"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-12-31"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+    </critdates>
+  </topicmeta>
+  <hasPart>
+    <subjectdef collection-type="sequence" href="concepts/entity_extraction.dita" keys="Extraction" type="concept">
+      <subjectdef collection-type="sequence" href="concepts/lux_top-level_entities.dita" keys="TopLevel" type="concept">
+        <subjectdef collection-type="sequence" href="concepts/record_level_entities.dita" keys="RecordLevel" type="concept">
+          <subjectdef href="tasks/content_and_carriers.dita" keys="ContentAndCarriers" type="task"/>
+          <subjectdef collection-type="sequence" href="tasks/supertypes/supertypes.dita" keys="Supertypes" type="concept">
+            <!--<subjectdef href="concepts/supertypes/types.dita" keys="Types" processing-role="resource-only" toc="no"/>
+            <subjectdef href="concepts/supertypes/formats.dita" keys="Formats" processing-role="resource-only" toc="no"/>
+            <subjectdef href="concepts/supertypes/core_classes.dita" keys="CoreClasses" processing-role="resource-only" toc="no"/>-->
+            <subjectdef href="tasks/supertypes/collectionformats.dita" keys="CollectionFormats" type="concept">
+              <subjectdef href="tasks/supertypes/archivalandmanuscriptmaterials.dita" keys="ArchivalAndManuscriptMaterials" type="task"/>
+              <subjectdef href="tasks/supertypes/kits.dita" keys="Kits" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/audioformats.dita" keys="AudioFormats" type="concept">
+              <subjectdef href="tasks/supertypes/music.dita" keys="Music" type="task"/>
+              <subjectdef href="tasks/supertypes/sound.dita" keys="Sound" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/cartographicformats.dita" keys="CartographicFormats" type="concept">
+              <subjectdef href="tasks/supertypes/atlases.dita" keys="Atlases" type="task"/>
+              <subjectdef href="tasks/supertypes/geospatialdata.dita" keys="GeospatialData" type="task"/>
+              <subjectdef href="tasks/supertypes/globes.dita" keys="Globes" type="task"/>
+              <subjectdef href="tasks/supertypes/maps.dita" keys="Maps" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/dataformats.dita" keys="DataFormats" type="concept">
+              <subjectdef href="tasks/supertypes/dataandfiles.dita" keys="DataAndFiles" type="task">
+                <subjectdef keyref="GeospatialData" type="task"/>
+                <subjectdef href="tasks/supertypes/imagedata.dita" keys="ImageData" type="task"/>
+                <subjectdef href="tasks/supertypes/textualdata.dita" keys="TextualData" type="task"/>
+              </subjectdef>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/imageformats.dita" keys="ImageFormats" type="concept">
+              <subjectdef href="tasks/supertypes/collages.dita" keys="Collages" type="task"/>
+              <subjectdef keyref="ImageData" type="task"/>
+              <subjectdef href="tasks/supertypes/drawings.dita" keys="Drawings" type="task"/>
+              <subjectdef keyref="Maps" type="task"/>
+              <subjectdef href="tasks/supertypes/paintings.dita" keys="Paintings" type="task"/>
+              <subjectdef href="tasks/supertypes/photographs.dita" keys="Photographs" type="task"/>
+              <subjectdef href="tasks/supertypes/pictures.dita" keys="Pictures" type="task"/>
+              <subjectdef href="tasks/supertypes/posters.dita" keys="Posters" type="task"/>
+              <subjectdef href="tasks/supertypes/prints.dita" keys="Prints" type="task"/>
+              <subjectdef href="tasks/supertypes/slides.dita" keys="Slides" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/movingimageformats.dita" keys="MovingImageFormats" type="concept">
+              <subjectdef href="tasks/supertypes/motionpictures.dita" keys="MotionPictures" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/notationformats.dita" keys="NotationFormats" type="concept">
+              <subjectdef href="tasks/supertypes/notatedmovement.dita" keys="NotatedMovement" type="task"/>
+              <subjectdef href="tasks/supertypes/notatedmusic.dita" keys="NotatedMusic" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/objectformats.dita" keys="ObjectFormats" type="concept">
+              <subjectdef keyref="Globes" type="task"/>
+              <subjectdef href="tasks/supertypes/models.dita" keys="Models" type="task"/>
+              <subjectdef href="tasks/supertypes/realia.dita" keys="Realia" type="task"/>
+              <subjectdef href="tasks/supertypes/toysandgames.dita" keys="ToysAndGames" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/softwareformats.dita" keys="SoftwareFormats" type="concept">
+              <subjectdef href="tasks/supertypes/softwareapplications.dita" keys="SoftwareApplications" type="task"/>
+              <subjectdef href="tasks/supertypes/databases.dita" keys="Databases" type="task"/>
+            </subjectdef>
+            <subjectdef href="tasks/supertypes/textualformats.dita" keys="TextualFormats" type="concept">
+              <subjectdef href="tasks/supertypes/books.dita" keys="Books" type="task">
+                <subjectdef keyref="Atlases" type="task"/>
+              </subjectdef>
+              <subjectdef href="tasks/supertypes/broadsides.dita" keys="Broadsides" type="task"/>
+              <subjectdef href="tasks/supertypes/dissertationsandtheses.dita" keys="DissertationsAndTheses" type="task"/>
+              <subjectdef href="tasks/supertypes/journalsandperiodicals.dita" keys="JournalsAndPeriodicals" type="task">
+                <subjectdef href="tasks/supertypes/newspapers.dita" keys="Newspapers" type="task"/>
+              </subjectdef>
+              <subjectdef keyref="TextualData" type="task"/>
+            </subjectdef>
+          </subjectdef>
+        </subjectdef>
+        <subjectdef href="tasks/related_entities.dita" keys="Related" type="task">
+          <subjectdef href="tasks/concepts/simple_subject_headings.dita" keys="SimpleSubjects" type="task"/>
+          <subjectdef href="tasks/concepts/complex_subject_headings.dita" type="task" keys="ComplexSubjects"/>
+          <subjectdef href="tasks/citation_entities.dita" keys="CitationEntities" type="task"/>
+          <subjectdef href="tasks/names-and-labels/related_title_entities.dita" keys="RelatedTitleEntities" type="task"/>
+          <subjectdef href="concepts/concepts.dita" keys="Concepts" type="concept">
+            <subjectdef href="tasks/concepts/classification_numbers.dita" keys="ClassificationNumbers" type="task"/>
+            <subjectdef href="concepts/languages.dita" type="task" keys="Languages"/>
+            <subjectdef href="tasks/concepts/roles.dita" type="task" keys="Roles"/>
+            <subjectdef href="tasks/concepts/subject_headings.dita" keys="SubjectHeadings" type="task"/>
+          </subjectdef>
+          <subjectdef href="concepts/events.dita" keys="Events" type="concept">
+            <subjectdef href="tasks/events/chronological_facets.dita" type="task" keys="ChronologicalFacets"/>
+          </subjectdef>
+          <subjectdef href="concepts/groups.dita" keys="Groups" type="concept">
+            <subjectdef href="concepts/groups_as_agents.dita" type="task" keys="GroupsAsAgents"/>
+            <subjectdef href="concepts/groups_as_subjects.dita" type="task" keys="GroupsAsSubjects"/>
+          </subjectdef>
+          <subjectdef href="concepts/people.dita" keys="People" type="concept">
+            <subjectdef href="concepts/people_as_agents.dita" type="task" keys="PeopleAsAgents"/>
+            <subjectdef href="concepts/people_as_subjects.dita" type="task" keys="PeopleAsSubjects"/>
+          </subjectdef>
+          <subjectdef href="concepts/places.dita" keys="Places" type="concept">
+            <subjectdef href="concepts/top_level_place_entities.dita" keys="TopLevelPlaceEntities" type="task">
+              <subjectdef href="concepts/places_as_agents.dita" keys="PlacesAsAgents" type="task"/>
+              <subjectdef href="concepts/places_as_subjects.dita" keys="PlacesAsSubjects" type="task"/>
+              <subjectdef href="concepts/associated_places.dita" keys="AssociatedPlaces" type="task"/>
+              <subjectdef href="concepts/places_from_fixed_field_008.dita" keys="PlacesFromFixedField008" type="task"/>
+              <subjectdef href="concepts/places_with_geographic_coordinates.dita" keys="PlacesWithGeographicCoords" type="task"/>
+            </subjectdef>
+          </subjectdef>
+          <subjectdef href="concepts/works.dita" type="concept" keys="Works">
+            <subjectdef href="tasks/concepts/name_title_entries.dita" type="task" keys="ComplexWorks"/>
+            <subjectdef href="tasks/name-title/works_as_subjects.dita" type="task" keys="WorksAsSubjects">
+              <subjectdef href="tasks/name-title/name-title-with-subdivisions.dita" type="task" keys="ComplexWorksAsSubjects"/>
+            </subjectdef>
+            <subjectdef href="tasks/name-title/works_as_whole_part.dita" type="task" keys="WorksWholePart"/>
+          </subjectdef>
+          <subjectdef href="concepts/related_sets.dita" keys="SetsRelated" type="concept">
+            <subjectdef href="concepts/library_collections.dita" type="task" keys="RepositoryCollections"/>
+          </subjectdef>
+        </subjectdef>
+      </subjectdef>
+    </subjectdef>
+    <subjectdef collection-type="sequence" href="concepts/descriptive_content.dita" keys="Descriptive" type="concept">
+      <subjectdef collection-type="sequence" href="concepts/lux_embedded_entities.dita" type="concept" keys="EmbeddedEntities">
+        <subjectdef href="concepts/digital_objects.dita" type="task" keys="DigitalObjectsCatalog"/>
+        <subjectdef href="concepts/digital_objects_asset_link.dita" keys="DigitalObjectsAssets" type="task"/>
+      </subjectdef>
+      <subjectdef href="concepts/identifiers.dita" keys="Identifiers" type="concept">
+        <subjectdef href="tasks/identifiers/orbis_bib_id.dita" keys="Orbis" type="task"/>
+        <subjectdef href="tasks/identifiers/library_of_congress_control_number_lccn.dita" keys="LCCN" type="task"/>
+        <subjectdef href="tasks/identifiers/international_standard_book_number_isbn.dita" keys="ISBN" type="task"/>
+        <subjectdef href="tasks/identifiers/call_number.dita" type="task" keys="CallNumber"/>
+        <subjectdef href="tasks/identifiers/international_standard_serial_number_issn.dita" keys="ISSN" type="task"/>
+        <subjectdef href="tasks/identifiers/publisher_or_distributor_number.dita" keys="PublisherDistributor" type="task"/>
+        <subjectdef href="tasks/identifiers/oclc_numbers.dita" keys="OCLCNumbers" type="task"/>
+      </subjectdef>
+      <subjectdef href="concepts/names_and_labels.dita" type="concept" keys="NamesAndLabels">
+        <subjectdef href="tasks/names-and-labels/names.dita" type="task" keys="Names">
+          <subjectdef href="tasks/names-and-labels/primary_name.dita" type="task" keys="PrimaryName"/>
+          <subjectdef href="tasks/names-and-labels/sorting_name.dita" type="task" keys="SortingName"/>
+          <subjectdef href="tasks/names-and-labels/transcribed_series_title.dita" type="task" keys="TranscribedSeriesTitle"/>
+          <subjectdef href="tasks/names-and-labels/alternative_title.dita" type="task" keys="AlternativeTitle"/>
+        </subjectdef>
+        <subjectdef href="tasks/names-and-labels/labels.dita" type="task" keys="Labels">
+          <subjectdef href="tasks/names-and-labels/root_label.dita" type="task" keys="RootLabel"/>
+        </subjectdef>
+      </subjectdef>
+      <subjectdef href="concepts/notes_and_statements.dita" keys="NotesAndStmts" type="concept">
+        <subjectdef href="tasks/notes-and-statements/abstract.dita" keys="Abstract" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/arrangement_note.dita" keys="ArrangementNote" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/attribution_statement.dita" keys="AttributionStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/bibliography_statement.dita" keys="BibliographyStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/biography_statement.dita" keys="BiographyStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/cartographic_statement.dita" keys="CartographicStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/citation.dita" keys="Citation" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/digital_file_note.dita" keys="DigitalFileNote" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/indexing_statement.dita" keys="IndexingStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/language_statement.dita" keys="LanguageStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/local_note.dita" keys="LocalNote" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/material_statement.dita" keys="MaterialStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/note.dita" keys="Note" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/physical_statement.dita" keys="PhysicalStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/access_statement.dita" type="task" keys="AccessStmt"/>
+        <subjectdef href="tasks/notes-and-statements/dimension_statement.dita" keys="DimensionStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/preferred_citation_note.dita" keys="PreferredCitationNote" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/provenance_statement.dita" keys="ProvenanceStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/acquisition_statement.dita" keys="AcquisitionStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/reproduction_statement.dita" keys="ReproductionStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/production_statement.dita" keys="ProductionStmt" type="task"/>
+        <subjectdef href="tasks/notes-and-statements/edition_statement.dita" type="task" keys="EditionStmt"/>
+      </subjectdef>
+      <subjectdef href="tasks/dates/dates.dita" keys="Dates" type="concept">
+        <subjectdef href="tasks/dates/008_dates.dita" type="task" keys="Dates008"/>
+        <subjectdef href="tasks/dates/26X_dates.dita" type="task" keys="Dates26X"/>
+      </subjectdef>
+    </subjectdef>
+  </hasPart>
+  <reltable title="Linked Art documentation">
+    <relheader>
+      <relcolspec type="concept"/>
+      <relcolspec type="reference"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="concepts/concepts.dita"/>
+      </relcell>
+      <relcell>
+        <topicref format="html" href="https://linked.art/api/1.0/shared/type/" navtitle="Linked Art documentation: Concept entity" scope="external"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable title="MARC 21 tables">
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec type="reference"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/concepts/subject_headings.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/600_bib_table.dita"/>
+        <topicref href="tables/610_bib_table.dita"/>
+        <topicref href="tables/611_bib_table.dita"/>
+        <topicref href="tables/630_bib_table.dita"/>
+        <topicref href="tables/650_bib_table.dita"/>
+        <topicref href="tables/651_bib_table.dita"/>
+        <topicref href="tables/653_bib_table.dita"/>
+        <topicref href="tables/655_bib_table.dita"/>
+        <topicref href="tables/656_bib_table.dita"/>
+        <topicref href="tables/657_bib_table.dita"/>
+        <topicref href="tables/662_bib_table.dita"/>
+        <topicref href="tables/688_bib_table.dita"/>
+        <topicref href="tables/690_bib_table.dita"/>
+        <topicref href="tables/691_bib_table.dita"/>
+        <topicref href="tables/692_bib_table.dita"/>
+        <topicref href="tables/693_bib_table.dita"/>
+        <topicref href="tables/694_bib_table.dita"/>
+        <topicref href="tables/695_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/concepts/classification_numbers.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/050_bib_table.dita"/>
+        <topicref href="tables/090_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/events/chronological_facets.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/600_bib_table.dita"/>
+        <topicref href="tables/610_bib_table.dita"/>
+        <topicref href="tables/611_bib_table.dita"/>
+        <topicref href="tables/630_bib_table.dita"/>
+        <topicref href="tables/650_bib_table.dita"/>
+        <topicref href="tables/651_bib_table.dita"/>
+        <topicref href="tables/653_bib_table.dita"/>
+        <topicref href="tables/655_bib_table.dita"/>
+        <topicref href="tables/656_bib_table.dita"/>
+        <topicref href="tables/657_bib_table.dita"/>
+        <topicref href="tables/662_bib_table.dita"/>
+        <topicref href="tables/688_bib_table.dita"/>
+        <topicref href="tables/690_bib_table.dita"/>
+        <topicref href="tables/691_bib_table.dita"/>
+        <topicref href="tables/692_bib_table.dita"/>
+        <topicref href="tables/693_bib_table.dita"/>
+        <topicref href="tables/694_bib_table.dita"/>
+        <topicref href="tables/695_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/identifiers/orbis_bib_id.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/001_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/identifiers/library_of_congress_control_number_lccn.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/010_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/identifiers/international_standard_book_number_isbn.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/020_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/identifiers/international_standard_serial_number_issn.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/022_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/identifiers/publisher_or_distributor_number.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/028_bib_table.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="tasks/identifiers/oclc_numbers.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="tables/035_bib_table.dita"/>
+        <topicref href="tables/079_bib_table.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <mapref href="submaps/glossary.ditamap"/>
+  <mapref href="submaps/reference.ditamap" toc="no"/>
+  <mapref href="submaps/common.ditamap" toc="no"/>
+  <!-- Bind an attribute to a tree of related values -->
+  <!--
+	<enumerationdef>
+		
+		<attributedef name="name"/>
+		<subjectdef/>
+	</enumerationdef>
+	-->
+</subjectScheme>

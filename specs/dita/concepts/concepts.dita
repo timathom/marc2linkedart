@@ -1,0 +1,23 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="concept_entities" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Concepts</title>
+  <shortdesc>Entities that represent what a resource is about.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+    </critdates>
+    <metadata conkeyref="metadata_linked_art/concept"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>In Linked Art, concept entities are represented by the <codeph>Type</codeph> class. Concept entities should be generated for subject headings and classification numbers in MARC.</p>
+  </conbody>
+</concept>

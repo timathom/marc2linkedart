@@ -1,0 +1,211 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_856_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>856 (Electronic Location and Access)</title>
+  <shortdesc>Information needed to locate and access an electronic resource. The field may be used in a bibliographic record for a resource when that resource or a subset of it is available electronically. In addition, it may be used to locate and access an electronic version of a non-electronic resource described in the bibliographic record or a related electronic resource. See theGuidelines for the Use of Field 856for a more thorough discussion on the use of field 856.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd856.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd856.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_856">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd856.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>a</entry>
+            <entry>Host name</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>c</entry>
+            <entry>Compression information</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>d</entry>
+            <entry>Path</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>f</entry>
+            <entry>Electronic name</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>m</entry>
+            <entry>Contact for access assistance</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>o</entry>
+            <entry>Operating system</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>p</entry>
+            <entry>Port</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>q</entry>
+            <entry>Electronic format type</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>s</entry>
+            <entry>File size</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>u</entry>
+            <entry>Uniform Resource Identifier</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>v</entry>
+            <entry>Hours access method available</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>w</entry>
+            <entry>Record control number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>x</entry>
+            <entry>Nonpublic note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>y</entry>
+            <entry>Link text</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>z</entry>
+            <entry>Public note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>2</entry>
+            <entry>Access method</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>7</entry>
+            <entry>Access status</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

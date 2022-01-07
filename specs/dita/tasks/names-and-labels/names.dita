@@ -1,0 +1,85 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="name" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Names</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <created date="2021-10-07"/>
+      <!--tt434-->
+      <revised modified="2021-10-11"/>
+      <!--tt434-->
+      <revised modified="2021-10-14"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>In Linked Art, <codeph>Name</codeph> is a resource type (class) that is invoked whenever a resource needs to be identified by name.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Identify top-level resources by name.</cmd>
+        <stepresult>
+          <yulbibid>9447</yulbibid>
+          <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/45a90f8b-c64e-4b2c-91ee-cc714361eaed",
+  "type": "Group",
+  "_label": "International Cultural Foundation",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "International Cultural Foundation"
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Identify embedded resources (for example, notes) by name.</cmd>
+        <stepresult>
+          <yulbibid>9447</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "190 p.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435430",
+          "type": "Type",
+          "_label": "Dimension Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Extent",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

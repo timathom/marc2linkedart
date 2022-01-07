@@ -1,0 +1,85 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_020_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>020 (International Standard Book Number)</title>
+  <shortdesc>International Standard Book Number (ISBN) assigned to a monographic publication by designated agencies in each country participating in the program. The field may include terms of availability and canceled or invalid ISBNs, such as ISBNs with invalid check digits or that are not applicable to the item being cataloged. It may be repeated for multiple numbers associated with the item (e.g., ISBNs for the hard bound and paperback manifestations; ISBNs for a set as a whole and for the individual parts in the set).</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd020.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd020.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_020">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd020.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>020</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>020</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>c</entry>
+            <entry>Terms of availability</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>020</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>q</entry>
+            <entry>Qualifying information</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>020</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>z</entry>
+            <entry>Canceled/invalid ISBN</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>020</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>020</entry>
+            <entry>International Standard Book Number</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

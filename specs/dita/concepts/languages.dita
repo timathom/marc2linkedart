@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="languages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Language entities</title>
+  <shortdesc>Language entities derived from <codeph>008</codeph> and <codeph>041</codeph>.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-12-21"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: LanguageEntities
+sampleBibs:
+  - 97
+  - 3779671
+# Source data fields
+fieldSpec:
+  - 008[35-37]
+  - 041abdefghijkmnpqrt
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <context>
+      <p><codeph>008[35-37]</codeph> and <codeph>041</codeph> contain three-letter codes representing a language entity.</p>
+      <p>The <codeph>008[35-37]</codeph> code represents the primary language of the resource. Additional codes in <codeph>041</codeph> represent <q>languages associated with an item when the language code in field 008/35-37 of the record is insufficient to convey full information.</q></p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Generate and store the top-level language resource from <codeph>008[35-37]</codeph>, identified by an IRI.</cmd>
+        <substeps id="substeps_y2j_lcy_rrb">
+          <substep>
+            <cmd>Normalize whitespace to test for null values.</cmd>
+          </substep>
+          <substep>
+            <cmd>Match the three-letter code against the Library of Congress's <xref format="html" href="https://id.loc.gov/vocabulary/languages.html" scope="external">MARC List for Languages</xref>, which is available as a <xref format="html" href="http://id.loc.gov/vocabulary/languages.tsv" scope="external">tab-delimited file</xref>, and add the corresponding IRI as an <codeph>equivalent</codeph> reference, as shown below.</cmd>
+          </substep>
+          <substep>
+            <cmd>Use the language code as a key to match against and merge with equivalent language entities.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>97</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/14033b5c-b596-4195-884f-5ac34d2f1174",
+  "type": "Language",
+  "_label": "Latin",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Latin"
+    },
+    {
+      "type": "Identifier",
+      "content": "lat"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/vocabulary/languages/lat",
+      "type": "Language"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Generate and store the top-level language resource from <codeph>041</codeph>, identified by an IRI.</cmd>
+        <substeps>
+          <substep>
+            <cmd>For each <codeph>041</codeph> subfield, extract the language code.</cmd>
+            <info>In some cases, <codeph>041</codeph> language codes may be run together (e.g., <codeph>lateng</codeph>). </info>
+          </substep>
+          <substep>
+            <cmd>Analyze each <codeph>041</codeph> subfield value using the regular expression <codeph>.{3}</codeph> in order to split combined codes.</cmd>
+          </substep>
+          <substep>
+            <cmd>Normalize whitespace.</cmd>
+          </substep>
+          <substep>
+            <cmd>Match the three-letter code against the Library of Congress's <xref format="html" href="https://id.loc.gov/vocabulary/languages.html" scope="external">MARC List for Languages</xref>, available as a <xref format="html" href="http://id.loc.gov/vocabulary/languages.tsv" scope="external">tab-delimited file</xref>, and add the corresponding IRI as an <codeph>equivalent</codeph> reference, as shown below.</cmd>
+          </substep>
+          <substep>
+            <cmd>Use the language code as a key to match against and merge with equivalent language entities.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>97</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/14033b5c-b596-4195-884f-5ac34d2f1174",
+  "type": "Language",
+  "_label": "Latin",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Latin"
+    },
+    {
+      "type": "Identifier",
+      "content": "lat"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/vocabulary/languages/lat",
+      "type": "Language"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Add an embedded reference to the language entity or entities within the record-level <codeph>LinguisticObject</codeph> resource.</cmd>
+      </step>
+      <step>
+        <cmd>If the language code extracted from <codeph>008[35-37]</codeph> is the same as a code extracted from <codeph>041</codeph>, deduplicate the language references in the record-level <codeph>LinguisticObject</codeph>.</cmd>
+        <stepresult>
+          <yulbibid>97</yulbibid>
+          <codeblock><![CDATA[{
+  "language": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/14033b5c-b596-4195-884f-5ac34d2f1174",
+      "type": "Language",
+      "_label": "Latin"
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/33d2e19a-72bc-4042-8d06-04dbbf3907b3",
+      "type": "Language",
+      "_label": "English"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>For top-level resources with a base class of <codeph>Set</codeph> (archival records or kits), language information should be attached to the embedded <codeph>HumanMadeObject</codeph> resource using the <codeph>carries</codeph> property.</cmd>
+        <stepresult>
+          <yulbibid>3779671</yulbibid>
+          <codeblock><![CDATA[{
+  "members_exemplified_by": [
+    {
+      "type": "HumanMadeObject",
+      "_label": "شجون المسجون وفتون المفتون / 1863",
+      "carries": [
+        {
+          "type": "LinguisticObject",
+          "language": [
+            {
+              "id": "https://lux.collections.yale.edu/data/concept/2b8c1ef3-fb14-4306-9d7c-d5b198acc3f8",
+              "type": "Language",
+              "_label": "Arabic"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,86 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="related_entities" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Related entities</title>
+  <shortdesc>Entities that represent the people, places, concepts, etc., that are connected to record-level resources.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: RelatedEntities
+fieldSpec:
+  - 10004abcdegjq
+  - 11004abcdeg
+  - 11104acdegjnqu
+  - 1300adfhklmnoprst
+  - 2400adfghklmnoprs
+  - 440a
+  - 60004abcdegjqvxyz
+  - 61004abcdegvxyz
+  - 61104acdegjnquvxyz
+  - 6300adfhklmnoprstvxyz
+  - 65004abcdegvxyz
+  - 65104abcdfghvxyz 
+  - 65504abcvxyz
+  - 69004abcdegvxyz
+  - 69104abcdfgh
+  - 69204abcdegjq
+  - 69304abcdeg
+  - 69404acdegjnqu
+  - 6950adfhklmnoprst
+  - 7000abcdgjq
+  - 7100abcdg
+  - 71104acdegjnquvxyz
+  - 7300adfhklmnoprst
+  - 75104abcdfgh
+  - 75204abcdfghvxyz
+  - 760ait
+  - 762ait
+  - 765at
+  - 767at
+  - 770at
+  - 772at
+  - 773at
+  - 774at
+  - 775at
+  - 776at
+  - 777at
+  - 780at
+  - 785at
+  - 786at
+  - 787at8000abcdgjq
+  - 8100abcdg
+  - 81104acdegjnquvxyz
+  - 8300adfhklmnoprst</codeblock>
+    </section>
+    <section>
+      <title>Processing information</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Extract related entities from MARC bibliographic records and assign an IRI to each distinct entity.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Create top-level related entities by normalizing and merging the string value of each set of source data subfields.</cmd>
+          </substep>
+          <substep>
+            <cmd>Apply specific processing steps for each related entity type (Concepts, Events, etc.).</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>For each related entity, add an embedded reference within the corresponding record-level resource (<codeph>DigitalObject</codeph>,<codeph>HumanMadeObject</codeph>,<codeph>LinguisticObject</codeph>,<codeph>Set</codeph>,<codeph>VisualItem</codeph>).</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,216 @@
+<task id="dimension_statement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Dimension statement</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <created date="2021-11-02"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value="2021-11-30T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_jy4_jxm_jrb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: DimensionStatement
+sampleBibs:
+  - 25079
+  - 3802858 # $f
+  - 3811379
+fieldSpec:
+  - 3003acf
+trimPunctuation: true
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Create separate dimension statements for <codeph>3003af</codeph> (identified as an <codeph>Extent</codeph> statement), and for <codeph>3003c</codeph> (identified as a <codeph>Dimensions</codeph> statement).</cmd>
+      </step>
+      <step>
+        <cmd>Trim punctuation and normalize space for each subfield, except <codeph>3</codeph>: see instructions below.</cmd>
+      </step>
+      <step>
+        <cmd>If subfield <codeph>f</codeph> is present, join subfields <codeph>af</codeph> with a whitespace character.</cmd>
+      </step>
+      <step>
+        <cmd>If subfield <codeph>3</codeph> is present:</cmd>
+        <substeps>
+          <substep>
+            <cmd>Test the value of <codeph>3</codeph> to see whether it ends with a colon.</cmd>
+          </substep>
+          <substep>
+            <cmd>If no colon is present, concatenate the value with a colon (<codeph>:</codeph>).</cmd>
+          </substep>
+          <substep>
+            <cmd>Join <codeph>3</codeph> to <codeph>af</codeph> and <codeph>c</codeph> with a whitespace character.</cmd>
+            <info>
+              <note>The value of <codeph>3</codeph> should always be prefixed to the other values.</note>
+            </info>
+          </substep>
+        </substeps>
+        <stepxmp>
+          <codeblock>300  $3 Copy 1: $a 1 album (32 photographic prints) : $b b &amp; w ; $c 13.4 x 20.6 cm.
+300  $3 Copy 2: $a 1 album (39 photographic prints) : $b b &amp; w ; $c 13.4 x 20.6 cm.</codeblock>
+        </stepxmp>
+        <stepresult>
+          <note>This example is meant to illustrate dimension statements and does not represent a complete JSON-LD document.</note>
+          <yulbibid>3811379</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Copy 1: 1 album (32 photographic prints)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435430",
+          "type": "Type",
+          "_label": "Dimension Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Extent",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "content": "Copy 1: 13.4 x 20.6 cm",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435430",
+          "type": "Type",
+          "_label": "Dimension Statement"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Dimensions",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "content": "Copy 2: 1 album (39 photographic prints)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435430",
+          "type": "Type",
+          "_label": "Dimension Statement"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Extent",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "content": "Copy 2: 13.4 x 20.6 cm",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435430",
+          "type": "Type",
+          "_label": "Dimension Statement"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Dimensions",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

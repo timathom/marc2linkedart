@@ -1,0 +1,68 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="groups_as_subjects" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Groups as subjects</title>
+  <shortdesc>Entities extracted from MARC 61X fields.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-10-05"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody> 
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>     
+      <step>
+        <cmd>After applying the instructions in <xref href="../tasks/concepts/simple_subject_headings.dita"/> or <xref href="../tasks/concepts/complex_subject_headings.dita"/>, add an embedded reference to the group entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the _label of the group entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process simple group references.</cmd>
+            <stepresult>
+              <yulbibid>68</yulbibid>
+              <codeblock id="codeblock_gxz_rvj_5rb"><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/group/a3d54906-5375-46a0-b0df-d6be7d6ecb7f",
+      "type": "Group",
+      "_label": "United States. National Archives and Records Service"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process concept/group references.</cmd>
+            <stepresult>
+              <yulbibid>7731</yulbibid>
+              <codeblock><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/54f5b059-a062-426a-a554-fe123c479779",
+      "type": "Type",
+      "_label": "Lebanon. Majlis al-Nūwāb -- Elections -- 1968"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>      
+    </steps>
+  </taskbody>
+</task>

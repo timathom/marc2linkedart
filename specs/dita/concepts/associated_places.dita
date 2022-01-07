@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="associated_places" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Associated places</title>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-10-05"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>After applying the instructions in <xref href="../tasks/concepts/simple_subject_headings.dita"/> or <xref href="../tasks/concepts/complex_subject_headings.dita"/>, add an embedded reference to the associated place entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>The <codeph>_label</codeph> of the <codeph>attributed_by</codeph> structure should always be <codeph>associated place</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>As the _label of the concept entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process simple place references.</cmd>
+            <stepresult>
+              <yulbibid>1066178</yulbibid>
+              <codeblock><![CDATA[{
+  "attributed_by": [
+    {
+      "type": "AttributeAssignment",
+      "_label": "associated place",
+      "assigned": {
+        "id": "https://lux.collections.yale.edu/data/place/d6997bff-a0d4-4394-93b6-fb9e6402bc13",
+        "type": "Place",
+        "_label": "Gateshead, England"
+      }
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process complex place references.</cmd>
+            <stepresult>
+              <yulbibid>9564880</yulbibid>
+              <codeblock><![CDATA[{
+  "attributed_by": [
+    {
+      "type": "AttributeAssignment",
+      "_label": "associated place",
+      "assigned": {
+        "id": "https://lux.collections.yale.edu/data/place/752-place",
+        "type": "Place",
+        "_label": "United States -- New York (State) -- New York -- Brooklyn"
+      }
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,118 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="cartographic_statement" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Cartographic statement</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-25"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-23T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_jy4_jxm_jrb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: CartographicStatement
+sampleBibs:
+  - 253435
+fieldSpec:
+  - 255abc
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process the arrangement note values (MARC<codeph>255abc</codeph>).</cmd>
+        <choices>
+          <choice>If two or more subfields (<codeph>255abc</codeph>) are present, join them with a whitespace character.</choice>
+          <choice>Else, output the string value of<codeph>255a</codeph>,<codeph>255b</codeph>, or<codeph>255c</codeph>.</choice>
+        </choices>
+        <stepresult>
+          <note>This example is meant to illustrate a cartographic statement and does not represent a complete JSON-LD document.</note>
+          <yulbibid>253435</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Scale 1:6,652,800. 105 miles to the inch ; Chamberlin trimetric proj. (W 84⁰--W 56⁰/N 12⁰--S 24⁰).",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300053163",
+          "type": "Type",
+          "_label": "Cartography Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Cartographic Mathematical Data",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

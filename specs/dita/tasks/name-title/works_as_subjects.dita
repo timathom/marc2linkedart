@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="standalone_works" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Works as subjects</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+    </critdates>
+  </prolog>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd>Add an embedded reference to the work entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the <codeph>_label</codeph> of the work entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process simple work references.</cmd>
+            <stepresult>
+              <yulbibid>227</yulbibid>
+              <codeblock><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/ea02530e-580f-41a8-92ac-d9e302ec5fbe",
+      "type": "LinguisticObject",
+      "_label": "Munich Four-Power Agreement (1938)"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process complex work references.</cmd>
+            <stepresult>
+              <yulbibid>72</yulbibid>
+              <codeblock><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/work2",
+      "type": "Type",
+      "_label": "Faust. 1. Theil"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process concept/work references.</cmd>
+            <stepresult>
+              <yulbibid>908059</yulbibid>
+              <codeblock><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/complex1",
+      "type": "Type",
+      "_label": "Fedorov, Ivan, approximately 1510-1583. Azbuka -- Concordances"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

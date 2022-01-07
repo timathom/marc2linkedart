@@ -1,0 +1,103 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_510_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>510 (Citation/References Note)</title>
+  <shortdesc>Citations or references to published bibliographic descriptions, reviews, abstracts, or indexes of the content of the described item.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd510.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd510.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_510">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd510.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>Name of source</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>b</entry>
+            <entry>Coverage of source</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>c</entry>
+            <entry>Location within source</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>u</entry>
+            <entry>Uniform Resource Identifier</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>x</entry>
+            <entry>International Standard Serial Number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>510</entry>
+            <entry>Citation/References Note</entry>
+            <entry>0-4</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>F</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

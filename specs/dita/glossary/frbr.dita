@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossentry id="frbr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:glossary.xsd">
+	<glossterm>Functional Requirements for Bibliographic Records (FRBR)</glossterm>
+	<glossdef>Conceptual model for library metadata, which has since been superseded by the Library Reference Model (LRM) developed by the International Federation of Library Associations and Institutions (IFLA).</glossdef>
+	<prolog>
+		<author conkeyref="metadata_common/author_metadata"/>
+		<source format="html" href="https://www.lorcandempsey.net/metadata-directions/#entification-strings-and-things" scope="external">https://www.lorcandempsey.net/metadata-directions/#entification-strings-and-things</source>
+		<publisher conkeyref="metadata_common/publ_metadata"/>
+		<critdates conkeyref="metadata_common/dates_metadata"/>
+		<metadata conkeyref="metadata_glossary/keyword_metadata_glossary"/>
+	</prolog>
+	<glossBody>		
+		<!--<glossSurfaceForm>Functional Requirements for Bibliographic Records (FRBR)</glossSurfaceForm>-->
+		<glossUsage>See <xref format="html" href="https://en.wikipedia.org/wiki/IFLA_Library_Reference_Model" scope="external">Wikipedia</xref> for an overview.</glossUsage>
+		<glossScopeNote>The FRBR model specifies a set of "Group 1" entities: Work, Expression, Manifestation, and Item. The Group 1 entities are intended to support user tasks such as finding all editions or translations of a novel.</glossScopeNote>
+		<!--<glossAlt>
+			<glossAcronym>FRBR</glossAcronym>
+		</glossAlt>-->
+	</glossBody>
+</glossentry>

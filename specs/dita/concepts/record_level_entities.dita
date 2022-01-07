@@ -1,0 +1,59 @@
+<concept id="record_level_entities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Record-level entities</title>
+  <shortdesc>Entities that correspond to resources held by the library (books, journals, databases, archival collections, etc.).</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-10-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-20"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <section>
+      <title>Supertypes</title>
+      <p>The Linked Art profile of the <ph keyref="cidoc">CIDOC Conceptual Reference Model (CRM)</ph> includes a limited number of core or base classes. These can be refined by referencing terms from a taxonomy or classification scheme. Because record-level entities can be of many types, a <i>supertype</i> scheme has been developed for use in <ph keyref="lux"/>.</p>
+      <p>The LUX supertype scheme is divided into two levels: <i>types</i> and <i>formats</i>. Types represent the mode of expression of a resource (textual, visual, audible, etc.), whereas formats can be thought of as specific instances of a type: for example, a <i>Book</i> is an instance or format of <i>Textual Works</i>. Some formats, such as <i>Geospatial Data</i> are instances of two different types: <i>Datasets</i> and <i>Cartography</i>. </p>
+    </section>
+    <section>
+      <title>Multiple supertypes: order of precedence</title>
+      <p>The base class for record-level entities is determined by the supertype mapping. When a record-level entity is mapped to more than one supertype format, and the formats have different base classes, the following order of precedence is applied:
+        <ol id="sl_dcd_kh4_brb">
+          <li>
+            <codeph>Set</codeph>
+          </li>
+          <li>
+            <codeph>LinguisticObject</codeph>
+          </li>
+          <li>
+            <codeph>VisualItem</codeph>
+          </li>
+          <li>
+            <codeph>DigitalObject</codeph>
+          </li>
+          <li>
+            <codeph>HumanMadeObject</codeph>
+          </li>
+        </ol>      
+      </p>
+      <p>For formats that are instances of two different types, one base class has been marked as <b>primary</b>. For these supertypes, only the primary base class should be used as the <codeph>Type</codeph> of the record-level resources.</p>
+    </section>
+    <section>
+      <title>Record processing rules</title>
+      <p>Apply the following rules to the processing of bibliographic (bib) and holdings (mfhd) records: <ul>
+          <li>Ignore all suppressed bibs and mfhds.</li>
+          <li>Ignore bibs with no related mfhds (orphan bibs).</li>
+          <li>Ignore bibs that are unsuppressed, but whose related mfhds are all suppressed.</li>
+          <li>Ignore mfhds that are unsuppressed, but whose related bib is suppressed.</li>
+        </ul></p>      
+    </section>
+  </conbody>
+</concept>

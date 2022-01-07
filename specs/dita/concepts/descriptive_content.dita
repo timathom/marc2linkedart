@@ -1,0 +1,19 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="descriptive_content" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
+  <title>Descriptive content</title>
+  <shortdesc>Content that represents attributes of an entity (for example: identifiers, notes, publication information).</shortdesc>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-05"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>Descriptive content may include references to top-level entities, but typically stores variable<codeph>content</codeph>values (string literals) with<codeph>classified_as</codeph>relationships pointing to concepts in a taxonomy or controlled vocabulary.</p>
+  </conbody>
+</concept>

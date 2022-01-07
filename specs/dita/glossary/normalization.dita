@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossentry id="normalization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:glossary.xsd">
+  <glossterm>Normalization</glossterm>
+  <glossdef>String normalization includes the following steps: <ol>
+      <li>Remove diacritics from the string.</li>
+      <li>Convert the characters to lower case.</li>
+      <li>Trim leading and trailing whitespace.</li>
+      <li>Convert internal whitespace to single whitespace characters.</li>
+      <li>Remove punctuation characters as specified. <ul>
+          <li>Punctuation characters are equivalent to the <codeph>\p{Punct}</codeph> character class in Java's regex implementation.</li>
+        </ul></li>
+    </ol></glossdef>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-11-23"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-03"/>
+    </critdates>
+    <metadata conkeyref="metadata_glossary/keyword_metadata_glossary"/>
+  </prolog>
+  <glossBody>
+    <glossUsage>See <xref format="html" href="http://www.fredosaurus.com/notes-java/data/strings/40regular_expressions/25sum-regex.html" scope="external">Java regex documentation</xref>.</glossUsage>
+  </glossBody>
+</glossentry>

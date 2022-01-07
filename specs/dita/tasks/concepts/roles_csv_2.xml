@@ -1,0 +1,1706 @@
+<csv>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">acteur</entry>
+    <entry name="Code"/>
+    <entry name="Target">actor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">architects</entry>
+    <entry name="Code"/>
+    <entry name="Target">architect</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">auteur</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">auth</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">authors</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">binders</entry>
+    <entry name="Code"/>
+    <entry name="Target">binder</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">binding designers</entry>
+    <entry name="Code"/>
+    <entry name="Target">binding designer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">bookjacket designer</entry>
+    <entry name="Code"/>
+    <entry name="Target">book jacket designer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">cast</entry>
+    <entry name="Code"/>
+    <entry name="Target">actor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">cast member</entry>
+    <entry name="Code"/>
+    <entry name="Target">actor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">co-author</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">collaborator</entry>
+    <entry name="Code"/>
+    <entry name="Target">contributor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">colourist</entry>
+    <entry name="Code"/>
+    <entry name="Target">colorist</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">comp</entry>
+    <entry name="Code"/>
+    <entry name="Target">composer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">defendent</entry>
+    <entry name="Code"/>
+    <entry name="Target">defendant</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">director of photography</entry>
+    <entry name="Code"/>
+    <entry name="Target">cinematographer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">ed</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">honouree</entry>
+    <entry name="Code"/>
+    <entry name="Target">honoree</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">ill</entry>
+    <entry name="Code"/>
+    <entry name="Target">illustrator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">illus</entry>
+    <entry name="Code"/>
+    <entry name="Target">illustrator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">illustrations</entry>
+    <entry name="Code"/>
+    <entry name="Target">illustrator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">main author</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">maker</entry>
+    <entry name="Code"/>
+    <entry name="Target">creator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">metal engraver</entry>
+    <entry name="Code"/>
+    <entry name="Target">metal-engraver</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">onscreen participant</entry>
+    <entry name="Code"/>
+    <entry name="Target">on-screen participant</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">onscreen presenter</entry>
+    <entry name="Code"/>
+    <entry name="Target">on-screen presenter</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">prin</entry>
+    <entry name="Code"/>
+    <entry name="Target">printer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">printers</entry>
+    <entry name="Code"/>
+    <entry name="Target">printer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">ptr</entry>
+    <entry name="Code"/>
+    <entry name="Target">printer</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">pub</entry>
+    <entry name="Code"/>
+    <entry name="Target">publisher</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">publishers</entry>
+    <entry name="Code"/>
+    <entry name="Target">publisher</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">respondant</entry>
+    <entry name="Code"/>
+    <entry name="Target">respondent</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">tr</entry>
+    <entry name="Code"/>
+    <entry name="Target">translator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">trad</entry>
+    <entry name="Code"/>
+    <entry name="Target">translator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">traducteur</entry>
+    <entry name="Code"/>
+    <entry name="Target">translator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">trans</entry>
+    <entry name="Code"/>
+    <entry name="Target">translator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">wen zi zuo zhe</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">wood engraver</entry>
+    <entry name="Code"/>
+    <entry name="Target">wood-engraver</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">writer</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">主编</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor in chief</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">原着</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">撰</entry>
+    <entry name="Code"/>
+    <entry name="Target">author</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编校</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编纂</entry>
+    <entry name="Code"/>
+    <entry name="Target">compiler</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编著</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编译</entry>
+    <entry name="Code"/>
+    <entry name="Target">compiler</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编辑</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">编选</entry>
+    <entry name="Code"/>
+    <entry name="Target">compiler</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">译</entry>
+    <entry name="Code"/>
+    <entry name="Target">translator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">译述</entry>
+    <entry name="Code"/>
+    <entry name="Target">translator</entry>
+  </record>
+  <record>
+    <entry name="Type">translations</entry>
+    <entry name="Source">辑</entry>
+    <entry name="Code"/>
+    <entry name="Target">editor</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">abridger</entry>
+    <entry name="Code">abr</entry>
+    <entry name="Target">aat:300440753</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">adapter</entry>
+    <entry name="Code">adp</entry>
+    <entry name="Target">aat:300410355</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">after</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">animator</entry>
+    <entry name="Code">anm</entry>
+    <entry name="Target">aat:300025646</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">architect</entry>
+    <entry name="Code">arc</entry>
+    <entry name="Target">aat:300024987</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">architect_GROUP</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300312082</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">arranger</entry>
+    <entry name="Code">arr</entry>
+    <entry name="Target">aat:300025667</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">artist</entry>
+    <entry name="Code">art</entry>
+    <entry name="Target">aat:300025103</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">author</entry>
+    <entry name="Code">aut</entry>
+    <entry name="Target">aat:300025492</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">binder</entry>
+    <entry name="Code">bnd</entry>
+    <entry name="Target">aat:300025704</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">binding designer</entry>
+    <entry name="Code">bdd</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/bdd</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">book artist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300386346</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">book designer</entry>
+    <entry name="Code">bkd</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/bkd</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">book jacket designer</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">book producer</entry>
+    <entry name="Code">bkp</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/bkp</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">bookbinder</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025704</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">bookplate designer</entry>
+    <entry name="Code">bpd</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/bpd</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">calligrapher</entry>
+    <entry name="Code">cll</entry>
+    <entry name="Target">aat:300025107</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">cartographer</entry>
+    <entry name="Code">ctg</entry>
+    <entry name="Target">aat:300025593</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">carver</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025256</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">casemaker</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">chromo-lithographer</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300251177</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">clockmaker</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025397</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">collotyper</entry>
+    <entry name="Code">clt</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/clt</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">colorist</entry>
+    <entry name="Code">clr</entry>
+    <entry name="Target">aat:300435165</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">compiler</entry>
+    <entry name="Code">com</entry>
+    <entry name="Target">aat:300121766</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">composer</entry>
+    <entry name="Code">cmp</entry>
+    <entry name="Target">aat:300025671</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">compositor</entry>
+    <entry name="Code">cmt</entry>
+    <entry name="Target">aat:300025708</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">contributor</entry>
+    <entry name="Code">ctb</entry>
+    <entry name="Target">aat:300403974</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">copyist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025189</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">cover artist</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">cover designer</entry>
+    <entry name="Code">cov</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/cov</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">creator</entry>
+    <entry name="Code">cre</entry>
+    <entry name="Target">aat:300386174</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">decorator</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300435238</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">designer</entry>
+    <entry name="Code">dsr</entry>
+    <entry name="Target">aat:300025190</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">diesinker</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300386327</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">draftsman</entry>
+    <entry name="Code">drm</entry>
+    <entry name="Target">aat:300112172</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">editor</entry>
+    <entry name="Code">edt</entry>
+    <entry name="Target">aat:300025526</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">editor in chief</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">electrotyper</entry>
+    <entry name="Code">elt</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/elt</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">engraver</entry>
+    <entry name="Code">egr</entry>
+    <entry name="Target">aat:300239410</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">etcher</entry>
+    <entry name="Code">etr</entry>
+    <entry name="Target">aat:300025174</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">fabricator</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300251917</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">fore-edge painter</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">gilder</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025261</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">illuminator</entry>
+    <entry name="Code">ilu</entry>
+    <entry name="Target">aat:300025122</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">illustrator</entry>
+    <entry name="Code">ill</entry>
+    <entry name="Target">aat:300025123</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">inker</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">inscriber</entry>
+    <entry name="Code">ins</entry>
+    <entry name="Target">aat:300121785</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">inventor</entry>
+    <entry name="Code">inv</entry>
+    <entry name="Target">aat:300025845</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">letterer</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025115</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">lithographer</entry>
+    <entry name="Code">ltg</entry>
+    <entry name="Target">aat:300025175</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">lyricist</entry>
+    <entry name="Code">lyr</entry>
+    <entry name="Target">aat:300025675</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">manufacturer</entry>
+    <entry name="Code">mfr</entry>
+    <entry name="Target">aat:300025230</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">metal-engraver</entry>
+    <entry name="Code">mte</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/mte</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">mint</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300205362</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">modeler</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025417</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">mounter</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">organizer</entry>
+    <entry name="Code">orm</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/orm</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">originator</entry>
+    <entry name="Code">org</entry>
+    <entry name="Target">aat:300386177</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">paper engineer</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">paper maker</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025344</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">papermaker</entry>
+    <entry name="Code">ppm</entry>
+    <entry name="Target">aat:300025344</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">penciller</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">photographer</entry>
+    <entry name="Code">pht</entry>
+    <entry name="Target">aat:300025687</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">playing card maker</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">potter</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025414</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">printer</entry>
+    <entry name="Code">prt</entry>
+    <entry name="Target">aat:300025732</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">printer of plates</entry>
+    <entry name="Code">pop</entry>
+    <entry name="Target">aat:300025733</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">printer_GROUP</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300386347</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">printmaker</entry>
+    <entry name="Code">prm</entry>
+    <entry name="Target">aat:300025164</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">printmaker_GROUP</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300312299</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">proofreader</entry>
+    <entry name="Code">pfr</entry>
+    <entry name="Target">aat:300418027v</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">repairer</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">screenwriter</entry>
+    <entry name="Code">aus</entry>
+    <entry name="Target">aat:300025515</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">scribe</entry>
+    <entry name="Code">scr</entry>
+    <entry name="Target">aat:300025580</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">sculptor</entry>
+    <entry name="Code">scl</entry>
+    <entry name="Target">aat:300025181</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">series editor</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">stereotyper</entry>
+    <entry name="Code">str</entry>
+    <entry name="Target">aat:300025743</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">transcriber</entry>
+    <entry name="Code">trc</entry>
+    <entry name="Target">aat:300440751</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">translator</entry>
+    <entry name="Code">trl</entry>
+    <entry name="Target">aat:300025601</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">type designer</entry>
+    <entry name="Code">tyd</entry>
+    <entry name="Target">aat:300417840</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">typesetter</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025744</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">typographer</entry>
+    <entry name="Code">tyg</entry>
+    <entry name="Target">aat:300025745</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">wood-engraver</entry>
+    <entry name="Code">wde</entry>
+    <entry name="Target">aat:300025167</entry>
+  </record>
+  <record>
+    <entry name="Type">production</entry>
+    <entry name="Source">woodcutter</entry>
+    <entry name="Code">wdc</entry>
+    <entry name="Target">aat:300025178</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">commissioned by</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300400903</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">commissioning body</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300400903</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">degree granting institution</entry>
+    <entry name="Code">dgg</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/dgg</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">degree supervisor</entry>
+    <entry name="Code">dgs</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/dgs</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">funder</entry>
+    <entry name="Code">fnd</entry>
+    <entry name="Target">aat:300188572</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">funder/sponsor</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300188572</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">host institution</entry>
+    <entry name="Code">his</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/his</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">sponsor</entry>
+    <entry name="Code">spn</entry>
+    <entry name="Target">aat:300188572</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">sponsoring body</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300400903</entry>
+  </record>
+  <record>
+    <entry name="Type">sponsor</entry>
+    <entry name="Source">sponsoring institution</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300188572</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">bank</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">bookseller</entry>
+    <entry name="Code">bsl</entry>
+    <entry name="Target">aat:300025244</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">broadcaster</entry>
+    <entry name="Code">brd</entry>
+    <entry name="Target">aat:300025502</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">distributor</entry>
+    <entry name="Code">dst</entry>
+    <entry name="Target">aat:300404885</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">enacting jurisdiction</entry>
+    <entry name="Code">enj</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/enj</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">film distributor</entry>
+    <entry name="Code">fds</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/fds</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">issuer</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">issuing body</entry>
+    <entry name="Code">isb</entry>
+    <entry name="Target">aat:300386627</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">publisher</entry>
+    <entry name="Code">pbl</entry>
+    <entry name="Target">aat:300025574</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">publisher_GROUP</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300386627</entry>
+  </record>
+  <record>
+    <entry name="Type">publication</entry>
+    <entry name="Source">retailer</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025246</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">actor</entry>
+    <entry name="Code">act</entry>
+    <entry name="Target">aat:300025658</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">bass</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300206743</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">boy soprano</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">camera</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">choreographer</entry>
+    <entry name="Code">chr</entry>
+    <entry name="Target">aat:300025649</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">cinematographer</entry>
+    <entry name="Code">cng</entry>
+    <entry name="Target">aat:300025650</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">clarinet</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">conductor</entry>
+    <entry name="Code">cnd</entry>
+    <entry name="Target">aat:300025672</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">costume designer</entry>
+    <entry name="Code">cst</entry>
+    <entry name="Target">aat:300163428</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">dancer</entry>
+    <entry name="Code">dnc</entry>
+    <entry name="Target">aat:300025653</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">direction</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">director</entry>
+    <entry name="Code">drt</entry>
+    <entry name="Target">aat:300025654</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">film director</entry>
+    <entry name="Code">fmd</entry>
+    <entry name="Target">aat:300312209</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">film editor</entry>
+    <entry name="Code">flm</entry>
+    <entry name="Target">aat:300386237</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">film producer</entry>
+    <entry name="Code">fmp</entry>
+    <entry name="Target">aat:300312211</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">filmmaker</entry>
+    <entry name="Code">fmk</entry>
+    <entry name="Target">aat:300075154</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">guitarist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300235042</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">hornist</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">instrumentalist</entry>
+    <entry name="Code">itr</entry>
+    <entry name="Target">aat:300162131</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">interpreter</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">interviewee</entry>
+    <entry name="Code">ive</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/ive</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">interviewer</entry>
+    <entry name="Code">ivr</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/ivr</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">librettist</entry>
+    <entry name="Code">lbt</entry>
+    <entry name="Target">aat:300025674</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">lighting designer</entry>
+    <entry name="Code">lgd</entry>
+    <entry name="Target">aat:300386275</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">music</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">musician</entry>
+    <entry name="Code">mus</entry>
+    <entry name="Target">aat:300025666</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">narrator</entry>
+    <entry name="Code">nrt</entry>
+    <entry name="Target">aat:300417254</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">on-screen participant</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">on-screen presenter</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">orchestra</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025666</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">organist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300235015</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">performer</entry>
+    <entry name="Code">prf</entry>
+    <entry name="Target">aat:300068931</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">pianist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300235018</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">praeses</entry>
+    <entry name="Code">pra</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/pra</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">producer</entry>
+    <entry name="Code">pro</entry>
+    <entry name="Target">aat:300197742</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">production</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">production company</entry>
+    <entry name="Code">prn</entry>
+    <entry name="Target">aat:300419391</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">production designer</entry>
+    <entry name="Code">prs</entry>
+    <entry name="Target">aat:300435129</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">production personnel</entry>
+    <entry name="Code">prd</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/prd</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">recording engineer</entry>
+    <entry name="Code">rce</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/rce</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">saxophonist</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">script</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">set designer</entry>
+    <entry name="Code">std</entry>
+    <entry name="Target">aat:300435127</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">singer</entry>
+    <entry name="Code">sng</entry>
+    <entry name="Target">aat:300025684</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">soprano</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300206741</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">stage director</entry>
+    <entry name="Code">sgd</entry>
+    <entry name="Target">aat:300312210</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">stage manager</entry>
+    <entry name="Code">stm</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/stm</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">television director</entry>
+    <entry name="Code">tld</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/tld</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">television producer</entry>
+    <entry name="Code">tlp</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/tlp</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">tenor</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300206746</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">trombonist</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">trumpet player</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300235064</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">video designer</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">videographer</entry>
+    <entry name="Code">vdg</entry>
+    <entry name="Target">aat:300263895</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">violist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300235045</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">violoncellist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300235047</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">vocalist</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025684</entry>
+  </record>
+  <record>
+    <entry name="Type">performance</entry>
+    <entry name="Source">voice actor</entry>
+    <entry name="Code">vac</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/vac</entry>
+  </record>
+  <record>
+    <entry name="Type">encounter</entry>
+    <entry name="Source">art collector</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">encounter</entry>
+    <entry name="Source">collector</entry>
+    <entry name="Code">col</entry>
+    <entry name="Target">aat:300025234</entry>
+  </record>
+  <record>
+    <entry name="Type">encounter</entry>
+    <entry name="Source">discoverer</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">encounter</entry>
+    <entry name="Source">expedition</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">auctioneer</entry>
+    <entry name="Code">auc</entry>
+    <entry name="Target">aat:300025208</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">client</entry>
+    <entry name="Code">cli</entry>
+    <entry name="Target">aat:300025833</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">commissaire-priseur</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300412173</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">copyright holder</entry>
+    <entry name="Code">cph</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/cph</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">current owner</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">donor</entry>
+    <entry name="Code">dnr</entry>
+    <entry name="Target">aat:300025240</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">exchanger</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">former owner</entry>
+    <entry name="Code">fmo</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/fmo</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">land owner</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">licensee</entry>
+    <entry name="Code">lse</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/lse</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">licensor</entry>
+    <entry name="Code">lso</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/lso</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">owner</entry>
+    <entry name="Code">own</entry>
+    <entry name="Target">aat:300203630</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">patron</entry>
+    <entry name="Code">pat</entry>
+    <entry name="Target">aat:300115251</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">previous owner</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">purchaser</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025211</entry>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">source</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">provenance</entry>
+    <entry name="Source">vendor</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300150791</entry>
+  </record>
+  <record>
+    <entry name="Type">exhibition</entry>
+    <entry name="Source">borrower</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300311675</entry>
+  </record>
+  <record>
+    <entry name="Type">exhibition</entry>
+    <entry name="Source">exhibition</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">exhibition</entry>
+    <entry name="Source">lender</entry>
+    <entry name="Code">len</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/len</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">addressee</entry>
+    <entry name="Code">rcp</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/rcp</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">advertiser</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300252554</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">annotator</entry>
+    <entry name="Code">ann</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/ann</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">appellant</entry>
+    <entry name="Code">apl</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/apl</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">appellee</entry>
+    <entry name="Code">ape</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/ape</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">assignee</entry>
+    <entry name="Code">asg</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/asg</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">associated name</entry>
+    <entry name="Code">asn</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/asn</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">auxilium</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">claimant</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">commentator</entry>
+    <entry name="Code">cmm</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/cmm</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">complainant</entry>
+    <entry name="Code">cpl</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/cpl</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">conservator</entry>
+    <entry name="Code">con</entry>
+    <entry name="Target">aat:300102842</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">correspondent</entry>
+    <entry name="Code">crp</entry>
+    <entry name="Target">aat:300225705</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">court reporter</entry>
+    <entry name="Code">crt</entry>
+    <entry name="Target">aat:300136440</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">curator</entry>
+    <entry name="Code">cur</entry>
+    <entry name="Target">aat:300025633</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">dedicatee</entry>
+    <entry name="Code">dte</entry>
+    <entry name="Target">aat:300121765</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">defendant</entry>
+    <entry name="Code">dfd</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/dfd</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">digitiser</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">editor and translator</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">honoree</entry>
+    <entry name="Code">hnr</entry>
+    <entry name="Target">aat:300404867</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">judge</entry>
+    <entry name="Code">jud</entry>
+    <entry name="Target">aat:300025625</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">magistrate</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025467</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">moderator</entry>
+    <entry name="Code">mod</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/mod</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">other</entry>
+    <entry name="Code">oth</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/oth</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">panelist</entry>
+    <entry name="Code">pan</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/pan</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">petitioner</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">plaintiff</entry>
+    <entry name="Code">ptf</entry>
+    <entry name="Target">aat:300440758</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">presenter</entry>
+    <entry name="Code">pre</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/pre</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">pressman</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025731</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">proprietor</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300025241</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">pseud</entry>
+    <entry name="Code"/>
+    <entry name="Target">aat:300404657</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">recipient</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">reporter</entry>
+    <entry name="Code">rpt</entry>
+    <entry name="Target">aat:300025508</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">respondent</entry>
+    <entry name="Code">rsp</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/rsp</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">reviewer</entry>
+    <entry name="Code">rev</entry>
+    <entry name="Target">aat:300440750</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">sender</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">signer</entry>
+    <entry name="Code">sgn</entry>
+    <entry name="Target">aat:300137375</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">speaker</entry>
+    <entry name="Code">spk</entry>
+    <entry name="Target">aat:300136462</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">subject of parody</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">surveyor</entry>
+    <entry name="Code">srv</entry>
+    <entry name="Target">aat:300025100</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">teacher</entry>
+    <entry name="Code">tch</entry>
+    <entry name="Target">aat:300025529</entry>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">user</entry>
+    <entry name="Code"/>
+    <entry name="Target"/>
+  </record>
+  <record>
+    <entry name="Type">other</entry>
+    <entry name="Source">witness</entry>
+    <entry name="Code">wit</entry>
+    <entry name="Target">http://id.loc.gov/vocabulary/relators/wit</entry>
+  </record>
+</csv>

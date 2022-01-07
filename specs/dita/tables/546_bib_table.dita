@@ -1,0 +1,76 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_546_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>546 (Language Note)</title>
+  <shortdesc>Textual information on the language or notation system used to convey the content of the described materials. A description of the alphabet, script, or other symbol system (e.g., arabic alphabet, ASCII, bar code, logarithmic graphing) may also be included, but for musical notation system terms, prefer field 348 (Notated Music Characteristics). Coded language information is contained in fields 008/35-37 (Language) and/or 041 (Language code).</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd546.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd546.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_546">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd546.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>546</entry>
+            <entry>Language Note</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>Language note</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>546</entry>
+            <entry>Language Note</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>b</entry>
+            <entry>Information code or alphabet</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>546</entry>
+            <entry>Language Note</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>546</entry>
+            <entry>Language Note</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>546</entry>
+            <entry>Language Note</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

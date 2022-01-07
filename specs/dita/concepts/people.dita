@@ -1,0 +1,27 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="people" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>People</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>Person entities are represented by the <codeph>Person</codeph> class.</p>
+    <p>Person entities may function either in creator/contributor (agent) roles or within subject/concept structures.</p>
+    <p>For person entities that are part of name/title entries in MARC, see <xref format="dita" href="../tasks/concepts/name_title_entries.dita" scope="local"/>.</p>
+  </conbody>
+</concept>

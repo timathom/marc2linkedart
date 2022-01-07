@@ -1,0 +1,91 @@
+<task id="people_as_subjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>People as subjects</title>
+  <shortdesc>Entities extracted from MARC 600 fields.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-10-05"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-27"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-28"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: PeopleAsSubjects
+sampleBibs:
+  - 7 # 692
+  - 14 # 600
+# Source data fields
+fieldSpec:
+  - 600014abcdgjqvxyz
+  - 692014abcdgjqvxyz
+trimPunctuation: true
+scriptInclusion: BOTH</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>After applying the instructions in <xref href="../tasks/concepts/simple_subject_headings.dita"/> or <xref href="../tasks/concepts/complex_subject_headings.dita"/>, add an embedded reference to the person entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the _label of the person entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process simple person references.</cmd>
+            <stepresult>
+              <yulbibid>907221</yulbibid>
+              <codeblock id="codeblock_hxz_rvj_5rb"><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/person/25ae094b-ee19-465b-aaf1-2ec08ce28bfd",
+      "type": "Person",
+      "_label": "Perizonius, Jacobus, 1651-1715"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process concept/person references.</cmd>
+            <stepresult>
+              <yulbibid>7</yulbibid>
+              <codeblock><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/46c465f1-3c49-4a5d-bd4c-01e2146cba44",
+      "type": "Type",
+      "_label": "Colvert, James B. -- Autograph"
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/7925767c-c120-49b6-977d-bce3d34750db",
+      "type": "Type",
+      "_label": "Bowers, Fredson -- Autograph"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,210 @@
+<task id="call_number" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Locations and call numbers</title>
+  <shortdesc>Locations and call numbers are derived from MARC holdings records (MFHDs).</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-12-10"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-15"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword></keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value="2021-12-14T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph></entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set → members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: LocationsAndCallNumbers
+sampleBibs:
+  - 3
+  - 9447
+fieldSpec:
+  - mfhd852bhim
+trimPunctuation: true
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Prepare the Voyager location code lookup table, which contains mappings between location codes and their corresponding names.</cmd>
+        <stepxmp>
+          <codeblock><![CDATA[{
+  "LOCATION_MAP_FACET": "Beinecke Rare Book and Manuscript Library",
+  "ORBIS_LOCATION_CODE": "beingen"
+}]]></codeblock>
+        </stepxmp>
+      </step>
+      <step>
+        <cmd>For each <codeph>852</codeph> field that contains a subfield <codeph>b</codeph>, select the value of subfield <codeph>b</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If field <codeph>852</codeph> does not contain a subfield <codeph>b</codeph>, skip the <codeph>852</codeph> field.</cmd>
+        <info>
+          <note>This instruction is temporary. At some point, other MFHD fields should also be processed.</note>
+        </info>
+      </step>
+      <step>
+        <cmd><xref keyref="gloss-norm">Normalize</xref> the value of subfield <codeph>b</codeph> and test whether it is equal to <codeph>withdrawn</codeph> or <codeph>suppressed</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If the value is equal to either <codeph>withdrawn</codeph> or <codeph>suppressed</codeph>, skip the <codeph>852</codeph> field.</cmd>
+      </step>
+      <step>
+        <cmd>If the normalized value of subfield <codeph>b</codeph> starts with <codeph>yulint</codeph>, there is no call number.</cmd>
+        <info>
+          <note id="note_s1l_1dg_xrb">MFHDs with an <codeph>852b</codeph> value of <codeph>yulint</codeph> or <codeph>yulintx</codeph> should be converted to <codeph>DigitalObject</codeph> carrier resources. See <xref href="../content_and_carriers.dita"/>.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>Select and save the value of subfield <codeph>b</codeph>.</cmd>
+        <substeps id="substeps_nf2_v53_wrb">
+          <substep>
+            <cmd>Match the value of subfield <codeph>b</codeph> against the location code lookup table and save the value of the <codeph>location_name</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Surround the value of the <codeph>location_name</codeph> with square brackets.</cmd>
+            <stepxmp><codeph>[Library Shelving Facility (LSF)]</codeph></stepxmp>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Select and save the value of subfield <codeph>h</codeph>.</cmd>
+        <substeps id="substeps_x2x_1t3_wrb">
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> the value.</cmd>
+          </substep>
+          <substep>
+            <cmd>If the value contains <q>(lc)</q>, select the original substring before <q>(lc)</q> and trim whitespace.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Select and save the value of subfield <codeph>i</codeph>.</cmd>
+        <substeps id="substeps_x2x_1t3_wrb_i">
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> the value.</cmd>
+          </substep>
+          <substep>
+            <cmd>If the value contains <q>(lc)</q>, select the original substring before <q>(lc)</q> and trim whitespace.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Select and save the value of subfield <codeph>m</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>Join the values of subfields <codeph>852him</codeph> with a whitespace character. This is the <codeph>call_number</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>Concatenate the <codeph>call_number</codeph> with the <codeph>location_name</codeph>.</cmd>
+      </step>
+    </steps>
+    <result>
+      <yulbibid>12244893</yulbibid>
+      <codeblock><![CDATA[{
+  "id": "https://lux.collections.yale.edu/data/digital/0283cba8-169b-4950-bb88-5ba3cdd4ca1d",
+  "type": "DigitalObject",
+  "_label": "弘前藩庁日記ひろひよみ : 気象・災害等の記述を中心に. Vol.2, (1741年-1868年)",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "QC990.J32 H576 2014 CD [Library Shelving Facility (LSF)]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311706",
+          "type": "Type",
+          "_label": "Call Number"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Hirosaki hanchō nikki hiroiyomi : kishō saigai nado no kijutsu o chūshin ni. Vol.2, (1741-nen-1868-nen)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "弘前藩庁日記ひろひよみ : 気象・災害等の記述を中心に. Vol.2, (1741年-1868年)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ],
+      "language": [
+        {
+          "id": "https://lux.collections.yale.edu/data/concept/70cb6397-2b2f-400c-b887-70fd80969c8b",
+          "type": "Language",
+          "_label": "und"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Hirosaki hanchō nikki hiroiyomi : kishō saigai nado no kijutsu o chūshin ni. Vol.2, (1741-nen-1868-nen)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404672",
+          "type": "Type",
+          "_label": "Sorting Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+    </result>
+  </taskbody>
+</task>

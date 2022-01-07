@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="production_statement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Production statement</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-11-23"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_hzf_25j_3rb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: ProductionStatement
+sampleBibs:
+  - 3643333
+fieldSpec:
+  - 260abcefg
+  - 264abc
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process the production statement values.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Do not trim punctuation from subfields.</cmd>
+          </substep>
+          <substep>
+            <cmd>Join subfields with a whitespace character.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <note>This example is meant to illustrate a physical statement and does not represent a complete JSON-LD document.</note>
+          <yulbibid>3643333</yulbibid>
+          <codeblock><![CDATA[{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "New York : Alfred A. Knopf, 1993, c1970",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435436",
+          "type": "Type",
+          "_label": "Production Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

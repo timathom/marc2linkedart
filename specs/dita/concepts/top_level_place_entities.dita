@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="top_level_place_entities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Top-level Place entities</title>
+  <shortdesc>Place entities extracted from 008, 034, 651, 751, 6XXz.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-11-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-24"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: PlaceEntities
+sampleBibs:
+  - 3906934 # 008, 034
+  - 2803263 # 651
+  - 1066178 # 751
+# Source data fields
+fieldSpec:
+  - 008[15-17]
+  - 040e
+  - 034defg
+  - 651014aegvxyz
+  - 691014aegvxyz
+  - 751014aeg
+trimPunctuation: true
+scriptInclusion: BOTH]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <context>
+      <p>Processing of place entities depends on the data source in MARC:</p>
+      <p>
+        <ol>
+          <li id="li_tgs_5dj_rrb"><codeph>008[15-17]</codeph>: two- or three-letter code representing a country- or state-level place entity (place of publication or production)</li>
+          <li id="li_dhs_5dj_rrb"><codeph>034</codeph>: latitude/longitude coordinates</li>
+          <li id="li_ehs_5dj_rrb"><codeph>6XXz</codeph>, <codeph>651</codeph>, <codeph>691</codeph>, <codeph>751</codeph>, <codeph>752</codeph>: geographic subjects and subdivisions or other associated places are covered by <xref href="../tasks/concepts/simple_subject_headings.dita"/> and <xref href="../tasks/concepts/complex_subject_headings.dita"/></li>
+          <li id="li_fhs_5dj_rrb"><codeph>26Xa</codeph>: place of publication. <note><codeph>26Xa</codeph> is not currently modeled as a place entity, but as a string value in the <xref href="../tasks/notes-and-statements/production_statement.dita">Production Statement</xref>.</note></li>
+        </ol>
+      </p>
+    </context>
+  </taskbody>
+</task>

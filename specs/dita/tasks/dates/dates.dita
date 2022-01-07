@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concept id="dates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
+  <title>Dates</title>
+  <shortdesc>Date values from fixed field <codeph>008</codeph> and 26X fields.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-12-09"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-15"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-16"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-17"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-20"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-31"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-04"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>Dates should be taken first from fixed field <codeph>008</codeph>. If no date value(s) have been recorded in the <codeph>008</codeph> field, attempt to extract a date from a <codeph>26X</codeph> field.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?><toc xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml"><title><span xmlns="http://www.w3.org/1999/xhtml" class="title">MARC-to-Linked Art mapping</span></title><topicmeta>
+    <author class="- topic/author ">timothy.thompson@yale.edu</author>
+    <author class="- topic/author " type="contributor">tt434</author>
+    <critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates>
+  </topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:1;22:101" href="concepts/entity_extraction.html" collection-type="sequence" data-id="entity_extraction" wh-toc-id="entity_extraction-d1506e34"><title>Entity extraction</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The transformation from MARC to Linked Art requires that both <strong class="ph b"><dfn class="term">records</dfn></strong> and <strong class="ph b"><dfn class="term">access points</dfn></strong> within records be modeled and <strong class="ph b"><a href="glossary/entification.html" title="The process of converting &#34;strings&#34; into &#34;things&#34;: for example, extracting and normalizing authorized access points in MARC bibliographic records so that there is a single representation of each distinct entity."><dfn class="term">entified</dfn></a></strong> in order to create a normalized representation of the data.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="entity_extraction"></resourceid><navtitle class="- topic/navtitle ">Entity extraction</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Entity extraction</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The transformation from MARC to Linked Art requires that both <b class="+ topic/ph hi-d/b "><term class="- topic/term ">records</term></b> and <b class="+ topic/ph hi-d/b "><term class="- topic/term ">access points</term></b> within records be modeled and <b class="+ topic/ph hi-d/b "><term class="- topic/term " href="glossary/entification.dita" keyref="gloss-ent">entified</term></b> in order to create a normalized representation of the data.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:2;23:106" href="concepts/lux_top-level_entities.html" collection-type="sequence" data-id="lux_entities" wh-toc-id="lux_entities-d1506e73"><title>LUX top-level entities</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Eleven top-level entities are required for use in <span class="keyword">LUX</span>.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="lux_entities"></resourceid><navtitle class="- topic/navtitle ">LUX top-level entities</navtitle><?ditaot gentext?><linktext class="- map/linktext ">LUX top-level entities</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Eleven top-level entities are required for use in <keyword class="- topic/keyword " keyref="lux">LUX</keyword>.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:3;24:110" href="concepts/record_level_entities.html" collection-type="sequence" data-id="record_level_entities" wh-toc-id="record_level_entities-d1506e103"><title>Record-level entities</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities that correspond to resources held by the library (books, journals, databases, archival collections, etc.).</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="record_level_entities"></resourceid><navtitle class="- topic/navtitle ">Record-level entities</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Record-level entities</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities that correspond to resources held by the library (books, journals, databases, archival collections, etc.).</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:4;25:89" href="tasks/content_and_carriers.html" data-id="content_and_carriers" wh-toc-id="content_and_carriers-d1506e130"><title>Content and carriers</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="content_and_carriers"></resourceid><navtitle class="- topic/navtitle ">Content and carriers</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Content and carriers</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:5;26:111" href="concepts/supertypes/supertypes.html" collection-type="sequence" data-id="supertypes" wh-toc-id="supertypes-d1506e156"><title><span xmlns="http://www.w3.org/1999/xhtml" class="ph">LUX</span> supertype taxonomy</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Taxonomy of content types and related formats for classifying record-level resources in <span class="ph">LUX</span>.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertypes"></resourceid><navtitle class="- topic/navtitle "><ph class="- topic/ph " keyref="lux">LUX</ph> supertype taxonomy</navtitle><?ditaot gentext?><linktext class="- map/linktext ">LUX supertype taxonomy</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Taxonomy of content types and related formats for classifying record-level resources in <ph class="- topic/ph " keyref="lux">LUX</ph>.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:9;30:100" href="concepts/supertypes/collectionformats.html" data-id="supertype_CollectionFormats" wh-toc-id="supertype_CollectionFormats-d1506e270"><title>Collections</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"><q class="q">Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval</q> (<a class="xref" href="http://www.getty.edu/vow/AATFullDisplay?find=&amp;logic=AND&amp;note=&amp;subjectid=300025976" target="_blank" rel="external noopener">AAT</a>).</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_CollectionFormats"></resourceid><navtitle class="- topic/navtitle ">Collections</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Collections</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "><q class="- topic/q ">Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval</q> (<xref class="- topic/xref " format="html" href="http://www.getty.edu/vow/AATFullDisplay?find=&amp;logic=AND&amp;note=&amp;subjectid=300025976" scope="external">AAT</xref>).</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:10;31:141" href="concepts/supertypes/archivalandmanuscriptmaterials.html" data-id="supertype_ArchivalAndManuscriptMaterials" wh-toc-id="supertype_ArchivalAndManuscriptMaterials-d1506e302"><title>Archival and Manuscript Materials</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_ArchivalAndManuscriptMaterials"></resourceid><navtitle class="- topic/navtitle ">Archival and Manuscript Materials</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Archival and Manuscript Materials</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:11;32:89" href="concepts/supertypes/kits.html" data-id="supertype_Kits" wh-toc-id="supertype_Kits-d1506e328"><title>Kits</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">     <q class="q">Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item.</q>   </p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Kits"></resourceid><navtitle class="- topic/navtitle ">Kits</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Kits</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">     <q class="- topic/q ">Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item.</q>   </shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:12;34:90" href="concepts/supertypes/audioformats.html" data-id="supertype_AudioFormats" wh-toc-id="supertype_AudioFormats-d1506e358"><title>Audio</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_AudioFormats"></resourceid><navtitle class="- topic/navtitle ">Audio</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Audio</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:13;35:91" href="concepts/supertypes/music.html" data-id="supertype_Music" wh-toc-id="supertype_Music-d1506e384"><title>Music</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Music"></resourceid><navtitle class="- topic/navtitle ">Music</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Music</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:14;36:91" href="concepts/supertypes/sound.html" data-id="supertype_Sound" wh-toc-id="supertype_Sound-d1506e410"><title>Sound</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Sound"></resourceid><navtitle class="- topic/navtitle ">Sound</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Sound</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:15;38:104" href="concepts/supertypes/cartographicformats.html" data-id="supertype_CartographicFormats" wh-toc-id="supertype_CartographicFormats-d1506e436"><title>Cartography</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Any materials representing, in whole or part, the earth or any celestial body at any scale.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_CartographicFormats"></resourceid><navtitle class="- topic/navtitle ">Cartography</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Cartography</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Any materials representing, in whole or part, the earth or any celestial body at any scale.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:16;39:95" href="concepts/supertypes/atlases.html" data-id="supertype_Atlases" wh-toc-id="supertype_Atlases-d1506e463"><title>Atlases</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Volumes of maps, with or without descriptive text, which may be issued to supplement or accompany texts or be published independently.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Atlases"></resourceid><navtitle class="- topic/navtitle ">Atlases</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Atlases</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Volumes of maps, with or without descriptive text, which may be issued to supplement or accompany texts or be published independently.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:17;40:109" href="concepts/supertypes/geospatialdata.html" data-id="supertype_GeospatialData" wh-toc-id="supertype_GeospatialData-d1506e490"><title>Geospatial Data</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_GeospatialData"></resourceid><navtitle class="- topic/navtitle ">Geospatial Data</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Geospatial Data</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:18;41:93" href="concepts/supertypes/globes.html" data-id="supertype_Globes" wh-toc-id="supertype_Globes-d1506e516"><title>Globes</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Representations of the Earth, heavens, or another planet in the form of a ball.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Globes"></resourceid><navtitle class="- topic/navtitle ">Globes</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Globes</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Representations of the Earth, heavens, or another planet in the form of a ball.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:19;42:89" href="concepts/supertypes/maps.html" data-id="supertype_Maps" wh-toc-id="supertype_Maps-d1506e543"><title>Maps</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen. </p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Maps"></resourceid><navtitle class="- topic/navtitle ">Maps</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Maps</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen. </shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:20;44:88" href="concepts/supertypes/dataformats.html" data-id="supertype_DataFormats" wh-toc-id="supertype_DataFormats-d1506e570"><title>Datasets</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_DataFormats"></resourceid><navtitle class="- topic/navtitle ">Datasets</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Datasets</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:21;45:104" href="concepts/supertypes/dataandfiles.html" data-id="supertype_DataAndFiles" wh-toc-id="supertype_DataAndFiles-d1506e596"><title>Data and Files</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_DataAndFiles"></resourceid><navtitle class="- topic/navtitle ">Data and Files</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Data and Files</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:22;46:66" href="concepts/supertypes/geospatialdata_2.html" data-id="supertype_GeospatialData" wh-toc-id="supertype_GeospatialData-d1506e622"><title>Geospatial Data</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_GeospatialData"></resourceid><navtitle class="- topic/navtitle ">Geospatial Data</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Geospatial Data</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:23;47:101" href="concepts/supertypes/imagedata.html" data-id="supertype_ImageData" wh-toc-id="supertype_ImageData-d1506e648"><title>Image Data</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_ImageData"></resourceid><navtitle class="- topic/navtitle ">Image Data</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Image Data</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:24;48:105" href="concepts/supertypes/textualdata.html" data-id="supertype_TextualData" wh-toc-id="supertype_TextualData-d1506e674"><title>Textual Data</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_TextualData"></resourceid><navtitle class="- topic/navtitle ">Textual Data</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Textual Data</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:25;51:90" href="concepts/supertypes/imageformats.html" data-id="supertype_ImageFormats" wh-toc-id="supertype_ImageFormats-d1506e700"><title>Visual Works</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_ImageFormats"></resourceid><navtitle class="- topic/navtitle ">Visual Works</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Visual Works</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:26;52:97" href="concepts/supertypes/collages.html" data-id="supertype_Collages" wh-toc-id="supertype_Collages-d1506e726"><title>Collages</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Works in two dimensions or very low relief that were made by gluing paper, fabrics, photographs, or other materials onto a flat surface.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Collages"></resourceid><navtitle class="- topic/navtitle ">Collages</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Collages</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Works in two dimensions or very low relief that were made by gluing paper, fabrics, photographs, or other materials onto a flat surface.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:27;53:59" href="concepts/supertypes/imagedata_2.html" data-id="supertype_ImageData" wh-toc-id="supertype_ImageData-d1506e753"><title>Image Data</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_ImageData"></resourceid><navtitle class="- topic/navtitle ">Image Data</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Image Data</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:28;54:97" href="concepts/supertypes/drawings.html" data-id="supertype_Drawings" wh-toc-id="supertype_Drawings-d1506e779"><title>Drawings</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Visual works produced by drawing, typically by the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of color.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Drawings"></resourceid><navtitle class="- topic/navtitle ">Drawings</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Drawings</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Visual works produced by drawing, typically by the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of color.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:29;55:54" href="concepts/supertypes/maps_2.html" data-id="supertype_Maps" wh-toc-id="supertype_Maps-d1506e806"><title>Maps</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen. </p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Maps"></resourceid><navtitle class="- topic/navtitle ">Maps</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Maps</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen. </shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:30;56:99" href="concepts/supertypes/paintings.html" data-id="supertype_Paintings" wh-toc-id="supertype_Paintings-d1506e833"><title>Paintings</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Paintings"></resourceid><navtitle class="- topic/navtitle ">Paintings</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Paintings</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:31;57:103" href="concepts/supertypes/photographs.html" data-id="supertype_Photographs" wh-toc-id="supertype_Photographs-d1506e860"><title>Photographs</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Refers to still images produced from radiation-sensitive materials generally by means of the chemical action of light on a sensitive film, paper, glass, or metal.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Photographs"></resourceid><navtitle class="- topic/navtitle ">Photographs</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Photographs</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Refers to still images produced from radiation-sensitive materials generally by means of the chemical action of light on a sensitive film, paper, glass, or metal.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:32;58:97" href="concepts/supertypes/pictures.html" data-id="supertype_Pictures" wh-toc-id="supertype_Pictures-d1506e887"><title>Pictures</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Catch-all category for resources that contain some kind of pictorial content, but a more specific kind cannot be determined from the mapping.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Pictures"></resourceid><navtitle class="- topic/navtitle ">Pictures</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Pictures</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Catch-all category for resources that contain some kind of pictorial content, but a more specific kind cannot be determined from the mapping.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:33;59:95" href="concepts/supertypes/posters.html" data-id="supertype_Posters" wh-toc-id="supertype_Posters-d1506e914"><title>Posters</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Notices, usually decorative or pictorial, intended to be posted to advertise, promote, or publicize an activity, cause, product, or service; also, decorative, mass-produced prints intended for hanging. For small printed notices or advertisements intended for distribution by hand, use "handbills."</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Posters"></resourceid><navtitle class="- topic/navtitle ">Posters</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Posters</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Notices, usually decorative or pictorial, intended to be posted to advertise, promote, or publicize an activity, cause, product, or service; also, decorative, mass-produced prints intended for hanging. For small printed notices or advertisements intended for distribution by hand, use "handbills."</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:34;60:93" href="concepts/supertypes/prints.html" data-id="supertype_Prints" wh-toc-id="supertype_Prints-d1506e941"><title>Prints</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Pictorial works produced by transferring images by means of a matrix such as a plate, block, or screen, using any of various printing processes.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Prints"></resourceid><navtitle class="- topic/navtitle ">Prints</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Prints</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Pictorial works produced by transferring images by means of a matrix such as a plate, block, or screen, using any of various printing processes.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:35;61:93" href="concepts/supertypes/slides.html" data-id="supertype_Slides" wh-toc-id="supertype_Slides-d1506e968"><title>Slides</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">An image on film or glass, usually positive, intended to be viewed by means of light passing through the image.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Slides"></resourceid><navtitle class="- topic/navtitle ">Slides</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Slides</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">An image on film or glass, usually positive, intended to be viewed by means of light passing through the image.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:36;63:102" href="concepts/supertypes/movingimageformats.html" data-id="supertype_MovingImageFormats" wh-toc-id="supertype_MovingImageFormats-d1506e995"><title>Moving Images</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_MovingImageFormats"></resourceid><navtitle class="- topic/navtitle ">Moving Images</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Moving Images</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:37;64:75" href="concepts/supertypes/motionpictures.html" data-id="supertype_MotionPictures" wh-toc-id="supertype_MotionPictures-d1506e1021"><title>Motion Pictures</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_MotionPictures"></resourceid><navtitle class="- topic/navtitle ">Motion Pictures</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Motion Pictures</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:38;66:96" href="concepts/supertypes/notationformats.html" data-id="supertype_NotationFormats" wh-toc-id="supertype_NotationFormats-d1506e1047"><title>Scores and Notation</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_NotationFormats"></resourceid><navtitle class="- topic/navtitle ">Scores and Notation</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Scores and Notation</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:39;67:111" href="concepts/supertypes/notatedmovement.html" data-id="supertype_NotatedMovement" wh-toc-id="supertype_NotatedMovement-d1506e1073"><title>Notated Movement</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_NotatedMovement"></resourceid><navtitle class="- topic/navtitle ">Notated Movement</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Notated Movement</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:40;68:105" href="concepts/supertypes/notatedmusic.html" data-id="supertype_NotatedMusic" wh-toc-id="supertype_NotatedMusic-d1506e1099"><title>Notated Music</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_NotatedMusic"></resourceid><navtitle class="- topic/navtitle ">Notated Music</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Notated Music</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:41;70:92" href="concepts/supertypes/objectformats.html" data-id="supertype_ObjectFormats" wh-toc-id="supertype_ObjectFormats-d1506e1126"><title>Objects</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_ObjectFormats"></resourceid><navtitle class="- topic/navtitle ">Objects</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Objects</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:42;71:56" href="concepts/supertypes/globes_2.html" data-id="supertype_Globes" wh-toc-id="supertype_Globes-d1506e1152"><title>Globes</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Representations of the Earth, heavens, or another planet in the form of a ball.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Globes"></resourceid><navtitle class="- topic/navtitle ">Globes</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Globes</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Representations of the Earth, heavens, or another planet in the form of a ball.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:43;72:93" href="concepts/supertypes/models.html" data-id="supertype_Models" wh-toc-id="supertype_Models-d1506e1179"><title>Models</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Models"></resourceid><navtitle class="- topic/navtitle ">Models</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Models</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:44;73:93" href="concepts/supertypes/realia.html" data-id="supertype_Realia" wh-toc-id="supertype_Realia-d1506e1205"><title>Realia</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Three-dimensional items not covered by more specific terms (e.g., clothing, stitchery, fabrics, tools, utensils), and naturally occurring objects.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Realia"></resourceid><navtitle class="- topic/navtitle ">Realia</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Realia</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Three-dimensional items not covered by more specific terms (e.g., clothing, stitchery, fabrics, tools, utensils), and naturally occurring objects.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:45;74:105" href="concepts/supertypes/toysandgames.html" data-id="supertype_ToysAndGames" wh-toc-id="supertype_ToysAndGames-d1506e1232"><title>Toys and Games</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_ToysAndGames"></resourceid><navtitle class="- topic/navtitle ">Toys and Games</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Toys and Games</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:46;76:96" href="concepts/supertypes/softwareformats.html" data-id="supertype_SoftwareFormats" wh-toc-id="supertype_SoftwareFormats-d1506e1258"><title>Software and Electronic Media</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_SoftwareFormats"></resourceid><navtitle class="- topic/navtitle ">Software and Electronic Media</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Software and Electronic Media</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:47;77:121" href="concepts/supertypes/softwareapplications.html" data-id="supertype_SoftwareApplications" wh-toc-id="supertype_SoftwareApplications-d1506e1284"><title>Software Applications</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_SoftwareApplications"></resourceid><navtitle class="- topic/navtitle ">Software Applications</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Software Applications</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:48;78:99" href="concepts/supertypes/databases.html" data-id="supertype_Databases" wh-toc-id="supertype_Databases-d1506e1310"><title>Databases</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">A dataset, structured according to a particular piece of software's requirements.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Databases"></resourceid><navtitle class="- topic/navtitle ">Databases</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Databases</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">A dataset, structured according to a particular piece of software's requirements.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:49;80:94" href="concepts/supertypes/textualformats.html" data-id="supertype_TextualFormats" wh-toc-id="supertype_TextualFormats-d1506e1337"><title>Textual Works</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Content represented as words in a particular language, and/or the objects carrying that content.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_TextualFormats"></resourceid><navtitle class="- topic/navtitle ">Textual Works</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Textual Works</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Content represented as words in a particular language, and/or the objects carrying that content.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:50;81:90" href="concepts/supertypes/books.html" data-id="supertype_Books" wh-toc-id="supertype_Books-d1506e1364"><title>Books</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Long form texts, divided into sections and/or the physical, paged objects that carry them.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Books"></resourceid><navtitle class="- topic/navtitle ">Books</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Books</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Long form texts, divided into sections and/or the physical, paged objects that carry them.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:51;82:59" href="concepts/supertypes/atlases_2.html" data-id="supertype_Atlases" wh-toc-id="supertype_Atlases-d1506e1391"><title>Atlases</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Volumes of maps, with or without descriptive text, which may be issued to supplement or accompany texts or be published independently.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Atlases"></resourceid><navtitle class="- topic/navtitle ">Atlases</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Atlases</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Volumes of maps, with or without descriptive text, which may be issued to supplement or accompany texts or be published independently.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:52;84:101" href="concepts/supertypes/broadsides.html" data-id="supertype_Broadsides" wh-toc-id="supertype_Broadsides-d1506e1418"><title>Broadsides</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Broadsides"></resourceid><navtitle class="- topic/navtitle ">Broadsides</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Broadsides</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:53;85:125" href="concepts/supertypes/dissertationsandtheses.html" data-id="supertype_DissertationsAndTheses" wh-toc-id="supertype_DissertationsAndTheses-d1506e1444"><title>Dissertations and Theses</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Texts written for the purpose of fulfilling an academic requirement.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_DissertationsAndTheses"></resourceid><navtitle class="- topic/navtitle ">Dissertations and Theses</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Dissertations and Theses</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Texts written for the purpose of fulfilling an academic requirement.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:54;86:124" href="concepts/supertypes/journalsandperiodicals.html" data-id="supertype_JournalsAndPeriodicals" wh-toc-id="supertype_JournalsAndPeriodicals-d1506e1471"><title>Journals and Periodicals</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Works published in pieces over time, typically at regular intervals.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_JournalsAndPeriodicals"></resourceid><navtitle class="- topic/navtitle ">Journals and Periodicals</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Journals and Periodicals</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Works published in pieces over time, typically at regular intervals.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:55;87:103" href="concepts/supertypes/newspapers.html" data-id="supertype_Newspapers" wh-toc-id="supertype_Newspapers-d1506e1498"><title>Newspapers</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Serials published at stated, frequent intervals, such as daily or weekly, and containing news, editorials, features, advertisements, and other items of current interest.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_Newspapers"></resourceid><navtitle class="- topic/navtitle ">Newspapers</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Newspapers</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Serials published at stated, frequent intervals, such as daily or weekly, and containing news, editorials, features, advertisements, and other items of current interest.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:56;89:61" href="concepts/supertypes/textualdata_2.html" data-id="supertype_TextualData" wh-toc-id="supertype_TextualData-d1506e1525"><title>Textual Data</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="supertype_TextualData"></resourceid><navtitle class="- topic/navtitle ">Textual Data</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Textual Data</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:57;92:122" href="tasks/names-and-labels/related_title_entities.html" data-id="related_title_entities" wh-toc-id="related_title_entities-d1506e1551"><title>Related title entities [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="related_title_entities"></resourceid><navtitle class="- topic/navtitle ">Related title entities [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Related title entities [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:58;94:102" href="concepts/work_level_entities.html" data-id="work_level_entities" wh-toc-id="work_level_entities-d1506e1577"><title>Work-level entities [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="work_level_entities"></resourceid><navtitle class="- topic/navtitle ">Work-level entities [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Work-level entities [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:59;95:78" href="concepts/name_title_entries.html" data-id="name_title_entries" wh-toc-id="name_title_entries-d1506e1603"><title>Name-title entries [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="name_title_entries"></resourceid><navtitle class="- topic/navtitle ">Name-title entries [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Name-title entries [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:60;96:85" href="tasks/name-title/people_with_works.html" data-id="people_with_works" wh-toc-id="people_with_works-d1506e1629"><title>People with works [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="people_with_works"></resourceid><navtitle class="- topic/navtitle ">People with works [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">People with works [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:61;97:85" href="tasks/name-title/groups_with_works.html" data-id="groups_with_works" wh-toc-id="groups_with_works-d1506e1655"><title>Groups with works [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="groups_with_works"></resourceid><navtitle class="- topic/navtitle ">Groups with works [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Groups with works [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:62;99:73" href="concepts/title_entries.html" data-id="title_entries" wh-toc-id="title_entries-d1506e1681"><title>Title entries [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="title_entries"></resourceid><navtitle class="- topic/navtitle ">Title entries [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Title entries [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:63;100:90" href="tasks/names-and-labels/standalone_works.html" data-id="standalone_works" wh-toc-id="standalone_works-d1506e1707"><title>Standalone works [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="standalone_works"></resourceid><navtitle class="- topic/navtitle ">Standalone works [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Standalone works [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:64;103:83" href="tasks/related_entities.html" data-id="related_entities" wh-toc-id="related_entities-d1506e1733"><title>Related entities</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities that represent the people, places, concepts, etc., that are connected to record-level resources.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="related_entities"></resourceid><navtitle class="- topic/navtitle ">Related entities</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Related entities</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities that represent the people, places, concepts, etc., that are connected to record-level resources.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:65;104:84" href="concepts/concepts.html" data-id="concept_entities" wh-toc-id="concept_entities-d1506e1760"><title>Concepts</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities that represent what a resource is about.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="concept_entities"></resourceid><navtitle class="- topic/navtitle ">Concepts</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Concepts</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities that represent what a resource is about.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:66;105:107" href="tasks/concepts/subject_headings.html" data-id="subject_headings" wh-toc-id="subject_headings-d1506e1787"><title>Subject headings</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Resources extracted from MARC 6XX entries.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="subject_headings"></resourceid><navtitle class="- topic/navtitle ">Subject headings</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Subject headings</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Resources extracted from MARC 6XX entries.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:67;106:88" href="tasks/concepts/classification_numbers.html" data-id="classification_numbers" wh-toc-id="classification_numbers-d1506e1814"><title>Classification numbers</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Resources extracted from MARC 050 and 090 entries.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="classification_numbers"></resourceid><navtitle class="- topic/navtitle ">Classification numbers</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Classification numbers</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Resources extracted from MARC 050 and 090 entries.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:68;108:80" href="concepts/events.html" data-id="events" wh-toc-id="events-d1506e1841"><title>Events</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities that represent time periods and/or discrete events related to a record-level resource.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="events"></resourceid><navtitle class="- topic/navtitle ">Events</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Events</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities that represent time periods and/or discrete events related to a record-level resource.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:69;109:84" href="tasks/events/chronological_facets.html" data-id="chronological_facets" wh-toc-id="chronological_facets-d1506e1868"><title>Chronological facets</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Resources extracted from MARC 6XXy.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="chronological_facets"></resourceid><navtitle class="- topic/navtitle ">Chronological facets</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Chronological facets</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Resources extracted from MARC 6XXy.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:70;111:80" href="concepts/groups.html" data-id="groups" wh-toc-id="groups-d1506e1895"><title>Groups</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities that represent groups of people functioning collectively (e.g., organizations and meetings/conferences).</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="groups"></resourceid><navtitle class="- topic/navtitle ">Groups</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Groups</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities that represent groups of people functioning collectively (e.g., organizations and meetings/conferences).</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="topicref:1;112:81" href="concepts/top_level_group_entities.html" data-id="top_level_group_entities" wh-toc-id="top_level_group_entities-d1506e1922"><title>Top-level Group entities</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Group entities extracted from both subject (6XX) and agent (11X and 71X) fields.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="top_level_group_entities"></resourceid><navtitle class="- topic/navtitle ">Top-level Group entities</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Top-level Group entities</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Group entities extracted from both subject (6XX) and agent (11X and 71X) fields.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="topicref:2;113:76" href="concepts/groups_as_agents.html" data-id="groups_as_agents" wh-toc-id="groups_as_agents-d1506e1949"><title>Groups as agents</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities extracted from MARC 11X and 71X fields.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="groups_as_agents"></resourceid><navtitle class="- topic/navtitle ">Groups as agents</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Groups as agents</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities extracted from MARC 11X and 71X fields.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="topicref:3;114:78" href="concepts/groups_as_subjects.html" data-id="groups_as_subjects" wh-toc-id="groups_as_subjects-d1506e1976"><title>Groups as subjects</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Entities extracted from MARC 61X fields.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="groups_as_subjects"></resourceid><navtitle class="- topic/navtitle ">Groups as subjects</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Groups as subjects</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Entities extracted from MARC 61X fields.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:71;117:81" href="concepts/people.html" data-id="people" wh-toc-id="people-d1506e2003"><title>People [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="people"></resourceid><navtitle class="- topic/navtitle ">People [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">People [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:72;118:81" href="concepts/places.html" data-id="places" wh-toc-id="places-d1506e2029"><title>Places [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="places"></resourceid><navtitle class="- topic/navtitle ">Places [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Places [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:73;119:100" href="concepts/provenance_activities.html" data-id="provenance_activities" wh-toc-id="provenance_activities-d1506e2055"><title>Provenance Activities [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="provenance_activities"></resourceid><navtitle class="- topic/navtitle ">Provenance Activities [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Provenance Activities [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:74;120:113" href="concepts/related_digital_objects.html" data-id="related_digital_objects" wh-toc-id="related_digital_objects-d1506e2081"><title>Digital Objects [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="related_digital_objects"></resourceid><navtitle class="- topic/navtitle ">Digital Objects [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Digital Objects [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:75;121:92" href="concepts/related_sets.html" data-id="related_sets" wh-toc-id="related_sets-d1506e2107"><title>Sets [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="related_sets"></resourceid><navtitle class="- topic/navtitle ">Sets [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Sets [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:76;125:119" href="concepts/descriptive_content.html" collection-type="sequence" data-id="descriptive_content" wh-toc-id="descriptive_content-d1506e2133"><title>Descriptive content</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Content that represents attributes of an entity (for example: identifiers, notes, publication information).</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="descriptive_content"></resourceid><navtitle class="- topic/navtitle ">Descriptive content</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Descriptive content</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Content that represents attributes of an entity (for example: identifiers, notes, publication information).</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:77;126:86" href="concepts/identifiers.html" data-id="identifiers" wh-toc-id="identifiers-d1506e2160"><title>Identifiers</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Standard alphanumeric values used to uniquely identify a resource.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="identifiers"></resourceid><navtitle class="- topic/navtitle ">Identifiers</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Identifiers</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Standard alphanumeric values used to uniquely identify a resource.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:78;127:90" href="tasks/identifiers/orbis_bib_id.html" data-id="voyager_bib_id" wh-toc-id="voyager_bib_id-d1506e2187"><title><span xmlns="http://www.w3.org/1999/xhtml" class="ph">Orbis BIB ID</span></title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The <span class="ph">Orbis BIB ID</span> is a serially based identifier assigned to MARC 21 Bibliographic records in the Voyager ILS.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="voyager_bib_id"></resourceid><navtitle class="- topic/navtitle "><ph class="- topic/ph " keyref="orbis">Orbis BIB ID</ph></navtitle><?ditaot gentext?><linktext class="- map/linktext ">Orbis BIB ID</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The <ph class="- topic/ph " keyref="orbis">Orbis BIB ID</ph> is a serially based identifier assigned to MARC 21 Bibliographic records in the Voyager ILS.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:79;128:116" href="tasks/identifiers/library_of_congress_control_number_lccn.html" data-id="library_of_congress_control_number_lccn" wh-toc-id="library_of_congress_control_number_lccn-d1506e2218"><title>Library of Congress Control Number (LCCN)</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The Library of Congress Control Number is a serially based identifier assigned to resources that also appear in the catalog of the Library of Congress.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="library_of_congress_control_number_lccn"></resourceid><navtitle class="- topic/navtitle ">Library of Congress Control Number (LCCN)</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Library of Congress Control Number (LCCN)</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The Library of Congress Control Number is a serially based identifier assigned to resources that also appear in the catalog of the Library of Congress.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:80;129:116" href="tasks/identifiers/international_standard_book_number_isbn.html" data-id="international_standard_book_number_isbn" wh-toc-id="international_standard_book_number_isbn-d1506e2245"><title><span xmlns="http://www.w3.org/1999/xhtml" class="ph">International Standard Book Number (ISBN)</span></title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The International Standard Book Number (ISBN) is a publisher-assigned commercial book identifier that is intended to be unique. May appear in 10- or 13-digit formats.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="international_standard_book_number_isbn"></resourceid><navtitle class="- topic/navtitle "><ph class="- topic/ph " keyref="isbn">International Standard Book Number (ISBN)</ph></navtitle><?ditaot gentext?><linktext class="- map/linktext ">International Standard Book Number (ISBN)</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The International Standard Book Number (ISBN) is a publisher-assigned commercial book identifier that is intended to be unique. May appear in 10- or 13-digit formats.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:81;130:118" href="tasks/identifiers/international_standard_serial_number_issn.html" data-id="international_standard_serial_number_issn" wh-toc-id="international_standard_serial_number_issn-d1506e2273"><title><span xmlns="http://www.w3.org/1999/xhtml" class="ph">International Standard Serial Number (ISSN)</span></title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The International Standard Serial Number is a unique identification number assigned to a continuing resource.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="international_standard_serial_number_issn"></resourceid><navtitle class="- topic/navtitle "><ph class="- topic/ph " keyref="issn">International Standard Serial Number (ISSN)</ph></navtitle><?ditaot gentext?><linktext class="- map/linktext ">International Standard Serial Number (ISSN)</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">The International Standard Serial Number is a unique identification number assigned to a continuing resource.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:82;131:124" href="tasks/identifiers/publisher_or_distributor_number.html" data-id="publisher_or_distributor_number" wh-toc-id="publisher_or_distributor_number-d1506e2301"><title><span xmlns="http://www.w3.org/1999/xhtml" class="ph">Publisher or Distributor Number</span></title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Formatted number used for sound recordings, printed music, other music-related materials, and video recordings.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="publisher_or_distributor_number"></resourceid><navtitle class="- topic/navtitle "><ph class="- topic/ph " keyref="pub-num">Publisher or Distributor Number</ph></navtitle><?ditaot gentext?><linktext class="- map/linktext ">Publisher or Distributor Number</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Formatted number used for sound recordings, printed music, other music-related materials, and video recordings.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:83;132:96" href="tasks/identifiers/oclc_numbers.html" data-id="oclc_numbers" wh-toc-id="oclc_numbers-d1506e2329"><title>System Control Numbers (OCLC Numbers)</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">System number used by OCLC to manage records in the WorldCat system.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="oclc_numbers"></resourceid><navtitle class="- topic/navtitle ">System Control Numbers (OCLC Numbers)</navtitle><?ditaot gentext?><linktext class="- map/linktext ">System Control Numbers (OCLC Numbers)</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">System number used by OCLC to manage records in the WorldCat system.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:84;134:72" href="concepts/names_and_labels.html" data-id="titles" wh-toc-id="titles-d1506e2356"><title>Names and labels</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Names and supplied for top-level resources.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="titles"></resourceid><navtitle class="- topic/navtitle ">Names and labels</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Names and labels</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Names and supplied for top-level resources.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="topicref:4;135:66" href="tasks/names-and-labels/root_label.html" data-id="root_label" wh-toc-id="root_label-d1506e2383"><title>Root label [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Root label of the top-level entity.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="root_label"></resourceid><navtitle class="- topic/navtitle ">Root label [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Root label [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Root label of the top-level entity.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="subjectdef:85;136:82" href="tasks/names-and-labels/primary_name.html" data-id="primary_name" wh-toc-id="primary_name-d1506e2410"><title>Primary name</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Main title of a record-level entity.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="primary_name"></resourceid><navtitle class="- topic/navtitle ">Primary name</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Primary name</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Main title of a record-level entity.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="topicref:5;137:80" href="tasks/names-and-labels/sorting_name.html" data-id="sorting_name" wh-toc-id="sorting_name-d1506e2437"><title>Sorting name</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Sorting title of a record-level entity. Taken from MARC <code class="ph codeph">245</code> with initial articles removed.</p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="sorting_name"></resourceid><navtitle class="- topic/navtitle ">Sorting name</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Sorting name</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Sorting title of a record-level entity. Taken from MARC <codeph class="+ topic/ph pr-d/codeph ">245</codeph> with initial articles removed.</shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/lux-v2.ditamap" xtrc="topicref:6;138:60" href="tasks/names-and-labels/name.html" data-id="name" wh-toc-id="name-d1506e2467"><title>Name [draft]</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="name"></resourceid><navtitle class="- topic/navtitle ">Name [draft]</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Name [draft]</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/submaps/glossary.ditamap" xtrc="topicref:1;4:92" href="glossary/marc_to_linked_art_glossary.html" collection-type="unordered" data-id="marc_to_linked_art_glossary" wh-toc-id="marc_to_linked_art_glossary-d1506e3282"><title>MARC to Linked Art glossary</title><shortdesc><p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p></shortdesc><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="marc_to_linked_art_glossary"></resourceid><navtitle class="- topic/navtitle ">MARC to Linked Art glossary</navtitle><?ditaot gentext?><linktext class="- map/linktext ">MARC to Linked Art glossary</linktext><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "></shortdesc><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/submaps/glossary.ditamap" xtrc="topicref:2;5:68" href="glossary/entification.html" data-id="entify" wh-toc-id="entify-d1506e3308"><title>Entification</title><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="entify"></resourceid><navtitle class="- topic/navtitle ">Entification</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Entification</linktext><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic><topic xtrf="file:/private/var/folders/hk/lvq3vkld1535ljtzsptfx4lc2_gfwg/T/OxygenXMLTemp/ditaTemporaryOutputDir-yxx_f1m_2rb/t1/t2/t3/t4/t5/submaps/glossary.ditamap" xtrc="topicref:3;6:61" href="glossary/frbr.html" data-id="frbr" wh-toc-id="frbr-d1506e3332"><title>Functional Requirements for Bibliographic Records (FRBR)</title><topicmeta><resourceid class="- topic/resourceid " oxy-source="topic" appid="frbr"></resourceid><navtitle class="- topic/navtitle ">Functional Requirements for Bibliographic Records (FRBR)</navtitle><?ditaot gentext?><linktext class="- map/linktext ">Functional Requirements for Bibliographic Records (FRBR)</linktext><author class="- topic/author ">timothy.thompson@yale.edu</author><author class="- topic/author " type="contributor">tt434</author><critdates class="- topic/critdates ">
+      
+      <revised class="- topic/revised " modified="2021-09-27"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-04"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-05"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-06"></revised>
+      
+      <revised class="- topic/revised " modified="2021-10-07"></revised>
+    </critdates></topicmeta></topic></topic></toc>

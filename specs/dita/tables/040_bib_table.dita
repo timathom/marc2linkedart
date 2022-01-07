@@ -1,0 +1,49 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_bib_040_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:reference.xsd">
+  <title>040 (Cataloging Source)</title>
+  <shortdesc/>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd040.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd040.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_040">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd040.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>040</entry>
+            <entry>Cataloging Source</entry>
+            <entry/>
+            <entry/>
+            <entry>a</entry>
+            <entry>Original cataloging agency</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>040</entry>
+            <entry>Cataloging Source</entry>
+            <entry/>
+            <entry/>
+            <entry>e</entry>
+            <entry>Description conventions</entry>
+            <entry>F</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

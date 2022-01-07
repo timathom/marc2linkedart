@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_ArchitecturalElements" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>ArchitecturalElements</title>
+  <shortdesc/>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd/>
+      </step>
+    </steps>
+    <result/>
+  </taskbody>
+</task>

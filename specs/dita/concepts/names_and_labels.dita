@@ -1,0 +1,32 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="titles" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Names and labels</title>
+  <shortdesc>Names and labels supplied for top-level resources.</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2021-10-05"/>
+      <!--tt434-->
+      <revised modified="2021-10-14"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <!-- 
+    <p>Titles provide names that identify a record-level resource. There are three types of descriptive title:<ul id="ul_ezq_g2w_drb">
+        <li>
+          <p>Main title (including non-Latin script alternatives)</p>
+        </li>
+        <li>
+          <p>Sorting title (main title with initial articles removed)</p>
+        </li>
+        <li>
+          <p>Alternative title</p>
+        </li>
+      </ul></p>-->
+    <p>Titles extracted from MARC<codeph>505</codeph>(Formatted Contents Note) are handled separately, as their own record-level entities: see<xref href="../tasks/names-and-labels/related_title_entities.dita"/>.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,118 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="language_statement" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Language statement</title>
+  <shortdesc>Textual information on the language or notation system used to convey the content of the described materials.</shortdesc>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-28"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-29T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context id="context_nzf_r13_krb">
+      <table id="table_ozf_r13_krb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section id="section_pzf_r13_krb">
+      <title>Source data</title>
+      <codeblock id="codeblock_myx_ryh_krb">---
+name: LanguageStatement
+sampleBibs:
+  - 1001852
+fieldSpec:
+  - 546ab
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section id="section_qzf_r13_krb">
+      <title>Processing steps and output</title>
+    </section>
+    <steps id="steps_rzf_r13_krb">
+      <step>
+        <cmd>Process the language statement values (MARC<codeph>546ab</codeph>).</cmd>
+        <choices id="choices_szf_r13_krb">
+          <choice>If both subfields (<codeph>546ab</codeph>) are present, join them with a whitespace character.</choice>
+          <choice>Else, output the string value of<codeph>546a</codeph>.</choice>
+        </choices>
+        <stepresult>
+          <note id="note_tzf_r13_krb">This example is meant to illustrate a language statement and does not represent a complete JSON-LD document.</note>
+          <yulbibid>1001852</yulbibid>
+          <codeblock id="codeblock_uzf_r13_krb">{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Syriac; Hebrew alphabet.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435433",
+          "type": "Type",
+          "_label": "Language Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Language Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

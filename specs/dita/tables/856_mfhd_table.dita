@@ -1,0 +1,211 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_856_table_mfhd" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>856 (Electronic Location and Access)</title>
+  <shortdesc>Information required to locate an electronic resource. The information identifies the electronic location containing the resource or from which it is available. It also contains information needed to retrieve the resource by the access method identified in the first indicator position. The relationship of the electronic location and access information in field 856 to the resource identified by the record as a whole is identified by the second indicator. The information contained in this field is sufficient to allow for the electronic transfer of a file, subscription to an electronic journal, or logon to an electronic resource. In some cases, only unique data elements are recorded which allow the user to access a locator table on a remote host containing the remaining information needed to access the resource. Field 856 is repeated when the location data elements vary (the URL in subfield $u or subfields $a and $d, when used). It is also repeated when more than one access method is used, different portions of the item are available electronically, mirror sites are recorded, different formats/resolutions with different URLs are indicated, and related items are recorded. See theGuidelines for the Use of Field 856for a more thorough discussion on the use of field 856.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/holdings/hd856.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/holdings/hd856.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_mfhd"/>
+  </prolog>
+  <refbody>
+    <table id="table_mfhd_856">
+      <desc>From <xref href="https://www.loc.gov/marc/holdings/hd856.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>a</entry>
+            <entry>Host name</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>c</entry>
+            <entry>Compression information</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>d</entry>
+            <entry>Path</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>f</entry>
+            <entry>Electronic name</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>m</entry>
+            <entry>Contact for access assistance</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>o</entry>
+            <entry>Operating system</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>p</entry>
+            <entry>Port</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>q</entry>
+            <entry>Electronic format type</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>s</entry>
+            <entry>File size</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>u</entry>
+            <entry>Uniform Resource Identifier</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>v</entry>
+            <entry>Hours access method available</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>w</entry>
+            <entry>Record control number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>x</entry>
+            <entry>Nonpublic note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>y</entry>
+            <entry>Link text</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>z</entry>
+            <entry>Public note</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>2</entry>
+            <entry>Access method</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>7</entry>
+            <entry>Access status</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>856</entry>
+            <entry>Electronic Location and Access</entry>
+            <entry>#-7</entry>
+            <entry>#-8</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

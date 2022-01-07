@@ -1,0 +1,170 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="related_entities" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Related entities</title>
+  <shortdesc>Entities that represent the people, places, concepts, etc., that are connected to record-level resources.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Relationships are recorded for seven different entity types:</p>
+      <table id="table_gmh_ybj_5rb">
+        <title>Linked Art classes and MARC mappings for related entities</title>
+        <tgroup cols="4">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="newCol2" colnum="2"/>
+          <colspec colname="c2" colnum="3"/>
+          <colspec colname="newCol4" colnum="4"/>
+          <thead>
+            <row>
+              <entry>Linked Art class</entry>
+              <entry>MARC tags</entry>
+              <entry>Entity types</entry>
+              <entry>MARC types</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Type</entry>
+              <entry>650 or 690</entry>
+              <entry>Concept</entry>
+              <entry>Topical subject</entry>
+            </row>
+            <row>
+              <entry>Period</entry>
+              <entry>6XXy</entry>
+              <entry>Event or time period</entry>
+              <entry>Chronological subdivision</entry>
+            </row>
+            <row>
+              <entry>Type</entry>
+              <entry>655</entry>
+              <entry>Genre or format</entry>
+              <entry>Genre/form term</entry>
+            </row>
+            <row>
+              <entry>Group</entry>
+              <entry>110, 111, 610, 611, 693, 694, 710, 711</entry>
+              <entry>Group</entry>
+              <entry>Corporate name (610, 693) or conference name (611, 694)</entry>
+            </row>
+            <row>
+              <entry>Person</entry>
+              <entry>100, 600, 692, 700</entry>
+              <entry>Person</entry>
+              <entry>Personal name</entry>
+            </row>
+            <row>
+              <entry>Place</entry>
+              <entry>651, 691, 751, 752</entry>
+              <entry>Place</entry>
+              <entry>Geographic name</entry>
+            </row>
+            <row>
+              <entry>LinguisticObject</entry>
+              <entry>130, 240, 630, 695, 730, 740, 830</entry>
+              <entry>Work (textual work, moving image, music, scores and notation)</entry>
+              <entry>Uniform title</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>In MARC, entries can be either simple or complex. Simple entries contain a reference to a single entity type: <ul id="ul_c5d_mpj_5rb">
+          <li>Concept</li>
+          <li>Genre or format</li>
+          <li>Group</li>
+          <li>Person</li>
+          <li>Place</li>
+          <li>Work</li>
+        </ul></p>
+      <p>Complex entries include a reference to two or more entity types. Complex entries are used to record name/title references and subject headings with subdivisions.</p>
+      <table id="table_xpd_zhj_5rb">
+        <title>Linked Art classes and MARC mappings for name/title entries and subject subdivisions</title>
+        <tgroup cols="4">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c2" colnum="2"/>
+          <colspec colname="c3" colnum="3"/>
+          <colspec colname="c4" colnum="4"/>
+          <thead>
+            <row>
+              <entry>Linked Art class</entry>
+              <entry>MARC code</entry>
+              <entry>Entity type</entry>
+              <entry>MARC type</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>LinguisticObject</entry>
+              <entry>240</entry>
+              <entry>Work (textual work, moving image, music, scores and notation)</entry>
+              <entry>Uniform title</entry>
+            </row>
+            <row>
+              <entry>LinguisticObject</entry>
+              <entry>t</entry>
+              <entry>Work (textual work, moving image, music, scores and notation)</entry>
+              <entry>Title of a work</entry>
+            </row>
+            <row>
+              <entry>Type</entry>
+              <entry>v</entry>
+              <entry>Genre or format</entry>
+              <entry>Form subdivision</entry>
+            </row>
+            <row>
+              <entry>Type</entry>
+              <entry>x</entry>
+              <entry>Concept</entry>
+              <entry>General subdivision</entry>
+            </row>
+            <row>
+              <entry>Period</entry>
+              <entry>y</entry>
+              <entry>Event or time period</entry>
+              <entry>Chronological subdivision</entry>
+            </row>
+            <row>
+              <entry>Place</entry>
+              <entry>z</entry>
+              <entry>Place</entry>
+              <entry>Geographic subdivision</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Processing information</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Extract related entities from MARC bibliographic records and assign an IRI to each distinct entity.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Create top-level related entities by joining subfields to create a key for matching and merging.</cmd>
+          </substep>
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> and match each unique string value.</cmd>
+          </substep>
+          <substep>
+            <cmd>Apply specific processing steps for each related entity type (concepts, agents, places, etc.).</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Add embedded references to related entities within corresponding record-level resources (<codeph>DigitalObject</codeph>, <codeph>HumanMadeObject</codeph>, <codeph>LinguisticObject</codeph>, <codeph>Set</codeph>, <codeph>VisualItem</codeph>).</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

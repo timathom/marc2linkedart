@@ -1,0 +1,28 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="groups_with_works" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+  <title>Groups with works</title>
+  <shortdesc>Entities extracted from MARC 11X fields when followed by MARC 240 and from MARC 61X, 71X, and 81X fields that contain<codeph>$t</codeph>.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p/>
+    </context>
+    <!-- 
+    
+    
+    -->
+  </taskbody>
+</task>

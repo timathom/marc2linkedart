@@ -1,0 +1,85 @@
+<task id="name-title-with-subdivisions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Complex works as complex subjects</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-12-06"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-08"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+  </prolog>
+  <taskbody>
+    <context>Complex works may appear as facets in complex subject headings.</context>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Apply the instructions in <xref href="../concepts/complex_subject_headings.dita"/> and <xref href="../concepts/name_title_entries.dita"/> to produce the desired output.</cmd>
+        <info>
+          <p>The <codeph>LinguisticObject</codeph> facet representing the work entity should be constructed according to <xref href="../concepts/name_title_entries.dita"/>. However, the agent (<codeph>Person</codeph> or <codeph>Group</codeph>) facet should also be included as a separate facet under <codeph>influenced_by</codeph>.</p>
+        </info>
+      </step>
+      <step>
+        <cmd>Join the  <codeph>agent value</codeph> and the <codeph>work value</codeph> as the <codeph>complex work reference</codeph>.</cmd>
+        <choices id="choices_tq5_slv_vrb">
+          <choice>If the <codeph>agent value</codeph> ends with a hyphen (<codeph>-</codeph>) or period (<codeph>.</codeph>), join the two values with a whitespace character.</choice>
+          <choice>Else, join the two values with a period and whitespace character.</choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Join the <codeph>complex work reference</codeph> with the subdivision subfields using space-surrounded double hyphens (<codeph> -- </codeph>) to output the <codeph>_label</codeph> and <codeph>content</codeph> values of the full precoordinated heading.</cmd>
+        <stepresult>
+          <yulbibid>908059</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/complex1",
+  "type": "Type",
+  "_label": "Fedorov, Ivan, approximately 1510-1583. Azbuka -- Concordances",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Fedorov, Ivan, approximately 1510-1583. Azbuka -- Concordances",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/person/person1",
+        "type": "Person",
+        "_label": "Fedorov, Ivan, approximately 1510-1583"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/text/work1",
+        "type": "LinguisticObject",
+        "_label": "Azbuka"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/form1",
+        "type": "Type",
+        "_label": "Concordances"
+      }
+    ]
+  }
+}
+]]></codeblock>
+        </stepresult>
+      </step>            
+    </steps>
+  </taskbody>
+</task>

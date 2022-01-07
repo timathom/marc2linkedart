@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concept id="works" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+    <title>Works</title>
+    <shortdesc></shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-12-07"/>
+    </critdates>
+  </prolog>
+    <conbody>
+      <p>Work entities are represented by the <codeph>LinguisticObject</codeph> class.</p>
+      <p>Work entities may function either in whole/part relationships or within subject/concept structures.</p>
+      <p>Complex work entities correspond to name/title entries in MARC, in which a person or group name is directly related to a uniform title.</p>
+      <p>Complex work entities may also appear with subject subdivisions, as part of a complex subject heading.</p>
+    </conbody>
+</concept>

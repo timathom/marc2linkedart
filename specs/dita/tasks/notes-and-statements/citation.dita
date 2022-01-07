@@ -1,0 +1,153 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="citation" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Citation</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-27"/>
+      <!--tt434-->
+      <revised modified="2021-10-28"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-29T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context id="context_fgk_hzm_jrb">
+      <table>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row id="row_qwf_czm_jrb">
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: Citation
+sampleBibs:
+  - 909399
+  - 10563633
+fieldSpec:
+  - 510abcu
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Check for <codeph>510u</codeph>.</cmd>
+        <choices>
+          <choice>Ignore <codeph>510u</codeph> if it does not include a URI containing the string <codeph>wikidata.org</codeph> and skip to step 3, below.</choice>
+          <choice>If <codeph>510u</codeph> is present with a Wikidata URI (e.g., <xref format="html" href="http://www.wikidata.org/entity/Q107432855" scope="external"/>), generate a top-level citation entity with an <codeph>equivalent</codeph> reference to the Wikidata URI (see <xref keyref="CitationEntities"/>).</choice>
+          <choice>Else, <xref format="dita" href="#citation/step_m53_cph_krb">output an inline citation object</xref> in the <codeph>referred_to_by</codeph> array.</choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>When <codeph>510u</codeph> is present with a Wikidata URI, output a reference to the top-level citation entity.</cmd>
+        <choices>
+          <choice>If subfields <codeph>510b</codeph> or <codeph>510c</codeph> are present, join them with <codeph>510a</codeph>, using a whitespace character, as the <codeph>_label</codeph> value in the reference.</choice>
+          <choice>Else, output the string value of the top-level citation entity name as the <codeph>_label</codeph> value in the reference.</choice>
+        </choices>
+        <stepresult>
+          <note>This example is meant to illustrate a citation reference and does not represent a complete JSON-LD document.</note>
+          <yulbibid>10563633</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/citation1",
+      "type": "LinguisticObject",
+      "_label": "Edizioni italiane del XVI secolo
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+      <step id="step_m53_cph_krb">
+        <cmd>When no <codeph>510u</codeph> is present with a Wikidata URI, process the values for inline citations (MARC <codeph>510abc</codeph>).</cmd>
+        <!--
+        <choices>
+          <choice>If subfields <codeph>510b</codeph> or <codeph>510c</codeph> are present, join all subfields with a whitespace character.</choice>
+          <choice>Else, output the string value of <codeph>510a</codeph>.</choice>
+        </choices>
+        -->
+        <stepresult>
+          <note>This example is meant to illustrate an inline citation and does not represent a complete JSON-LD document.</note>
+          <yulbibid>909399</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Abbey, J.R. Scenery 111",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311705",
+          "type": "Type",
+          "_label": "Citation",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Citation/References Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

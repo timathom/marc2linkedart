@@ -1,0 +1,49 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_bib_440_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:reference.xsd">
+  <title>440 (Series Statement/Added Entry-Title)</title>
+  <shortdesc/>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd440.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd440.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_440">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd440.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>440</entry>
+            <entry>Series Statement/Added Entry-Title</entry>
+            <entry/>
+            <entry/>
+            <entry>a</entry>
+            <entry>Title</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>440</entry>
+            <entry>Series Statement/Added Entry-Title</entry>
+            <entry/>
+            <entry/>
+            <entry>w</entry>
+            <entry>Bibliographic record control number</entry>
+            <entry>F</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

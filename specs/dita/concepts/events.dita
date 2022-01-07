@@ -1,0 +1,21 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="events" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Events</title>
+  <shortdesc>Entities that represent time periods and/or discrete events related to a record-level resource.</shortdesc>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>YUL Event entities are represented by the <codeph>Period</codeph> class. Event entities should be generated for chronological subdivisions (facets) in MARC 6XX subject headings.</p>
+  </conbody>
+</concept>

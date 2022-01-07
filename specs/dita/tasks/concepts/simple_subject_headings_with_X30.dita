@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="simple_subject_headings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Creators, contributors, standalone works, simple subject/genre headings, and associated places</title>
+  <shortdesc>Related resources that represent a single entity type.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-12-03"/>
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-26"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <!--<keyword>Completed</keyword>
+        <keyword>Deployed</keyword>-->
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+    <data name="sample" value="https://linked-art-test.library.yale.edu/ils/bib/9564880"/>
+  </prolog>
+  <taskbody>
+    <context id="context_pwz_rvj_5rb">Apply these instructions for source data fields that reference a single entity, without component parts.</context>
+    <section id="section_qwz_rvj_5rb">
+      <title>Source data</title>
+      <codeblock id="codeblock_rwz_rvj_5rb">---
+name: SingleEntities
+sampleBibs:
+  - 3 # 650
+  - 7 # 710
+  - 9 # 710
+  - 11 # 110
+  - 19 # 111
+  - 38 # 110
+  - 68 # 610
+  - 127 # 111
+  - 162 # 610
+  - 227 # 630
+  - 422 # 693
+  - 426 # 711
+  - 607 # 611
+  - 693 # 100, 700
+  - 947 # 711
+  - 1029 # 611
+  - 8839 # 611
+  - 9292 # 693
+  - 4504 # 655
+  - 614880 # 694
+  - 838469 # 694
+  - 907221 # 600
+  - 1066178 # 751
+  - 6017172 # 651
+# Source data fields
+fieldSpec:
+  - 100014abcdegjq
+  - 110014abcdeg
+  - 111014cdegjnqu
+  - 130014adfghklmnoprst
+  - 600014abcdegjq
+  - 610014abcdeg
+  - 611014acdegjnqu
+  - 630014adfghklmnoprst
+  - 65004abcdeg
+  - 651| 0|014ae
+  - 655014abc
+  - 690014abcdeg
+  - 691014ae       
+  - 692014abcdegjq
+  - 693014abcdeg
+  - 694014acdegjnqu
+  - 695014adfhklmnoprst
+  - 700014abcdegjq
+  - 710014abcdeg
+  - 711014acdegjnqu
+  - 730014adfghklmnoprst
+  - 751014ae
+  - 830014adfghklmnoprst
+trimPunctuation: true
+scriptInclusion: BOTH</codeblock>
+    </section>
+    <section id="section_swz_rvj_5rb">
+      <title>Processing steps and output</title>
+    </section>
+    <steps id="steps_twz_rvj_5rb">
+      <step>
+        <cmd>For each unique source data value, generate and store a top-level resource identified by an IRI.</cmd>
+        <substeps id="substeps_uwz_rvj_5rb">
+          <substep>
+            <cmd>Ignore the following subfields when creating a key for matching and merging.</cmd>
+            <info>
+              <table id="table_vwz_rvj_5rb">
+                <title>Subfields to skip when matching strings</title>
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>Fields</entry>
+                      <entry>Subfields</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>All</entry>
+                      <entry>04</entry>
+                    </row>
+                    <row>
+                      <entry>All except X11 and 694</entry>
+                      <entry>e</entry>
+                    </row>
+                    <row>
+                      <entry>X11 and 694</entry>
+                      <entry>j</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Apply the following mapping table to create a key for matching and merging. For rows in the table with multiple subfields, join the subfields with a whitespace character.</cmd>
+            <info>
+              <table id="facet_values_table">
+                <title>Subfield mapping for entities</title>
+                <tgroup cols="3">
+                  <thead>
+                    <row>
+                      <entry>Linked Art class</entry>
+                      <entry>MARC tag</entry>
+                      <entry>Subfields</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>Person</entry>
+                      <entry>X00</entry>
+                      <entry>abcdgjq</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>X10</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>X11</entry>
+                      <entry>acdegnqu</entry>
+                    </row>
+                    <row>
+                      <entry>LinguisticObject</entry>
+                      <entry>X30</entry>
+                      <entry>adfhklmnoprs</entry>
+                    </row>
+                    <row>
+                      <entry>Concept</entry>
+                      <entry>650</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>Place</entry>
+                      <entry>651| 0|</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>Type</entry>
+                      <entry>655</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>Concept</entry>
+                      <entry>690</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>Place</entry>
+                      <entry>691</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>Person</entry>
+                      <entry>692</entry>
+                      <entry>abcdgjq</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>693</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>694</entry>
+                      <entry>acdgnqu</entry>
+                    </row>
+                    <row>
+                      <entry>LinguisticObject</entry>
+                      <entry>695</entry>
+                      <entry>adfhklmnoprs</entry>
+                    </row>
+                    <row>
+                      <entry>Place</entry>
+                      <entry>751</entry>
+                      <entry>a</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> and match string values.</cmd>
+          </substep>
+          <substep>
+            <cmd>If a field includes a <codeph>$0</codeph> with an IRI, output an <codeph>equivalent</codeph> reference.</cmd>
+            <info>
+              <note id="note_wwz_rvj_5rb">The <codeph>Type</codeph> of the <codeph>equivalent</codeph> reference should match the <codeph>Type</codeph> of the top-level resource.</note>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Process top-level concept resources.</cmd>
+            <stepresult>
+              <yulbibid>3</yulbibid>
+              <codeblock id="codeblock_x45_jsj_5rb"><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/522b36c5-57c4-4026-9deb-ff1aeb3ef187",
+  "type": "Type",
+  "_label": "Paleoecology",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Paleoecology",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh85097060",
+      "type": "Type"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep id="genre_form_substep">
+            <cmd>Process top-level genre/form resources.</cmd>
+            <info>
+              <note id="note_xwz_rvj_5rb">Top-level resources representing genre/form headings should include an additional <codeph>classified_as</codeph> for <codeph>Format</codeph> to distinguish them from topical subject headings.</note>
+            </info>
+            <stepresult>
+              <yulbibid>4504</yulbibid>
+              <codeblock id="codeblock_ywz_rvj_5rb"><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/43427eb8-ebc3-4197-9dfd-9a55ceee894b",
+  "type": "Type",
+  "_label": "Photoplay editions",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300226816",
+      "type": "Type",
+      "_label": "Format"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Photoplay editions",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh2002001432",
+      "type": "Type"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process top-level group (<codeph>Organization</codeph>) resources.</cmd>
+            <info>
+              <note>Top-level resources representing group entities derived from <codeph>X10</codeph> fields should include an additional <codeph>classified_as</codeph> for <codeph>Organization</codeph> to distinguish them from meeting entities derived from <codeph>X11</codeph>.</note>
+            </info>
+            <stepresult>
+              <yulbibid>68</yulbibid>
+              <codeblock id="codeblock_zwz_rvj_5rb"><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/a3d54906-5375-46a0-b0df-d6be7d6ecb7f",
+  "type": "Group",
+  "_label": "United States. National Archives and Records Service",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300025948",
+      "type": "Type",
+      "_label": "Organization"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "United States. National Archives and Records Service",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n79091762",
+      "type": "Group"
+    }
+  ]
+}
+]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process top-level group (<codeph>Meeting</codeph>) resources.</cmd>
+            <info>
+              <note>Top-level resources representing group entities derived from <codeph>X11</codeph> fields should include an additional <codeph>classified_as</codeph> for <codeph>Meeting</codeph> to distinguish them from organization entities derived from <codeph>X10</codeph>.</note>
+            </info>
+            <stepresult>
+              <yulbibid>8839</yulbibid>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/4583e5ce-fc9d-4e1c-aa61-a822d346dccc",
+  "type": "Group",
+  "_label": "Congreso de Cu\u0301cuta (1821)",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300054788",
+      "type": "Type",
+      "_label": "Meeting"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Congreso de Cu\u0301cuta (1821)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process top-level person resources.</cmd>
+            <stepresult>
+              <yulbibid>907221</yulbibid>
+              <codeblock id="codeblock_axz_rvj_5rb"><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/person/25ae094b-ee19-465b-aaf1-2ec08ce28bfd",
+  "type": "Person",
+  "_label": "Perizonius, Jacobus, 1651-1715",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Perizonius, Jacobus, 1651-1715",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n88198532",
+      "type": "Person"
+    }
+  ]
+}
+]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process top-level place resources.</cmd>
+            <stepresult>
+              <yulbibid>6017172</yulbibid>
+              <codeblock id="codeblock_bxz_rvj_5rb"><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/ff9095c9-db47-423d-938b-5c2e3fe9e177",
+  "type": "Place",
+  "_label": "Aleppo (Syria)",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Aleppo (Syria)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n81053997",
+      "type": "Place"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process top-level standalone work resources.</cmd>
+            <stepresult>
+              <yulbibid>227</yulbibid>
+              <codeblock id="codeblock_cxz_rvj_5rb"><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/text/ea02530e-580f-41a8-92ac-d9e302ec5fbe",
+  "type": "LinguisticObject",
+  "_label": "Munich Four-Power Agreement (1938)",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Munich Four-Power Agreement (1938)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n50063330",
+      "type": "LinguisticObject"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>In each referring record-level resource (<codeph>DigitalObject</codeph>, <codeph>HumanMadeObject</codeph>, <codeph>LinguisticObject</codeph>, <codeph>Set</codeph>, <codeph>VisualItem</codeph>), add an embedded reference to the concept entity.</cmd>
+        <substeps>
+          <substep>
+            <cmd>For concept (<codeph>Type</codeph>) entities, see <xref href="subject_headings.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For associated places, see <xref href="../../concepts/associated_places.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For other place entities, see <xref href="../../concepts/places_as_agents.dita"/> and <xref href="../../concepts/places_as_subjects.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For person entities, see <xref href="../../concepts/people_as_agents.dita"/> and <xref href="../../concepts/people_as_subjects.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For group entities, see <xref href="../../concepts/groups_as_agents.dita"/> and <xref href="../../concepts/groups_as_subjects.dita"/>.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

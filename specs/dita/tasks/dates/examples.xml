@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00797cam a2200265 i 4500</leader>
+    <controlfield tag="001">4298</controlfield>
+    <controlfield tag="005">20190910130617.0</controlfield>
+    <controlfield tag="008">801220m1952uuuunyu           000 0 eng u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">52011400</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687882616</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG0367754-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAA4362YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">4298</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ODaWU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm00367754</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">PR8873</subfield>
+      <subfield code="b">.M4</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Mercier, Vivian,</subfield>
+      <subfield code="d">1919-1989.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">1000 years of Irish prose;</subfield>
+      <subfield code="c">edited with an introduction by Vivian Mercier and David H. Greene.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Devin-Adair,</subfield>
+      <subfield code="c">1952-</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v. ;</subfield>
+      <subfield code="c">23 cm</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Irish prose literature.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">English prose literature</subfield>
+      <subfield code="x">Irish authors.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Greene, David H.</subfield>
+      <subfield code="q">(David Herbert),</subfield>
+      <subfield code="d">1913-2008.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00755cam a2200253   4500</leader>
+    <controlfield tag="001">4337</controlfield>
+    <controlfield tag="005">20210504182950.0</controlfield>
+    <controlfield tag="008">801220m1942uuuunyu           000 0 eng</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">42017400</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687888176</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG0370915-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAA4401YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">4337</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ODaWU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">17504302</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">B790</subfield>
+      <subfield code="b">.W46</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Who's who in philosophy.</subfield>
+      <subfield code="b">Dagobert D. Runes, editor;</subfield>
+      <subfield code="c">Lester E. Denonn, Ralph B. Winn, associate editors.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">[New York,</subfield>
+      <subfield code="b">Philosophical library,</subfield>
+      <subfield code="c">1942-</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="505" ind1="0" ind2=" ">
+      <subfield code="a">v. 1. Anglo-American philosophers.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Philosophers.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Runes, Dagobert D.</subfield>
+      <subfield code="q">(Dagobert David),</subfield>
+      <subfield code="d">1902-1982.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01170cam a2200349   4500</leader>
+    <controlfield tag="001">11910</controlfield>
+    <controlfield tag="005">20140930180316.0</controlfield>
+    <controlfield tag="008">801221s1971uuuube b          000 0 dut u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73304934</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687501049</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG1039120-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAB2056YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">11910</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NIC</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">dut</subfield>
+      <subfield code="b">ger</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-be---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PF827.B6</subfield>
+      <subfield code="b">W5</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01039120</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">PF827.B6</subfield>
+      <subfield code="b">W5</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Willemyns, Roland.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Bijdrage tot de studie van de klankleer van het Brugs op het einde van de middeleeuwen.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">Tongeren,</subfield>
+      <subfield code="b">Drukk. G. Michiels,</subfield>
+      <subfield code="c">1971.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">306 p.</subfield>
+      <subfield code="b">maps, tables.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Werken uitg. door de Koninklijke Commissie voor. Toponymie en Dialectologie, Vlaamse Afdeling,</subfield>
+      <subfield code="v">12</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Summary in German.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. [20]-27.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Dutch language</subfield>
+      <subfield code="x">Dialects</subfield>
+      <subfield code="z">Belgium</subfield>
+      <subfield code="z">Bruges.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Dutch language</subfield>
+      <subfield code="x">Phonetics.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Dutch language</subfield>
+      <subfield code="y">To 1800.</subfield>
+    </datafield>
+    <datafield tag="810" ind1="1" ind2=" ">
+      <subfield code="a">Belgium.</subfield>
+      <subfield code="b">Commission royale de toponymie et de dialectologie.</subfield>
+      <subfield code="b">Section flamande.</subfield>
+      <subfield code="t">Werken ;</subfield>
+      <subfield code="v">12.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01029cam a2200325   4500</leader>
+    <controlfield tag="001">12212</controlfield>
+    <controlfield tag="005">20140930180333.0</controlfield>
+    <controlfield tag="008">801221s1958uuuune a          000 0 dut u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">74221607</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687504619</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG1065318-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAB2358YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">12212</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NBuU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">dut</subfield>
+      <subfield code="a">eng</subfield>
+      <subfield code="a">fre</subfield>
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">ND673.R9</subfield>
+      <subfield code="b">B23</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01065318</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">NJ18.R82</subfield>
+      <subfield code="b">B37</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Baudouin, Frans.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Herinneringen aan P. P. Rubens;</subfield>
+      <subfield code="b">tentoonstelling Juli-Augustus 1958, Rubenshuis; catalogus</subfield>
+      <subfield code="c">[door F. Baudouin.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">Antwerpen,</subfield>
+      <subfield code="c">1958]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">36 p.</subfield>
+      <subfield code="b">[11] p. of illus.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">At head of title: Stad Antwerpen.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Captions in English, French, and German: 8 p. inserted.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 11.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Rubens, Peter Paul,</subfield>
+      <subfield code="c">Sir,</subfield>
+      <subfield code="d">1577-1640.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Rubens, Peter Paul,</subfield>
+      <subfield code="c">Sir,</subfield>
+      <subfield code="d">1577-1640.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Rubenshuis (Antwerp, Belgium)</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01404cam a2200349   4500</leader>
+    <controlfield tag="001">41220</controlfield>
+    <controlfield tag="005">20191206141222.0</controlfield>
+    <controlfield tag="008">801221s1972uuuube ceh        000 0 dut u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">72372222</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687863106</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG1747168-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAE1533YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">41220</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ViU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">dut</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-be---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2="4">
+      <subfield code="a">LA819.A7</subfield>
+      <subfield code="b">D33 1972</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01747168</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">LA819.A7</subfield>
+      <subfield code="b">D33 1972</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Daele, Henk van.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Geschiedenis van het stedelijk lager onderwijs te Antwerpen van 1830 tot 1872.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">[Brussel],</subfield>
+      <subfield code="b">Pro Civitate, [Gemeentekrediet van België, Panhecolaan, 44],</subfield>
+      <subfield code="c">1972.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">x, 367 p.</subfield>
+      <subfield code="b">ports., plans, tables, facsim.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Pro Civitate.  Historische uitgaven.  Reeks in -8, nr. 3l</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Originally presented as the author's thesis, Ghent, 1967.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Summary in English and French.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 315-328.</subfield>
+    </datafield>
+    <datafield tag="583" ind1="1" ind2=" ">
+      <subfield code="a">committed to retain</subfield>
+      <subfield code="c">20190228</subfield>
+      <subfield code="d">20421231</subfield>
+      <subfield code="f">HathiTrust</subfield>
+      <subfield code="5">CtY</subfield>
+      <subfield code="z">To help ensure preservation of print and digital collections, this title is retained by Yale University Library on behalf of the HathiTrust Shared Print Program.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Education, Primary</subfield>
+      <subfield code="z">Belgium</subfield>
+      <subfield code="z">Antwerp</subfield>
+      <subfield code="x">History.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Collection Histoire Pro Civitate.</subfield>
+      <subfield code="n">Série in-8o ;</subfield>
+      <subfield code="v">no 31.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00797cam a2200265 i 4500</leader>
+    <controlfield tag="001">4298</controlfield>
+    <controlfield tag="005">20190910130617.0</controlfield>
+    <controlfield tag="008">801220m1952uuuunyu           000 0 eng u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">52011400</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687882616</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG0367754-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAA4362YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">4298</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ODaWU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm00367754</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">PR8873</subfield>
+      <subfield code="b">.M4</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Mercier, Vivian,</subfield>
+      <subfield code="d">1919-1989.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">1000 years of Irish prose;</subfield>
+      <subfield code="c">edited with an introduction by Vivian Mercier and David H. Greene.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Devin-Adair,</subfield>
+      <subfield code="c">1952-</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v. ;</subfield>
+      <subfield code="c">23 cm</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Irish prose literature.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">English prose literature</subfield>
+      <subfield code="x">Irish authors.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Greene, David H.</subfield>
+      <subfield code="q">(David Herbert),</subfield>
+      <subfield code="d">1913-2008.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00755cam a2200253   4500</leader>
+    <controlfield tag="001">4337</controlfield>
+    <controlfield tag="005">20210504182950.0</controlfield>
+    <controlfield tag="008">801220m1942uuuunyu           000 0 eng</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">42017400</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687888176</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG0370915-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAA4401YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">4337</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ODaWU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">17504302</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">B790</subfield>
+      <subfield code="b">.W46</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Who's who in philosophy.</subfield>
+      <subfield code="b">Dagobert D. Runes, editor;</subfield>
+      <subfield code="c">Lester E. Denonn, Ralph B. Winn, associate editors.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">[New York,</subfield>
+      <subfield code="b">Philosophical library,</subfield>
+      <subfield code="c">1942-</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="505" ind1="0" ind2=" ">
+      <subfield code="a">v. 1. Anglo-American philosophers.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Philosophers.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Runes, Dagobert D.</subfield>
+      <subfield code="q">(Dagobert David),</subfield>
+      <subfield code="d">1902-1982.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01170cam a2200349   4500</leader>
+    <controlfield tag="001">11910</controlfield>
+    <controlfield tag="005">20140930180316.0</controlfield>
+    <controlfield tag="008">801221s1971uuuube b          000 0 dut u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73304934</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687501049</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG1039120-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAB2056YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">11910</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NIC</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">dut</subfield>
+      <subfield code="b">ger</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-be---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PF827.B6</subfield>
+      <subfield code="b">W5</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01039120</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">PF827.B6</subfield>
+      <subfield code="b">W5</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Willemyns, Roland.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Bijdrage tot de studie van de klankleer van het Brugs op het einde van de middeleeuwen.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">Tongeren,</subfield>
+      <subfield code="b">Drukk. G. Michiels,</subfield>
+      <subfield code="c">1971.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">306 p.</subfield>
+      <subfield code="b">maps, tables.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Werken uitg. door de Koninklijke Commissie voor. Toponymie en Dialectologie, Vlaamse Afdeling,</subfield>
+      <subfield code="v">12</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Summary in German.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. [20]-27.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Dutch language</subfield>
+      <subfield code="x">Dialects</subfield>
+      <subfield code="z">Belgium</subfield>
+      <subfield code="z">Bruges.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Dutch language</subfield>
+      <subfield code="x">Phonetics.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Dutch language</subfield>
+      <subfield code="y">To 1800.</subfield>
+    </datafield>
+    <datafield tag="810" ind1="1" ind2=" ">
+      <subfield code="a">Belgium.</subfield>
+      <subfield code="b">Commission royale de toponymie et de dialectologie.</subfield>
+      <subfield code="b">Section flamande.</subfield>
+      <subfield code="t">Werken ;</subfield>
+      <subfield code="v">12.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01029cam a2200325   4500</leader>
+    <controlfield tag="001">12212</controlfield>
+    <controlfield tag="005">20140930180333.0</controlfield>
+    <controlfield tag="008">801221s1958uuuune a          000 0 dut u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">74221607</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687504619</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG1065318-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAB2358YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">12212</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NBuU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">dut</subfield>
+      <subfield code="a">eng</subfield>
+      <subfield code="a">fre</subfield>
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">ND673.R9</subfield>
+      <subfield code="b">B23</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01065318</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">NJ18.R82</subfield>
+      <subfield code="b">B37</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Baudouin, Frans.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Herinneringen aan P. P. Rubens;</subfield>
+      <subfield code="b">tentoonstelling Juli-Augustus 1958, Rubenshuis; catalogus</subfield>
+      <subfield code="c">[door F. Baudouin.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">Antwerpen,</subfield>
+      <subfield code="c">1958]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">36 p.</subfield>
+      <subfield code="b">[11] p. of illus.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">At head of title: Stad Antwerpen.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Captions in English, French, and German: 8 p. inserted.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 11.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Rubens, Peter Paul,</subfield>
+      <subfield code="c">Sir,</subfield>
+      <subfield code="d">1577-1640.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Rubens, Peter Paul,</subfield>
+      <subfield code="c">Sir,</subfield>
+      <subfield code="d">1577-1640.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Rubenshuis (Antwerp, Belgium)</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01404cam a2200349   4500</leader>
+    <controlfield tag="001">41220</controlfield>
+    <controlfield tag="005">20191206141222.0</controlfield>
+    <controlfield tag="008">801221s1972uuuube ceh        000 0 dut u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">72372222</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687863106</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG1747168-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAE1533YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">41220</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ViU</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">dut</subfield>
+      <subfield code="b">eng</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-be---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2="4">
+      <subfield code="a">LA819.A7</subfield>
+      <subfield code="b">D33 1972</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01747168</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">LA819.A7</subfield>
+      <subfield code="b">D33 1972</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Daele, Henk van.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Geschiedenis van het stedelijk lager onderwijs te Antwerpen van 1830 tot 1872.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">[Brussel],</subfield>
+      <subfield code="b">Pro Civitate, [Gemeentekrediet van België, Panhecolaan, 44],</subfield>
+      <subfield code="c">1972.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">x, 367 p.</subfield>
+      <subfield code="b">ports., plans, tables, facsim.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Pro Civitate.  Historische uitgaven.  Reeks in -8, nr. 3l</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Originally presented as the author's thesis, Ghent, 1967.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Summary in English and French.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 315-328.</subfield>
+    </datafield>
+    <datafield tag="583" ind1="1" ind2=" ">
+      <subfield code="a">committed to retain</subfield>
+      <subfield code="c">20190228</subfield>
+      <subfield code="d">20421231</subfield>
+      <subfield code="f">HathiTrust</subfield>
+      <subfield code="5">CtY</subfield>
+      <subfield code="z">To help ensure preservation of print and digital collections, this title is retained by Yale University Library on behalf of the HathiTrust Shared Print Program.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Education, Primary</subfield>
+      <subfield code="z">Belgium</subfield>
+      <subfield code="z">Antwerp</subfield>
+      <subfield code="x">History.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Collection Histoire Pro Civitate.</subfield>
+      <subfield code="n">Série in-8o ;</subfield>
+      <subfield code="v">no 31.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00625cas a22002291  4500</leader>
+    <controlfield tag="001">5742371</controlfield>
+    <controlfield tag="005">20110323182251.0</controlfield>
+    <controlfield tag="008">uuuuuuuuunyuuu p       0  0 0eng d</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn686874788</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">PMA0025YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">5742371</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocn213709510</subfield>
+    </datafield>
+    <datafield tag="130" ind1="0" ind2=" ">
+      <subfield code="a">Matrix (Rochester, N.Y.)</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Matrix.</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2=" ">
+      <subfield code="a">Rochester,</subfield>
+      <subfield code="b">Rochester Institute of Technology.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">39 cm.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Graphic arts</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Decoration and ornament</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Rochester Institute of Technology.</subfield>
+    </datafield>
+    <datafield tag="927" ind1=" " ind2=" ">
+      <subfield code="a">9412RO</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031197</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">rep</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>00781cam a22002651  4500</leader>
+    <controlfield tag="001">5245404</controlfield>
+    <controlfield tag="005">20210611173541.0</controlfield>
+    <controlfield tag="008">930118u19621960nyu           000 0 eng</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn702897397</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(ESL)20004285</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">PAD7006YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">5245404</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+      <subfield code="a">ESLC</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">433887247</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+      <subfield code="a">ESLC</subfield>
+      <subfield code="b">BX8.2</subfield>
+      <subfield code="c">T3813 1962 (LC)</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Tavard, George H.</subfield>
+      <subfield code="q">(George Henry),</subfield>
+      <subfield code="d">1922-2007.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Two centuries of ecumenism:</subfield>
+      <subfield code="b">the search for unity,</subfield>
+      <subfield code="c">by George H. Tavard. Translated by Royce W. Hughes.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">New American Library,</subfield>
+      <subfield code="c">1962, c1960.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">192 p.</subfield>
+      <subfield code="c">18 cm.</subfield>
+    </datafield>
+    <datafield tag="440" ind1=" " ind2="2">
+      <subfield code="a">A Mentor-Omega book,</subfield>
+      <subfield code="v">MT465</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Ecumenical movement.</subfield>
+    </datafield>
+    <datafield tag="927" ind1=" " ind2=" ">
+      <subfield code="a">ESLC</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031197</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">ESLC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01336cas a2200373 a 4500</leader>
+    <controlfield tag="001">29059</controlfield>
+    <controlfield tag="005">20151110181454.0</controlfield>
+    <controlfield tag="008">840126u19uu9999et  x    b   i0   a0eng d</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">84640138</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687726900</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAC9293YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">29059</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">CSfSt</subfield>
+      <subfield code="c">CSfSt</subfield>
+      <subfield code="d">DLC</subfield>
+      <subfield code="d">m/c</subfield>
+      <subfield code="d">NST</subfield>
+      <subfield code="d">CtY-SSE</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">lc</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">f------</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2="0">
+      <subfield code="a">Z7554.A34</subfield>
+      <subfield code="b">B52</subfield>
+      <subfield code="a">HA4671</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm10343621</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2=" ">
+      <subfield code="a">016.316</subfield>
+      <subfield code="2">19</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Bibliography of African statistical publications /</subfield>
+      <subfield code="c">Economic Commission for Africa = Bibliographie des publications statistiques africaines / Commission économique pour l'Afrique.</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="1">
+      <subfield code="a">Bibliographie des publications statistiques africaines</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="1">
+      <subfield code="a">Bibliographie des publications statistiques sur l'Afrique</subfield>
+    </datafield>
+    <datafield tag="260" ind1="0" ind2="0">
+      <subfield code="a">[s.l.] :</subfield>
+      <subfield code="b">The Commission.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v. ;</subfield>
+      <subfield code="c">28 cm.</subfield>
+    </datafield>
+    <datafield tag="310" ind1=" " ind2=" ">
+      <subfield code="a">Irregular</subfield>
+    </datafield>
+    <datafield tag="362" ind1="1" ind2=" ">
+      <subfield code="a">Began in 1962.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Description based on: 1969-June 1975; title from text.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Vol. for 1962 has parallel title: Bibliographie des publications statistiques sur l'Afrique.</subfield>
+    </datafield>
+    <datafield tag="546" ind1=" " ind2=" ">
+      <subfield code="a">English and French.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">Africa</subfield>
+      <subfield code="x">Statistics</subfield>
+      <subfield code="v">Bibliography</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">United Nations.</subfield>
+      <subfield code="b">Economic Commission for Africa.</subfield>
+    </datafield>
+    <datafield tag="927" ind1=" " ind2=" ">
+      <subfield code="a">tape</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">REC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01202cas a2200361 a 4500</leader>
+    <controlfield tag="001">37273</controlfield>
+    <controlfield tag="005">20151103181904.0</controlfield>
+    <controlfield tag="008">750609u19669999fr  x    s   i0   a0eng</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">83640640</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn687819727</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAD7558YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">37273</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">FGULS</subfield>
+      <subfield code="d">MnMULS</subfield>
+      <subfield code="d">NIC</subfield>
+      <subfield code="d">N</subfield>
+      <subfield code="d">DLC</subfield>
+      <subfield code="d">NST</subfield>
+      <subfield code="d">MH</subfield>
+      <subfield code="d">m/c</subfield>
+      <subfield code="d">MH</subfield>
+      <subfield code="d">NST</subfield>
+      <subfield code="d">WaU</subfield>
+      <subfield code="d">NST</subfield>
+      <subfield code="d">DNAL</subfield>
+      <subfield code="d">NST</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">eng</subfield>
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">lc</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2="0">
+      <subfield code="a">HD9000.1</subfield>
+      <subfield code="b">.F5894</subfield>
+    </datafield>
+    <datafield tag="070" ind1="0" ind2=" ">
+      <subfield code="a">HD9000.5.O7</subfield>
+    </datafield>
+    <datafield tag="072" ind1=" " ind2="0">
+      <subfield code="a">T000</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm01381462</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2=" ">
+      <subfield code="a">339.4/86413/00212</subfield>
+      <subfield code="2">19</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Food consumption statistics =</subfield>
+      <subfield code="b">Statistiques de la consommation des denrées alimentaires.</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="0">
+      <subfield code="a">Basic statistics OECD/OCDE statistiques de base</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="1">
+      <subfield code="a">Statistiques de la consommation des denrées alimentaires</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris :</subfield>
+      <subfield code="b">OCDE,</subfield>
+      <subfield code="c">1968-</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">32 cm.</subfield>
+    </datafield>
+    <datafield tag="362" ind1="0" ind2=" ">
+      <subfield code="a">1954/1966-</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">At head of title, 1954-1966: Basic statistics OECD/OCDE  statistiques de base.</subfield>
+    </datafield>
+    <datafield tag="546" ind1=" " ind2=" ">
+      <subfield code="a">In English and French.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Food consumption</subfield>
+      <subfield code="v">Statistics</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Organisation for Economic Co-operation and Development.</subfield>
+    </datafield>
+    <datafield tag="927" ind1=" " ind2=" ">
+      <subfield code="a">tape</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+      <subfield code="a">REC</subfield>
+    </datafield>
+  </record>
+  <record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01471cas a2200385 a 4500</leader>
+    <controlfield tag="001">53883</controlfield>
+    <controlfield tag="005">20110324193612.0</controlfield>
+    <controlfield tag="008">920428u19uu9999fi uu p  b    0uuub0eng d</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">75534884 //r862</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocn688001056</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CStRLIN)CTYG92-S338</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="9">AAF4274YL</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">53883</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">m/c</subfield>
+      <subfield code="d">CStRLIN</subfield>
+      <subfield code="d">CtY</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">engfin</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+      <subfield code="a">lc</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-fi---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">Z7164.E2</subfield>
+      <subfield code="b">K35</subfield>
+      <subfield code="a">HB9</subfield>
+    </datafield>
+    <datafield tag="079" ind1=" " ind2=" ">
+      <subfield code="a">ocm04530613</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Kansantaloustieteellinen kirjallisuus Suomessa =</subfield>
+      <subfield code="b">Bibliography of economics literature in Finland.</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="1">
+      <subfield code="a">Bibliography of economics literature in Finland</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Helsinki :</subfield>
+      <subfield code="b">Helsingin Kauppakorkeakoulu, Kirjasto,</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">v. ;</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">19  -73: Helsingin Kauppakorkeakoulun kirjaston julkaisuja</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">1974-75: Helsingin Kauppakorkeakoulun julkaisuja. D</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Description based on: 1974.</subfield>
+    </datafield>
+    <datafield tag="546" ind1=" " ind2=" ">
+      <subfield code="a">English or Finnish.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Economics</subfield>
+      <subfield code="x">Periodicals</subfield>
+      <subfield code="v">Bibliography</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Economics</subfield>
+      <subfield code="z">Finland</subfield>
+      <subfield code="x">Periodicals</subfield>
+      <subfield code="v">Bibliography</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Managerial economics</subfield>
+      <subfield code="x">Periodicals</subfield>
+      <subfield code="v">Bibliography</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Managerial economics</subfield>
+      <subfield code="z">Finland</subfield>
+      <subfield code="x">Periodicals</subfield>
+      <subfield code="v">Bibliography</subfield>
+      <subfield code="v">Periodicals.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Helsingin Kauppakorkeakoulu.</subfield>
+      <subfield code="b">Kirjasto.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Helsingin Kauppakorkeakoulun kirjaston julkaisuja.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Helsingin Kauppakorkeakoulun julkaisuja.</subfield>
+      <subfield code="n">D.</subfield>
+    </datafield>
+    <datafield tag="928" ind1=" " ind2=" ">
+      <subfield code="a">AC031297</subfield>
+    </datafield>
+  </record>
+</collection>

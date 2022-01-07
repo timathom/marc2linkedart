@@ -1,0 +1,88 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="related_title_entities" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Related title entities</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--tt434-->
+      <revised modified="2021-11-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-20"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin,Maggie Yue"/>
+    <data name="completed" value="2021-11-18T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <context/>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: RelatedTitleEntries
+sampleBibs:
+  - 2733
+  - 3931
+fieldSpec:
+  - 505agrt
+trimPunctuation: true
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process each entry in a<codeph>505</codeph>contents note as a top-level<codeph>LinguisticObject</codeph>.</cmd>
+        <substeps>
+          <substep>
+            <cmd>If subfields<codeph>grt</codeph>are present, join the string values of MARC<codeph>505agrt</codeph>with a whitespace character.</cmd>
+          </substep>
+          <substep>
+            <cmd>Split the joined string on double hyphen characters (<codeph>--</codeph>).</cmd>
+          </substep>
+          <substep>
+            <cmd>For each title entry, generate and store a top-level related title entity, each identified by an IRI.</cmd>
+          </substep>
+          <substep>
+            <cmd>Within each top-level related title entity, include a <codeph>part_of</codeph> reference to the <codeph>LinguisticObject</codeph> representing the bibliographic record with the <codeph>505</codeph> contents note.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>3931</yulbibid>
+          <codeblock>{
+  "id": "https://lux.collections.yale.edu/data/text/08bdfe14-6deb-494c-b7c1-93a32d568ca4",
+  "type": "LinguisticObject",
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/2189ea9f-98b9-48fb-9745-eaaffcff360d",
+      "type": "LinguisticObject",
+      "_label": "The early dynastic cemeteries of Naga-ed-Dêr"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "pt. 3. A provincial cemetery of the Pyramid Age, Naga-ed-Dêr / by George A. Reisner",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

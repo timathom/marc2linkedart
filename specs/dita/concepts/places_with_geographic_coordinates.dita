@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="places_with_geographic_coordinates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Places with geographic coordinates</title>
+  <shortdesc>Place entities derived from <codeph>MARC 034</codeph>.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-11-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: PlacesWithGeo
+sampleBibs:
+  - 970151 # 008, 034
+  - 3906934 # 008, 034
+  - 5123661 # 034 with duplicate values
+# Source data fields
+fieldSpec:
+  - 034defg
+  - 651a
+trimPunctuation: true
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <context>
+      <p>Geographic coordinates should be recorded as points or polygons using the <xref format="html" href="https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry" scope="external">WKT syntax</xref>. MARC 034 subfields representing latitude and longitude are not always clean or consistent, so care should be taken when processing the data. Sometimes, the data will be in decimal form (e.g., <codeph>085.000000</codeph>) and sometimes in <i>hdddmmss</i> (hemisphere-degrees-minutes-seconds) form.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Processing each <codeph>034</codeph> field separately and generate a separate top-level place resource for each.</cmd>
+        <info>
+          <p>Sometimes the latitude/longitude coordinates will be repeated in each pair of subfields. First check to see whether the information is repeated or whether there are four different values.</p>
+          <p>If <codeph>034d == 034e and 034f == 034g</codeph>, select the first nonempty occurrence of 034d and 034f.</p>
+          <p>Else, select the first nonempty occurrence of each distinct subfield.</p>  
+        </info>
+      </step>
+      <step>
+        <cmd>Check the subfield values.</cmd>
+        <info>
+          <ol id="ol_zsh_bh4_rrb">
+            <li>If the subfield contains a period (<codeph>.</codeph>), assume the value is in decimal form and continue processing.</li>
+            <li>Else, parse the data in <i>hdddmmss</i> form and convert it to decimal form: <table id="table_ath_bh4_rrb">
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>Step</entry>
+                      <entry>Variable</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>Store the first character in the string.</entry>
+                      <entry><varname>first</varname></entry>
+                    </row>
+                    <row>
+                      <entry>Store the rest of the string following <codeph>first</codeph>.</entry>
+                      <entry><varname>rest</varname></entry>
+                    </row>
+                    <row>
+                      <entry>Store the last four characters of <codeph>rest</codeph>.</entry>
+                      <entry><varname>rightHand</varname></entry>
+                    </row>
+                    <row>
+                      <entry>Store the substring of <codeph>rest</codeph> to the left of <codeph>rightHand</codeph>.</entry>
+                      <entry><varname>leftHand</varname></entry>
+                    </row>
+                    <row>
+                      <entry>
+                        <p>Clean the value of <codeph>leftHand</codeph>: <ol id="ol_frj_4wk_rrb">
+                            <li>Convert the value to lower case.</li>
+                            <li>Remove leading zeroes or occurrences of the letter <i>o</i> (a typo for zero).</li>
+                          </ol></p>
+                      </entry>
+                      <entry><varname>cleanedLeftHand</varname></entry>
+                    </row>
+                    <row>
+                      <entry>Concatenate the value of <codeph>cleanedLeftHand</codeph> and <codeph>rightHand</codeph> with a period (<codeph>.</codeph>).</entry>
+                      <entry><varname>decimalValue</varname></entry>
+                    </row>
+                    <row>
+                      <entry>Determine the sign of <codeph>decimalValue</codeph>.<ul id="ul_ixh_kxk_rrb">
+                          <li>If <codeph>first</codeph> equals <codeph>-</codeph>, <codeph>W</codeph>, or <codeph>S</codeph>, the sign is negative.</li>
+                          <li>Else, it is positive (unsigned).</li>
+                        </ul></entry>
+                      <entry><varname>signedDecimalValue</varname></entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table></li>
+          </ol>
+        </info>
+      </step>
+      <step>
+        <cmd>Construct the WKT string.</cmd>
+        <info>
+          <p>If 034 includes four distinct subfield values, construct a WKT polygon: <codeblock><![CDATA["POLYGON((" + 034d + " " + 034f + ", " + 034e + " " + 034f + ", " + 034e + " " + 034g + ", " + 034d + " " + 034g + ", " + 034d + " " + 034f + "))"]]></codeblock></p>
+          <p>Else, construct a WKT point: <codeblock><![CDATA["POINT(" + 034d + " " + 034f + ")"]]></codeblock></p>
+        </info>
+      </step>
+      <step>
+        <cmd>Generate a top-level place resource, identified by an IRI, with the value of the WKT coordinates.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Use the value of the WKT string as a key for matching and merging Place entities with the same coordinates.</cmd>
+          </substep>
+          <substep>
+            <cmd>As the <codeph>_label</codeph> and <codeph>Primary Name</codeph> of the Place entity, take the string value of the <b>first</b>
+              <codeph>651a</codeph> subject heading in the MARC bibliographic record.</cmd>
+          </substep>
+          <substep>
+            <cmd>Include the string value of additional <codeph>651a</codeph> subject headings as <codeph>Name</codeph> objects in the <codeph>identified_by</codeph> array.</cmd>
+          </substep>
+          <substep>
+            <cmd>If a WKT string matches an existing entry, but the labels extracted from <codeph>651a</codeph> are different, do not change the existing <codeph>_label</codeph> or <codeph>Primary Name</codeph>, but add a new <codeph>Name</codeph> object to the <codeph>identified_by</codeph> array for the top-level Place entity.</cmd>
+          </substep>
+        </substeps>
+        <stepxmp>
+          <yulbibid>970151</yulbibid>
+          <codeblock><![CDATA[034 1 $a a $b 50000 $d W0611800 $e W0610600 $f N0132300 $g N0130600]]></codeblock>
+          <codeblock><![CDATA[651 0 $a Kingstown (Saint Vincent and the Grenadines) $v Maps.]]></codeblock>
+          <codeblock><![CDATA[651 0 $a Saint Vincent $v Maps.]]></codeblock>
+        </stepxmp>
+        <stepresult>
+          <yulbibid>970151</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/place1",
+  "type": "Place",
+  "_label": "Kingstown (Saint Vincent and the Grenadines)",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Kingstown (Saint Vincent and the Grenadines)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Saint Vincent"
+    }
+  ],
+  "defined_by": "POLYGON((-61.1800 13.2300, -61.0600 13.2300, -61.0600 13.0600, -61.1800 13.0600, -61.1800 13.2300))"
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Add an embedded reference to the place entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the <codeph>_label</codeph> of the place entity, take the value of the top-level entity label.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>970151</yulbibid>
+          <codeblock><![CDATA[{
+  "represents": [
+    {
+      "id": "https://lux.collections.yale.edu/data/place/place1",
+      "type": "Place"
+      "_label": "Kingstown (Saint Vincent and the Grenadines)"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

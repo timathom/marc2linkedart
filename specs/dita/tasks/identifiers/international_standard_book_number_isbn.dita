@@ -1,0 +1,100 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="international_standard_book_number_isbn" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>International Standard Book Number (ISBN)</title>
+  <shortdesc>The International Standard Book Number (ISBN) is a publisher-assigned commercial book identifier that is intended to be unique. May appear in 10- or 13-digit formats.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin,Maggie Yue"/>
+    <data name="completed" value="2021-10-13T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_o4r_4fn_frb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock conkeyref="specs/tag020"/>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Skip<codeph>020</codeph>if<codeph>020z</codeph>(canceled/invalid ISBN).</cmd>
+      </step>
+      <step>
+        <cmd>Get value of<codeph>020a</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>Process any<codeph>020q</codeph>(qualifying information) values.</cmd>
+        <substeps>
+          <substep>
+            <cmd>If 2 or more<codeph>020q</codeph>, join values with a whitespace character.</cmd>
+          </substep>
+          <substep>
+            <cmd>If value extracted from<codeph>020q</codeph>begins and ends with open/closing parentheses, return the value.</cmd>
+          </substep>
+          <substep>
+            <cmd>Else, concatenate the value with open/closing parentheses.</cmd>
+          </substep>
+          <substep>
+            <cmd>Join the values extracted from<codeph>020a</codeph>and<codeph>020q</codeph>with a whitespace character.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>
+          <ph keyref="output-vals"/>ISSN:</cmd>
+      </step>
+    </steps>
+    <result>
+      <div conkeyref="linked_art_ex/ex-identifier-020"/>
+    </result>
+  </taskbody>
+</task>

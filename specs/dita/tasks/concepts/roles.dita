@@ -1,0 +1,1896 @@
+<task id="roles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Roles</title>
+  <shortdesc>Roles for related entities within activities.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-11-05"/>
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-04"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword/>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: Roles
+sampleBibs:
+  - 693
+# Source data fields
+fieldSpec:
+  - 100e4
+  - 110e4
+  - 111j4
+  - 600e4
+  - 610e4
+  - 611j4
+  - 700e4
+  - 710e4
+  - 711j4
+  - 800e4
+  - 810e4
+  - 811j4
+trimPunctuation: true
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <context>
+      <p>The role of an agent within an activity is derived from <codeph>$e</codeph> (relator term for organizations and persons), <codeph>$j</codeph> (relator term for conferences/meetings), or <codeph>$4</codeph> (relationship code for any entity type). When those subfields are absent, a generic role of <codeph>creator</codeph> is assigned when <codeph>1XX</codeph> is the source or <codeph>contributor</codeph> when <codeph>7XX</codeph> is the source.</p>
+      <p>The mapping table below should be used to generate unique concept entities for role terms. For entries in the table with a type of <codeph>translations</codeph>, the <codeph>Target</codeph> column represents a reference to an <q>authorized</q> version of the term that appears later in the table. For all other entries, the <codeph>Target</codeph> column represents an <codeph>equivalent</codeph> IRI that should be included in the top-level resource description for the role concept.</p>
+      <p>
+        <table id="table_h12_q3j_dsb">
+          <title>Roles terms mapping</title>
+          <tgroup cols="4">
+            <colspec colname="col1" colnum="1" colwidth="93"/>
+            <colspec colname="col2" colnum="2" colwidth="187"/>
+            <colspec colname="col3" colnum="3" colwidth="43"/>
+            <colspec colname="col4" colnum="4" colwidth="293"/>
+            <thead>
+              <row>
+                <entry>Type</entry>
+                <entry>Source</entry>
+                <entry>Code</entry>
+                <entry>Target</entry>
+              </row>
+            </thead>
+            <tbody>             
+              <row>
+                <entry>translations</entry>
+                <entry>acteur</entry>
+                <entry/>
+                <entry>actor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>architects</entry>
+                <entry/>
+                <entry>architect</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>auteur</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>auth</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>authors</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>binders</entry>
+                <entry/>
+                <entry>binder</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>binding designers</entry>
+                <entry/>
+                <entry>binding designer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>bookjacket designer</entry>
+                <entry/>
+                <entry>book jacket designer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>cast</entry>
+                <entry/>
+                <entry>actor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>cast member</entry>
+                <entry/>
+                <entry>actor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>co-author</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>collaborator</entry>
+                <entry/>
+                <entry>contributor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>colourist</entry>
+                <entry/>
+                <entry>colorist</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>comp</entry>
+                <entry/>
+                <entry>composer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>defendent</entry>
+                <entry/>
+                <entry>defendant</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>director of photography</entry>
+                <entry/>
+                <entry>cinematographer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>ed</entry>
+                <entry/>
+                <entry>editor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>honouree</entry>
+                <entry/>
+                <entry>honoree</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>ill</entry>
+                <entry/>
+                <entry>illustrator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>illus</entry>
+                <entry/>
+                <entry>illustrator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>illustrations</entry>
+                <entry/>
+                <entry>illustrator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>main author</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>maker</entry>
+                <entry/>
+                <entry>creator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>metal engraver</entry>
+                <entry/>
+                <entry>metal-engraver</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>onscreen participant</entry>
+                <entry/>
+                <entry>on-screen participant</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>onscreen presenter</entry>
+                <entry/>
+                <entry>on-screen presenter</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>prin</entry>
+                <entry/>
+                <entry>printer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>printers</entry>
+                <entry/>
+                <entry>printer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>ptr</entry>
+                <entry/>
+                <entry>printer</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>pub</entry>
+                <entry/>
+                <entry>publisher</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>publishers</entry>
+                <entry/>
+                <entry>publisher</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>respondant</entry>
+                <entry/>
+                <entry>respondent</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>tr</entry>
+                <entry/>
+                <entry>translator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>trad</entry>
+                <entry/>
+                <entry>translator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>traducteur</entry>
+                <entry/>
+                <entry>translator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>trans</entry>
+                <entry/>
+                <entry>translator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>wen zi zuo zhe</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>wood engraver</entry>
+                <entry/>
+                <entry>wood-engraver</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>writer</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>主编</entry>
+                <entry/>
+                <entry>editor in chief</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>原着</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>撰</entry>
+                <entry/>
+                <entry>author</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编</entry>
+                <entry/>
+                <entry>editor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编校</entry>
+                <entry/>
+                <entry>editor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编纂</entry>
+                <entry/>
+                <entry>compiler</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编著</entry>
+                <entry/>
+                <entry>editor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编译</entry>
+                <entry/>
+                <entry>compiler</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编辑</entry>
+                <entry/>
+                <entry>editor</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>编选</entry>
+                <entry/>
+                <entry>compiler</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>译</entry>
+                <entry/>
+                <entry>translator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>译述</entry>
+                <entry/>
+                <entry>translator</entry>
+              </row>
+              <row>
+                <entry>translations</entry>
+                <entry>辑</entry>
+                <entry/>
+                <entry>editor</entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>abridger</entry>
+                <entry>abr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300440753" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>adapter</entry>
+                <entry>adp</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300410355" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>after</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>animator</entry>
+                <entry>anm</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025646" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>architect</entry>
+                <entry>arc</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300024987" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>architect_GROUP</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300312082" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>arranger</entry>
+                <entry>arr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025667" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>artist</entry>
+                <entry>art</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025103" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>author</entry>
+                <entry>aut</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025492" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>binder</entry>
+                <entry>bnd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025704" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>binding designer</entry>
+                <entry>bdd</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/bdd" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>book artist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300386346" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>book designer</entry>
+                <entry>bkd</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/bkd" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>book jacket designer</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>book producer</entry>
+                <entry>bkp</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/bkp" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>bookbinder</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025704" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>bookplate designer</entry>
+                <entry>bpd</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/bpd" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>calligrapher</entry>
+                <entry>cll</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025107" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>cartographer</entry>
+                <entry>ctg</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025593" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>carver</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025256" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>casemaker</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>chromo-lithographer</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300251177" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>clockmaker</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025397" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>collotyper</entry>
+                <entry>clt</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/clt" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>colorist</entry>
+                <entry>clr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300435165" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>compiler</entry>
+                <entry>com</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300121766" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>composer</entry>
+                <entry>cmp</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025671" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>compositor</entry>
+                <entry>cmt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025708" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>contributor</entry>
+                <entry>ctb</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300403974" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>copyist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025189" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>cover artist</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>cover designer</entry>
+                <entry>cov</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/cov" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>creator</entry>
+                <entry>cre</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300386174" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>decorator</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300435238" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>designer</entry>
+                <entry>dsr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025190" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>diesinker</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300386327" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>draftsman</entry>
+                <entry>drm</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300112172" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>editor</entry>
+                <entry>edt</entry>
+                <entry><xref format="html" href="http://vocab.getty.edu/aat/300025526" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>editor in chief</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>electrotyper</entry>
+                <entry>elt</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/elt" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>engraver</entry>
+                <entry>egr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300239410" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>etcher</entry>
+                <entry>etr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025174" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>fabricator</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300251917" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>fore-edge painter</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>gilder</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025261" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>illuminator</entry>
+                <entry>ilu</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025122" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>illustrator</entry>
+                <entry>ill</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025123" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>inker</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>inscriber</entry>
+                <entry>ins</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300121785" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>inventor</entry>
+                <entry>inv</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025845" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>letterer</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025115" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>lithographer</entry>
+                <entry>ltg</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025175" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>lyricist</entry>
+                <entry>lyr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025675" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>manufacturer</entry>
+                <entry>mfr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025230" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>metal-engraver</entry>
+                <entry>mte</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/mte" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>mint</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300205362" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>modeler</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025417" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>mounter</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>organizer</entry>
+                <entry>orm</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/orm" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>originator</entry>
+                <entry>org</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300386177" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>paper engineer</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>paper maker</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025344" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>papermaker</entry>
+                <entry>ppm</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025344" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>penciller</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>photographer</entry>
+                <entry>pht</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025687" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>playing card maker</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>potter</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025414" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>printer</entry>
+                <entry>prt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025732" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>printer of plates</entry>
+                <entry>pop</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025733" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>printer_GROUP</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300386347" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>printmaker</entry>
+                <entry>prm</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025164" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>printmaker_GROUP</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300312299" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>proofreader</entry>
+                <entry>pfr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300418027v" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>repairer</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>screenwriter</entry>
+                <entry>aus</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025515" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>scribe</entry>
+                <entry>scr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025580" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>sculptor</entry>
+                <entry>scl</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025181" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>series editor</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>stereotyper</entry>
+                <entry>str</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025743" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>transcriber</entry>
+                <entry>trc</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300440751" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>translator</entry>
+                <entry>trl</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025601" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>type designer</entry>
+                <entry>tyd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300417840" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>typesetter</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025744" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>typographer</entry>
+                <entry>tyg</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025745" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>wood-engraver</entry>
+                <entry>wde</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025167" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>production</entry>
+                <entry>woodcutter</entry>
+                <entry>wdc</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025178" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>commissioned by</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300400903" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>commissioning body</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300400903" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>degree granting institution</entry>
+                <entry>dgg</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/dgg" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>degree supervisor</entry>
+                <entry>dgs</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/dgs" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>funder</entry>
+                <entry>fnd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300188572" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>funder/sponsor</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300188572" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>host institution</entry>
+                <entry>his</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/his" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>sponsor</entry>
+                <entry>spn</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300188572" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>sponsoring body</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300400903" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>sponsor</entry>
+                <entry>sponsoring institution</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300188572" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>bank</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>bookseller</entry>
+                <entry>bsl</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025244" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>broadcaster</entry>
+                <entry>brd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025502" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>distributor</entry>
+                <entry>dst</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300404885" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>enacting jurisdiction</entry>
+                <entry>enj</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/enj" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>film distributor</entry>
+                <entry>fds</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/fds" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>issuer</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>issuing body</entry>
+                <entry>isb</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300386627" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>publisher</entry>
+                <entry>pbl</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025574" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>publisher_GROUP</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300386627" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>publication</entry>
+                <entry>retailer</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025246" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>actor</entry>
+                <entry>act</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025658" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>bass</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300206743" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>boy soprano</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>camera</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>choreographer</entry>
+                <entry>chr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025649" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>cinematographer</entry>
+                <entry>cng</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025650" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>clarinet</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>conductor</entry>
+                <entry>cnd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025672" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>costume designer</entry>
+                <entry>cst</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300163428" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>dancer</entry>
+                <entry>dnc</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025653" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>direction</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>director</entry>
+                <entry>drt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025654" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>film director</entry>
+                <entry>fmd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300312209" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>film editor</entry>
+                <entry>flm</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300386237" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>film producer</entry>
+                <entry>fmp</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300312211" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>filmmaker</entry>
+                <entry>fmk</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300075154" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>guitarist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300235042" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>hornist</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>instrumentalist</entry>
+                <entry>itr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300162131" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>interpreter</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>interviewee</entry>
+                <entry>ive</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/ive" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>interviewer</entry>
+                <entry>ivr</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/ivr" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>librettist</entry>
+                <entry>lbt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025674" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>lighting designer</entry>
+                <entry>lgd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300386275" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>music</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>musician</entry>
+                <entry>mus</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025666" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>narrator</entry>
+                <entry>nrt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300417254" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>on-screen participant</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>on-screen presenter</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>orchestra</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025666" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>organist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300235015" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>performer</entry>
+                <entry>prf</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300068931" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>pianist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300235018" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>praeses</entry>
+                <entry>pra</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/pra" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>producer</entry>
+                <entry>pro</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300197742" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>production</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>production company</entry>
+                <entry>prn</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300419391" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>production designer</entry>
+                <entry>prs</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300435129" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>production personnel</entry>
+                <entry>prd</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/prd" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>recording engineer</entry>
+                <entry>rce</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/rce" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>saxophonist</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>script</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>set designer</entry>
+                <entry>std</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300435127" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>singer</entry>
+                <entry>sng</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025684" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>soprano</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300206741" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>stage director</entry>
+                <entry>sgd</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300312210" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>stage manager</entry>
+                <entry>stm</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/stm" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>television director</entry>
+                <entry>tld</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/tld" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>television producer</entry>
+                <entry>tlp</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/tlp" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>tenor</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300206746" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>trombonist</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>trumpet player</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300235064" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>video designer</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>videographer</entry>
+                <entry>vdg</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300263895" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>violist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300235045" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>violoncellist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300235047" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>vocalist</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025684" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>performance</entry>
+                <entry>voice actor</entry>
+                <entry>vac</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/vac" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>encounter</entry>
+                <entry>art collector</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>encounter</entry>
+                <entry>collector</entry>
+                <entry>col</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025234" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>encounter</entry>
+                <entry>discoverer</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>encounter</entry>
+                <entry>expedition</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>auctioneer</entry>
+                <entry>auc</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025208" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>client</entry>
+                <entry>cli</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025833" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>commissaire-priseur</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300412173" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>copyright holder</entry>
+                <entry>cph</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/cph" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>current owner</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>donor</entry>
+                <entry>dnr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025240" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>exchanger</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>former owner</entry>
+                <entry>fmo</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/fmo" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>land owner</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>licensee</entry>
+                <entry>lse</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/lse" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>licensor</entry>
+                <entry>lso</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/lso" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>owner</entry>
+                <entry>own</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300203630" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>patron</entry>
+                <entry>pat</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300115251" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>previous owner</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>purchaser</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025211" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>source</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>provenance</entry>
+                <entry>vendor</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300150791" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>exhibition</entry>
+                <entry>borrower</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300311675" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>exhibition</entry>
+                <entry>exhibition</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>exhibition</entry>
+                <entry>lender</entry>
+                <entry>len</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/len" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>addressee</entry>
+                <entry>rcp</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/rcp" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>advertiser</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300252554" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>annotator</entry>
+                <entry>ann</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/ann" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>appellant</entry>
+                <entry>apl</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/apl" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>appellee</entry>
+                <entry>ape</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/ape" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>assignee</entry>
+                <entry>asg</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/asg" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>associated name</entry>
+                <entry>asn</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/asn" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>auxilium</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>claimant</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>commentator</entry>
+                <entry>cmm</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/cmm" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>complainant</entry>
+                <entry>cpl</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/cpl" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>conservator</entry>
+                <entry>con</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300102842" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>correspondent</entry>
+                <entry>crp</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300225705" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>court reporter</entry>
+                <entry>crt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300136440" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>curator</entry>
+                <entry>cur</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025633" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>dedicatee</entry>
+                <entry>dte</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300121765" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>defendant</entry>
+                <entry>dfd</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/dfd" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>digitiser</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>editor and translator</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>honoree</entry>
+                <entry>hnr</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300404867" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>judge</entry>
+                <entry>jud</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025625" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>magistrate</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025467" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>moderator</entry>
+                <entry>mod</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/mod" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>other</entry>
+                <entry>oth</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/oth" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>panelist</entry>
+                <entry>pan</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/pan" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>petitioner</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>plaintiff</entry>
+                <entry>ptf</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300440758" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>presenter</entry>
+                <entry>pre</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/pre" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>pressman</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025731" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>proprietor</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300025241" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>pseud</entry>
+                <entry/>
+                <entry><xref href="http://vocab.getty.edu/aat/300404657" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>recipient</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>reporter</entry>
+                <entry>rpt</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025508" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>respondent</entry>
+                <entry>rsp</entry>
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/rsp" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>reviewer</entry>
+                <entry>rev</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300440750" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>sender</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>signer</entry>
+                <entry>sgn</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300137375" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>speaker</entry>
+                <entry>spk</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300136462" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>subject of parody</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>surveyor</entry>
+                <entry>srv</entry>
+                <entry><xref href="http://vocab.getty.edu/aat/300025100" format="html" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>teacher</entry>
+                <entry>tch</entry>
+                <entry><xref format="html" href="http://vocab.getty.edu/aat/300025529" scope="external"/></entry>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>user</entry>
+                <entry/>
+                <entry/>
+              </row>
+              <row>
+                <entry>other</entry>
+                <entry>witness</entry>
+                <entry>wit</entry>                
+                <entry><xref href="http://id.loc.gov/vocabulary/relators/wit" format="html" scope="external"/></entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>       
+      </p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Generate and store the top-level concept resources using the mapping table, each identified by an IRI.</cmd>
+        <substeps>
+          <substep>
+            <cmd>For the <codeph>_label</codeph> and <codeph>Primary Name</codeph>, capitalize the first letter of the term.</cmd>
+          </substep>
+          <substep>
+            <cmd>For each entry in the mapping table with an IRI in the <codeph>Target</codeph> column, add a corresponding <codeph>equivalent</codeph> reference.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/271d291f-0d42-4abf-bf43-070b241edc98",
+  "type": "Type",
+  "_label": "Translator",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Translator",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://vocab.getty.edu/aat/300025601",
+      "type": "Type"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>For each <codeph>1XX</codeph>, <codeph>6XX</codeph>, <codeph>7XX</codeph>, or <codeph>8XX</codeph> field, inspect subfields <codeph>e</codeph> (all but <codeph>111</codeph>, <codeph>611</codeph>, <codeph>711</codeph>, and <codeph>811</codeph>), <codeph>j</codeph> (only <codeph>X11)</codeph>, and <codeph>4</codeph> (all) for a role term or code.</cmd>
+      </step>
+      <step>
+        <cmd>Match role terms in <codeph>e</codeph> or <codeph>j</codeph> and role codes in <codeph>4</codeph> against the top-level entities corresponding to the terms and codes listed in the mapping table.</cmd>
+      </step>
+      <step>
+        <cmd>For each <codeph>part</codeph> of an activity in a record-level resource, add a <codeph>classified_as</codeph> reference to the corresponding role concept.</cmd>
+        <stepresult>
+          <yulbibid>693</yulbibid>
+          <p>Domain: <codeph>LinguisticObject</codeph></p>
+          <codeblock><![CDATA[{
+  "created_by": {
+    "type": "Creation",
+    "part": [
+      {
+        "type": "Creation",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/70ef44e6-621f-4edb-a13d-a7f2149229d5",
+            "type": "Person",
+            "_label": "Ricœur, Paul"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/81b7e2c2-b7bb-4bcb-a806-9bfc1838e317",
+            "type": "Type",
+            "_label": "author"
+          }
+        ]
+      },
+      {
+        "type": "Creation",
+         "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/9011fee1-8916-4117-a07b-1519667f121d",
+            "type": "Person",
+            "_label": "Savage, Denis"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/271d291f-0d42-4abf-bf43-070b241edc98",
+            "type": "Type",
+            "_label": "translator"
+          }
+        ]
+      },
+      {
+        "type": "Creation",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/group/cdbe8c98-a3a6-4f7e-a20d-698cbe87dcc2",
+            "type": "Group",
+            "_label": "Samuel R. Delany Library (Beinecke Rare Book and Manuscript Library). Working Library"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
+            "type": "Type",
+            "_label": "contributor"
+          }
+        ]
+      }
+    ]
+  }
+}]]></codeblock>
+        </stepresult>
+      </step>
+      
+    </steps>
+  </taskbody>
+</task>

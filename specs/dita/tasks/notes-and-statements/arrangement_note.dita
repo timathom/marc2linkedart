@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="arrangement_note" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Arrangement note</title>
+  <shortdesc>Corresponds to the <codeph>351</codeph> note field in MARC.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value="2021-11-24T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_wyn_5rq_3rb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry>Do not repeat on nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: ArrangementNote
+sampleBibs:
+  - 12656596
+fieldSpec:
+  - 351ab
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process the arrangement note values (MARC <codeph>351ab</codeph>).</cmd>
+        <choices>
+          <choice>If both subfields <codeph>351ab</codeph> are present, join them with a whitespace character.</choice>
+          <choice>Else, output the string value of <codeph>351a</codeph> or <codeph>351b</codeph>.</choice>
+        </choices>
+        <stepresult>
+          <note>This example is meant to illustrate an arrangement note and does not represent a complete JSON-LD document.</note>
+          <yulbibid>12656596</yulbibid>
+          <codeblock><![CDATA[{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Arranged alphabetically.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300444118",
+          "type": "Type",
+          "_label": "Contents Organization/Arrangement Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Organization and Arrangement of Materials",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+
+  </taskbody>
+
+</task>

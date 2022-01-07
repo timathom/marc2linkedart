@@ -1,0 +1,94 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_055_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>055 (Classification Numbers Assigned in Canada)</title>
+  <shortdesc>Complete call number or a classification number assigned by Library and Archives Canada (LAC) or a library contributing to LAC.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd055.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd055.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_055">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd055.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>a</entry>
+            <entry>Classification number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>b</entry>
+            <entry>Item number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>0</entry>
+            <entry>Authority record control number or standard number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>1</entry>
+            <entry>Real World Object URI</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>2</entry>
+            <entry>Source of call/class number</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>055</entry>
+            <entry>Classification Numbers Assigned in Canada</entry>
+            <entry>#-1</entry>
+            <entry>0-9</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

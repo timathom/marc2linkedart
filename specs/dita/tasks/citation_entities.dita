@@ -1,0 +1,77 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="citation_entities" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Citation entities</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--tt434-->
+      <revised modified="2021-11-03"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--tt434-->
+      <revised modified="2021-11-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-24"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+    </critdates>
+  </prolog>
+  <taskbody>
+    <context/>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: CitationEntities
+sampleBibs:
+  - 10563633
+fieldSpec:
+  - 510abcu
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>For each MARC <codeph>510</codeph>, if subfield<codeph>u</codeph> is present and includes a URI containing the string <codeph>wikidata.org</codeph> (e.g.,<xref format="html" href="http://www.wikidata.org/entity/Q107432855" scope="external"/>), generate a top-level citation entity with an <codeph>equivalent</codeph> reference to the Wikidata URI.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Use the Wikidata URI as a key for matching and merging citation entities.</cmd>
+          </substep>
+          <substep>
+            <cmd>Use the value of <codeph>510a</codeph> as the <codeph>_label</codeph> and <codeph>Primary Name</codeph> of the citation entity.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>3931</yulbibid>
+          <codeblock>{
+  "id": "https://lux.collections.yale.edu/data/text/citation1",
+  "type": "LinguisticObject",
+  "_label": "Edizioni italiane del XVI secolo",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Edizioni italiane del XVI secolo",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://www.wikidata.org/entity/Q107444740",
+      "type": "LinguisticObject"
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

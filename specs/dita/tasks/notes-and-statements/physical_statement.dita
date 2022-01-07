@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="physical_statement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Physical statement</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value="2021-11-30T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_jy4_jxm_jrb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: PhysicalStatement
+sampleBibs:
+  - 25079
+  - 3811379
+fieldSpec:
+  - 3003acef
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process the physical statement values (MARC <codeph>3003acef</codeph>).</cmd>
+        <substeps>
+          <substep>
+            <cmd>Do not trim punctuation from subfields.</cmd>
+          </substep>
+          <substep>
+            <cmd>Join fields <codeph>300acef</codeph> with a whitespace character.</cmd>
+          </substep>
+          <substep>
+            <cmd>If subfield <codeph>3</codeph> is present, but does not appear first in the subfield sequence, prefix the statement with the value of subfield <codeph>3</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Test the value of <codeph>3</codeph> to see whether it ends with a colon.</cmd>
+          </substep>
+          <substep>
+            <cmd>If no colon is present, concatenate the value with a colon (<codeph>:</codeph>).</cmd>
+          </substep>
+          <substep>
+            <cmd>Else, output the value of subfield <codeph>3</codeph>.</cmd>
+            <stepxmp>
+              <codeblock><![CDATA[300  $3 Copy 1: $a 1 album (32 photographic prints) : $b b & w ; $c 13.4 x 20.6 cm.
+300  $3 Copy 2: $a 1 album (39 photographic prints) : $b b & w ; $c 13.4 x 20.6 cm.]]></codeblock>
+            </stepxmp>
+            <stepresult>
+              <note>This example is meant to illustrate a physical statement and does not represent a complete JSON-LD document.</note>
+              <yulbibid>3811379</yulbibid>
+              <codeblock><![CDATA[{
+  "referred_to_by": [        
+    {
+      "type": "LinguisticObject",
+      "content": "Copy 1: 1 album (32 photographic prints) ; 13.4 x 20.6 cm",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435452",
+          "type": "Type",
+          "_label": "Physical Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Physical Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "content": "Copy 2: 1 album (39 photographic prints) ; 13.4 x 20.6 cm",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435452",
+          "type": "Type",
+          "_label": "Physical Statement"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Physical Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

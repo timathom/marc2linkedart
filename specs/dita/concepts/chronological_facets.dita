@@ -1,0 +1,179 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="chronological_facets" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Chronological facets</title>
+  <shortdesc>Resources extracted from MARC 6XXy.</shortdesc>
+  <prolog>
+    <author type="creator">tt434</author>
+    <critdates>
+      <created date="2021-10-03"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: ChronologicalFacets
+sampleBibs:
+  - 9564880
+  - 12164046
+# Source data fields
+fieldSpec:
+  - 600y
+  - 610y
+  - 611y
+  - 630y
+  - 650y
+  - 651y
+  - 655y
+  - 690y
+  - 691y
+  - 692y
+  - 693y
+  - 694y
+  - 695y
+trimPunctuation: true
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Create top-level concepts by normalizing and merging the string value of each distinct chronological facet.</cmd>
+        <info>
+          <table>
+            <title>Variable values for chronological facets</title>
+            <tgroup cols="2">
+              <thead>
+                <row>
+                  <entry>JSON structure</entry>
+                  <entry>Description</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry>
+                    <codeph>root → id</codeph>
+                  </entry>
+                  <entry>Concept IRI</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → type</codeph>
+                  </entry>
+                  <entry>Semantic type of concept. Default value:<codeph>Period</codeph>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → _label</codeph>
+                  </entry>
+                  <entry>Label of facet</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → identified_by → content</codeph>
+                  </entry>
+                  <entry>Same as<codeph>root → _label</codeph>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </info>
+        <stepresult>
+          <yulbibid>12164046</yulbibid>
+          <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/event/73c0ba3c-e469-4969-be1c-0479c856add3",
+  "type": "Period",
+  "_label": "World War, 1914-1918",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "World War, 1914-1918"
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Add an embedded reference to the facet resource within the top-level resource for the full subject heading.</cmd>
+        <info>
+          <table>
+            <title>Variable values for embedded facet references</title>
+            <tgroup cols="2">
+              <thead>
+                <row>
+                  <entry>JSON structure</entry>
+                  <entry>Description</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry>
+                    <codeph>root → created_by → influenced_by → id</codeph>
+                  </entry>
+                  <entry>Must match the<codeph>id</codeph>of the top-level resource</entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → type</codeph>
+                  </entry>
+                  <entry>Must match the<codeph>type</codeph>of the top-level resource. Default value:<codeph>Period</codeph>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <codeph>root → _label</codeph>
+                  </entry>
+                  <entry>Must match the<codeph>_label</codeph>of the top-level resource</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </info>
+        <stepresult>
+          <yulbibid>12164046</yulbibid>
+          <codeblock>{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/003c6a29-8b30-4e90-9664-ea7d65f8e4ec",
+  "type": "Type",
+  "_label": "Russia. Voennyĭ flot--History--World War, 1914-1918",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Russia. Voennyĭ flot--History--World War, 1914-1918"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/group/9110fd4b-6992-4e75-89f9-cae80221d79c",
+        "type": "Group",
+        "_label": "Russia. Voennyĭ flot"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/d43ab750-6e8d-4f7c-b3e2-d5a8dc134a37",
+        "type": "Type",
+        "_label": "History"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/event/73c0ba3c-e469-4969-be1c-0479c856add3",
+        "type": "Period",
+        "_label": "World War, 1914-1918"
+      }
+    ]
+  }
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="complex_subject_headings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Complex subject/genre headings and hierarchical associated places</title>
+  <shortdesc>Subject headings representing two or more entity types.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-12-06"/>
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-26"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <!--<keyword>Completed</keyword>
+        <keyword>Deployed</keyword>-->
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+    <data name="sample" value="https://linked-art-test.library.yale.edu/ils/bib/9564880"/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Apply these instructions for field <codeph>752</codeph> (hierarchical place name) and when a <codeph>6XX</codeph> field includes any of the subdivision subfields <codeph>vxyz</codeph>. <note id="note_zyn_fml_vrb"><codeph>600</codeph>, <codeph>610</codeph>, <codeph>611</codeph>, and <codeph>69X</codeph> entries--except for <codeph>695</codeph>--that include a subfield <codeph>t</codeph> should not be processed using this spec. See instead <xref href="name_title_entries.dita"/>.</note></p>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: ComplexSubjectHeadingsAndAsociatedPlaces
+sampleBibs:
+  - 9564880
+  - 3145537 # 630
+  - 13146411
+# Source data fields
+fieldSpec:
+  - 60004abcdegjquvxyz
+  - 61004abcdeguvxyz
+  - 61104acdegjnquvxyz
+  - 630014adfghklmnoprstvxyz
+  - 65004abcdegvxyz
+  - 651| 0|014aegvxyz
+  - 65504abcvxyz
+  - 69004abcdegvxyz
+  - 691014aegvxyz         
+  - 69204abcdegjquvxyz
+  - 69304abcdeguvxyz
+  - 69404acdegjnquvxyz
+  - 695014adfghklmnoprstvxyz
+  - 752014abcdefgh
+trimPunctuation: true
+scriptInclusion: BOTH</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>For each unique source data value, generate and store a top-level resource identified by an IRI.</cmd>
+        <substeps id="substeps_uwz_rvj_5rb">
+          <substep>
+            <cmd>Ignore the following subfields when creating a key for matching and merging.</cmd>
+            <info>
+              <table id="table_vwz_rvj_5rb">
+                <title>Subfields to skip when matching strings</title>
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>Fields</entry>
+                      <entry>Subfields</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>All</entry>
+                      <entry>014</entry>
+                    </row>
+                    <row>
+                      <entry>All except X11 and 694</entry>
+                      <entry>e</entry>
+                    </row>
+                    <row>
+                      <entry>X11 and 694</entry>
+                      <entry>j</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Apply the following mapping table to create a key for matching and merging. For rows in the table with multiple subfields, join the subfields with a whitespace character.</cmd>
+            <info>
+              <note id="note_zyn_fml_vrb_2"><codeph>600</codeph>, <codeph>610</codeph>, <codeph>611</codeph>, and <codeph>69X</codeph> entries--except for <codeph>695</codeph>--that include a subfield <codeph>t</codeph> should not be processed using this spec. See instead <xref href="name_title_entries.dita"/>.</note>
+              <table id="subfield_mapping_table">
+                <title>Subfield mapping for entities</title>
+                <tgroup cols="3">
+                  <thead>
+                    <row>
+                      <entry>Linked Art class</entry>
+                      <entry>MARC tag</entry>
+                      <entry>Subfields</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>Person</entry>
+                      <entry>600</entry>
+                      <entry>abcdgjqvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>610</entry>
+                      <entry>abcdgvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>611</entry>
+                      <entry>acdegnquvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>LinguisticObject</entry>
+                      <entry>630</entry>
+                      <entry>adfhklmnoprst</entry>
+                    </row>
+                    <row>
+                      <entry>Concept</entry>
+                      <entry>650</entry>
+                      <entry>abcdgvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Place</entry>
+                      <entry>651| 0|</entry>
+                      <entry>agvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Type</entry>
+                      <entry>655</entry>
+                      <entry>avxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Concept</entry>
+                      <entry>690</entry>
+                      <entry>abcdgvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Place</entry>
+                      <entry>691</entry>
+                      <entry>agvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Person</entry>
+                      <entry>692</entry>
+                      <entry>abcdgjqvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>693</entry>
+                      <entry>abcdgvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>Group</entry>
+                      <entry>694</entry>
+                      <entry>acdgnquvxyz</entry>
+                    </row>
+                    <row>
+                      <entry>LinguisticObject</entry>
+                      <entry>695</entry>
+                      <entry>adfhklmnoprst</entry>
+                    </row>
+                    <row>
+                      <entry>Place</entry>
+                      <entry>752</entry>
+                      <entry>abcdfgh</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> and match string values.</cmd>
+          </substep>
+          <substep>
+            <cmd>If a field includes a <codeph>$0</codeph> with an IRI, output an <codeph>equivalent</codeph> reference.</cmd>
+            <info>
+              <note id="note_wwz_rvj_5rb">The <codeph>Type</codeph> of the <codeph>equivalent</codeph> reference should match the <codeph>Type</codeph> of the top-level resource.</note>
+            </info>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Within the top-level resource corresponding to the <codeph>752</codeph> or <codeph>6XX</codeph> field, model each subdivision in the heading as a facet.</cmd>
+      </step>
+      <step>
+        <cmd>Generate a top-level resource for each unique facet.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Create facets by normalizing and matching the string value of each facet resource according to the facet value mapping table below.</cmd>
+          </substep>
+          <substep>
+            <cmd>For rows in the table with multiple subfields, join the subfields with a whitespace character.</cmd>
+            <info>
+              <table id="facet_values_table">
+                <title>Facet value mapping</title>
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>MARC tag</entry>
+                      <entry>Subfields</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>v</entry>
+                    </row>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>x</entry>
+                    </row>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>y</entry>
+                    </row>
+                    <row>
+                      <entry>6XX</entry>
+                      <entry>z</entry>
+                    </row>
+                    <row>
+                      <entry>600</entry>
+                      <entry>abcdgjq</entry>
+                    </row>
+                    <row>
+                      <entry>610</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>611</entry>
+                      <entry>acdegnqu</entry>
+                    </row>
+                    <row>
+                      <entry>630</entry>
+                      <entry>adfhklmnoprst</entry>
+                    </row>
+                    <row>
+                      <entry>650</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>651| 0|</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>651| 0|</entry>
+                      <entry>g</entry>
+                    </row>
+                    <row>
+                      <entry>655</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>690</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>691</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>691</entry>
+                      <entry>g</entry>
+                    </row>
+                    <row>
+                      <entry>692</entry>
+                      <entry>abcdgjq</entry>
+                    </row>
+                    <row>
+                      <entry>693</entry>
+                      <entry>abcdg</entry>
+                    </row>
+                    <row>
+                      <entry>694</entry>
+                      <entry>acdgnqu</entry>
+                    </row>
+                    <row>
+                      <entry>695</entry>
+                      <entry>adfhklmnoprst</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>a</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>b</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>c</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>d</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>f</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>g</entry>
+                    </row>
+                    <row>
+                      <entry>752</entry>
+                      <entry>h</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Determine the <codeph>type</codeph> value for each facet from the tag and subfield values in MARC according to the facet type mapping table below.</cmd>
+            <info>
+              <table id="facet_types_table">
+                <title>Facet type mapping</title>
+                <tgroup cols="2">
+                  <thead>
+                    <row>
+                      <entry>MARC values</entry>
+                      <entry>Type</entry>
+                    </row>
+                  </thead>
+                  <tbody>
+                    <row>
+                      <entry>6XXvx</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>6XXy</entry>
+                      <entry>Period</entry>
+                    </row>
+                    <row>
+                      <entry>6XXz</entry>
+                      <entry>Place</entry>
+                    </row>
+                    <row>
+                      <entry>600abcdgjq</entry>
+                      <entry>Person</entry>
+                    </row>
+                    <row>
+                      <entry>610abcdg</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>611acdegnqu</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>630adfhklmnoprst</entry>
+                      <entry>LinguisticObject</entry>
+                    </row>
+                    <row>
+                      <entry>650abcdg</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>651| 0|ag</entry>
+                      <entry>Place</entry>
+                    </row>
+                    <row>
+                      <entry>655a</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>690abcdg</entry>
+                      <entry>Type</entry>
+                    </row>
+                    <row>
+                      <entry>691ag</entry>
+                      <entry>Place</entry>
+                    </row>
+                    <row>
+                      <entry>692abcdgjq</entry>
+                      <entry>Person</entry>
+                    </row>
+                    <row>
+                      <entry>693abcdg</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>694acdegnqu</entry>
+                      <entry>Group</entry>
+                    </row>
+                    <row>
+                      <entry>695adfhklmnoprst</entry>
+                      <entry>LinguisticObject</entry>
+                    </row>
+                  </tbody>
+                </tgroup>
+              </table>
+              <note>Top-level genre/form (<codeph>655</codeph>) resources should include a <codeph>Genre</codeph> classification, as shown in <xref href="simple_subject_headings.dita"/>.</note>
+            </info>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>9564880</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/event/92a599a2-2117-43f9-be3e-6e07f36cb2a5",
+  "type": "Period",
+  "_label": "2nd century",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "2nd century",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Join the string values of the facets with space-surrounded double hyphens (<codeph> -- </codeph>) to output the <codeph>_label</codeph> and <codeph>content</codeph> values of the full precoordinated heading.</cmd>
+      </step>
+      <step>
+        <cmd>Add an embedded reference to the facet resources within the top-level resource for the full heading.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Process <codeph>752</codeph> entries for associated places.</cmd>
+            <stepresult>
+              <yulbibid>35599</yulbibid>
+              <note>IRIs in the example below are for illustration only and should be replaced with system-generated UUIDs.</note>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/752-place",
+  "type": "Place",
+  "_label": "United States -- New York (State) -- New York -- Brooklyn",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "United States -- New York (State) -- New York -- Brooklyn",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/place/752-place-1",
+        "type": "Place",
+        "_label": "United States"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/place/752-place-2",
+        "type": "Place",
+        "_label": "New York (State)"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/place/752-place-3",
+        "type": "Place",
+        "_label": "New York"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/place/752-place-4",
+        "type": "Place",
+        "_label": "Brooklyn"
+      }
+    ]
+  }
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process <codeph>6XX</codeph> entries for complex subject headings.</cmd>
+            <stepresult>
+              <div>
+                <yulbibid>9564880</yulbibid>
+                <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/24f1b754-9566-4f38-8c61-9ce4082606aa",
+  "type": "Type",
+  "_label": "Death -- Religious aspects -- Christianity -- History -- 2nd century",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Death -- Religious aspects -- Christianity -- History -- 2nd century",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/c54ba0ac-c106-4afe-8007-cb4a34cf0bd7",
+        "type": "Type",
+        "_label": "Death"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/b273c64d-a9bb-4c2e-bb3f-5c13a6825a55",
+        "type": "Type",
+        "_label": "Religious aspects"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/33a05e84-57bc-4f1d-a792-0de7758bd0d8",
+        "type": "Type",
+        "_label": "Christianity"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/d43ab750-6e8d-4f7c-b3e2-d5a8dc134a37",
+        "type": "Type",
+        "_label": "History"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/event/92a599a2-2117-43f9-be3e-6e07f36cb2a5",
+        "type": "Period",
+        "_label": "2nd century"
+      }
+    ]
+  }
+}]]></codeblock>
+              </div>
+              <div>
+                <yulbibid>3145537</yulbibid>
+                <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/06eddac8-f6b9-442c-a0e5-c7a5a2c55ba1",
+  "type": "Type",
+  "_label": "Qurʼan -- Hermeneutics -- History",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Qurʼan -- Hermeneutics -- History"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/text/1a429a8f-b77c-4956-811c-c9fc5237eb8d",
+        "type": "LinguisticObject",
+        "_label": "Qurʼan"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/71abaf42-a479-41bf-bd6f-2cf6aeca2060",
+        "type": "Type",
+        "_label": "Hermeneutics"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/d43ab750-6e8d-4f7c-b3e2-d5a8dc134a37",
+        "type": "Type",
+        "_label": "History"
+      }
+    ]
+  }
+}]]></codeblock>
+              </div>    
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>If a <codeph>752</codeph> or <codeph>6XX</codeph> field in MARC includes a <codeph>$0</codeph> with an IRI, output an<codeph>equivalent</codeph>reference.</cmd>
+        <stepresult>
+          <yulbibid>13146411</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/2dba70e6-3702-4bbc-953c-1fdee7460594",
+  "type": "Type",
+  "_label": "Earth (Planet) -- Maps",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Earth (Planet) -- Maps",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/subjects/sh2013000103",
+      "type": "Type"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/place/f0c5212e-e671-4c59-a745-581b350f191d",
+        "type": "Place",
+        "_label": "Earth (Planet)"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/c5974fce-ed0d-4556-a2f6-bd98965ffc50",
+        "type": "Type",
+        "_label": "Maps"
+      }
+    ]
+  }
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>In each referring record-level resource (<codeph>DigitalObject</codeph>, <codeph>HumanMadeObject</codeph>, <codeph>LinguisticObject</codeph>, <codeph>Set</codeph>, <codeph>VisualItem</codeph>), add an embedded reference to the concept entity.</cmd>
+        <substeps>
+          <substep>
+            <cmd>For concept (<codeph>Type</codeph>) entities, see <xref href="subject_headings.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For associated places, see <xref href="../../concepts/associated_places.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For places as subjects, see <xref href="../../concepts/places_as_subjects.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For people as subjects, see <xref href="../../concepts/people_as_subjects.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For groups as subjects, see <xref href="../../concepts/groups_as_subjects.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>For works as subjects, see <xref href="../name-title/works_as_subjects.dita"/>.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

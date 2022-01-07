@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_Types" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
+  <title>Types</title>
+  <shortdesc/>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+  </prolog>
+  <conbody>
+    <!--
+		<p>
+			<xref format="html" href="http://prodorbis.library.yale.edu:7014/vxws/GetHoldingsService?bibId=2" scope="external"><yulbibid>2</yulbibid></xref>
+			<yulbibid>2</yulbibid>
+		</p>
+		-->
+  </conbody>
+</concept>

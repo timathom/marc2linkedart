@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="oclc_number" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:generalTask.xsd">
+    <title><ph keyref="oclc-num"/></title>
+	<shortdesc>System number used by OCLC to manage records in the WorldCat system.</shortdesc>
+	<prolog>
+		<author conkeyref="metadata_common/author_metadata"/>
+		<publisher conkeyref="metadata_common/publ_metadata"/>
+		<critdates conkeyref="metadata_common/dates_metadata"/>
+		<metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+	</prolog>
+	<taskbody>
+		<section>
+			<title>Source data</title>
+			<codeblock conkeyref="specs/tag035"/>
+		</section>
+		<section>
+			<title>Processing steps and output</title>
+		</section>
+		<steps>			
+			<step>
+				<cmd>Skip <codeph>035</codeph> if <codeph>035z</codeph> (canceled/invalid control number).</cmd>        
+			</step>
+			<step>   
+				<cmd>Get value of <codeph>035a</codeph>.</cmd>
+				<substeps>					
+					<substep>
+						<cmd>Normalize <codeph>035a</codeph> (lower case and remove punctuation characters) to test the value.</cmd>
+					</substep>
+					<substep>
+						<cmd>If the normalized value of <codeph>035a</codeph> starts with "oc", return the original value.</cmd>
+					</substep>
+					<substep>
+						<cmd>Else, skip <codeph>035</codeph>.</cmd>
+					</substep>
+				</substeps>
+			</step>
+		</steps>			
+	</taskbody>
+</task>

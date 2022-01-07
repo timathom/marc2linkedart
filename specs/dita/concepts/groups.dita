@@ -1,0 +1,27 @@
+<concept id="groups" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Groups</title>
+  <shortdesc>Entities that represent groups of people functioning collectively (e.g., organizations and meetings/conferences).</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+    </critdates>
+    <metadata conkeyref="metadata_common/keyword_metadata_entity"/>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>Group entities are represented by the <codeph>Group</codeph> class.</p>
+    <p>Group entities may function either in creator/contributor (agent) roles or within subject/concept structures.</p>
+    <p>For group entities that are part of name/title entries in MARC, see <xref format="dita" href="../tasks/concepts/name_title_entries.dita" scope="local"/>.</p>
+  </conbody>
+</concept>

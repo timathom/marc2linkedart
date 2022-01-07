@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concept id="entity_extraction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
+	<title>Entity modeling</title>
+	<shortdesc>The transformation from MARC to Linked Art requires that both <b><term>records</term></b> and <b><term>access points</term></b> within records be modeled and <b><term keyref="gloss-ent">entified</term></b> in order to create a normalized representation of the data.</shortdesc>
+	<prolog>
+		<publisher conkeyref="metadata_common/publ_metadata"/>
+		<critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+    </critdates>
+		<metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+	</prolog>
+	<conbody>
+		<ul>
+			<li>
+				<p>Unique identifiers in the form of an <keyword keyref="iri"/> must be assigned to each entity.</p>
+			</li>
+			<li>
+				<p>Entities corresponding to access points (for example, <keyword keyref="1xx"/>, <keyword keyref="6xx"/>, and <keyword keyref="7xx"/> fields in MARC) must be extracted and merged (deduplicated).</p>
+			</li>
+			<li><p>Entities corresponding to records (bibliographic and holdings) should not be merged and deduplicated at this stage. For example, multiple editions of the novel <i>Beloved</i> will not be <b><term keyref="gloss-frbr">FRBRized</term></b> or linked to a common Work entity. However, they should all be linked to a single Person entity for the author Toni Morrison.</p></li>
+      <li>A <keyword keyref="json-ld"/> representation of each top-level entity must be dereferenceable through a RESTful API.</li>
+		</ul>
+	</conbody>
+</concept>

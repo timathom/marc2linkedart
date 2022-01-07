@@ -1,0 +1,139 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_656_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>656 (Index Term-Occupation)</title>
+  <shortdesc>Index term that is descriptive of the occupation (including avocation) reflected in the contents of the described materials.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd656.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd656.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_656">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd656.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>a</entry>
+            <entry>Occupation</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>k</entry>
+            <entry>Form</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>v</entry>
+            <entry>Form subdivision</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>x</entry>
+            <entry>General subdivision</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>y</entry>
+            <entry>Chronological subdivision</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>z</entry>
+            <entry>Geographic subdivision</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>0</entry>
+            <entry>Authority record control number or standard number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>1</entry>
+            <entry>Real World Object URI</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>2</entry>
+            <entry>Source of term</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>656</entry>
+            <entry>Index Term-Occupation</entry>
+            <entry>#</entry>
+            <entry>7</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

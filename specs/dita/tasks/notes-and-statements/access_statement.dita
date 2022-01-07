@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="access_statement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Access statement</title>
+  <shortdesc>Statement indicating whether a resource is available online or in the library.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph></entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set → members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: AccessStatement
+sampleBibs:
+  - 3
+  - 6546882
+fieldSpec:
+  - mfhd852b
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>For MFHDs with an <codeph>852b</codeph> value of <codeph>yulint</codeph> or <codeph>yulintx</codeph>, output an access statement with a <codeph>content</codeph> value of <codeph>Online</codeph>.</cmd>
+        <stepresult>
+          <yulbibid>6546882</yulbibid>
+          <codeblock><![CDATA[{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Online",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300133046",
+          "type": "Type",
+          "_label": "Access Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>For all other MFHD locations, output an access statement with a <codeph>content</codeph> value of <codeph>In the Library</codeph>.</cmd>
+        <stepresult>
+          <yulbibid>3</yulbibid>
+          <codeblock><![CDATA[{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "In the Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300133046",
+          "type": "Type",
+          "_label": "Access Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="places_as_agents" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Places as agents</title>
+  <shortdesc>Places as jurisdictions (for example, United States as a political entity).</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2021-11-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+    </critdates>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Places as agents are considered to be jurisdictions and are treated as groups: see the <xref href="groups_as_agents.dita">Groups as agents </xref>specification.</p>
+    </context>
+  </taskbody>
+</task>

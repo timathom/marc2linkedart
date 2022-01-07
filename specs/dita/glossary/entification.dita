@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossentry id="entify" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:glossary.xsd">
+	<glossterm>Entification</glossterm>
+	<glossdef>The process of converting "strings" into "things": for example, extracting and normalizing authorized access points in MARC bibliographic records so that there is a single representation of each distinct entity.</glossdef>
+	<prolog>
+		<author conkeyref="metadata_common/author_metadata"/>
+		<source format="html" href="https://www.lorcandempsey.net/metadata-directions/#entification-strings-and-things" scope="external">https://www.lorcandempsey.net/metadata-directions/#entification-strings-and-things</source>
+		<publisher conkeyref="metadata_common/publ_metadata"/>
+		<critdates conkeyref="metadata_common/dates_metadata"/>
+		<metadata conkeyref="metadata_glossary/keyword_metadata_glossary"/>
+	</prolog>
+	<glossBody>
+		<glossUsage>See <xref format="html" href="https://www.lorcandempsey.net/metadata-directions/#entification-strings-and-things" scope="external">this post</xref> by Lorcan Dempsey for further discussion.</glossUsage>
+	</glossBody>
+</glossentry>

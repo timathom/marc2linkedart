@@ -1,0 +1,27 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="places" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Places</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-10-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>Place entities are represented by the <codeph>Place</codeph> class.</p>
+    <p>Place entities may function either in creator/contributor (agent) roles, within subject/concept structures, or as associated places.</p>
+    <p>For place entities that are part of name/title entries in MARC, see <xref format="dita" href="../tasks/concepts/name_title_entries.dita" scope="local">Groups with works</xref> (places as agents are considered to be jurisdictional entities, which are treated as groups).</p>
+  </conbody>
+</concept>

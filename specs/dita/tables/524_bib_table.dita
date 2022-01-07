@@ -1,0 +1,49 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_bib_524_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:reference.xsd">
+  <title>524 (Preferred Citation of Described Materials Note)</title>
+  <shortdesc/>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd524.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd524.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_524">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd524.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>524</entry>
+            <entry>Preferred Citation of Described Materials Note</entry>
+            <entry/>
+            <entry/>
+            <entry>a</entry>
+            <entry>Preferred citation of described materials note</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>524</entry>
+            <entry>Preferred Citation of Described Materials Note</entry>
+            <entry/>
+            <entry/>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

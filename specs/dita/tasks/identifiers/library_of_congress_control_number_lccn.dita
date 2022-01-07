@@ -1,0 +1,83 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="library_of_congress_control_number_lccn" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Library of Congress Control Number (LCCN)</title>
+  <shortdesc>The Library of Congress Control Number is a serially based identifier assigned to resources that also appear in the catalog of the Library of Congress.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-10-12"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value="2021-10-15T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_g5w_mfn_frb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock conkeyref="specs/tag010"/>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Get value of<codeph>010a</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>
+          <ph keyref="output-vals"/>LCCN:</cmd>
+      </step>
+    </steps>
+    <result>
+      <div conkeyref="linked_art_ex/ex-identifier-010"/>
+    </result>
+  </taskbody>
+</task>

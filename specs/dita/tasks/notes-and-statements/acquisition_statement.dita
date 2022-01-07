@@ -1,0 +1,124 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="acquisition_statement" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Acquisition statement</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <created date="2021-11-02"/>
+      <!--tt434-->
+      <revised modified="2021-11-02"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value="2021-11-29T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_jy4_jxm_jrb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>LinguisticObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on related<codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing<codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: AcquisitionStatement
+sampleBibs:
+  - 431
+  - 58130
+fieldSpec:
+  - 541|1 |3abcdefn
+  - 541|  |3abcdefn
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Process the acquisition statement values (MARC<codeph>5413abcdefn</codeph>).</cmd>
+        <substeps>
+          <substep>
+            <cmd>Join the string values of<codeph>5413abcdefn</codeph>with a whitespace character.</cmd>
+          </substep>
+          <substep>
+            <cmd>If subfield<codeph>3</codeph>is present, but does not appear first in the subfield sequence, prefix the statement with the value of subfield<codeph>3</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Test the value of<codeph>3</codeph>to see whether it ends with a colon.</cmd>
+          </substep>
+          <substep>
+            <cmd>If no colon is present,<b>trim punctuation</b>and concatenate the value with a colon (<codeph>:</codeph>).</cmd>
+          </substep>
+          <substep>
+            <cmd>Else, output the value of subfield<codeph>3</codeph>.</cmd>
+          </substep>
+        </substeps>
+        <stepxmp>
+          <codeblock>541  $3 DIV copy 2; $c Gift; $a Gift of Marvin H. Pope; $d 1999.</codeblock>
+        </stepxmp>
+        <stepresult>
+          <note>This example is meant to illustrate an acquisition statement and does not represent a complete JSON-LD document.</note>
+          <yulbibid>58130</yulbibid>
+          <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "DIV copy 2: Gift; Div copy Gift of Marvin H. Pope; 1999.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435439",
+          "type": "Type",
+          "_label": "Acquisition Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

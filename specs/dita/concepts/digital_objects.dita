@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="digital_objects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Digital object link to catalog</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-01-05"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_jy4_jxm_jrb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: DigitalObjectCatalog
+sampleBibs:
+  - 358058
+fieldSpec:
+  - 001
+trimPunctuation: false
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Output a <codeph>DigitalObject</codeph> link to the record in QuickSearch using the BIB ID.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Concatenate the QuickSearch base URI with the BIB ID.</cmd>
+            <stepxmp><codeph><q>https://search.library.yale.edu/catalog/</q> + 358058</codeph></stepxmp>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>358058</yulbibid>
+          <codeblock><![CDATA[{
+  "subject_of": [
+    {
+      "type": "LinguisticObject",
+      "_label": "Text of Repository Page",
+      "digitally_carried_by": [
+        {
+          "type": "DigitalObject",
+          "_label": "Repository Page",
+          "access_point": [
+            {
+              "id": "https://search.library.yale.edu/catalog/358058",
+              "type": "DigitalObject"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

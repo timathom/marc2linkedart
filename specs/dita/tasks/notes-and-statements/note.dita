@@ -1,0 +1,157 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="note" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Note</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <!--tt434-->
+      <revised modified="2021-11-01"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context id="context_nzf_r13_krb">
+      <table id="table_ozf_r13_krb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph></entry>
+              <entry/>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section id="section_pzf_r13_krb">
+      <title>Source data</title>
+      <codeblock id="codeblock_myx_ryh_krb">---
+name: Note
+sampleBibs:
+  - 2
+  - 2814209
+fieldSpec:
+  - 500a
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section id="section_qzf_r13_krb">
+      <title>Processing steps and output</title>
+    </section>
+    <steps id="steps_rzf_r13_krb">
+      <step>
+        <cmd>For each <codeph>500a</codeph> note, output its value as a <codeph>Note</codeph> resource.</cmd>        
+        <stepresult>
+          <yulbibid>2</yulbibid>
+          <codeblock id="codeblock_uzf_r13_krb">{
+  "id": "https://lux.collections.yale.edu/data/text/968652fc-4e7b-479b-a5b9-f8c0cd68bcb8",
+  "type": "LinguisticObject",
+  "_label": "Die Streitkräfte der NATO auf dem Territorium der BRD",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028051",
+      "type": "Type",
+      "_label": "Books",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/61d2655b-095d-4864-9d62-e04e55042baf",
+      "type": "Type",
+      "_label": "UA646.5.G4"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Die Streitkräfte der NATO auf dem Territorium der BRD",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Streitkräfte der NATO auf dem Territorium der BRD",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404672",
+          "type": "Type",
+          "_label": "Sorting Name"
+        }
+      ]
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "Includes index.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300027200",
+          "type": "Type",
+          "_label": "Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

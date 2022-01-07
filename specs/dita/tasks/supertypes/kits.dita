@@ -1,0 +1,72 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_Kits" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Kits</title>
+  <shortdesc>
+    <q>Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item.</q>
+  </shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value="2021-11-04T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: Kits
+sampleBibs:
+  - 8068082
+fieldSpec: 
+  - ldr[6]
+  - 008[33]
+  - 006[0]</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+      <codeblock>---
+# Kits mapping
+conditions:
+  OR:
+    # Kit
+    - - ldr[6]
+      - o
+    - AND:
+      # Three-dimensional artifact or naturally occurring object
+      - - ldr[6]
+        - r      
+      # Kit
+      - - 008[33]
+        - b        				     
+    # Kit
+    - - 006[0]
+      - o</codeblock>
+    </section>
+    <result>
+      <codeblock>{
+  "classified_as": [    
+    {
+      "id": "http://vocab.getty.edu/aat/300247921",
+      "type": "Type",
+      "_label": "Kits",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300226816",
+          "type": "Type",
+          "_label": "Format"
+        }
+      ]
+    }
+  ]
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

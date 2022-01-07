@@ -1,0 +1,112 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_300_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>300 (Physical Description)</title>
+  <shortdesc>Physical description of the described item, including its extent, dimensions, and such other physical details as a description of any accompanying materials and unit type and size.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd300.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd300.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_300">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd300.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>Extent</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>b</entry>
+            <entry>Other physical details</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>c</entry>
+            <entry>Dimensions</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>e</entry>
+            <entry>Accompanying material</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>f</entry>
+            <entry>Type of unit</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>g</entry>
+            <entry>Size of unit</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>3</entry>
+            <entry>Materials specified</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>300</entry>
+            <entry>Physical Description</entry>
+            <entry>#</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

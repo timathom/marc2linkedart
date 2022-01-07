@@ -1,0 +1,21 @@
+<concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="notes" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+  <title>Notes and statements</title>
+  <shortdesc>Brief texts that provide additional information about a resource, supplied by catalogers or transcribed from a resource.</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2021-10-14"/>
+      <!--tt434-->
+      <revised modified="2021-10-14"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <conbody>
+    <p>Notes and descriptive statements are collected within a<codeph>referred_to_by</codeph>array.</p>
+    <p>Nineteen note and statement types are currently mapped for<ph keyref="lux"/>.</p>
+  </conbody>
+</concept>

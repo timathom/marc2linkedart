@@ -1,0 +1,202 @@
+<reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="reference_130_table_bib" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:reference.xsd">
+  <title>130 (Main Entry-Uniform Title)</title>
+  <shortdesc>Uniform title used as a main entry in a bibliographic record.</shortdesc>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <source format="html" href="https://www.loc.gov/marc/bibliographic/bd130.html" scope="external">Library of Congress MARC Standards Office, https://www.loc.gov/marc/bibliographic/bd130.html</source>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_reference/keyword_metadata_bib"/>
+  </prolog>
+  <refbody>
+    <table id="table_bib_130">
+      <desc>From <xref href="https://www.loc.gov/marc/bibliographic/bd130.html" scope="external" format="html"/>.</desc>
+      <tgroup cols="7">
+        <thead>
+          <row>
+            <entry>Tag</entry>
+            <entry>Tag Label</entry>
+            <entry>First Indicator</entry>
+            <entry>Second Indicator</entry>
+            <entry>Subfield</entry>
+            <entry>Subfield Label</entry>
+            <entry>Repeatable</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>a</entry>
+            <entry>Uniform title</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>d</entry>
+            <entry>Date of treaty signing</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>f</entry>
+            <entry>Date of a work</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>g</entry>
+            <entry>Miscellaneous information</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>h</entry>
+            <entry>Medium</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>k</entry>
+            <entry>Form subheading</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>l</entry>
+            <entry>Language of a work</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>m</entry>
+            <entry>Medium of performance for music</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>n</entry>
+            <entry>Number of part/section of a work</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>o</entry>
+            <entry>Arranged statement for music</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>p</entry>
+            <entry>Name of part/section of a work</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>r</entry>
+            <entry>Key for music</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>s</entry>
+            <entry>Version</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>t</entry>
+            <entry>Title of a work</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>0</entry>
+            <entry>Authority record control number or standard number</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>1</entry>
+            <entry>Real World Object URI</entry>
+            <entry>T</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>2</entry>
+            <entry>Source of heading or term</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>6</entry>
+            <entry>Linkage</entry>
+            <entry>F</entry>
+          </row>
+          <row>
+            <entry>130</entry>
+            <entry>Main Entry-Uniform Title</entry>
+            <entry>0-9</entry>
+            <entry>#</entry>
+            <entry>8</entry>
+            <entry>Field link and sequence number</entry>
+            <entry>T</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+</reference>

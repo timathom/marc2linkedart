@@ -1,0 +1,81 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_Collages" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Collages</title>
+  <shortdesc>Works in two dimensions or very low relief that were made by gluing paper, fabrics, photographs, or other materials onto a flat surface.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-11-11"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-23"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-11-10T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: Collages
+sampleBibs:
+  - 7647390
+fieldSpec: 
+  - ldr[6]
+  - 006[0]
+  - 007[0]
+  - 007[1]
+  - 300a
+  - 655a</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+      <codeblock>---
+# Collages mapping
+conditions:
+  OR:  
+    # Two-dimensional nonprojectable graphic
+    - - ldr[6]
+      - k
+    # Two-dimensional nonprojectable graphic
+    - - 006[0]
+      - k
+  AND:
+    - OR:      
+      - AND:             
+        # Nonprojected graphic
+        - - 007[0]
+          - k
+        # Collage
+        - - 007[1]
+          - c
+      - lower-case(300a) contains 'collage'
+      - lower-case(655a) contains 'collage'</codeblock>
+    </section>
+    <result>
+      <codeblock>{
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300033963",
+      "type": "Type",
+      "_label": "Collages",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300226816",
+          "type": "Type",
+          "_label": "Format"
+        }
+      ]
+    }
+  ]    		
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

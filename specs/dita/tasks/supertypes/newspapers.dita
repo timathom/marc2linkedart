@@ -1,0 +1,83 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_Newspapers" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Newspapers</title>
+  <shortdesc>Serials published at stated, frequent intervals, such as daily or weekly, and containing news, editorials, features, advertisements, and other items of current interest.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata"/>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value="2021-11-18T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: Newspapers
+sampleBibs:
+  - 1495840
+fieldSpec:
+  - ldr[6]
+  - ldr[7]
+  - 008[21]
+  - 006[0]
+  - 006[4]</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+      <codeblock>---
+# Newspapers mapping
+conditions:
+  OR:
+    - AND:
+      # Language material
+      - - ldr[6]
+        - a
+      - OR:
+        # Serial component part
+        - - ldr[7]
+          - b
+        # Serial
+        - - ldr[7]
+          - s
+      # Newspaper
+      - - 008[21]
+        - n
+    - AND:
+      # Serial control
+      - - 006[0]
+        - s
+      # Newspaper
+      - - 006[4]
+        - n
+    - OR:
+      - lower-case(760t) contains 'newspaper'
+      - lower-case(830a) contains 'newspaper'</codeblock>
+    </section>
+    <result>
+      <codeblock>{
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300026656",
+      "type": "Type",
+      "_label": "Newspapers",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300226816",
+          "type": "Type",
+          "_label": "Format"
+        }
+      ]
+    }
+  ]    		
+}</codeblock>
+    </result>
+  </taskbody>
+</task>
