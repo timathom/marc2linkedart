@@ -28,10 +28,10 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Process the indexing statement values \(MARC`555abc`\).
+1.  Process the indexing statement values \(MARC `555abc`\).
 
     -   If two or more subfields \(`555abc`\) are present, join them with a whitespace character.
-    -   Else, output the string value of`555a`or`555b`.
+    -   Else, output the string value of `555a` or `555b`.
     **Note:** This example is meant to illustrate an indexing statement and does not represent a complete JSON-LD document.
 
     `8010777`

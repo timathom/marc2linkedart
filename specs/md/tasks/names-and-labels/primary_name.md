@@ -13,7 +13,7 @@ Main title of a record-level entity.
 |-------|-----|
 |`LinguisticObject` `HumanMadeObject`|Repeat on both JSON-LD documents.|
 |`VisualItem` `HumanMadeObject`|Repeat on both JSON-LD documents.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 **Note:** The primary name is mirrored in parallel non-Latin script titles, when present.
@@ -35,11 +35,11 @@ scriptInclusion: BOTH
 
 ## Processing steps and output
 
-1.  Process the main title values \(MARC`245`and parallel`880`, if applicable\).
+1.  Process the main title values \(MARC `245` and parallel `880`, if applicable\).
 
-    1.  Join the string value of MARC`245`subfields`abfghknps`\(excluding`$6`\) with a whitespace character.
+    1.  Join the string value of MARC `245` subfields `abfghknps` \(excluding `$6`\) with a whitespace character.
 
-    2.  If applicable, join the string value of parallel MARC`880`subfields`abfghknps`\(excluding`$6`\) with a whitespace character.
+    2.  If applicable, join the string value of parallel MARC `880` subfields `abfghknps` \(excluding `$6`\) with a whitespace character.
 
     `9447`
 

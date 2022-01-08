@@ -9,8 +9,8 @@ Textual information on the language or notation system used to convey the conten
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -28,10 +28,10 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Process the language statement values \(MARC`546ab`\).
+1.  Process the language statement values \(MARC `546ab`\).
 
     -   If both subfields \(`546ab`\) are present, join them with a whitespace character.
-    -   Else, output the string value of`546a`.
+    -   Else, output the string value of `546a`.
     **Note:** This example is meant to illustrate a language statement and does not represent a complete JSON-LD document.
 
     `1001852`

@@ -1,6 +1,6 @@
 ---
 author: [timothy.thompson@yale.edu, timothy.thompson@yale.edu]
-keyword: []
+keyword: 
 ---
 
 # Digital object link to catalog
@@ -59,6 +59,4 @@ scriptInclusion: NONE
 
 
 **Parent topic:**[Embedded entities](../concepts/lux_embedded_entities.md)
-
-**Next topic:**[Digital object link to asset](../concepts/digital_objects_asset_link.md)
 

@@ -1,10 +1,11 @@
 ---
 author: timothy.thompson@yale.edu
+keyword: [Assigned, Completed]
 ---
 
 # Medium of performance
 
-Corresponds to the `382` field in MARC.
+Corresponds to the`382`field in MARC.
 
 |Domains|Usage|
 |-------|-----|

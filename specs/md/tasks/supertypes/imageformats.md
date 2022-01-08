@@ -29,7 +29,3 @@ An image on film or glass, usually positive, intended to be viewed by means of l
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Datasets](../../tasks/supertypes/dataformats.md)
-
-**Next topic:**[Moving Images](../../tasks/supertypes/movingimageformats.md)
-

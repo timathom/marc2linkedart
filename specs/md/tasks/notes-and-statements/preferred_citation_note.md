@@ -7,9 +7,9 @@ keyword: [Assigned, Completed]
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -27,7 +27,7 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Process the preferred citation note values \(MARC`524a`\).
+1.  Process the preferred citation note values \(MARC `524a`\).
 
     **Note:** This example is meant to illustrate a preferred citation note and does not represent a complete JSON-LD document.
 

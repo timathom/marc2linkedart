@@ -6,7 +6,7 @@ category: Entity extraction
 
 # Collections
 
-“Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval”\([AAT](http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300025976)\).
+“Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval” \([AAT](http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300025976)\).
 
 -   **[Archival and Manuscript Materials](../../tasks/supertypes/archivalandmanuscriptmaterials.md)**  
 
@@ -14,6 +14,4 @@ category: Entity extraction
  “Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item.”
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
-
-**Next topic:**[Audio](../../tasks/supertypes/audioformats.md)
 

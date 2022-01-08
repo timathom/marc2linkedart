@@ -1,15 +1,15 @@
 ---
 author: [timothy.thompson@yale.edu, timothy.thompson@yale.edu]
-keyword: []
+keyword: 
 ---
 
 # Production statement
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data

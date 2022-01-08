@@ -10,9 +10,9 @@ Eleven top-level entities are required for use inLUX.
 
 InLUX, top-level entities can be divided into*record-level*entities, which correspond to resources held by the library \(books, journals, databases, archival collections, etc.\), and*related*entities, which correspond to the people, places, concepts, etc., connected to those resources through some standard relationship.
 
-1.  [Record-level entities](../concepts/record_level_entities.md)  
+-   **[Record-level entities](../concepts/record_level_entities.md)**  
 Entities that correspond to resources held by the library \(books, journals, databases, archival collections, etc.\).
-2.  [Related entities](../tasks/related_entities.md)  
+-   **[Related entities](../tasks/related_entities.md)**  
 Entities that represent the people, places, concepts, etc., that are connected to record-level resources.
 
 **Parent topic:**[Entity modeling](../concepts/entity_extraction.md)

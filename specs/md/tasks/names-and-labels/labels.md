@@ -6,7 +6,7 @@ author: timothy.thompson@yale.edu
 
 The label of a resource.
 
-The generic`_label`property is used to provide a human-readable label for a top-level or embedded resource.
+The generic `_label` property is used to provide a human-readable label for a top-level or embedded resource.
 
 `9447`
 
@@ -28,7 +28,7 @@ The generic`_label`property is used to provide a human-readable label for a top-
           {
             "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
             "type": "Type",
-            "_label": "contributor"
+            "_label": "Contributor"
           }
         ]
       }

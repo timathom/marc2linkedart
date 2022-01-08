@@ -13,7 +13,3 @@ category: Entity extraction
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Moving Images](../../tasks/supertypes/movingimageformats.md)
-
-**Next topic:**[Objects](../../tasks/supertypes/objectformats.md)
-

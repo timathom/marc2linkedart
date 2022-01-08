@@ -11,9 +11,9 @@ The Library of Congress Control Number is a serially based identifier assigned t
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -32,7 +32,7 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Get value of`010a`.
+1.  Get value of `010a`.
 
 2.  Output JSON-LD with theLCCN:
 

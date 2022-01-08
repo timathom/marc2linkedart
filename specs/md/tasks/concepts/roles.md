@@ -26,17 +26,16 @@ fieldSpec:
   - 611j4
   - 700e4
   - 710e4
-  - 711j4
-  - 800e4
-  - 810e4
-  - 811j4
+  - 711j4 
 trimPunctuation: true
 scriptInclusion: NONE
 ```
 
 ## Processing steps and output
 
-The role of an agent within an activity is derived from `$e` \(relator term for organizations and persons\), `$j` \(relator term for conferences/meetings\), or `$4` \(relationship code for any entity type\). When those subfields are absent, a generic role of `creator` is assigned when `1XX` is the source or `contributor` when `7XX` is the source.
+The role of an agent within an activity is derived from `$e` \(relator term for organizations and persons\), `$j` \(relator term for conferences/meetings\), or `$4` \(relationship code for any entity type\). When those subfields are absent, a generic role of `Creator` is assigned when `1XX` is the source or `Contributor` when `7XX` is the source.
+
+Roles are typically used in the context of an activity. However, entities referenced as subjects may also have role terms assigned to them.
 
 The mapping table below should be used to generate unique concept entities for role terms. For entries in the table with a type of `translations`, the `Target` column represents a reference to an “authorized” version of the term that appears later in the table. For all other entries, the `Target` column represents an `equivalent` IRI that should be included in the top-level resource description for the role concept.
 
@@ -361,9 +360,9 @@ The mapping table below should be used to generate unique concept entities for r
     }
     ```
 
-2.  For each `1XX`, `6XX`, `7XX`, or `8XX` field, inspect subfields `e` \(all but `111`, `611`, `711`, and `811`\), `j` \(only `X11)`, and `4` \(all\) for a role term or code.
+2.  For each `1XX` or `7XX` field, inspect each subfield `e` \(all but `111` or `711`\), `j` \(only `X11)`, and `4` \(all\) for a role term or code.
 
-3.  Match role terms in `e` or `j` and role codes in `4` against the top-level entities corresponding to the terms and codes listed in the mapping table.
+3.  [Normalize](../../glossary/normalization.md) and match role terms in `e` or `j` and role codes in `4` against the top-level entities corresponding to the terms and codes listed in the mapping table.
 
 4.  For each `part` of an activity in a record-level resource, add a `classified_as` reference to the corresponding role concept.
 
@@ -389,7 +388,7 @@ The mapping table below should be used to generate unique concept entities for r
               {
                 "id": "https://lux.collections.yale.edu/data/concept/81b7e2c2-b7bb-4bcb-a806-9bfc1838e317",
                 "type": "Type",
-                "_label": "author"
+                "_label": "Author"
               }
             ]
           },
@@ -406,7 +405,7 @@ The mapping table below should be used to generate unique concept entities for r
               {
                 "id": "https://lux.collections.yale.edu/data/concept/271d291f-0d42-4abf-bf43-070b241edc98",
                 "type": "Type",
-                "_label": "translator"
+                "_label": "Translator"
               }
             ]
           },
@@ -423,12 +422,55 @@ The mapping table below should be used to generate unique concept entities for r
               {
                 "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
                 "type": "Type",
-                "_label": "contributor"
+                "_label": "Contributor"
               }
             ]
           }
         ]
       }
+    }
+    ```
+
+5.  For each `6XX`, field, inspect each subfield `e` \(all but `611`\), `j` \(only `611)`, and `4` \(all\) for a role term or code.
+
+6.  [Normalize](../../glossary/normalization.md) and match role terms in `e` or `j` and role codes in `4` against the top-level entities corresponding to the terms and codes listed in the mapping table.
+
+7.  If the role term in `$e` is `depicted` or the code in `$4` is `dpc`, then generate a reference using the `represents` property rather than `about`.
+
+    `4887522`
+
+    ```
+    {
+      "represents": [
+        {
+          "id": "https://lux.collections.yale.edu/data/person/fbb6aff5-5c18-4653-8db8-8cff23988ca4",
+          "type": "Person",
+          "_label": "Broughton, Jack, 1704-1789"
+        }
+      ]
+    }
+    ```
+
+8.  Else, for all other `6XX` role terms or codes add a `classified_as` reference to the corresponding role concept with the referenced entity.
+
+    `6146780`
+
+    ```
+    {
+      "about": [
+        {
+          "id": "https://lux.collections.yale.edu/data/person/6e2bc024-ad8b-4906-95ab-83f441a1d306",
+          "type": "Person",
+          "_label": "Schrade, Paul",
+          "classified_as": [
+              {
+                "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
+                "type": "Type",
+                "_label": "Interviewee"
+              }
+            ]
+        }
+      ]
     }
     ```
 

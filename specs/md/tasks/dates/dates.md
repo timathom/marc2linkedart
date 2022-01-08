@@ -16,5 +16,3 @@ Date values from a `26X` field.
 
 **Parent topic:**[Descriptive content](../../concepts/descriptive_content.md)
 
-**Previous topic:**[Notes and statements](../../concepts/notes_and_statements.md)
-

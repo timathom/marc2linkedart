@@ -7,8 +7,8 @@ keyword: [Assigned, Completed]
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -26,7 +26,7 @@ scriptInclusion: BOTH
 
 ## Processing steps and output
 
-1.  Process the bibliography statement value \(MARC`504a`\).
+1.  Process the bibliography statement value \(MARC `504a`\).
 
     **Note:** This example is meant to illustrate a bibliography statement and does not represent a complete JSON-LD document.
 

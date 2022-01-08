@@ -11,9 +11,9 @@ Sorting title of a record-level entity. Taken from MARC`245`with initial article
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -32,20 +32,11 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Determine the number of nonfiling characters from the MARC`245`second indicator value.
+1.  Determine the number of nonfiling characters from the MARC `245` second indicator value.
 
-    -   If the second indicator is missing/corrupt or not castable as an integer, set the value to`0`.
-    -   Else, extract the value of`245`second indicator as an integer.
+    -   If the second indicator is missing/corrupt or not castable as an integer, set the value to `0`.
+    -   Else, extract the value of `245` second indicator as an integer.
     1.  Using the string value of the main title, take the substring using the number of nonfiling characters extracted from`245`second indicator as offset.
-
-    |JSON structure|Description|Default|
-    |--------------|-----------|-------|
-    |`root → identified_by → [2]`|When a parallel non-Latin script`Primary Name`is present, the`Sorting Name`is the third item in the`identified_by`array.| |
-    |`root → identified_by → [2] → type`| |`Name`|
-    |`root → identified_by → [2] → content`|String value of MARC`245`subfields with the number of nonfiling characters as offset| |
-    |`root → identified_by → [2] → classified_as → id`|IRI of the concept used to classify the sorting title|[http://vocab.getty.edu/aat/300404672](http://vocab.getty.edu/aat/300404672)|
-    |`root → identified_by → [2] → classified_as → type`| |`Type`|
-    |`root → identified_by → [2] → classified_as → _label`|Label of the concept used to classify the main title|`Sorting Name`|
 
     `9447`
 

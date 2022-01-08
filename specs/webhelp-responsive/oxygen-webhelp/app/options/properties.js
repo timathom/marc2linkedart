@@ -11,7 +11,7 @@ define(
     "webhelp.search.page.numberOfItems" : "10",
     "webhelp.search.ranking" : "true",
     "webhelp.show.full.size.image" : "true",
-    "webhelp.show.main.page.tiles" : "no",
-    "webhelp.show.main.page.toc" : "yes",
+    "webhelp.show.main.page.tiles" : "yes",
+    "webhelp.show.main.page.toc" : "no",
     "webhelp.top.menu.depth" : "3",
     "webhelp.topic.collapsible.elements.initial.state" : "expanded" });

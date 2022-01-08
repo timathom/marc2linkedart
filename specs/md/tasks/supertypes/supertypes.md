@@ -51,28 +51,26 @@ The supertype of a resource is used to determine its base class or document type
 
 
 
-1.  [Collections](../../tasks/supertypes/collectionformats.md)  
- “Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval”\([AAT](http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300025976)\).
-2.  [Audio](../../tasks/supertypes/audioformats.md)  
+-   **[Collections](../../tasks/supertypes/collectionformats.md)**  
+ “Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval” \([AAT](http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300025976)\).
+-   **[Audio](../../tasks/supertypes/audioformats.md)**  
 
-3.  [Cartography](../../tasks/supertypes/cartographicformats.md)  
+-   **[Cartography](../../tasks/supertypes/cartographicformats.md)**  
 Any materials representing, in whole or part, the earth or any celestial body at any scale.
-4.  [Datasets](../../tasks/supertypes/dataformats.md)  
+-   **[Datasets](../../tasks/supertypes/dataformats.md)**  
 
-5.  [Visual Works](../../tasks/supertypes/imageformats.md)  
+-   **[Visual Works](../../tasks/supertypes/imageformats.md)**  
 
-6.  [Moving Images](../../tasks/supertypes/movingimageformats.md)  
+-   **[Moving Images](../../tasks/supertypes/movingimageformats.md)**  
 
-7.  [Scores and Notation](../../tasks/supertypes/notationformats.md)  
+-   **[Scores and Notation](../../tasks/supertypes/notationformats.md)**  
 
-8.  [Objects](../../tasks/supertypes/objectformats.md)  
+-   **[Objects](../../tasks/supertypes/objectformats.md)**  
 
-9.  [Software and Electronic Media](../../tasks/supertypes/softwareformats.md)  
+-   **[Software and Electronic Media](../../tasks/supertypes/softwareformats.md)**  
 
-10. [Textual Works](../../tasks/supertypes/textualformats.md)  
+-   **[Textual Works](../../tasks/supertypes/textualformats.md)**  
 Content represented as words in a particular language, and/or the objects carrying that content.
 
 **Parent topic:**[Record-level entities](../../concepts/record_level_entities.md)
-
-**Previous topic:**[Content and carriers](../../tasks/content_and_carriers.md)
 

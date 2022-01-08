@@ -11,9 +11,9 @@ TheOrbis BIB IDis a serially based identifier assigned to MARC 21 Bibliographic 
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -32,7 +32,7 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Get value of`001`and prepend with`ils:yul:`.
+1.  Get value of `001` and prepend with `ils:yul:`.
 
 2.  Output JSON-LD with the Orbis BIB ID:
 

@@ -19,7 +19,3 @@ Refers to graphic or photogrammetric representations of the Earth's surface or a
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Audio](../../tasks/supertypes/audioformats.md)
-
-**Next topic:**[Datasets](../../tasks/supertypes/dataformats.md)
-

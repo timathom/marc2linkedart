@@ -7,9 +7,9 @@ keyword: [Assigned, Completed]
 
 |Domains|Usage|
 |-------|-----|
-|`HumanMadeObject`|Do not repeat on related`LinguisticObject`.|
-|`HumanMadeObject`|Do not repeat on related`VisualItem`.|
-|`members_exemplified_by → HumanMadeObject`|Do not repeat on containing`Set`.|
+|`HumanMadeObject`|Do not repeat on related `LinguisticObject`.|
+|`HumanMadeObject`|Do not repeat on related `VisualItem`.|
+|`members_exemplified_by → HumanMadeObject`|Do not repeat on containing `Set`.|
 
 ## Source data
 
@@ -26,17 +26,17 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Process the provenance statement values \(MARC`5613a`\).
+1.  Process the provenance statement values \(MARC `5613a`\).
 
-    1.  Join the string values of`5613a`with a whitespace character.
+    1.  Join the string values of `5613a` with a whitespace character.
 
-    2.  If subfield`3`is present, but does not appear first in the subfield sequence, prefix the statement with the value of subfield`3`.
+    2.  If subfield `3` is present, but does not appear first in the subfield sequence, prefix the statement with the value of subfield `3`.
 
-    3.  Test the value of`3`to see whether it ends with a colon.
+    3.  Test the value of `3` to see whether it ends with a colon.
 
     4.  If no colon is present, concatenate the value with a colon \(`:`\).
 
-    5.  Else, output the value of subfield`3`.
+    5.  Else, output the value of subfield `3`.
 
     ```
     561  $3 Copy 1: $a Purchased from Michael D. Heaston Co. on the Winlock William Miller, Jr. Memorial Fund, 1989.

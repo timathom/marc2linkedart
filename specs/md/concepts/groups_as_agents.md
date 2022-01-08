@@ -71,7 +71,7 @@ scriptInclusion: BOTH
                   {
                     "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
                     "type": "Type",
-                    "_label": "creator"
+                    "_label": "Creator"
                   }
                 ]
               }

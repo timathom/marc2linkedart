@@ -25,7 +25,3 @@ System number used by OCLC to manage records in the WorldCat system.
 
 **Parent topic:**[Descriptive content](../concepts/descriptive_content.md)
 
-**Previous topic:**[Embedded entities](../concepts/lux_embedded_entities.md)
-
-**Next topic:**[Names and labels](../concepts/names_and_labels.md)
-

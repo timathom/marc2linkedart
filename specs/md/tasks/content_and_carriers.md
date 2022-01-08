@@ -613,5 +613,3 @@ The following diagram \(by Rob Sanderson\) provides a high-level overview of the
 
 **Parent topic:**[Record-level entities](../concepts/record_level_entities.md)
 
-**Next topic:**[LUX supertype taxonomy](../tasks/supertypes/supertypes.md)
-

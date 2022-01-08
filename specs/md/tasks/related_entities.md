@@ -78,5 +78,3 @@ Membership in library collections.
 
 **Parent topic:**[LUX top-level entities](../concepts/lux_top-level_entities.md)
 
-**Previous topic:**[Record-level entities](../concepts/record_level_entities.md)
-

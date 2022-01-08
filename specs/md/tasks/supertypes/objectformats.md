@@ -17,7 +17,3 @@ Three-dimensional items not covered by more specific terms \(e.g., clothing, sti
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Scores and Notation](../../tasks/supertypes/notationformats.md)
-
-**Next topic:**[Software and Electronic Media](../../tasks/supertypes/softwareformats.md)
-

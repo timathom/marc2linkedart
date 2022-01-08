@@ -6,9 +6,9 @@ author: timothy.thompson@yale.edu
 
 Brief texts that provide additional information about a resource, supplied by catalogers or transcribed from a resource.
 
-Notes and descriptive statements are collected within a`referred_to_by`array.
+Notes and descriptive statements are collected within a `referred_to_by` array.
 
-Nineteen note and statement types are currently mapped forLUX.
+Nineteen note and statement types are currently mapped for LUX.
 
 -   **[Abstract](../tasks/notes-and-statements/abstract.md)**  
 Corresponds to the`520`note field in MARC.
@@ -56,8 +56,4 @@ Statement indicating whether a resource is available online or in the library.
 
 
 **Parent topic:**[Descriptive content](../concepts/descriptive_content.md)
-
-**Previous topic:**[Names and labels](../concepts/names_and_labels.md)
-
-**Next topic:**[Dates](../tasks/dates/dates.md)
 

@@ -11,9 +11,9 @@ System number used by OCLC to manage records in the WorldCat system.
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -36,11 +36,11 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Skip if the source data field contains a`$z`\(canceled/invalid control number\).
+1.  Skip if the source data field contains a `$z` \(canceled/invalid control number\).
 
-2.  Get value of`$a`.
+2.  Get value of `$a`.
 
-    1.  If the value of`$a`after`(OCoLC)`\(if present\) starts with "oc", return the original value.
+    1.  If the value of `$a` after `(OCoLC)` \(if present\) starts with "oc", return the original value.
 
     2.  Else, skip the source data field.
 

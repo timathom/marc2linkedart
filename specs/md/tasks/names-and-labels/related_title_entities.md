@@ -21,9 +21,9 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Process each entry in a`505`contents note as a top-level`LinguisticObject`.
+1.  Process each entry in a `505` contents note as a top-level `LinguisticObject`.
 
-    1.  If subfields`grt`are present, join the string values of MARC`505agrt`with a whitespace character.
+    1.  If subfields `grt` are present, join the string values of MARC `505agrt` with a whitespace character.
 
     2.  Split the joined string on double hyphen characters \(`--`\).
 

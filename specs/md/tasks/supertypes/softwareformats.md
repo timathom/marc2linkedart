@@ -13,7 +13,3 @@ A dataset, structured according to a particular piece of software's requirements
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Objects](../../tasks/supertypes/objectformats.md)
-
-**Next topic:**[Textual Works](../../tasks/supertypes/textualformats.md)
-

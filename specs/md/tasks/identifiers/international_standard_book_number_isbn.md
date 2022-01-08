@@ -11,9 +11,9 @@ The International Standard Book Number \(ISBN\) is a publisher-assigned commerci
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
-|`Set`|Do not repeat on nested`members_exemplified_by → HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
+|`Set`|Do not repeat on nested `members_exemplified_by → HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -33,19 +33,19 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Skip`020`if`020z`\(canceled/invalid ISBN\).
+1.  Skip `020` if `020z` \(canceled/invalid ISBN\).
 
-2.  Get value of`020a`.
+2.  Get value of `020a`.
 
-3.  Process any`020q`\(qualifying information\) values.
+3.  Process any `020q` \(qualifying information\) values.
 
-    1.  If 2 or more`020q`, join values with a whitespace character.
+    1.  If 2 or more `020q`, join values with a whitespace character.
 
-    2.  If value extracted from`020q`begins and ends with open/closing parentheses, return the value.
+    2.  If value extracted from `020q` begins and ends with open/closing parentheses, return the value.
 
     3.  Else, concatenate the value with open/closing parentheses.
 
-    4.  Join the values extracted from`020a`and`020q`with a whitespace character.
+    4.  Join the values extracted from `020a` and `020q` with a whitespace character.
 
 4.  Output JSON-LD with theISSN:
 

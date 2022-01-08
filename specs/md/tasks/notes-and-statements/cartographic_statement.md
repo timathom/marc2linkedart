@@ -7,8 +7,8 @@ keyword: [Assigned, Completed]
 
 |Domains|Usage|
 |-------|-----|
-|`LinguisticObject`|Do not repeat on related`HumanMadeObject`.|
-|`VisualItem`|Do not repeat on related`HumanMadeObject`.|
+|`LinguisticObject`|Do not repeat on related `HumanMadeObject`.|
+|`VisualItem`|Do not repeat on related `HumanMadeObject`.|
 |`DigitalObject`| |
 
 ## Source data
@@ -26,10 +26,10 @@ scriptInclusion: NONE
 
 ## Processing steps and output
 
-1.  Process the arrangement note values \(MARC`255abc`\).
+1.  Process the arrangement note values \(MARC `255abc`\).
 
     -   If two or more subfields \(`255abc`\) are present, join them with a whitespace character.
-    -   Else, output the string value of`255a`,`255b`, or`255c`.
+    -   Else, output the string value of `255a`, `255b`, or `255c`.
     **Note:** This example is meant to illustrate a cartographic statement and does not represent a complete JSON-LD document.
 
     `253435`

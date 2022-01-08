@@ -21,5 +21,3 @@ Works published in pieces over time, typically at regular intervals.
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Software and Electronic Media](../../tasks/supertypes/softwareformats.md)
-

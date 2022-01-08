@@ -11,7 +11,3 @@ category: Entity extraction
 
 **Parent topic:**[LUX supertype taxonomy](../../tasks/supertypes/supertypes.md)
 
-**Previous topic:**[Cartography](../../tasks/supertypes/cartographicformats.md)
-
-**Next topic:**[Visual Works](../../tasks/supertypes/imageformats.md)
-

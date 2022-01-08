@@ -35,12 +35,10 @@ Apply the following rules to the processing of bibliographic \(bib\) and holding
 -   Ignore bibs that are unsuppressed, but whose related mfhds are all suppressed.
 -   Ignore mfhds that are unsuppressed, but whose related bib is suppressed.
 
-1.  [Content and carriers](../tasks/content_and_carriers.md)  
+-   **[Content and carriers](../tasks/content_and_carriers.md)**  
 
-2.  [LUX supertype taxonomy](../tasks/supertypes/supertypes.md)  
+-   **[LUX supertype taxonomy](../tasks/supertypes/supertypes.md)**  
 Taxonomy of content types and related formats for classifying record-level resources in LUX.
 
 **Parent topic:**[LUX top-level entities](../concepts/lux_top-level_entities.md)
-
-**Next topic:**[Related entities](../tasks/related_entities.md)
 
