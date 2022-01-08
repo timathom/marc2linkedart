@@ -134,7 +134,6 @@ Geographic coordinates should be recorded as points or polygons using the [WKT s
 
         ```
         034 0 $a a $d E1135000 $e E1143000 $f N0224000 $g N0221000
-        
         ```
 
         ```
