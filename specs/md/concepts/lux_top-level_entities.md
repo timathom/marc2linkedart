@@ -6,9 +6,9 @@ category: Entity extraction
 
 # LUX top-level entities
 
-Eleven top-level entities are required for use inLUX.
+Eleven top-level entities are required for use in LUX.
 
-InLUX, top-level entities can be divided into*record-level*entities, which correspond to resources held by the library \(books, journals, databases, archival collections, etc.\), and*related*entities, which correspond to the people, places, concepts, etc., connected to those resources through some standard relationship.
+InLUX, top-level entities can be divided into *record-level* entities, which correspond to resources held by the library \(books, journals, databases, archival collections, etc.\), and *related* entities, which correspond to the people, places, concepts, etc., connected to those resources through some standard relationship.
 
 -   **[Record-level entities](../concepts/record_level_entities.md)**  
 Entities that correspond to resources held by the library \(books, journals, databases, archival collections, etc.\).
