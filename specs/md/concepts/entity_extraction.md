@@ -17,5 +17,5 @@ The transformation from MARC to Linked Art requires that both **records** and **
 -   A [JSON-LD](https://json-ld.org/) representation of each top-level entity must be dereferenceable through a RESTful API.
 
 -   **[LUX top-level entities](../concepts/lux_top-level_entities.md)**  
-Eleven top-level entities are required for use inLUX.
+Eleven top-level entities are required for use in LUX.
 
