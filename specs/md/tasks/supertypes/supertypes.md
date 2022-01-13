@@ -22,8 +22,8 @@ The supertype of a resource is used to determine its base class or document type
 |LinguisticObject|Objects|[Models](models.md)| |
 |LinguisticObject|Objects|[Realia](realia.md)| |
 |LinguisticObject|Objects|[Toys and Games](toysandgames.md)| |
-|LinguisticObject|Audio|[Music](music.md)| |
-|LinguisticObject|Audio|[Sound](sound.md)| |
+|LinguisticObject|Audio Works|[Music](music.md)| |
+|LinguisticObject|Audio Works|[Sound](sound.md)| |
 |LinguisticObject|Moving Images|[Motion Pictures](motionpictures.md)| |
 |LinguisticObject|Scores and Notation|[Notated Movement](notatedmovement.md)| |
 |LinguisticObject|Scores and Notation|[Notated Music](notatedmusic.md)| |
@@ -34,10 +34,10 @@ The supertype of a resource is used to determine its base class or document type
 |LinguisticObject|Textual Works|[Textual Data](textualdata.md)| |
 |Set|Collections|[Archival and Manuscript Materials](archivalandmanuscriptmaterials.md)| |
 |Set|Collections|[Kits](kits.md)| |
-|VisualItem **\[primary\]**|Cartography|[Atlases](atlases.md)| |
-|VisualItem|Cartography|[Geospatial Data](geospatialdata.md)| |
-|VisualItem **\[primary\]**|Cartography|[Globes](globes.md)| |
-|VisualItem|Cartography|[Maps](maps.md)| |
+|VisualItem **\[primary\]**|Cartographic Works|[Atlases](atlases.md)| |
+|VisualItem|Cartographic Works|[Geospatial Data](geospatialdata.md)| |
+|VisualItem **\[primary\]**|Cartographic Works|[Globes](globes.md)| |
+|VisualItem|Cartographic Works|[Maps](maps.md)| |
 |VisualItem|Visual Works|[Collages](collages.md)| |
 |VisualItem|Visual Works|[Drawings](drawings.md)| |
 |VisualItem|Visual Works|[Image Data](imagedata.md)| |
@@ -53,9 +53,9 @@ The supertype of a resource is used to determine its base class or document type
 
 -   **[Collections](../../tasks/supertypes/collectionformats.md)**  
  “Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval” \([AAT](http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300025976)\).
--   **[Audio](../../tasks/supertypes/audioformats.md)**  
+-   **[Audio Works](../../tasks/supertypes/audioformats.md)**  
 
--   **[Cartography](../../tasks/supertypes/cartographicformats.md)**  
+-   **[Cartographic Works](../../tasks/supertypes/cartographicformats.md)**  
 Any materials representing, in whole or part, the earth or any celestial body at any scale.
 -   **[Datasets](../../tasks/supertypes/dataformats.md)**  
 
