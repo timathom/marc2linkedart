@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="summary_holdings_supplements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Supplementary material holdings note</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-05-19"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>This specification applies to holdings records that contain <codeph>86X</codeph> fields with textual holdings notes.</p>
+      <table id="table_jy4_jxm_jrb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: SummaryHoldingsStatement
+sampleMfhds:
+  - 13867637
+fieldSpec:
+  - mfhd867a
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>If the carrier-level record contains multiple <codeph>867</codeph> fields, join the string value of all <codeph>867a</codeph> values with an escaped newline character (<codeph>\\n</codeph>).</cmd>
+      </step>
+      <step>
+        <cmd>Output a supplementary material note with the value from <codeph>867a</codeph>.</cmd>
+      </step>      
+    </steps>
+    <result>
+      <yulmfhdid>13867637 [MFHD]</yulmfhdid>
+      <codeblock>{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "v.14(1839):suppl.-v.15(1839):suppl.,\\nv.20(1853):suppl.,\\nv.22(1860):suppl.,\\nv.28(1879):suppl,\\n1883:Nov.:suppl.,\\nv.32(1887):suppl.,\\nv.35(1890):suppl.-v.40(1905):suppl.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300027363",
+          "type": "Type",
+          "_label": "Supplementary Material",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Supplementary Material Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

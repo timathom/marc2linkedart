@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossentry id="content_level_record" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:glossary.xsd">
+  <glossterm>Content-level record</glossterm>
+  <glossdef>
+    <p>In MARC-based systems, the content/carrier model corresponds roughly to the distinction between bibliographic records and holdings plus item records.</p>
+    <p>Content-level records correspond to bib records in the ILS and are represented by the Linked Art base classes <codeph>LinguisticObject</codeph>, <codeph>VisualItem</codeph>, and <codeph>Set</codeph>.</p>
+  </glossdef>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <source format="dita" href="../tasks/content_and_carriers.dita" scope="local"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2022-05-03"/>
+    </critdates>
+    <metadata conkeyref="metadata_glossary/keyword_metadata_glossary"/>
+  </prolog>
+  <glossBody>
+    <glossUsage>See <xref format="dita" href="../tasks/content_and_carriers.dita" scope="local"></xref> for more information.</glossUsage>
+  </glossBody>
+</glossentry>

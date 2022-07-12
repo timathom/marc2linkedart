@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossentry id="bound-with_resource" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:glossary.xsd">
+  <glossterm>Bound-with resource</glossterm>
+  <glossdef>
+    <p>A bound-with resource is a single volume in which multiple individual objects are bound together.</p>
+    <p>In Voyager, bound-with resources are represented by a single holdings record with multiple <codeph>014</codeph> fields.</p>
+    <p>A <q>master</q> bib record is linked to the MFHD, and then the bib ID for every other object bound with the object represented by the <q>master</q> record is recorded in a separate <codeph>014</codeph> field.</p>
+  </glossdef>
+  <prolog>
+    <author conkeyref="metadata_common/author_metadata"/>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <source format="dita" href="../tasks/content_and_carriers.dita" scope="local"/>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2022-05-03"/>
+    </critdates>
+    <metadata conkeyref="metadata_glossary/keyword_metadata_glossary"/>
+  </prolog>
+  <glossBody>
+    <glossUsage>See bib <codeph>2778143</codeph> in Voyager for an example.</glossUsage>
+  </glossBody>
+</glossentry>

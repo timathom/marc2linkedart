@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Complex works as complex subjects","shortdesc":"<p class=\"shortdesc\"\/>","href":"tasks\/name-title\/name-title-with-subdivisions.html","attributes":{"data-id":"name-title-with-subdivisions"},"menu":{"hasChildren":false},"tocID":"name-title-with-subdivisions-d2224e5732","topics":[]}]});

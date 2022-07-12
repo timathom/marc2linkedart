@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="copyright_entity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Copyright entities</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_hzf_25j_3rb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: CopyrightEntities
+sampleBibs:
+  - 693
+fieldSpec:  
+  - 264|*4|c
+trimPunctuation: true
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>      
+      <step>
+        <cmd>If <codeph>008[06]</codeph> has a value of <codeph>t</codeph>, then use the <codeph>008</codeph> date to generate a copyright entity, as specified in <xref href="../tasks/dates/008_dates.dita"/>.</cmd>
+      </step>
+      <step>
+        <cmd>Else, for each <codeph>264|*4|</codeph> with only <codeph>$c</codeph>, generate a copyright entity.</cmd>
+      </step>
+      <step>
+        <cmd>If the value of <codeph>264|*4|c</codeph> starts with a copyright symbol, preserve the symbol in the value of <codeph>content</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If the value of <codeph>264|*4|c</codeph> starts with a copyright symbol, strip the copyright symbol to generate date/time values using the <codeph>begin_of_the_begin</codeph> and <codeph>end_of_the_end</codeph> properties.</cmd>
+        <stepxmp>
+          <yulbibid>693</yulbibid>
+          <codeblock><![CDATA[264 4 $c ©1970]]></codeblock>
+        </stepxmp>
+        <stepresult>
+          <codeblock><![CDATA[{
+  "subject_to": [
+    {
+      "type": "Right",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055598",
+          "type": "Type",
+          "_label": "Copyright"
+        }
+      ],
+      "created_by": {
+        "type": "Creation",
+        "timespan": {
+          "type": "TimeSpan",
+          "begin_of_the_begin": "1970-01-01T00:00:00Z",
+          "end_of_the_end": "1971-01-01T00:00:00Z",
+          "identified_by": [
+            {
+              "type": "Name",
+              "content": "©1970",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300404669",
+                  "type": "Type",
+                  "_label": "Display Title"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>      
+    </steps>
+  </taskbody>
+</task>

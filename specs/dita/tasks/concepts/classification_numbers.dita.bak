@@ -1,0 +1,172 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classification_numbers" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Classification numbers</title>
+  <shortdesc>Resources extracted from MARC 050 and 090 entries.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-03"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin,Maggie Yue"/>
+    <data name="completed" value="2021-12-01T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: ClassificationNumbers
+sampleBibs:
+  - 4
+  - 11 # 050 and 090
+  - 236
+  - 907498
+  - 4824458
+  - 15589961
+# Source data fields
+fieldSpec:
+  - 050a
+  - 090a
+trimPunctuation: true
+stripPunctuation:
+  - true
+  - preserve:
+    - period
+scriptInclusion: NONE</codeblock>
+    </section>
+    <steps>
+      <step>
+        <cmd>For each unique <codeph>050a</codeph> or <codeph>090a</codeph> value, generate and store a top-level concept resource, identified by an IRI.</cmd>
+      </step>
+      <step>
+        <cmd>Create a key for matching.</cmd>
+        <substeps>          
+          <substep>
+            <cmd>Replace any punctuation characters that are <i>not</i> a period (<codeph>.</codeph>) with a whitespace character.</cmd>
+          </substep>
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> and match/merge each unique string value.</cmd>
+          </substep>
+          <substep>
+            <cmd>After normalizing, use an appropriate regular expression to test the value of <codeph>050a</codeph> or <codeph>090a</codeph> to see whether it is an LC classification number.</cmd>
+            <stepxmp><codeph>[a-z]+[0-9]+([.][a-z]+[0-9]+)?</codeph></stepxmp>
+          </substep>
+          <substep>
+            <cmd>For values that match the test, add a <codeph>classified_as</codeph> for <codeph>Library of Congress classification</codeph>, as in the example below.</cmd>
+          </substep>
+          <substep>
+            <cmd>For now, skip any values that do not match the regular expression.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <ol>
+            <li>
+              <yulbibid>907498</yulbibid>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/f0c0c4d0-532d-4438-a26f-15c261fb4f6c",
+  "type": "Type",
+  "_label": "PT3818",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "PT3818"
+    }
+  ],
+  "classified_as": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q621080",
+      "type": "Type",
+      "_label": "Library of Congress classification"
+    }
+  ]
+}]]></codeblock>
+            </li>
+            <li>
+              <yulbibid>907498</yulbibid>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/f0c0c4d0-532d-4438-a26f-15c261fb4f6c",
+  "type": "Type",
+  "_label": "PT3818",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "PT3818"
+    }
+  ],
+  "classified_as": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q621080",
+      "type": "Type",
+      "_label": "Library of Congress classification"
+    }
+  ]
+}]]></codeblock>
+            </li>
+          </ol>
+          
+        </stepresult>
+      </step>
+      <step>
+        <cmd>In the referring record-level resource (<codeph>LinguisticObject</codeph>, <codeph>VisualItem</codeph>, or <codeph>DigitalObject</codeph>), add an embedded reference for each concept entity.</cmd>
+        <substeps id="substeps_ym3_fvn_trb">
+          <substep>
+            <cmd>If there is more than concept entity, sort them by their string values in alphanumeric order.</cmd>
+          </substep>
+        </substeps>
+        <info>
+          <note>The embedded reference should follow the <indexterm>supertype</indexterm> classification of the resource in the same <codeph>classified_as</codeph> array.</note>
+        </info>        
+        <stepresult>
+          <yulbibid>11</yulbibid>
+          <codeblock><![CDATA[{
+  "id": "https://lux.collections.yale.edu/data/text/8697aefe-8ffa-4f73-bf3d-f4883a5c26dd",
+  "type": "LinguisticObject",
+  "_label": "Governmental accounting, auditing, and financial reporting",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028051",
+      "type": "Type",
+      "_label": "Books",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/090-1",
+      "type": "Type",
+      "_label": "HJ9771"
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/e372cfe2-988e-41c7-ab4a-30dea4dce28b",
+      "type": "Type",
+      "_label": "HJ9773"
+    }    
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

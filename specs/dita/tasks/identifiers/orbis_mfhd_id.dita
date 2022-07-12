@@ -1,0 +1,75 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="orbis_mfhd_id" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Voyager MFHD ID</title>
+  <shortdesc>The Voyager MFHD ID is a serially based identifier assigned to MARC 21 Holdings records in the Voyager ILS.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2022-05-13"/>
+      <!--tt434-->
+      <revised modified="2021-10-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword></keyword>
+        <keyword></keyword>
+        <keyword></keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_hdd_ffn_frb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph></entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>members_exemplified_by → HumanMadeObject</codeph>
+              </entry>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock conkeyref="specs/mfhd_id"/>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Get value of MFHD ID and prepend with <codeph>ils:yul:mfhd:</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>For each <xref keyref="gloss-carrier"/>, output  the MFHD identifier.</cmd>
+      </step>
+    </steps>
+    <result>
+      <div conkeyref="linked_art_ex/ex-identifier-mfhd"/>
+    </result>
+  </taskbody>
+</task>

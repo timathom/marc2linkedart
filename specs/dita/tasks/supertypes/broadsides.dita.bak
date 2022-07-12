@@ -1,0 +1,72 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_Broadsides" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Broadsides</title>
+  <shortdesc/>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-10-05"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: Broadsides
+sampleBibs:
+  - 6642610
+fieldSpec:
+  - 300a
+  - 500a
+  - 655a
+  - MFHD 852hik</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+      <codeblock>---
+# Broadsides mapping
+conditions:
+  OR:
+    - 300a contains 'broadside'    
+    - AND:
+      - 300a contains 'sheet'
+      - OR:
+        - 500a contains 'broadsheet'
+        - 500a contains 'broadside'
+        - 500a contains 'broad-side'
+    - lower-case(655a) contains 'broadside'
+    - lower-case(MFHD 852h) contains 'brside'
+    - lower-case(MFHD 852i) contains 'brside'
+    - lower-case(MFHD 852k) contains 'brside'
+  NOT:
+    - 035a contains 'yuldbase'</codeblock>
+    </section>
+    <result>
+      <codeblock>{
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300026739",
+      "type": "Type",
+      "_label": "Broadsides",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    }
+  ]    		
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

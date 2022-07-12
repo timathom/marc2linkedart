@@ -1,0 +1,134 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="table_of_contents" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Table of contents</title>
+  <shortdesc>Corresponds to the<codeph>505</codeph>note field in MARC.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-01-12"/>
+      <!--tt434-->
+      <revised modified="2021-10-21"/>
+      <!--tt434-->
+      <revised modified="2021-10-22"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-19"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin,Maggie Yue"/>
+    <data name="completed" value="2021-11-22T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_hzf_25j_3rb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry>Do not repeat on nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: TableOfContents
+sampleBibs:
+  - 18
+fieldSpec:
+  - 505agrt
+trimPunctuation: false
+scriptInclusion: NONE</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>If <codeph>505a</codeph> and no other subfields, output the value of <codeph>505a</codeph>.</cmd>        
+      </step>
+      <step>
+        <cmd>Else, join all <codeph>505</codeph> subfields with a whitespace character.</cmd>
+      </step>
+      <step>
+        <cmd>If there is more than one <codeph>505</codeph> field, join the string value of all <codeph>505</codeph> fields with an escaped newline character (<codeph>\\n</codeph>)</cmd>
+      </step>
+      <step>
+        <cmd>If additional <codeph>505</codeph> fields begin with the prefix <q>(Cont.)</q>, strip the prefix and trailing whitespace from the <codeph>505</codeph> field.</cmd>
+      </step>
+      <step>
+        <cmd>Replace space-surrounded double hyphens (<codeph> -- </codeph>) with escaped newline characters (<codeph>\\n</codeph>) and store the string as a single <codeph>content</codeph> value.</cmd>
+      </step>      
+    </steps>
+    <result>
+      <note>This example is meant to illustrate an table of contents note and does not represent a complete JSON-LD document.</note>
+      <yulbibid>2733</yulbibid>
+      <codeblock><![CDATA[{
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "The letter\\nTaller to-day\\nThe journey\\nNo change of place\\nThe question\\nThis lunar beauty\\nThis one\\nChorus\\nThe watchers\\nOde\\nThe decoys\\nThe three companions\\nIn legend\\nThe quarry\\nSeascape\\nA dream\\nSong\\nAutumn song\\nOne evening\\nLullaby\\nUnderneath the abject willow\\nMadrigal\\nAble at times to cry\\nTwo songs for Hedli Anderson\\nMiss Gee : a ballad\\nRoman wall blues\\nVictor : a ballad\\nThe dead echo\\nGanymede\\nA new age\\nSurgical ward\\nEmbassy\\nThe sphinx\\nMacao\\nThe bard\\nMus©♭e des Beaux Arts\\nGare du Midi\\nRimbaud\\nThe capital\\nEpitaph on a tyrant\\nIn memory of W.B. Yeats\\nIn memory of Sigmund Freud\\nThe quest\\nLaw like love\\nAnother time\\nOur bias\\nHell\\nSong\\nLady, weeping at the crossroads\\nIf I could tell you\\nThe model\\nAtlantis\\nDoomsday song\\nSong of the old soldier\\nMundus et infans\\nThe lesson\\nInvocation to Ariel\\nStephano's song\\nTrinculo's song\\nAlonso to Ferdinand\\nSong of the master and boatswain\\nMiranda's song\\nCaliban to the audience\\nThree dreams\\nIn praise of limestone\\nOne circumlocution\\nTheir lonely betters\\nSong\\nPleasure island\\nThe fall of Rome\\nThe managers\\nBarbed wire\\nUnder Sirius\\nNumbers and faces\\nA household\\nPrecious five\\nThe shield of Achilles\\nFleet visit\\nThe willow-wren and the stare\\nThe proof\\nA permanent way\\nNocturne\\nIn memoriam L.K.A., 1950-52\\nBucolics. Winds\\nWoods\\nMountains\\nLakes\\nIslands\\nPlains\\nStreams\\nHorae canonicae. Prime\\nTerce\\nSext\\nNones\\nVespers\\nCompline\\nLauds\\nMetalogue to The magic flute\\nThe song\\nGood-bye to the mezzogiorno\\nPrologue : the birth of architecture\\nThanksgiving for a habitat\\nThe cave of making\\nDown there\\nUp there\\nThe geography of the house\\nEncomium Balnei\\nGrub first, then ethics\\nFor friends only\\nTonight at seven-thirty\\nThe cave of nakedness\\nThe common life\\nYou\\nOn the circuit\\nAfter reading a child's guide to modern physics\\nWhitsunday in Kirchstetten\\nJoseph Weinheber\\nThe Horatians\\nSince\\nIn due season\\nAugust 1968\\nRiver profile\\nPrologue at sixty.",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300195187",
+          "type": "Type",
+          "_label": "Table of Contents",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Table of Contents Note",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+    </result>
+  </taskbody>
+</task>

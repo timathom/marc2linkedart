@@ -1,0 +1,2143 @@
+[ {
+  "value" : "acqAOB",
+  "name" : "acqAOB"
+}, {
+  "value" : "acqART",
+  "name" : "acqART"
+}, {
+  "value" : "acqAST",
+  "name" : "acqAST"
+}, {
+  "value" : "acqCCL",
+  "name" : "acqCCL"
+}, {
+  "value" : "acqCHEM",
+  "name" : "acqCHEM"
+}, {
+  "value" : "acqCLAS",
+  "name" : "acqCLAS"
+}, {
+  "value" : "acqCSSSI",
+  "name" : "acqCSSSI"
+}, {
+  "value" : "acqDIVBKS",
+  "name" : "acqDIVBKS"
+}, {
+  "value" : "acqDIVSER",
+  "name" : "acqDIVSER"
+}, {
+  "value" : "acqDRA",
+  "name" : "acqDRA"
+}, {
+  "value" : "acqENGN",
+  "name" : "acqENGN"
+}, {
+  "value" : "acqEPH",
+  "name" : "acqEPH"
+}, {
+  "value" : "acqFES",
+  "name" : "acqFES"
+}, {
+  "value" : "acqGDC",
+  "name" : "acqGDC"
+}, {
+  "value" : "acqGEO",
+  "name" : "acqGEO"
+}, {
+  "value" : "acqKSLANT",
+  "name" : "acqKSLANT"
+}, {
+  "value" : "acqKSLBKS",
+  "name" : "acqKSLBKS"
+}, {
+  "value" : "acqKSLSER",
+  "name" : "acqKSLSER"
+}, {
+  "value" : "acqLWL",
+  "name" : "acqLWL"
+}, {
+  "value" : "acqMATH",
+  "name" : "acqMATH"
+}, {
+  "value" : "acqMEDBKS",
+  "name" : "acqMEDBKS"
+}, {
+  "value" : "acqMEDHIST",
+  "name" : "acqMEDHIST"
+}, {
+  "value" : "acqMEDSER",
+  "name" : "acqMEDSER"
+}, {
+  "value" : "acqMSSA",
+  "name" : "acqMSSA"
+}, {
+  "value" : "acqMUS",
+  "name" : "acqMUS"
+}, {
+  "value" : "acqORN",
+  "name" : "acqORN"
+}, {
+  "value" : "acqREVIEW",
+  "name" : "acqREVIEW"
+}, {
+  "value" : "acqSMLAFR",
+  "name" : "acqSMLAFR"
+}, {
+  "value" : "acqSMLBUS",
+  "name" : "acqSMLBUS"
+}, {
+  "value" : "acqSMLEAC",
+  "name" : "acqSMLEAC"
+}, {
+  "value" : "acqSMLEXCB",
+  "name" : "acqSMLEXCB"
+}, {
+  "value" : "acqSMLEXCS",
+  "name" : "acqSMLEXCS"
+}, {
+  "value" : "acqSMLFST",
+  "name" : "acqSMLFST"
+}, {
+  "value" : "acqSMLGIFB",
+  "name" : "acqSMLGIFB"
+}, {
+  "value" : "acqSMLGIFS",
+  "name" : "acqSMLGIFS"
+}, {
+  "value" : "acqSMLJUD",
+  "name" : "acqSMLJUD"
+}, {
+  "value" : "acqSMLLAC",
+  "name" : "acqSMLLAC"
+}, {
+  "value" : "acqSMLMST",
+  "name" : "acqSMLMST"
+}, {
+  "value" : "acqSMLNEA",
+  "name" : "acqSMLNEA"
+}, {
+  "value" : "acqSMLOST",
+  "name" : "acqSMLOST"
+}, {
+  "value" : "acqSMLPREP",
+  "name" : "acqSMLPREP"
+}, {
+  "value" : "acqSMLPRES",
+  "name" : "acqSMLPRES"
+}, {
+  "value" : "acqSMLSEA",
+  "name" : "acqSMLSEA"
+}, {
+  "value" : "acqSMLSLAV",
+  "name" : "acqSMLSLAV"
+}, {
+  "value" : "acqSMLSST",
+  "name" : "acqSMLSST"
+}, {
+  "value" : "acqSSL",
+  "name" : "acqSSL"
+}, {
+  "value" : "acqSSLEGC",
+  "name" : "acqSSLEGC"
+}, {
+  "value" : "acqSTAT",
+  "name" : "acqSTAT"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "art"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artbas3"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artbirr"
+}, {
+  "value" : "HAAS ARTS LIBRARY, Art & Arch Collection",
+  "name" : "artcirc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artcr"
+}, {
+  "value" : "Yale University Art Gallery",
+  "name" : "artgal"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artlck1"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artlck2"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artlo1"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artlo2"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artmicl"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artnogo"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artop"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artor"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artper"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artref"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artrefb"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artrefc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artrefi"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artspc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artspr"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artsps"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artsty1"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artsty2"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artts"
+}, {
+  "value" : "ARTS SPECIAL COLLECTIONS, Type Specimens (Non-Circulating)",
+  "name" : "arttsc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artunca"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artuncd"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artunci"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "artzzz"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ast"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "astref"
+}, {
+  "value" : "Institutional Archives (BAC)",
+  "name" : "bacia"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacpd"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacpdref"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrb"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrb1"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrb2"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrb3"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrbb"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrbca"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrbcu"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrbf"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrbs"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacref"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrefc"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrefd"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrefl"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrefp"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrefr"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "bacrefv"
+}, {
+  "value" : "Bass Library",
+  "name" : "bassill"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beineliz"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beingen"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beinosb"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beinref"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beinsref"
+}, {
+  "value" : "BEINECKE (Non-Circulating) Technical Services in process",
+  "name" : "beints"
+}, {
+  "value" : "BEINECKE (Non-Circulating) Technical Services in process",
+  "name" : "beintsa"
+}, {
+  "value" : "BEINECKE (Non-Circulating) Technical Services in process",
+  "name" : "beintsg"
+}, {
+  "value" : "BEINECKE (Non-Circulating) Technical Services in process",
+  "name" : "beintso"
+}, {
+  "value" : "BEINECKE (Non-Circulating) Technical Services in process",
+  "name" : "beintsw"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beinwa"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beinycal"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "beinycgl"
+}, {
+  "value" : "catYUL",
+  "name" : "catYUL"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccl"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccl2wkr"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccl3day"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclaud"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclaudio"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclbind"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclbmec"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclborr"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclcd"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclclicker"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclclos"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccldesk"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccldvd"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclec"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccletextcd"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclger"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclgraph"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclhr2"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclhr24"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccllibn"
+}, {
+  "value" : "Bass, Upper Level, Model Research Collection",
+  "name" : "cclmrc"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclmtn"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclnew"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclnogo"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclop"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclpoor"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclpres"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclra1"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclref"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclrefa"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclsoft"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccltran"
+}, {
+  "value" : "Bass Library",
+  "name" : "ccltravel"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclvd"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclvid"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclyccdvd"
+}, {
+  "value" : "Bass Library",
+  "name" : "cclzzz"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "chem"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "chemref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "chemwkst"
+}, {
+  "value" : "circAA",
+  "name" : "circAA"
+}, {
+  "value" : "Pickup at Bass Library Service Desk",
+  "name" : "circACCCCL"
+}, {
+  "value" : "Contactless pickup at Sterling Library Nave",
+  "name" : "circACCSML"
+}, {
+  "value" : "circAOB",
+  "name" : "circAOB"
+}, {
+  "value" : "circAST",
+  "name" : "circAST"
+}, {
+  "value" : "circBAC",
+  "name" : "circBAC"
+}, {
+  "value" : "circBDIR",
+  "name" : "circBDIR"
+}, {
+  "value" : "circBEIN",
+  "name" : "circBEIN"
+}, {
+  "value" : "circCHEM",
+  "name" : "circCHEM"
+}, {
+  "value" : "circCLAS",
+  "name" : "circCLAS"
+}, {
+  "value" : "Pickup at Divinity Library: Requires Divinity School Access",
+  "name" : "circDIV"
+}, {
+  "value" : "Distance Nursing Program",
+  "name" : "circDNP"
+}, {
+  "value" : "Pickup at Arts Library Service Desk ",
+  "name" : "circDRA"
+}, {
+  "value" : "DRMS 344 Winchester",
+  "name" : "circDRMS"
+}, {
+  "value" : "circENGN",
+  "name" : "circENGN"
+}, {
+  "value" : "circEPH",
+  "name" : "circEPH"
+}, {
+  "value" : "Forestry & Environmental Studies Library Circulation Desk",
+  "name" : "circFES"
+}, {
+  "value" : "circFILM",
+  "name" : "circFILM"
+}, {
+  "value" : "circFILMHQ",
+  "name" : "circFILMHQ"
+}, {
+  "value" : "circGEOL",
+  "name" : "circGEOL"
+}, {
+  "value" : "SML ILL Desk",
+  "name" : "circILL"
+}, {
+  "value" : "circKSL",
+  "name" : "circKSL"
+}, {
+  "value" : "circLAW",
+  "name" : "circLAW"
+}, {
+  "value" : "circLSF",
+  "name" : "circLSF"
+}, {
+  "value" : "circLSFR",
+  "name" : "circLSFR"
+}, {
+  "value" : "circMAPS",
+  "name" : "circMAPS"
+}, {
+  "value" : "circMATH",
+  "name" : "circMATH"
+}, {
+  "value" : "Contactless pickup at Medical Library",
+  "name" : "circMED"
+}, {
+  "value" : "circMSBASS",
+  "name" : "circMSBASS"
+}, {
+  "value" : "circMSDIV",
+  "name" : "circMSDIV"
+}, {
+  "value" : "circMSHAAS",
+  "name" : "circMSHAAS"
+}, {
+  "value" : "circMSMARX",
+  "name" : "circMSMARX"
+}, {
+  "value" : "circMSMED",
+  "name" : "circMSMED"
+}, {
+  "value" : "circMSMUS",
+  "name" : "circMSMUS"
+}, {
+  "value" : "circMSSA",
+  "name" : "circMSSA"
+}, {
+  "value" : "circMSSML",
+  "name" : "circMSSML"
+}, {
+  "value" : "circMSTST",
+  "name" : "circMSTST"
+}, {
+  "value" : "circMUDD",
+  "name" : "circMUDD"
+}, {
+  "value" : "circMUSIC",
+  "name" : "circMUSIC"
+}, {
+  "value" : "circOPAC",
+  "name" : "circOPAC"
+}, {
+  "value" : "Online Physician Assistant Program",
+  "name" : "circOPAP"
+}, {
+  "value" : "circORN",
+  "name" : "circORN"
+}, {
+  "value" : "circPR344",
+  "name" : "circPR344"
+}, {
+  "value" : "No Longer in Use--See HAAS Course Reserve Desk",
+  "name" : "circRSVART"
+}, {
+  "value" : "circRSVCCL",
+  "name" : "circRSVCCL"
+}, {
+  "value" : "circRSVDIV",
+  "name" : "circRSVDIV"
+}, {
+  "value" : "HASS Course Reserve Desk",
+  "name" : "circRSVDRA"
+}, {
+  "value" : "circRSVEGN",
+  "name" : "circRSVEGN"
+}, {
+  "value" : "circRSVEPH",
+  "name" : "circRSVEPH"
+}, {
+  "value" : "F&ES Course Reserve Desk",
+  "name" : "circRSVFES"
+}, {
+  "value" : "circRSVKSL",
+  "name" : "circRSVKSL"
+}, {
+  "value" : "circRSVMED",
+  "name" : "circRSVMED"
+}, {
+  "value" : "circRSVMUS",
+  "name" : "circRSVMUS"
+}, {
+  "value" : "circRSVSSL",
+  "name" : "circRSVSSL"
+}, {
+  "value" : "circSN",
+  "name" : "circSN"
+}, {
+  "value" : "Pickup at Marx Library Information Desk",
+  "name" : "circSSL"
+}, {
+  "value" : "circSTAT",
+  "name" : "circSTAT"
+}, {
+  "value" : "circTECH",
+  "name" : "circTECH"
+}, {
+  "value" : "circVRC",
+  "name" : "circVRC"
+}, {
+  "value" : "circWALPOL",
+  "name" : "circWALPOL"
+}, {
+  "value" : "circWC",
+  "name" : "circWC"
+}, {
+  "value" : "Classics Library",
+  "name" : "clanum"
+}, {
+  "value" : "Classics Library",
+  "name" : "clas"
+}, {
+  "value" : "Classics Library",
+  "name" : "clasclos"
+}, {
+  "value" : "Classics Library",
+  "name" : "clasdict"
+}, {
+  "value" : "Classics Library",
+  "name" : "clasref"
+}, {
+  "value" : "Classics Library",
+  "name" : "clasres"
+}, {
+  "value" : "Yale University Library",
+  "name" : "cowl"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssi"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssi24hr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssi2hr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssi3day"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssiannex"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssifolio"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssiper"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssiperm"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssiref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "csssirefst"
+}, {
+  "value" : "Divinity Library",
+  "name" : "div"
+}, {
+  "value" : "Divinity Library",
+  "name" : "div3day"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divannx"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divborr"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divbss"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divcd"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divdmr"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divdmrref"
+}, {
+  "value" : "Divinity Library",
+  "name" : "diveast"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divhr24"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divlo"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divmrc"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divmrclc"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divmrr"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divmrv"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divrc"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divres"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divrlo"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divrr"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divrrus"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divrsno"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divspc"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divsr"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divts"
+}, {
+  "value" : "Divinity Library",
+  "name" : "divwk1r"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "dra"
+}, {
+  "value" : "Yale University Library",
+  "name" : "draat"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drabbx"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "dracr"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drafoll"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drafolo"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "dragpb"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drahclc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "dranbs"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "draod"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "draor"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "draperc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drar"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drarefl"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drarefo"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drascrc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "draspc"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "drathe"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engn"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnborr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnhr24"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnlo"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnnonc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnper"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnperm"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnrep"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "engnres"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "eph"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephcens"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephcirc"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephhist"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephhr24"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephnchs"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephper"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephref"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephres"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephres3"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "ephsref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "fes"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "fesfol"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "fesfsc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "feshr2"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "feshr24"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "fesover"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "fesper"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "fesref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "festhe"
+}, {
+  "value" : "Film Study Center",
+  "name" : "filmdvd"
+}, {
+  "value" : "Film Study Center",
+  "name" : "filmfidv"
+}, {
+  "value" : "Film Study Center",
+  "name" : "filmlasr"
+}, {
+  "value" : "Film Study Center",
+  "name" : "filmref"
+}, {
+  "value" : "Film Study Center",
+  "name" : "filmvidb"
+}, {
+  "value" : "FILM ARCHIVE, Three-Day Reserve",
+  "name" : "fsc3day"
+}, {
+  "value" : "FILM ARCHIVE, Three-Hour Reserve",
+  "name" : "fschr3"
+}, {
+  "value" : "Film Study Center",
+  "name" : "fsfilm"
+}, {
+  "value" : "Government Documents",
+  "name" : "gdcsslr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geo"
+}, {
+  "value" : "MARX Library - ask at Info Desk",
+  "name" : "geoanx"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geodsk"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geofol"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geogis"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geohr2"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geomap"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geomic"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geonbs"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geonogo"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geononc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geoper"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geoperm"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "georbc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "georbr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "georef"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geores"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "georrr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geothe"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geots"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "geozzz"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ksl"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslabs"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslannex"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslant"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslantc"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "kslantm"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslanto"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslantp"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslantr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslcage"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslclb"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslclp"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslfolio"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslherb"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslkoff"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslloff"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "kslmic"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslnew"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslop"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslopen"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslper"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslperm"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslpers"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslrec"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslrefa"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslrefd"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslrefj"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslrefo"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslroff"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslsngo"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslstks"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ksltoff"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslvid"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "kslzzz"
+}, {
+  "value" : "Law Library",
+  "name" : "law"
+}, {
+  "value" : "Linguistics Seminar, Room 302 HGS, phone (203) 432-2450",
+  "name" : "ling"
+}, {
+  "value" : "Library Shelving Facility (LSF)",
+  "name" : "lsf"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfaobr"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfart"
+}, {
+  "value" : "LSF-please contact art.library@yale.edu to request this item",
+  "name" : "lsfartmr"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfartr"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfartrr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfbaby"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "lsfbacr"
+}, {
+  "value" : "Yale Center for British Art",
+  "name" : "lsfbarr"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "lsfbeiar"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "lsfbeigr"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "lsfbeior"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "lsfbeir"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "lsfbeiwr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfche"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfchem"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfcher"
+}, {
+  "value" : "Classics Library",
+  "name" : "lsfcla"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfclar"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfcsssi"
+}, {
+  "value" : "asd",
+  "name" : "lsfcsssir"
+}, {
+  "value" : "Divinity Library",
+  "name" : "lsfdiv"
+}, {
+  "value" : "Divinity Library",
+  "name" : "lsfdivr"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfdra"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfdrar"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfdrarr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfeng"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfengr"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "lsfeph"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "lsfephr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsffes"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "lsffesr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsffor"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfforr"
+}, {
+  "value" : "Library Shelving Facility (LSF)",
+  "name" : "lsffs"
+}, {
+  "value" : "Film Study Center",
+  "name" : "lsffsfilm"
+}, {
+  "value" : "LSF--Request for delivery to any Yale Library",
+  "name" : "lsffsvideo"
+}, {
+  "value" : "LSF--Contact Film Archive to request item",
+  "name" : "lsffsvidr"
+}, {
+  "value" : "Government Documents",
+  "name" : "lsfgdc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfgdcr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfgeo"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfgeor"
+}, {
+  "value" : "Music Library",
+  "name" : "lsfhsrr"
+}, {
+  "value" : "LSF-Physical copy for request by library staff only",
+  "name" : "lsfhvt"
+}, {
+  "value" : "Library Shelving Facility (LSF)",
+  "name" : "lsfi"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfjud"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfksl"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfkslant"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfkslr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsflamc"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfmap"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfmapr"
+}, {
+  "value" : "LSF - Request for delivery to any Yale Library",
+  "name" : "lsfmarx"
+}, {
+  "value" : "LSF - Request for delivery to Marx Library only (non circ)",
+  "name" : "lsfmarxmap"
+}, {
+  "value" : "Math Library",
+  "name" : "lsfmath"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "lsfmed"
+}, {
+  "value" : "LSF-Use in the Medical Historical Library only (Non-circ)",
+  "name" : "lsfmedhr"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "lsfmedr"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "lsfmssr"
+}, {
+  "value" : "Bass Library",
+  "name" : "lsfmtn"
+}, {
+  "value" : "Music Library",
+  "name" : "lsfmus"
+}, {
+  "value" : "Music Library",
+  "name" : "lsfmusr"
+}, {
+  "value" : "LSF, Music Library Recordings Collection (Non-Circulating)",
+  "name" : "lsfmusrecr"
+}, {
+  "value" : "LSF, Music Library Special Collections, Sheet Music",
+  "name" : "lsfmussmcr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfnea"
+}, {
+  "value" : "Classics Library",
+  "name" : "lsfnum"
+}, {
+  "value" : "Classics Library",
+  "name" : "lsfnumr"
+}, {
+  "value" : "LSF, Oral History of American Music (Non-Circulating)",
+  "name" : "lsfohmr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfpresr"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "lsfr"
+}, {
+  "value" : "Library Shelving Facility (LSF)",
+  "name" : "lsfsem"
+}, {
+  "value" : "Library Shelving Facility (LSF)",
+  "name" : "lsfsemi"
+}, {
+  "value" : "LSF-Use in SML, Manuscripts and Archives only (Non-Circ)",
+  "name" : "lsfsemr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsla"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfslar"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsmlaris"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsmlasi"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsmlasir"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsmlear"
+}, {
+  "value" : "LSF - Request for delivery to any Yale Library",
+  "name" : "lsfsmlmic"
+}, {
+  "value" : "LSF - Request for in-building use at any Yale library",
+  "name" : "lsfsmlmici"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsmlmicr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "lsfsmlphi"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfssl"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfsslc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfsslr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "lsfstat"
+}, {
+  "value" : "Yale University Library",
+  "name" : "lsftib"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "lsfvrcr"
+}, {
+  "value" : "Lewis Walpole Library",
+  "name" : "lwl"
+}, {
+  "value" : "Lewis Walpole Library",
+  "name" : "lwlint"
+}, {
+  "value" : "Lewis Walpole Library",
+  "name" : "lwlprsat"
+}, {
+  "value" : "Lewis Walpole Library",
+  "name" : "lwlref"
+}, {
+  "value" : "MARX LIBRARY",
+  "name" : "marx"
+}, {
+  "value" : "MARX LIBRARY, 24-hour reserve, ask at Info Desk",
+  "name" : "marx24hr"
+}, {
+  "value" : "MARX LIBRARY, 2-hour reserve, ask at Info Desk",
+  "name" : "marx2hr"
+}, {
+  "value" : "MARX LIBRARY, 3-day reserve, ask at Info Desk",
+  "name" : "marx3day"
+}, {
+  "value" : "MARX LIBRARY, 4-hour reserve, ask at Info Desk",
+  "name" : "marx4hr"
+}, {
+  "value" : "MARX LIBRARY, ANNEX, request for use",
+  "name" : "marxannex"
+}, {
+  "value" : "MARX LIBRARY, Maps, Request to use at Marx",
+  "name" : "marxmap"
+}, {
+  "value" : "MARX LIBRARY, Current Journal Display Shelves",
+  "name" : "marxper"
+}, {
+  "value" : "Math Library",
+  "name" : "math"
+}, {
+  "value" : "Math Library",
+  "name" : "mathannex"
+}, {
+  "value" : "Math Library",
+  "name" : "mathper"
+}, {
+  "value" : "Math Library",
+  "name" : "mathref"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "med"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "med3day"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medbiog"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medcat"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medcirc"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medcird"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medcres"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhper"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhr24"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhr4"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhrf"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhs"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhsl"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medhslmini"
+}, {
+  "value" : "Humanities in Medicine Collection",
+  "name" : "medhum"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medill"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medjres"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medmic"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "mednref"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "mednres"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medper"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medref"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medrefchc"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medrefec"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medrefeol"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medrefrc"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medres"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medsref"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medtcc"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medthes"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medts"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medwk1"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "medzzz"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "mesjres"
+}, {
+  "value" : "Yale University Library",
+  "name" : "mudd"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddart"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddauct"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddb24"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddb68"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddb69"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddbig2"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddbig3"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddbsmt"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddchem"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddclsd"
+}, {
+  "value" : "Yale University Library",
+  "name" : "mudddiv"
+}, {
+  "value" : "Yale University Library",
+  "name" : "mudddivr"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddegcm"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddengn"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddengp"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddennc"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddfes"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdc"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdc3"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdcb"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdcd"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdce"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdci"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdcm"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdco"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdcr"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdcw"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgdsr"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddgeo"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddksl"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddlamc"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddlaw"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddlnb"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddlock"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddmaps"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddmath"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddmed"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddmus"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddnasa"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddnew2"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddnew3"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddnews"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddnum"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddpr18"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddpres"
+}, {
+  "value" : "Yale University Library",
+  "name" : "mudds2"
+}, {
+  "value" : "Yale University Library",
+  "name" : "mudds3"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddssl"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddsslm"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddtib"
+}, {
+  "value" : "Yale University Library",
+  "name" : "muddzeta"
+}, {
+  "value" : "Music Library",
+  "name" : "mus"
+}, {
+  "value" : "Music Library",
+  "name" : "muscar"
+}, {
+  "value" : "Music Library",
+  "name" : "muscirc"
+}, {
+  "value" : "Music Library",
+  "name" : "mushsr"
+}, {
+  "value" : "MUSIC LIBRARY, SML, HSR reference (Non-Circulating)",
+  "name" : "mushsrref"
+}, {
+  "value" : "Music Library",
+  "name" : "musmic"
+}, {
+  "value" : "Music Library",
+  "name" : "musoff1"
+}, {
+  "value" : "Music Library",
+  "name" : "musoff2"
+}, {
+  "value" : "Music Library",
+  "name" : "musoff3"
+}, {
+  "value" : "Oral History of American Music",
+  "name" : "musohm"
+}, {
+  "value" : "Music Library",
+  "name" : "musper"
+}, {
+  "value" : "Music Library",
+  "name" : "musrar1"
+}, {
+  "value" : "Beinecke Library",
+  "name" : "musrar2"
+}, {
+  "value" : "Music Library",
+  "name" : "musrec"
+}, {
+  "value" : "Music Library",
+  "name" : "musref"
+}, {
+  "value" : "Music Library",
+  "name" : "musres"
+}, {
+  "value" : "Music Library",
+  "name" : "muszzz"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "orn"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ornref"
+}, {
+  "value" : "Yale University Library",
+  "name" : "presdig"
+}, {
+  "value" : "Cushing/Whitney Medical Library",
+  "name" : "rad"
+}, {
+  "value" : "review",
+  "name" : "review"
+}, {
+  "value" : "Marx Selfcheck Circ Desk",
+  "name" : "scMARX"
+}, {
+  "value" : "Math Selfcheck Circulation Desk",
+  "name" : "scMATH"
+}, {
+  "value" : "Sterling & Bass Selfcheck Circ Desk",
+  "name" : "scSML"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "sml"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlafr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlamst"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smland"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "smlaob"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlaos"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlaris"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlasi"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlasi2"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlasi3"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlbab"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlbib"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlbind"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlbldg"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlcat"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlcatr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlcd"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlchir"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlcoff"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlcon"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smldesk"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smldskn"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlear"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smleasc"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smleaso"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlegypt"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smleng"
+}, {
+  "value" : "SML, Franke Family Digital Humanities Lab (Non-Circulating)",
+  "name" : "smlffdhl"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlfolio"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlfolior"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlfra"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlgen"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlhtxt"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlill"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smljpnr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smljud"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smljudr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlkorr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smllamc"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smllnb"
+}, {
+  "value" : "Bass Library",
+  "name" : "smllnbm"
+}, {
+  "value" : "Bass Library",
+  "name" : "smllnbt"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmap"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmapa"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmapb"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmapg"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmapl"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmapr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmapu"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmic"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmicr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlmlc"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "smlmss"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnea"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlneg"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnegd"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnews"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnogo"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnonc"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnrc"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlnum"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlop"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlparl"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlper"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlphi"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlpres"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlref"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrefa"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrefd"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrefh"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrefi"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrefl"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlres"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrfof"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlrstr"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlsea"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlsem"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlser"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlsin"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlsla"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlslam"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlslanews"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlslar"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlsub"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlsyst"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smly"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "smlyal"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "smlyalc"
+}, {
+  "value" : "Manuscripts and Archives",
+  "name" : "smlyalt"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlzeta"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "smlzzz"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ssl"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ssl3day"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslP2"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslcd"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslclr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ssldar"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslegc"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslgdcr"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslhr24"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslmic1"
+}, {
+  "value" : "MARX LIBRARY",
+  "name" : "sslp2"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslp24"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslpam1"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslpam2"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslper"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslref"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslref5"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslref6"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "ssltec"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslvid"
+}, {
+  "value" : "Center for Science and Social Science Information",
+  "name" : "sslzzz"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "stat"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "statper"
+}, {
+  "value" : "Sterling Memorial Library",
+  "name" : "statref"
+}, {
+  "value" : "Haas Arts Library",
+  "name" : "vrcspc"
+}, {
+  "value" : "Withdrawn - Suppressed",
+  "name" : "withdrawn"
+}, {
+  "value" : "Yale University Art Gallery",
+  "name" : "yuagcm"
+}, {
+  "value" : "Yale University Art Gallery",
+  "name" : "yuagpr"
+}, {
+  "value" : "Yale University Library",
+  "name" : "yul"
+}, {
+  "value" : "Yale University Library",
+  "name" : "yuleres"
+}, {
+  "value" : "Online",
+  "name" : "yulint"
+}, {
+  "value" : "Unavailable. Use HathiTrust link or search for online copies",
+  "name" : "yulinthtea"
+}, {
+  "value" : "Internet Archive",
+  "name" : "yulintia"
+}, {
+  "value" : "Online",
+  "name" : "yulintx"
+}, {
+  "value" : "Yale University Library",
+  "name" : "yulvols"
+} ]

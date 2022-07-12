@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ld4">
+    <title>LD4</title>
+    <body>
+        <section id="section_jny_fxy_d5b">
+            <title>Block 1</title>
+            <p>Today, I'll be talking about metadata crosswalks in the context of linked open data.
+                I'd like to begin with a quote from a white paper published by NISO, the National
+                Information Standards Organization, which states: <q>There is currently no accepted
+                    standard method of specifying all the transformations required for crosswalk
+                    development.</q> That white paper, written by Margaret St. Pierre and William
+                LaPlant, was published in 1998, and the statement continues to hold true today.
+                Paradoxically, our work to create crosswalks between metadata standards remains
+                almost completely ad hoc and unstandardized.</p>
+            <p>When I use the term <q>crosswalk,</q> I mean a translation between two different
+                metadata standards. The terms <q>mapping</q> and <q>crosswalk</q> are often used
+                interchangeably, but a mapping can be seen as one component of a crosswalk.</p>
+            <p>St. Pierre and LaPlant define a crosswalk as <q>a set of transformations applied to
+                    the content of elements in a source metadata standard that result in the storage
+                    of appropriately modified content in the analogous elements of a target metadata
+                    standard.</q> They emphasize the importance of structured documentation in
+                crosswalk development, and they state: <q>A complete or fully specified crosswalk
+                    consists of both a semantic mapping and a metadata conversion specification. The
+                    metadata conversion specification contains the transformations required to
+                    convert the metadata record content compliant to a source metadata standard into
+                    a record whose contents are compliant with a target metadata standard.</q>
+            </p>
+            <p>According to this definition, a mapping is a structured document that specifies how
+                an element in the source standard should be represented in the target standard, with
+                a focus on preserving semantic alignment between the two. A mapping should also be
+                accompanied by a set of rules or algorithms for content conversion, which takes into
+                account the structural and conceptual differences between the standards.</p>
+            <p>The other main component of a crosswalk is the implementation, or how the mapping is
+                expressed as computer code. Mappings and conversion rules are typically created by
+                metadata professionals, whereas an implementation may be developed in collaboration
+                with software engineers.</p>
+            <p>Setting aside the definition of a <q>complete or fully specified crosswalk,</q> we
+                know that in practice metadata crosswalks can exist on a broad spectrum from
+                informal to formal, even in production environments. In an informal crosswalk, a
+                metadata mapping is implemented directly in computer code, with no structured
+                documentation to accompany it. In a formal crosswalk, detailed documentation is
+                provided to specify both semantic mappings and rules for content conversion (St.
+                Pierre and LaPlant 1998).</p>
+            <p>In the linked open data domain, an example of informal and formal crosswalks can be
+                found in the Library of Congress MARC to BIBFRAME converters. In 2012, an informal
+                crosswalk was released for BIBFRAME 1.0. It was implemented using the XQuery
+                programming language and was iteratively developed over the course of several years.
+                In 2017, a formal crosswalk was released for BIBFRAME 2.0. A suite of specifications
+                was developed to document both semantic mappings and conversion rules and to provide
+                comprehensive coverage of the MARC 21 Format for Bibliographic Data. The
+                specifications were implemented using the XSLT 1.0 programming language. For each
+                specification document, corresponding unit tests were developed for the codebase.
+                Subsequently, a BIBFRAME to MARC crosswalk was released using the same rigorous
+                approach.</p>
+            <p>In an article published in 2018, Xu, Hess, and Akerman give a detailed overview of
+                the Library of Congress marc2bibframe2 project. They cite the definition of a
+                crosswalk presented in the 1998 NISO white paper and argue that the Library of
+                Congress BIBFRAME 2.0 crosswalk embodies <q>the same best practices recommended by
+                    St. Pierre and LaPlant.</q></p>
+            <p>I would agree that the Library of Congress marc2bibframe2 crosswalk and its companion
+                bibframe2marc project represent a major milestone in the library community's long
+                transition from MARC to linked open data. Creating, implementing, and maintaining a
+                comprehensive crosswalk from MARC 21 to a linked data framework is a monumental
+                task, and one that library metadata practitioners have struggled with for well over
+                a decade.</p>
+            <p>At the same time, although the marc2bibframe2 crosswalk meets the standard of being
+                    <q>fully specified,</q> it does not itself follow a standardized approach in the
+                way in which its documentation is structured. The mapping specifications for the
+                crosswalk are published as a series of 18 Microsoft Excel spreadsheets that are
+                concise, but not designed to be machine readable. They rely on visual formatting and
+                indentation as a way to group fields, subfields, and coded values, and they cannot
+                be processed as tabular data. The mappings are complemented by a pair of Microsoft
+                Word documents that describe certain transformation rules in greater detail,
+                including instructions that apply across multiple MARC fields. Again, these
+                documents are designed to be read by humans rather than computers.</p>
+            <p>In general, the lack of a standard framework for metadata crosswalks means that
+                crosswalks cannot be easily shared and reused as structured documentation. Without a
+                standard way to customize a mapping for local requirements, community adoption
+                becomes more difficult. In their discussion, Xu, Hess, and Ackerman also raise the
+                question of whether the BIBFRAME crosswalks are flexible and extensible enough to be
+                used outside the Library of Congress. </p>
+        </section>
+        <section>
+            <title>Block 2</title>
+            <p>I'll now present a possible solution to the problem of metadata crosswalk
+                standardization--a solution that is still very much as work in progress, but that
+                has been successful in fulfilling our use case at Yale University. </p>
+            <p>At last year's LD4 Conference, I presented with Rob Sanderson about a multiyear
+                effort at Yale to create a cross-collection discovery environment that is being
+                designed using the principles of Linked Open Usable Data. I won't describe the
+                project in detail today, but I refer anyone who's interested to the recording of our
+                presentation.</p>
+            <p>Yale's new integrated discovery platform is called LUX, or “light,” from the Latin
+                motto of the university. LUX aggregates metadata from the catalogs of Yale's four
+                main collecting units: the Yale University Art Gallery, the Yale Center for British
+                Art, the Yale University Library, and the Yale Peabody Museum of Natural History.
+                LUX is being built around the Linked Art profile of the CIDOC-CRM ontology as its
+                common data model. Each unit has developed its own crosswalk from its local domain
+                standard to the Linked Art model. </p>
+            <p>The library uses Ex Libris Voyager as its integrated library system, and there are
+                currently 12.5 million MARC records in its public catalog. MARC 21 is a complex
+                legacy standard with thousands of data elements. Our own local cataloging practices
+                have also evolved over time, and we have locally defined fields, especially for
+                special collections, that are not part of the standard. When creating a crosswalk,
+                we need to translate from the semantics of MARC--which are essentially the semantics
+                of the card catalog--to the semantics of the Linked Art model, which has clearly
+                defined entities and relationships. For example, one challenge we face is in mapping
+                object- or item-level relationships. The Linked Art standard is closely tied to the
+                museum domain, where objects are the focus of description. In the library catalog,
+                by contrast, holdings and item records are sparse, and information about different
+                objects is often recorded on a single bibliographic record.</p>
+            <p>For the library, the data transformation process has involved close collaboration
+                between metadata librarians in Technical Services and software engineers in Library
+                IT. Early on, we decided that a spreadsheet-based mapping from MARC to Linked Art
+                would not satisfy our requirements. The tabular format of a spreadsheet makes it
+                difficult to supply contextual information to guide those who are ultimately
+                responsible for implementing a crosswalk in code. The transformation from MARC to
+                Linked Art often involves complex conditional logic, and it can be necessary to
+                combine data from multiple fields in a MARC record to produce the desired
+                output.</p>
+            <p>The approach that we adopted, and which has evolved over time, was to create a set of
+                modular specifications, which are structured almost as a handbook. There are
+                currently 133 separate documents in the specification suite, with a primary division
+                between top-level entities (objects, works, people, places, concepts) and
+                descriptive content (identifiers, names, and notes). Some specifications provide
+                information to contextualize a metadata concept. These are paired with documents
+                that specify individual tasks or algorithms needed to implement a particular
+                mapping.</p>
+            <p>Having a set of specifications has also made the task of implementation easier to
+                manage. Individual specifications can be assigned to developers for work, and the
+                structure of the code can be guided by the conceptual structure of the
+                specifications. Collaboration between Technical Services and Library IT has
+                benefited as a result and could serve as a potential model for future efforts at
+                Yale.</p>
+        </section>
+        <section>
+            <title>Block 3</title>
+            <p>Yale's MARC to Linked Art crosswalk has been documented using the Darwin Information
+                Typing Architecture, or DITA, which is an XML standard for documentation and
+                technical writing that emphasizes structure, modularity, and content reuse. The DITA
+                standard is based on the idea of topics. A topic is a discrete unit of information
+                that can stand on its own. DITA topics are organized into a logical structure using
+                another type of document called a map, which can be thought of as a table of
+                contents.</p>
+            <p>Without realizing it, you've probably encountered DITA in the wild when browsing
+                online help pages. For example, I recently purchased a smart watch and noticed what
+                looks like DITA in the owner's manual. </p>
+            <p>Here the topic is <q>Intensity Minutes.</q> It has a subtopic called <q>Earning
+                    Intensity Minutes</q> and a containing topic called <q>Activity
+                Tracking.</q></p>
+            <p>DITA supports topic specialization, which means that the generic topic type can be
+                extended to accommodate more specific types of information. Out of the box, the DITA
+                standard defines a core set of topic specializations, including
+                    <codeph>concept</codeph>, <codeph>task</codeph>, <codeph>reference</codeph>, and
+                    <codeph>glossentry</codeph> for glossaries.</p>
+            <p>Each topic specialization has its own content model, while also inheriting from the
+                core DITA topic type.</p>
+            <p>This example demonstrates a <codeph>task</codeph> topic, which lists a series of
+                steps to be followed.</p>
+            <p>DITA also defines a robust set of mechanisms for content reuse. Topics or individual
+                sections within a topic can be repurposed and transcluded into other topics, and
+                content can be profiled to display information based on conditional filters. Using a
+                content-agnostic standard such as DITA, it's possible to create metadata mapping and
+                conversion specifications that are both human- and machine-readable. Documentation
+                can be generated in multiple output formats while maintaining a single source of
+                truth. The DITA standard has an active open source software community and is also
+                well supported by editing environments such as the oXygen XML Editor.</p>
+        </section>
+
+        <section>
+            <title>Block 4</title>
+            <p>In using DITA to document our MARC to Linked Art crosswalk, I relied heavily on the
+                    <codeph>task</codeph> topic to specify steps </p>
+            
+            
+            <ul>
+                <li>Demo, examples</li>
+                <li>Git repos</li>
+                <li>oXygen output (?)</li>
+                <li>Content reuse</li>
+                <li>specs to code</li>
+                <li>Tracking spreadsheet</li>
+            </ul>
+        </section>
+    </body>
+</topic>

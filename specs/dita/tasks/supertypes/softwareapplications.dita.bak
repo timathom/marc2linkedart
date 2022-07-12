@@ -1,0 +1,68 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_SoftwareApplications" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Software Applications</title>
+  <shortdesc/>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-23"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_desc"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword>Deployed</keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Maggie"/>
+    <data name="completed" value="2021-11-16T00:00:00.000"/>
+    <data name="deployed" value="Yes"/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: SoftwareApplications
+sampleBibs:
+  - 12244893
+fieldSpec:
+  - ldr[6]
+  - 035a
+  - 336a</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+      <codeblock>---
+# Software Applications mapping
+conditions:
+  # Computer file
+  - - ldr[6]
+    - m
+  - NOT:
+    - - 090a
+      - yuldset
+    - - 035a contains 'yuldbase'
+    - - 336a
+      - computer datasets</codeblock>
+    </section>
+    <result>
+      <codeblock>{
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028566",
+      "type": "Type",
+      "_label": "Software Applications",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    }
+  ]    		
+}</codeblock>
+    </result>
+  </taskbody>
+</task>

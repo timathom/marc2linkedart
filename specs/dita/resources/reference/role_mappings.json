@@ -1,0 +1,1394 @@
+[
+  {
+    "type": "production",
+    "value": "abridger",
+    "code": "abr",
+    "equivalent": "http://vocab.getty.edu/aat/300440753"
+  },
+  {
+    "type": "production",
+    "value": "adapter",
+    "code": "adp",
+    "equivalent": "http://vocab.getty.edu/aat/300410355"
+  },
+  {
+    "type": "production",
+    "value": "after",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "animator",
+    "code": "anm",
+    "equivalent": "http://vocab.getty.edu/aat/300025646"
+  },
+  {
+    "type": "production",
+    "value": "architect",
+    "code": "arc",
+    "equivalent": "http://vocab.getty.edu/aat/300024987"
+  },
+  {
+    "type": "production",
+    "value": "architect_GROUP",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300312082"
+  },
+  {
+    "type": "production",
+    "value": "arranger",
+    "code": "arr",
+    "equivalent": "http://vocab.getty.edu/aat/300025667"
+  },
+  {
+    "type": "production",
+    "value": "artist",
+    "code": "art",
+    "equivalent": "http://vocab.getty.edu/aat/300025103"
+  },
+  {
+    "type": "production",
+    "value": "author",
+    "code": "aut",
+    "equivalent": "http://vocab.getty.edu/aat/300025492"
+  },
+  {
+    "type": "production",
+    "value": "binder",
+    "code": "bnd",
+    "equivalent": "http://vocab.getty.edu/aat/300025704"
+  },
+  {
+    "type": "production",
+    "value": "binding designer",
+    "code": "bdd",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/bdd"
+  },
+  {
+    "type": "production",
+    "value": "book artist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300386346"
+  },
+  {
+    "type": "production",
+    "value": "book designer",
+    "code": "bkd",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/bkd"
+  },
+  {
+    "type": "production",
+    "value": "book jacket designer",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "book producer",
+    "code": "bkp",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/bkp"
+  },
+  {
+    "type": "production",
+    "value": "bookbinder",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025704"
+  },
+  {
+    "type": "production",
+    "value": "bookplate designer",
+    "code": "bpd",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/bpd"
+  },
+  {
+    "type": "production",
+    "value": "calligrapher",
+    "code": "cll",
+    "equivalent": "http://vocab.getty.edu/aat/300025107"
+  },
+  {
+    "type": "production",
+    "value": "cartographer",
+    "code": "ctg",
+    "equivalent": "http://vocab.getty.edu/aat/300025593"
+  },
+  {
+    "type": "production",
+    "value": "carver",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025256"
+  },
+  {
+    "type": "production",
+    "value": "casemaker",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "chromo-lithographer",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300251177"
+  },
+  {
+    "type": "production",
+    "value": "clockmaker",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025397"
+  },
+  {
+    "type": "production",
+    "value": "collotyper",
+    "code": "clt",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/clt"
+  },
+  {
+    "type": "production",
+    "value": "colorist",
+    "code": "clr",
+    "equivalent": "http://vocab.getty.edu/aat/300435165"
+  },
+  {
+    "type": "production",
+    "value": "compiler",
+    "code": "com",
+    "equivalent": "http://vocab.getty.edu/aat/300121766"
+  },
+  {
+    "type": "production",
+    "value": "composer",
+    "code": "cmp",
+    "equivalent": "http://vocab.getty.edu/aat/300025671"
+  },
+  {
+    "type": "production",
+    "value": "compositor",
+    "code": "cmt",
+    "equivalent": "http://vocab.getty.edu/aat/300025708"
+  },
+  {
+    "type": "production",
+    "value": "contributor",
+    "code": "ctb",
+    "equivalent": "http://vocab.getty.edu/aat/300403974"
+  },
+  {
+    "type": "production",
+    "value": "copyist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025189"
+  },
+  {
+    "type": "production",
+    "value": "cover artist",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "cover designer",
+    "code": "cov",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/cov"
+  },
+  {
+    "type": "production",
+    "value": "creator",
+    "code": "cre",
+    "equivalent": "http://vocab.getty.edu/aat/300386174"
+  },
+  {
+    "type": "production",
+    "value": "decorator",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300435238"
+  },
+  {
+    "type": "production",
+    "value": "designer",
+    "code": "dsr",
+    "equivalent": "http://vocab.getty.edu/aat/300025190"
+  },
+  {
+    "type": "production",
+    "value": "diesinker",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300386327"
+  },
+  {
+    "type": "production",
+    "value": "draftsman",
+    "code": "drm",
+    "equivalent": "http://vocab.getty.edu/aat/300112172"
+  },
+  {
+    "type": "production",
+    "value": "editor",
+    "code": "edt",
+    "equivalent": "http://vocab.getty.edu/aat/300025526"
+  },
+  {
+    "type": "production",
+    "value": "editor in chief",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "electrotyper",
+    "code": "elt",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/elt"
+  },
+  {
+    "type": "production",
+    "value": "engraver",
+    "code": "egr",
+    "equivalent": "http://vocab.getty.edu/aat/300239410"
+  },
+  {
+    "type": "production",
+    "value": "etcher",
+    "code": "etr",
+    "equivalent": "http://vocab.getty.edu/aat/300025174"
+  },
+  {
+    "type": "production",
+    "value": "fabricator",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300251917"
+  },
+  {
+    "type": "production",
+    "value": "fore-edge painter",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "gilder",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025261"
+  },
+  {
+    "type": "production",
+    "value": "illuminator",
+    "code": "ilu",
+    "equivalent": "http://vocab.getty.edu/aat/300025122"
+  },
+  {
+    "type": "production",
+    "value": "illustrator",
+    "code": "ill",
+    "equivalent": "http://vocab.getty.edu/aat/300025123"
+  },
+  {
+    "type": "production",
+    "value": "inker",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "inscriber",
+    "code": "ins",
+    "equivalent": "http://vocab.getty.edu/aat/300121785"
+  },
+  {
+    "type": "production",
+    "value": "inventor",
+    "code": "inv",
+    "equivalent": "http://vocab.getty.edu/aat/300025845"
+  },
+  {
+    "type": "production",
+    "value": "letterer",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025115"
+  },
+  {
+    "type": "production",
+    "value": "lithographer",
+    "code": "ltg",
+    "equivalent": "http://vocab.getty.edu/aat/300025175"
+  },
+  {
+    "type": "production",
+    "value": "lyricist",
+    "code": "lyr",
+    "equivalent": "http://vocab.getty.edu/aat/300025675"
+  },
+  {
+    "type": "production",
+    "value": "manufacturer",
+    "code": "mfr",
+    "equivalent": "http://vocab.getty.edu/aat/300025230"
+  },
+  {
+    "type": "production",
+    "value": "metal-engraver",
+    "code": "mte",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/mte"
+  },
+  {
+    "type": "production",
+    "value": "mint",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300205362"
+  },
+  {
+    "type": "production",
+    "value": "modeler",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025417"
+  },
+  {
+    "type": "production",
+    "value": "mounter",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "organizer",
+    "code": "orm",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/orm"
+  },
+  {
+    "type": "production",
+    "value": "originator",
+    "code": "org",
+    "equivalent": "http://vocab.getty.edu/aat/300386177"
+  },
+  {
+    "type": "production",
+    "value": "paper engineer",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "paper maker",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025344"
+  },
+  {
+    "type": "production",
+    "value": "papermaker",
+    "code": "ppm",
+    "equivalent": "http://vocab.getty.edu/aat/300025344"
+  },
+  {
+    "type": "production",
+    "value": "penciller",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "photographer",
+    "code": "pht",
+    "equivalent": "http://vocab.getty.edu/aat/300025687"
+  },
+  {
+    "type": "production",
+    "value": "playing card maker",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "potter",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025414"
+  },
+  {
+    "type": "production",
+    "value": "printer",
+    "code": "prt",
+    "equivalent": "http://vocab.getty.edu/aat/300025732"
+  },
+  {
+    "type": "production",
+    "value": "printer of plates",
+    "code": "pop",
+    "equivalent": "http://vocab.getty.edu/aat/300025733"
+  },
+  {
+    "type": "production",
+    "value": "printer_GROUP",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300386347"
+  },
+  {
+    "type": "production",
+    "value": "printmaker",
+    "code": "prm",
+    "equivalent": "http://vocab.getty.edu/aat/300025164"
+  },
+  {
+    "type": "production",
+    "value": "printmaker_GROUP",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300312299"
+  },
+  {
+    "type": "production",
+    "value": "proofreader",
+    "code": "pfr",
+    "equivalent": "http://vocab.getty.edu/aat/300418027v"
+  },
+  {
+    "type": "production",
+    "value": "repairer",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "screenwriter",
+    "code": "aus",
+    "equivalent": "http://vocab.getty.edu/aat/300025515"
+  },
+  {
+    "type": "production",
+    "value": "scribe",
+    "code": "scr",
+    "equivalent": "http://vocab.getty.edu/aat/300025580"
+  },
+  {
+    "type": "production",
+    "value": "sculptor",
+    "code": "scl",
+    "equivalent": "http://vocab.getty.edu/aat/300025181"
+  },
+  {
+    "type": "production",
+    "value": "series editor",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "production",
+    "value": "stereotyper",
+    "code": "str",
+    "equivalent": "http://vocab.getty.edu/aat/300025743"
+  },
+  {
+    "type": "production",
+    "value": "transcriber",
+    "code": "trc",
+    "equivalent": "http://vocab.getty.edu/aat/300440751"
+  },
+  {
+    "type": "production",
+    "value": "translator",
+    "code": "trl",
+    "equivalent": "http://vocab.getty.edu/aat/300025601"
+  },
+  {
+    "type": "production",
+    "value": "type designer",
+    "code": "tyd",
+    "equivalent": "http://vocab.getty.edu/aat/300417840"
+  },
+  {
+    "type": "production",
+    "value": "typesetter",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025744"
+  },
+  {
+    "type": "production",
+    "value": "typographer",
+    "code": "tyg",
+    "equivalent": "http://vocab.getty.edu/aat/300025745"
+  },
+  {
+    "type": "production",
+    "value": "wood-engraver",
+    "code": "wde",
+    "equivalent": "http://vocab.getty.edu/aat/300025167"
+  },
+  {
+    "type": "production",
+    "value": "woodcutter",
+    "code": "wdc",
+    "equivalent": "http://vocab.getty.edu/aat/300025178"
+  },
+  {
+    "type": "sponsor",
+    "value": "commissioned by",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300400903"
+  },
+  {
+    "type": "sponsor",
+    "value": "commissioning body",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300400903"
+  },
+  {
+    "type": "sponsor",
+    "value": "degree granting institution",
+    "code": "dgg",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/dgg"
+  },
+  {
+    "type": "sponsor",
+    "value": "degree supervisor",
+    "code": "dgs",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/dgs"
+  },
+  {
+    "type": "sponsor",
+    "value": "funder",
+    "code": "fnd",
+    "equivalent": "http://vocab.getty.edu/aat/300188572"
+  },
+  {
+    "type": "sponsor",
+    "value": "funder/sponsor",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300188572"
+  },
+  {
+    "type": "sponsor",
+    "value": "host institution",
+    "code": "his",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/his"
+  },
+  {
+    "type": "sponsor",
+    "value": "sponsor",
+    "code": "spn",
+    "equivalent": "http://vocab.getty.edu/aat/300188572"
+  },
+  {
+    "type": "sponsor",
+    "value": "sponsoring body",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300400903"
+  },
+  {
+    "type": "sponsor",
+    "value": "sponsoring institution",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300188572"
+  },
+  {
+    "type": "publication",
+    "value": "bank",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "publication",
+    "value": "bookseller",
+    "code": "bsl",
+    "equivalent": "http://vocab.getty.edu/aat/300025244"
+  },
+  {
+    "type": "publication",
+    "value": "broadcaster",
+    "code": "brd",
+    "equivalent": "http://vocab.getty.edu/aat/300025502"
+  },
+  {
+    "type": "publication",
+    "value": "distributor",
+    "code": "dst",
+    "equivalent": "http://vocab.getty.edu/aat/300404885"
+  },
+  {
+    "type": "publication",
+    "value": "enacting jurisdiction",
+    "code": "enj",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/enj"
+  },
+  {
+    "type": "publication",
+    "value": "film distributor",
+    "code": "fds",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/fds"
+  },
+  {
+    "type": "publication",
+    "value": "issuer",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "publication",
+    "value": "issuing body",
+    "code": "isb",
+    "equivalent": "http://vocab.getty.edu/aat/300386627"
+  },
+  {
+    "type": "publication",
+    "value": "publisher",
+    "code": "pbl",
+    "equivalent": "http://vocab.getty.edu/aat/300025574"
+  },
+  {
+    "type": "publication",
+    "value": "publisher_GROUP",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300386627"
+  },
+  {
+    "type": "publication",
+    "value": "retailer",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025246"
+  },
+  {
+    "type": "performance",
+    "value": "actor",
+    "code": "act",
+    "equivalent": "http://vocab.getty.edu/aat/300025658"
+  },
+  {
+    "type": "performance",
+    "value": "bass",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300206743"
+  },
+  {
+    "type": "performance",
+    "value": "boy soprano",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "camera",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "choreographer",
+    "code": "chr",
+    "equivalent": "http://vocab.getty.edu/aat/300025649"
+  },
+  {
+    "type": "performance",
+    "value": "cinematographer",
+    "code": "cng",
+    "equivalent": "http://vocab.getty.edu/aat/300025650"
+  },
+  {
+    "type": "performance",
+    "value": "clarinet",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "conductor",
+    "code": "cnd",
+    "equivalent": "http://vocab.getty.edu/aat/300025672"
+  },
+  {
+    "type": "performance",
+    "value": "costume designer",
+    "code": "cst",
+    "equivalent": "http://vocab.getty.edu/aat/300163428"
+  },
+  {
+    "type": "performance",
+    "value": "dancer",
+    "code": "dnc",
+    "equivalent": "http://vocab.getty.edu/aat/300025653"
+  },
+  {
+    "type": "performance",
+    "value": "direction",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "director",
+    "code": "drt",
+    "equivalent": "http://vocab.getty.edu/aat/300025654"
+  },
+  {
+    "type": "performance",
+    "value": "film director",
+    "code": "fmd",
+    "equivalent": "http://vocab.getty.edu/aat/300312209"
+  },
+  {
+    "type": "performance",
+    "value": "film editor",
+    "code": "flm",
+    "equivalent": "http://vocab.getty.edu/aat/300386237"
+  },
+  {
+    "type": "performance",
+    "value": "film producer",
+    "code": "fmp",
+    "equivalent": "http://vocab.getty.edu/aat/300312211"
+  },
+  {
+    "type": "performance",
+    "value": "filmmaker",
+    "code": "fmk",
+    "equivalent": "http://vocab.getty.edu/aat/300075154"
+  },
+  {
+    "type": "performance",
+    "value": "guitarist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300235042"
+  },
+  {
+    "type": "performance",
+    "value": "hornist",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "instrumentalist",
+    "code": "itr",
+    "equivalent": "http://vocab.getty.edu/aat/300162131"
+  },
+  {
+    "type": "performance",
+    "value": "interpreter",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "interviewee",
+    "code": "ive",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/ive"
+  },
+  {
+    "type": "performance",
+    "value": "interviewer",
+    "code": "ivr",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/ivr"
+  },
+  {
+    "type": "performance",
+    "value": "librettist",
+    "code": "lbt",
+    "equivalent": "http://vocab.getty.edu/aat/300025674"
+  },
+  {
+    "type": "performance",
+    "value": "lighting designer",
+    "code": "lgd",
+    "equivalent": "http://vocab.getty.edu/aat/300386275"
+  },
+  {
+    "type": "performance",
+    "value": "music",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "musician",
+    "code": "mus",
+    "equivalent": "http://vocab.getty.edu/aat/300025666"
+  },
+  {
+    "type": "performance",
+    "value": "narrator",
+    "code": "nrt",
+    "equivalent": "http://vocab.getty.edu/aat/300417254"
+  },
+  {
+    "type": "performance",
+    "value": "on-screen participant",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "on-screen presenter",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "orchestra",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025666"
+  },
+  {
+    "type": "performance",
+    "value": "organist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300235015"
+  },
+  {
+    "type": "performance",
+    "value": "performer",
+    "code": "prf",
+    "equivalent": "http://vocab.getty.edu/aat/300068931"
+  },
+  {
+    "type": "performance",
+    "value": "pianist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300235018"
+  },
+  {
+    "type": "performance",
+    "value": "praeses",
+    "code": "pra",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/pra"
+  },
+  {
+    "type": "performance",
+    "value": "producer",
+    "code": "pro",
+    "equivalent": "http://vocab.getty.edu/aat/300197742"
+  },
+  {
+    "type": "performance",
+    "value": "production",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "production company",
+    "code": "prn",
+    "equivalent": "http://vocab.getty.edu/aat/300419391"
+  },
+  {
+    "type": "performance",
+    "value": "production designer",
+    "code": "prs",
+    "equivalent": "http://vocab.getty.edu/aat/300435129"
+  },
+  {
+    "type": "performance",
+    "value": "production personnel",
+    "code": "prd",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/prd"
+  },
+  {
+    "type": "performance",
+    "value": "recording engineer",
+    "code": "rce",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/rce"
+  },
+  {
+    "type": "performance",
+    "value": "saxophonist",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "script",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "set designer",
+    "code": "std",
+    "equivalent": "http://vocab.getty.edu/aat/300435127"
+  },
+  {
+    "type": "performance",
+    "value": "singer",
+    "code": "sng",
+    "equivalent": "http://vocab.getty.edu/aat/300025684"
+  },
+  {
+    "type": "performance",
+    "value": "soprano",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300206741"
+  },
+  {
+    "type": "performance",
+    "value": "stage director",
+    "code": "sgd",
+    "equivalent": "http://vocab.getty.edu/aat/300312210"
+  },
+  {
+    "type": "performance",
+    "value": "stage manager",
+    "code": "stm",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/stm"
+  },
+  {
+    "type": "performance",
+    "value": "television director",
+    "code": "tld",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/tld"
+  },
+  {
+    "type": "performance",
+    "value": "television producer",
+    "code": "tlp",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/tlp"
+  },
+  {
+    "type": "performance",
+    "value": "tenor",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300206746"
+  },
+  {
+    "type": "performance",
+    "value": "trombonist",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "trumpet player",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300235064"
+  },
+  {
+    "type": "performance",
+    "value": "video designer",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "performance",
+    "value": "videographer",
+    "code": "vdg",
+    "equivalent": "http://vocab.getty.edu/aat/300263895"
+  },
+  {
+    "type": "performance",
+    "value": "violist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300235045"
+  },
+  {
+    "type": "performance",
+    "value": "violoncellist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300235047"
+  },
+  {
+    "type": "performance",
+    "value": "vocalist",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025684"
+  },
+  {
+    "type": "performance",
+    "value": "voice actor",
+    "code": "vac",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/vac"
+  },
+  {
+    "type": "encounter",
+    "value": "art collector",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "encounter",
+    "value": "collector",
+    "code": "col",
+    "equivalent": "http://vocab.getty.edu/aat/300025234"
+  },
+  {
+    "type": "encounter",
+    "value": "discoverer",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "encounter",
+    "value": "expedition",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "provenance",
+    "value": "auctioneer",
+    "code": "auc",
+    "equivalent": "http://vocab.getty.edu/aat/300025208"
+  },
+  {
+    "type": "provenance",
+    "value": "client",
+    "code": "cli",
+    "equivalent": "http://vocab.getty.edu/aat/300025833"
+  },
+  {
+    "type": "provenance",
+    "value": "commissaire-priseur",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300412173"
+  },
+  {
+    "type": "provenance",
+    "value": "copyright holder",
+    "code": "cph",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/cph"
+  },
+  {
+    "type": "provenance",
+    "value": "current owner",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "provenance",
+    "value": "donor",
+    "code": "dnr",
+    "equivalent": "http://vocab.getty.edu/aat/300025240"
+  },
+  {
+    "type": "provenance",
+    "value": "exchanger",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "provenance",
+    "value": "former owner",
+    "code": "fmo",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/fmo"
+  },
+  {
+    "type": "provenance",
+    "value": "land owner",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "provenance",
+    "value": "licensee",
+    "code": "lse",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/lse"
+  },
+  {
+    "type": "provenance",
+    "value": "licensor",
+    "code": "lso",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/lso"
+  },
+  {
+    "type": "provenance",
+    "value": "owner",
+    "code": "own",
+    "equivalent": "http://vocab.getty.edu/aat/300203630"
+  },
+  {
+    "type": "provenance",
+    "value": "patron",
+    "code": "pat",
+    "equivalent": "http://vocab.getty.edu/aat/300115251"
+  },
+  {
+    "type": "provenance",
+    "value": "previous owner",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "provenance",
+    "value": "purchaser",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025211"
+  },
+  {
+    "type": "provenance",
+    "value": "source",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "provenance",
+    "value": "vendor",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300150791"
+  },
+  {
+    "type": "exhibition",
+    "value": "borrower",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300311675"
+  },
+  {
+    "type": "exhibition",
+    "value": "exhibition",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "exhibition",
+    "value": "lender",
+    "code": "len",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/len"
+  },
+  {
+    "type": "other",
+    "value": "addressee",
+    "code": "rcp",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/rcp"
+  },
+  {
+    "type": "other",
+    "value": "advertiser",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300252554"
+  },
+  {
+    "type": "other",
+    "value": "annotator",
+    "code": "ann",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/ann"
+  },
+  {
+    "type": "other",
+    "value": "appellant",
+    "code": "apl",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/apl"
+  },
+  {
+    "type": "other",
+    "value": "appellee",
+    "code": "ape",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/ape"
+  },
+  {
+    "type": "other",
+    "value": "assignee",
+    "code": "asg",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/asg"
+  },
+  {
+    "type": "other",
+    "value": "associated name",
+    "code": "asn",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/asn"
+  },
+  {
+    "type": "other",
+    "value": "auxilium",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "claimant",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "commentator",
+    "code": "cmm",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/cmm"
+  },
+  {
+    "type": "other",
+    "value": "complainant",
+    "code": "cpl",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/cpl"
+  },
+  {
+    "type": "other",
+    "value": "conservator",
+    "code": "con",
+    "equivalent": "http://vocab.getty.edu/aat/300102842"
+  },
+  {
+    "type": "other",
+    "value": "correspondent",
+    "code": "crp",
+    "equivalent": "http://vocab.getty.edu/aat/300225705"
+  },
+  {
+    "type": "other",
+    "value": "court reporter",
+    "code": "crt",
+    "equivalent": "http://vocab.getty.edu/aat/300136440"
+  },
+  {
+    "type": "other",
+    "value": "curator",
+    "code": "cur",
+    "equivalent": "http://vocab.getty.edu/aat/300025633"
+  },
+  {
+    "type": "other",
+    "value": "dedicatee",
+    "code": "dte",
+    "equivalent": "http://vocab.getty.edu/aat/300121765"
+  },
+  {
+    "type": "other",
+    "value": "defendant",
+    "code": "dfd",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/dfd"
+  },
+  {
+    "type": "other",
+    "value": "digitiser",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "editor and translator",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "honoree",
+    "code": "hnr",
+    "equivalent": "http://vocab.getty.edu/aat/300404867"
+  },
+  {
+    "type": "other",
+    "value": "judge",
+    "code": "jud",
+    "equivalent": "http://vocab.getty.edu/aat/300025625"
+  },
+  {
+    "type": "other",
+    "value": "magistrate",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025467"
+  },
+  {
+    "type": "other",
+    "value": "moderator",
+    "code": "mod",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/mod"
+  },
+  {
+    "type": "other",
+    "value": "other",
+    "code": "oth",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/oth"
+  },
+  {
+    "type": "other",
+    "value": "panelist",
+    "code": "pan",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/pan"
+  },
+  {
+    "type": "other",
+    "value": "petitioner",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "plaintiff",
+    "code": "ptf",
+    "equivalent": "http://vocab.getty.edu/aat/300440758"
+  },
+  {
+    "type": "other",
+    "value": "presenter",
+    "code": "pre",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/pre"
+  },
+  {
+    "type": "other",
+    "value": "pressman",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025731"
+  },
+  {
+    "type": "other",
+    "value": "proprietor",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300025241"
+  },
+  {
+    "type": "other",
+    "value": "pseud",
+    "code": "",
+    "equivalent": "http://vocab.getty.edu/aat/300404657"
+  },
+  {
+    "type": "other",
+    "value": "recipient",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "reporter",
+    "code": "rpt",
+    "equivalent": "http://vocab.getty.edu/aat/300025508"
+  },
+  {
+    "type": "other",
+    "value": "respondent",
+    "code": "rsp",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/rsp"
+  },
+  {
+    "type": "other",
+    "value": "reviewer",
+    "code": "rev",
+    "equivalent": "http://vocab.getty.edu/aat/300440750"
+  },
+  {
+    "type": "other",
+    "value": "sender",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "signer",
+    "code": "sgn",
+    "equivalent": "http://vocab.getty.edu/aat/300137375"
+  },
+  {
+    "type": "other",
+    "value": "speaker",
+    "code": "spk",
+    "equivalent": "http://vocab.getty.edu/aat/300136462"
+  },
+  {
+    "type": "other",
+    "value": "subject of parody",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "surveyor",
+    "code": "srv",
+    "equivalent": "http://vocab.getty.edu/aat/300025100"
+  },
+  {
+    "type": "other",
+    "value": "teacher",
+    "code": "tch",
+    "equivalent": "http://vocab.getty.edu/aat/300025529"
+  },
+  {
+    "type": "other",
+    "value": "user",
+    "code": null,
+    "equivalent": null
+  },
+  {
+    "type": "other",
+    "value": "witness",
+    "code": "wit",
+    "equivalent": "http://id.loc.gov/vocabulary/relators/wit"
+  }
+]

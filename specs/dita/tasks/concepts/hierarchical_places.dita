@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="hierarchical_places" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Place hierarchies</title>
+  <shortdesc>Place entities represented as a hierarchy.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-12-06"/>
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-26"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-11"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-13"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-18"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <!--<keyword>Completed</keyword>
+        <keyword>Deployed</keyword>-->
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+    <data name="sample" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>Apply these instructions for field <codeph>752</codeph> (hierarchical place name) and for geographic subdivisions (<codeph>6XXz</codeph>) when there is a sequence of two or more.</p>
+      <p><codeph>752</codeph> entries and sequences of two or more geographic subdivisions represent a chain of places defined by <codeph>part_of</codeph> relationships.</p>
+      <p>The actual entity represented is the last (i.e., most specific) subdivision in the heading or sequence. Preceding subdivisions should be linked in reverse order from the last geographic element in the hierarchy.</p>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: HierarchicalPlaces
+sampleBibs:
+  - 35599
+  - 3802854
+# Source data fields
+fieldSpec:
+  - 6XXz
+  - 752014abcdefgh
+trimPunctuation: true
+scriptInclusion: BOTH</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Generate and store a top-level place resource for the last subdivision, identified by an IRI.</cmd>
+        <substeps id="substeps_uwz_rvj_5rb">
+          <substep>
+            <cmd>Ignore subfields <codeph>014e</codeph> when creating a key for matching and merging.</cmd>
+          </substep>
+          <substep id="substep_hierarchical_places_matching">
+            <cmd>As the value of the matching key, use the current and preceding subdivision values.</cmd>
+          </substep>
+          <substep>
+            <cmd>Join subdivision values with space-separated double hyphens (<codeph> -- </codeph>).</cmd>
+            <stepxmp>
+              <yulbibid>35599</yulbibid>
+              <codeblock><![CDATA[752  $a United States $b New York (State) $d New York $f Brooklyn.]]></codeblock>
+              <ul>
+                <li>Matching key for last (most specific) subdivision: <codeph><![CDATA[united states -- new york state -- new york -- brooklyn]]></codeph></li>
+                <li>Matching key for preceding (third) subdivision: <codeph><![CDATA[united states -- new york state -- new york]]></codeph></li>
+                <li>Matching key for preceding (second) subdivision: <codeph><![CDATA[united states -- new york state]]></codeph></li>
+                <li>Matching key for preceding (first) subdivision: <codeph><![CDATA[united states]]></codeph></li>
+              </ul>
+            </stepxmp>
+          </substep>
+          <substep>
+            <cmd>If a field includes a <codeph>$0</codeph> with an IRI, output an <codeph>equivalent</codeph> reference.</cmd>
+            <info>
+              <note id="note_wwz_rvj_5rb">The <codeph>Type</codeph> of the <codeph>equivalent</codeph> reference should match the <codeph>Type</codeph> of the top-level resource.</note>
+            </info>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Working back from the last subdivision, generate and store a top-level place resource for each preceding geographic subdivision, identified by IRIs.</cmd>
+      </step>
+      <step>
+        <cmd>Link the place entities using the <codeph>part_of</codeph> property.</cmd>
+      </step>
+      <step>
+        <cmd>As the <codeph>_label</codeph> and <codeph>Primary Name</codeph> of each place entity, use the value of the respective subdivision.</cmd>
+      </step>
+      <step>
+        <cmd>Construct the chain of place entities for <codeph>752</codeph> entries.</cmd>
+        <stepxmp>
+          <yulbibid>35599</yulbibid>
+          <codeblock><![CDATA[752  $a United States $b New York (State) $d New York $f Brooklyn.]]></codeblock>
+        </stepxmp>
+        <stepresult>          
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/752-place",
+  "type": "Place",
+  "_label": "Brooklyn",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Brooklyn",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/place/752-place-3",
+        "type": "Place",
+        "_label": "New York"
+    }
+  ]
+}]]></codeblock>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/752-place-3",
+  "type": "Place",
+  "_label": "New York",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "New York",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/place/752-place-2",
+      "type": "Place",
+      "_label": "New York (State)"
+    }
+  ]
+}]]></codeblock>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/752-place-2",
+  "type": "Place",
+  "_label": "New York (State)",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "New York (State)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/place/752-place-1",
+      "type": "Place",
+      "_label": "United States"
+    }
+  ]
+}]]></codeblock>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/752-place-1",
+  "type": "Place",
+  "_label": "United States",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "United States",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>In each referring record-level resource (<codeph>LinguisticObject</codeph>, <codeph>Set</codeph>, <codeph>VisualItem</codeph>), add an embedded reference to the most specific <codeph>752</codeph> entity.</cmd>
+        <substeps>
+          <substep>
+            <cmd>See <xref href="../../concepts/associated_places.dita"/> for instructions related to <codeph>752</codeph>.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Construct the chain of place entities for sequences of two or more <codeph>6XXz</codeph> subdivisions.</cmd>
+        <stepxmp>
+          <yulbibid>3802854</yulbibid>
+          <codeblock><![CDATA[650 0 $a Folk songs, Romanian $z Romania $z Loviștea Region $v Texts.]]></codeblock>
+        </stepxmp>
+        <stepresult>
+          <yulbibid>3802854</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/70db3ab1-33fa-4123-8217-2d8c85576aa9",
+  "type": "Type",
+  "_label": "Folk songs, Romanian -- Romania -- Loviștea Region -- Texts",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Folk songs, Romanian -- Romania -- Loviștea Region -- Texts",
+       "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/75bb7d9f-2d42-4219-8790-62eacbf10f7a",
+        "type": "Type",
+        "_label": "Folk songs, Romanian"
+      },     
+      {
+        "id": "https://lux.collections.yale.edu/data/place/23e3171a-f151-4c54-aee3-afb13109da61",
+        "type": "Place",
+        "_label": "Loviștea Region"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/f27fdcfa-e945-4a86-a623-57c418c8780d",
+        "type": "Type",
+        "_label": "Texts"
+      }
+    ]
+  }
+}]]></codeblock>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/23e3171a-f151-4c54-aee3-afb13109da61",
+  "type": "Place",
+  "_label": "Loviștea Region",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Loviștea Region",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/place/8659a573-f14f-4cc9-ab3d-41b56ddb9d78",
+      "type": "Place",
+      "_label": "Romania"
+    }
+  ]
+}]]></codeblock>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/place/8659a573-f14f-4cc9-ab3d-41b56ddb9d78",
+  "type": "Place",
+  "_label": "Romania",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Romania",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult> 
+      </step>
+    </steps>
+  </taskbody>
+</task>

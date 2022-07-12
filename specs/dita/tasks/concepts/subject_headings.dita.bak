@@ -1,0 +1,174 @@
+<task id="subject_headings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Subject and genre/form headings</title>
+  <shortdesc>Resources extracted from MARC 6XX entries.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <!--tt434-->
+      <revised modified="2021-09-28"/>
+      <!--tt434-->
+      <revised modified="2021-10-03"/>
+      <!--tt434-->
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-26"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <!--<keyword>Completed</keyword>
+        <keyword>Deployed</keyword>-->
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Martin"/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+    <data name="sample" value="https://linked-art-test.library.yale.edu/ils/bib/9564880"/>
+  </prolog>
+  <taskbody>
+    <context></context>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>After applying the instructions in <xref href="simple_subject_headings.dita"/> or <xref href="complex_subject_headings.dita"/>, add an embedded reference to the concept entity within the record-level resource.</cmd>
+        <info>
+          <note id="note_ffn_hjr_dsb">Genre entities should be modeled using the <codeph>classified_as</codeph> pattern.</note>
+        </info>
+        <substeps>
+          <substep>
+            <cmd>As the _label of the concept entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>Process simple concept references for subject headings.</cmd>
+            <stepresult>
+              <yulbibid>3</yulbibid>
+              <codeblock id="codeblock_exz_rvj_5rb"><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/522b36c5-57c4-4026-9deb-ff1aeb3ef187",
+      "type": "Type",
+      "_label": "Paleoecology"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process complex concept references for subject headings.</cmd>
+            <stepresult>
+              <yulbibid>9564880</yulbibid>
+              <codeblock><![CDATA[{
+  "about": [
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/c5ba671b-c41d-40f5-983f-beb38b75b5b2",
+      "type": "Type",
+      "_label": "Death -- Religious aspects -- Christianity"
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/24f1b754-9566-4f38-8c61-9ce4082606aa",
+      "type": "Type",
+      "_label": "Death -- Religious aspects -- Christianity -- History -- 2nd century"
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process simple concept references for genre (<codeph>655</codeph>) headings.</cmd>            
+            <stepresult>
+              <yulbibid>34747</yulbibid>
+              <codeblock><![CDATA[{
+  "id": "https://lux.collections.yale.edu/data/text/c3b75623-7203-4a73-8c5b-f7d442d11dc2",
+  "type": "LinguisticObject",
+  "_label": "Tšhukudu",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028051",
+      "type": "Type",
+      "_label": "Books",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/d3ce7f25-0650-4c92-be9e-01a17a4827ca",
+      "type": "Type",
+      "_label": "PL8690.9.M35"
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/8dbace9e-d7ee-4d0e-a5f5-3784b7aaaf80",
+      "type": "Type",
+      "_label": "Northern Sotho poetry",
+      "classified_as": [
+        {
+          "id": "http://www.wikidata.org/entity/Q483394",
+          "type": "Type",
+          "_label": "Genre"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process complex concept references for genre (<codeph>655</codeph>) headings.</cmd>
+            <stepresult>
+              <yulbibid>486848</yulbibid>
+              <codeblock><![CDATA[{
+  "id": "https://lux.collections.yale.edu/data/text/810e7bed-875e-4a9b-baf3-5e8d8e5aabac",
+  "type": "LinguisticObject",
+  "_label": "Blue moon",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300215390",
+      "type": "Type",
+      "_label": "Journals",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    },
+    {
+      "id": "https://lux.collections.yale.edu/data/concept/c29adf17-ad5c-4925-8201-3f4c119ebeb7",
+      "type": "Type",
+      "_label": "College student newspapers and periodicals -- Connecticut -- New Haven",
+      "classified_as": [
+        {
+          "id": "http://www.wikidata.org/entity/Q483394",
+          "type": "Type",
+          "_label": "Genre"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

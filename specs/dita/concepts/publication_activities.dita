@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="publication_activities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Publication activities</title>
+  <shortdesc>Activities with information from <codeph>26X</codeph> fields.</shortdesc>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <table id="table_hzf_25j_3rb">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock><![CDATA[---
+name: PublicationActivities
+sampleBibs:
+  - 358058
+fieldSpec:  
+  - 260abc
+  - 264|**|abc
+trimPunctuation: true
+scriptInclusion: NONE]]></codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <context>
+      <p>Publication activities incorporate information from the <codeph>008</codeph> and <codeph>26X</codeph> fields. <ul id="ul_x1l_j3q_fsb">
+          <li>Mappings for <codeph>008</codeph> are specified in <xref href="places_from_fixed_field_008.dita"/> and <xref href="../tasks/dates/008_dates.dita"/></li>
+          <li>Mappings for <codeph>26X</codeph> are specified in <xref href="../tasks/notes-and-statements/production_statement.dita"/> and <xref href="../tasks/dates/26X_dates.dita"/> (as a fallback when no <codeph>008</codeph> date is present).</li>
+        </ul></p>
+      <p>In addition, place and agent information from <codeph>26X</codeph> fields should be included as provisional references within publication activities.</p>
+      <p>Although information recorded in <codeph>26X</codeph> fields is uncontrolled, exposing it will allow it to be processed and potentially reconciled by the LUX data enrichment pipeline.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Process each <codeph>26X</codeph> field.</cmd>
+        <info>
+          <p><codeph>260</codeph> may contain multiple <codeph>abc</codeph> subfields. A semicolon (<codeph>;</codeph>) is used when <codeph>$a</codeph> is followed by another <codeph>$a</codeph>.</p>
+        </info>
+      </step>
+      <step>
+        <cmd>If <codeph>260</codeph> includes a semicolon, split the field on the semicolon. Each group is a <codeph>subfield set</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>For each <codeph>26X</codeph> field or <codeph>subfield set</codeph>, generate a publication activity using the <codeph>used_for</codeph> property.</cmd>
+        <info>
+          <p>If there is more than one <codeph>26X</codeph> field, attach the publication-related information derived from <codeph>008</codeph> to the <b>first</b> activity in the sequence.</p>
+        </info>
+      </step>
+      <step>
+        <cmd>For <codeph>26Xa</codeph>:</cmd>
+        <substeps>
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> the subfield value.</cmd>
+          </substep>
+          <substep>
+            <cmd>Add a blank node using the <codeph>took_place_at</codeph> property, with the subfield as the value of <codeph>_label</codeph>.</cmd>
+          </substep>
+        </substeps>
+        <stepxmp>
+          <yulbibid>3</yulbibid>
+          <codeblock><![CDATA[260  $a México : $b Instituto Nacional de Antropología e Historia, $c 1979.]]></codeblock>
+          <codeblock><![CDATA[{
+  "used_for": [
+    {
+      "type": "Activity",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300054686",
+          "type": "Type",
+          "_label": "Publishing"
+        }
+      ],
+      "took_place_at": [
+        {
+          "id": "https://lux.collections.yale.edu/data/place/3dcbc9fa-ca9c-4fa1-bd0e-d25e93f461e5",
+          "type": "Place"
+        },
+        {
+          "type": "Place",
+          "_label": "México"
+        }
+      ],
+      "timespan": {
+        "type": "TimeSpan",
+        "begin_of_the_begin": "1878-01-01T00:00:00Z",
+        "end_of_the_end": "1879-01-01T00:00:00Z",
+        "identified_by": [
+          {
+            "type": "Name",
+            "content": "1878",
+            "classified_as": [
+              {
+                "id": "http://vocab.getty.edu/aat/300404669",
+                "type": "Type",
+                "_label": "Display Title"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}]]></codeblock>
+        </stepxmp>
+      </step>
+      <step>
+        <cmd>For <codeph>26Xb</codeph>:</cmd>
+        <substeps>
+          <substep>
+            <cmd><xref keyref="gloss-norm">Normalize</xref> the subfield value.</cmd>
+          </substep>
+          <substep>
+            <cmd>Add a blank node using the <codeph>carried_out_by</codeph> property, with a type of <codeph>Actor</codeph> and with the subfield as the value of <codeph>_label</codeph>.</cmd>
+          </substep>     
+        </substeps>
+        <stepxmp>
+          <yulbibid>3</yulbibid>
+          <codeblock><![CDATA[260  $a México : $b Instituto Nacional de Antropología e Historia, $c 1979.]]></codeblock>
+          <codeblock><![CDATA[{
+  "used_for": [
+    {
+      "type": "Activity",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300054686",
+          "type": "Type",
+          "_label": "Publishing"
+        }
+      ],
+      "carried_out_by": [
+        {
+          "type": "Actor",
+          "_label": "Instituto Nacional de Antropología e Historia"
+        }
+      ]
+      "took_place_at": [
+        {
+          "id": "https://lux.collections.yale.edu/data/place/3dcbc9fa-ca9c-4fa1-bd0e-d25e93f461e5",
+          "type": "Place"
+        },
+        {
+          "type": "Place",
+          "_label": "México"
+        }
+      ],
+      "timespan": {
+        "type": "TimeSpan",
+        "begin_of_the_begin": "1878-01-01T00:00:00Z",
+        "end_of_the_end": "1879-01-01T00:00:00Z",
+        "identified_by": [
+          {
+            "type": "Name",
+            "content": "1878",
+            "classified_as": [
+              {
+                "id": "http://vocab.getty.edu/aat/300404669",
+                "type": "Type",
+                "_label": "Display Title"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}]]></codeblock>
+        </stepxmp>
+      </step>
+      <step>
+        <cmd>If the field is <codeph>264|*4|</codeph> with only <codeph>$c</codeph> (to record the copyright date), do not generate an activity. Instead, apply the instructions in <xref href="copyright_entity.dita"/>.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

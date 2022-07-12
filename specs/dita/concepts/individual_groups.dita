@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="individual_groups" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Entities for specific groups</title>
+  <shortdesc/>
+  <prolog>
+    <author type="creator">timothy.thompson@yale.edu</author>
+    <critdates>
+      <created date="2022-02-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-15"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-23"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <keyword/>
+
+      </keywords>
+    </metadata>
+    <data name="assigned" value=""/>
+    <data name="completed" value=""/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>Generate a top-level group entity for each of the campus divisions and locations listed below.</cmd>
+        <info>
+          <note>Locations should include a <codeph>member_of</codeph> relation to the campus division entity.</note>
+          <p>Campus divisions should be <codeph>classified_as</codeph> <codeph>http://vocab.getty.edu/aat/300264595</codeph> (<codeph>Repository</codeph>).</p>
+          <p>Locations should be <codeph>classified_as</codeph> <codeph>http://vocab.getty.edu/aat/300263534</codeph> (<codeph>Department</codeph>).</p>
+          <table conkeyref="specs/table_collections_mapping">
+            <tgroup cols="1">
+              <tbody>
+                <row>
+                  <entry/>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </info>
+        <stepresult>
+          <div>
+            <div>
+              <b>Yale University Library (campus division)</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/yale-university-library",
+  "type": "Group",
+  "_label": "Yale University Library",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300264595",
+      "type": "Type",
+      "_label": "Repository"
+    }
+  ],  
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n80008747",
+      "type": "Group",
+      "_label": "Yale University Library"
+    },
+    {
+      "id": "http://vocab.getty.edu/ulan/500303563",
+      "type": "Group",
+      "_label": "Yale University Library"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q2583293",
+      "type": "Group",
+      "_label": "Yale University Library"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yale University Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+            <div>
+              <b>Bass Library (member of Yale University Library)</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/bass-library",
+  "type": "Group",
+  "_label": "Bass Library",
+  "classified_as": [
+    {
+      "id": "Department",
+      "type": "Type",
+      "_label": "http://vocab.getty.edu/aat/300263534"
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/group/yale-university-library",
+      "_label": "Yale University Library"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Bass Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+          </div>
+          <div>
+            <div>
+              <b>Yale Center for British Art</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/ycba-as-entity",
+  "type": "Group",
+  "_label": "Yale Center for British Art",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300264595",
+      "type": "Type",
+      "_label": "Repository"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n77005277",
+      "type": "Group",
+      "_label": "Yale Center for British Art"
+    },
+    {
+      "id": "http://vocab.getty.edu/ulan/500303557",
+      "type": "Group",
+      "_label": "Yale Center for British Art"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q6352575",
+      "type": "Group",
+      "_label": "Yale Center for British Art"
+    }    
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yale Center for British Art",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+            <div>
+              <b>Yale Center for British Art Reference Library</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/ycba-reference-library",
+  "type": "Group",
+  "_label": "Yale Center for British Art Reference Library",
+  "classified_as": [
+    {
+      "id": "Department",
+      "type": "Type",
+      "_label": "http://vocab.getty.edu/aat/300263534"
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/group/ycba-as-entity",
+      "_label": "Yale Center for British Art"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yale Center for British Art Reference Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+          </div>
+          <div>
+            <div>
+              <b>Yale University Art Gallery</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/yuag-as-entity",
+  "type": "Group",
+  "_label": "Yale University Art Gallery",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300264595",
+      "type": "Type",
+      "_label": "Repository"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://id.loc.gov/authorities/names/n79129213",
+      "type": "Group",
+      "_label": "Yale University Art Gallery"
+    },
+    {
+      "id": "http://vocab.getty.edu/ulan/500303559",
+      "type": "Group",
+      "_label": "Yale University Art Gallery"
+    },
+    {
+      "id": "http://www.wikidata.org/entity/Q1568434",
+      "type": "Group",
+      "_label": "Yale University Art Gallery"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yale University Art Gallery",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+            <div>
+              <b>Yale University Art Gallery Numismatics</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/yuag-numismatics",
+  "type": "Group",
+  "_label": "Yale University Art Gallery Numismatics",
+  "classified_as": [
+    {
+      "id": "Department",
+      "type": "Type",
+      "_label": "http://vocab.getty.edu/aat/300263534"
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/group/yuag-as-entity",
+      "_label": "Yale University Art Gallery"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Yale University Art Gallery Numismatics",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+          </div>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Generate a top-level group entity for the additional groups listed below.</cmd>
+        <info>
+          <p>
+            <ul id="ul_dgg_rkd_psb">
+              <li>Library of Congress</li>
+              <li>OCLC</li>
+            </ul>  
+          </p>          
+        </info>
+        <stepresult>
+          <div>
+            <div>
+              <b>Library of Congress</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/lc-as-entity",
+  "type": "Group",
+  "_label": "Library of Congress",
+  "classified_as": [    
+    {
+      "id": "http://vocab.getty.edu/aat/300264595",
+      "type": "Type",
+      "_label": "Repository"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "https://www.wikidata.org/entity/Q131454",
+      "type": "Group",
+      "_label": "Library of Congress"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Library of Congress",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+            <div>
+              <b>OCLC</b>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/group/oclc-as-entity",
+  "type": "Group",
+  "_label": "OCLC",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300025948",
+      "type": "Type",
+      "_label": "Organization"
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "http://www.wikidata.org/entity/Q190593",
+      "type": "Group",
+      "_label": "OCLC"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "OCLC",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+            </div>
+          </div>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Include an embedded reference to the group entity in the appropriate context.</cmd>
+        <substeps>
+          <substep>
+            <cmd>YUL, YCBA, and YUAG collections as defined in <xref href="library_collections.dita"/>.</cmd>
+          </substep>
+          <substep>
+            <cmd>OCLC and Library of Congress within <codeph>AttributeAssignment</codeph> entities for OCLC numbers and LCCNs, (<xref href="../tasks/identifiers/oclc_numbers.dita"/> and <xref href="../tasks/identifiers/library_of_congress_control_number_lccn.dita"/>), respectively.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>

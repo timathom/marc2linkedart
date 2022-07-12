@@ -1,0 +1,736 @@
+<task id="content_and_carriers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Content and carriers</title>
+  <shortdesc/>
+  <prolog>
+    <critdates>
+      <created date="2021-10-06"/>
+      <!--tt434-->
+      <revised modified="2021-10-07"/>
+      <!--tt434-->
+      <revised modified="2021-10-12"/>
+      <!--tt434-->
+      <revised modified="2021-10-14"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-12-13"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-23"/>
+    </critdates>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>In Linked Art, record-level entities are divided into two categories:<ul id="ul_zr2_4c5_yqb">
+          <li>
+            <p>Conceptual entities, which represent the intellectual content of a resource:<ul>
+                <li>
+                  <p>
+                    <codeph>DigitalObject</codeph>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <codeph>LinguisticObject</codeph>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <codeph>Set</codeph>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <codeph>VisualItem</codeph>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>Carrier entities, which carry that content in a particular form:<ul>
+                <li>
+                  <p>
+                    <codeph>DigitalObject</codeph>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <codeph>HumanMadeObject</codeph>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+        <note>For supertypes under the <codeph>Datasets</codeph> and <codeph>Software and Electronic Media</codeph> content types, a single <codeph>DigitalObject</codeph> resource should be generated, representing both content and carrier in a single resource.</note>
+      </p>
+      <p>Resources with a base class of <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph> must follow the content/carrier model. In MARC-based systems, this model corresponds roughly to the distinction between bibliographic records and holdings records.</p>
+      <p>For each record-level resource with a base class of <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph> (the <i>content</i> level), one or more resources with a base class of <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph> (the <i>carrier</i> level) must be generated.<note id="note_zyb_zjf_xrb"><codeph>DigitalObject</codeph> carriers should be generated when the MFHD <codeph>852b</codeph> has a value of <codeph>yulint</codeph> or <codeph>yulintx</codeph>.</note></p>
+      <p>These <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph> resources must point to the <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph> resource that they instantiate and where the supertype and any subjects, etc., are assigned.</p>
+      <p>The following diagram (by Rob Sanderson) provides a high-level overview of the Linked Art model.</p>
+      <image href="../resources/img/base-model-classes.png" id="image_ag3_d4d_2rb"/>
+    </context>
+    <section id="section_zby_m4d_2rb">
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>For each MARC holdings record, determine the supertype of the resource and generate a JSON-LD document with a <codeph>type</codeph> value of either <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>, as appropriate.</cmd>
+        <info>
+          <note id="note_lwg_3dw_frb">For supertypes with two possible base classes (such as <xref keyref="Globes">Globes</xref>), apply the <xref href="../concepts/record_level_entities.dita#record_level_entities">order of preference</xref> for base classes when generating the content-level resource.</note>
+        </info>
+        <stepresult>
+          <note>This example is meant to illustrate supertype assignment and does not represent a complete JSON-LD document.</note>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/abc",
+  "type": "HumanMadeObject",
+  "_label": "麗澤論說集錄 : [十卷]",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028051",
+      "type": "Type",
+      "_label": "Books",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Object"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>For each MARC bibliographic record, determine the supertype of the resource and generate a JSON-LD document with a <codeph>type</codeph> value corresponding to the base class of the supertype.</cmd>        
+      </step>
+      <step>
+        <cmd>In addition, for each record-level bibliographic resource, add another <codeph>classified_as</codeph> object to mark the record as an "Information Artifact" (IRI <codeph>http://vocab.getty.edu/aat/300230425</codeph>).</cmd>
+        <stepresult>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/text/416165c2-1108-4acd-b7ab-008f773a2ba3",
+  "type": "LinguisticObject",
+  "_label": "麗澤論說集錄 : [十卷]",
+  "classified_as": [    
+    {
+      "id": "http://vocab.getty.edu/aat/300230425",
+      "type": "Type",
+      "_label": "Information Artifact"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>For each MARC holdings record attached to a bibliographic record:</cmd>
+        <choices>
+          <choice>If the base class derived from the supertype is <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>: <ul>
+              <li>If the MFHD <codeph>852b</codeph> is <codeph>yulint</codeph> or <codeph>yulintx</codeph>, generate a JSON-LD document with a base class of <codeph>DigitalObject</codeph>.</li>
+              <li>Else, generate a JSON-LD document with a base class of <codeph>HumanMadeObject</codeph>.</li>
+            </ul></choice>
+          <choice>If the base class derived from the supertype is <codeph>Set</codeph>, generate an embedded <codeph>Set → members_exemplified_by → HumanMadeObject</codeph> resource to record carrier-level information.</choice>
+          <choice>If the base class derived from the supertype is <codeph>DigitalObject</codeph>, do not generate a separate carrier-level resource. Record both content- and carrier-level information in a single JSON-LD document, with <codeph>DigitalObject</codeph> as base class.</choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>If the supertype of the resource corresponding to the bibliographic record has a base class of <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>, then <codeph>HumanMadeObject</codeph> carriers must point to the content-level resource using the <codeph>carries</codeph> property for <codeph>LinguisticObject</codeph> resources or the <codeph>shows</codeph> property for <codeph>VisualItem</codeph> resources. For <codeph>DigitalObject</codeph> carriers, the corresponding properties are <codeph>digitally_carries</codeph> and <codeph>digitally_shows</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If the supertype of the resource corresponding to the bibliographic record has a base class of <codeph>Set</codeph> (for archival records or kits), then the <codeph>HumanMadeObject</codeph> carrier is <b>not</b> modeled as a separate resource, but rather embedded within the <codeph>Set</codeph> resource using the property <codeph>members_exemplified_by</codeph>. </cmd>
+      </step>
+    </steps>
+    <result>
+      <note>These examples are meant to illustrate the content/carrier distinction and do not necessarily represent complete JSON-LD documents.</note>
+      <ol>
+        <li>
+          <codeph>Set → members_exemplified_by → HumanMadeObject</codeph> [<yulbibid>3779671</yulbibid>] <codeblock><![CDATA[{
+  "id": "https://lux.collections.yale.edu/data/set/00046754-f28f-4b56-a611-056341335226",
+  "type": "Set",
+  "_label": "شجون المسجون وفتون المفتون / 1863",
+  "members_exemplified_by": [
+    {
+      "type": "HumanMadeObject",
+      "_label": "شجون المسجون وفتون المفتون / 1863",
+      "identified_by": [
+        {
+          "type": "Identifier",
+          "content": "Arabic MSS 480 [Beinecke Library]",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300311706",
+              "type": "Type",
+              "_label": "Call Number"
+            }
+          ]
+        }
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "content": "At the Library",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300133046",
+              "type": "Type",
+              "_label": "Access Statement",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinguisticObject",
+          "content": "Purchased from Oskar Rescher in August 1959 on plain fund.",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435438",
+              "type": "Type",
+              "_label": "Provenance Statement",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinguisticObject",
+          "content": "leaves 119 verso-176 ; 24.5 x 18 cm",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435452",
+              "type": "Type",
+              "_label": "Physical Statement",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ]
+            }
+          ],
+          "identified_by": [
+            {
+              "type": "Name",
+              "content": "Physical Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300404669",
+                  "type": "Type",
+                  "_label": "Display Title"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinguisticObject",
+          "content": "Purchased from Oskar Rescher in August 1959 on plain fund.",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435438",
+              "type": "Type",
+              "_label": "Provenance Statement"
+            }
+          ],
+          "identified_by": [
+            {
+              "type": "Name",
+              "content": "Ownership and Custodial History",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300404669",
+                  "type": "Type",
+                  "_label": "Display Title"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "subject_of": [
+        {
+          "type": "LinguisticObject",
+          "_label": "Text of Repository Page",
+          "digitally_carried_by": [
+            {
+              "type": "DigitalObject",
+              "_label": "Repository Page",
+              "access_point": [
+                {
+                  "id": "https://search.library.yale.edu/catalog/3779671",
+                  "type": "DigitalObject"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "member_of": [
+        {
+          "id": "https://lux.collections.yale.edu/data/set/xyz",
+          "type": "Set",
+          "_label": "Beinecke Library"
+        }
+      ],
+      "carries": [
+        {
+          "type": "LinguisticObject",
+          "language": [
+            {
+              "id": "https://lux.collections.yale.edu/data/concept/2b8c1ef3-fb14-4306-9d7c-d5b198acc3f8",
+              "type": "Language",
+              "_label": "Arabic"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </li>
+        <li>
+          <codeph>HumanMadeObject → carries → LinguisticObject</codeph> [<yulbibid>7778409</yulbibid>] <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/8e0bdbff-ebb1-4f9b-b98b-e97d64a01ff9",
+  "type": "HumanMadeObject",
+  "_label": "麗澤論說集錄 : [十卷]",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028051",
+      "type": "Type",
+      "_label": "Books",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Object"
+        }
+      ]
+    }
+  ],
+  "carries": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/416165c2-1108-4acd-b7ab-008f773a2ba3",
+      "type": "LinguisticObject",
+      "_label": "麗澤論說集錄 : [十卷]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "BL1840 .L84 2003 [Library Shelving Facility (LSF)]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311706",
+          "type": "Type",
+          "_label": "Call Number"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Li ze lun shuo ji lu : [shi juan]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "\u9e97\u6fa4\u8ad6\u8aaa\u96c6\u9304 : [\u5341\u5377]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ],
+      "language": [
+        {
+          "id": "https://lux.collections.yale.edu/data/concept/70cb6397-2b2f-400c-b887-70fd80969c8b",
+          "type": "Language",
+          "_label": "und"
+        }
+      ]
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "At the Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300133046",
+          "type": "Type",
+          "_label": "Access Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "content": "5 v. ; 33 cm",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435452",
+          "type": "Type",
+          "_label": "Physical Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Physical Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "type": "LinguisticObject",
+      "_label": "Text of Repository Page",
+      "digitally_carried_by": [
+        {
+          "type": "DigitalObject",
+          "_label": "Repository Page",
+          "access_point": [
+            {
+              "id": "https://search.library.yale.edu/catalog/7778409",
+              "type": "DigitalObject"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/set/def",
+      "type": "Set",
+      "_label": "Yale University Library"
+    }
+  ]
+}]]></codeblock>
+        </li>
+        <li>
+          <codeph>HumanMadeObject → shows → VisualItem</codeph> [<yulbibid>9777342</yulbibid>] <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/000564c6-1615-47e6-b379-192e16a3e14a",
+  "type": "HumanMadeObject",
+  "_label": "Lessons for shaving!!! [graphic]",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300041273",
+      "type": "Type",
+      "_label": "Prints",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Object"
+        }
+      ]
+    }
+  ],
+  "shows": [
+    {
+      "id": "https://lux.collections.yale.edu/data/visual/fd3d836b-1cd1-47d9-a38e-002ce325601b",
+      "type": "VisualItem",
+      "_label": "Lessons for shaving!!! [graphic]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "796.04.16.02++ [Lewis Walpole Library]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311706",
+          "type": "Type",
+          "_label": "Call Number"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Lessons for shaving!!! [graphic]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "At the Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300133046",
+          "type": "Type",
+          "_label": "Access Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "content": "1 print : etching on wove paper, hand-colored ; plate mark 34.8 x 48 cm, on sheet 38 x 50 cm",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435452",
+          "type": "Type",
+          "_label": "Physical Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Physical Description",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300404669",
+              "type": "Type",
+              "_label": "Display Title"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subject_of": [
+    {
+      "type": "LinguisticObject",
+      "_label": "Text of Repository Page",
+      "digitally_carried_by": [
+        {
+          "type": "DigitalObject",
+          "_label": "Repository Page",
+          "access_point": [
+            {
+              "id": "https://search.library.yale.edu/catalog/9777342",
+              "type": "DigitalObject"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/set/collection1",
+      "type": "Set",
+      "_label": "Yale University Library"
+    }
+  ],
+  "produced_by": {
+    "type": "Production",
+    "part": [
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/6a4346f3-b238-47d4-a6d0-980c21c0a307",
+            "type": "Person",
+            "_label": "Woodward, G. M. (George Moutard), approximately 1760-1809"
+          }
+        ]
+      }
+    ]
+  }
+}]]></codeblock>
+        </li>
+        <li>
+          <codeph>DigitalObject → digitally_carries → LinguisticObject</codeph> [<yulbibid>6546882</yulbibid>] <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/e161c7e7-7a78-4976-8774-0de867c3222d",
+  "type": "DigitalObject",
+  "_label": "ZYX and his fairy, or, The soul in search of peace [electronic resource]",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028051",
+      "type": "Type",
+      "_label": "Books",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Object"
+        }
+      ]
+    }
+  ],
+  "digitally_carries": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/7210e343-ce9d-4853-8454-a7c4e88644db",
+      "type": "LinguisticObject",
+      "_label": "ZYX and his fairy, or, The soul in search of peace [electronic resource]"
+    }
+  ]
+}
+]]></codeblock>
+        </li>
+        <li>
+          <codeph>DigitalObject → digitally_shows → VisualItem</codeph> [<yulbibid>12237283</yulbibid>] <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/ed9af261-e373-40fa-8248-48afb62eb3c2",
+  "type": "DigitalObject",
+  "_label": "Sarah Malcolm [graphic] : executed in Fleet Street, March the 7th 1733 for robbing [the] chambers of Mrs. Lydia Duncomb in [the] Temple, & murdering her, Eliz. Harrison, & Ann Price",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300041273",
+      "type": "Type",
+      "_label": "Prints",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Object"
+        }
+      ]
+    }
+  ],
+  "digitally_shows": [
+    {
+      "id": "https://lux.collections.yale.edu/data/visual/8cf565ab-f2ad-4af2-9840-c18f36d6fe08",
+      "type": "VisualItem",
+      "_label": "Sarah Malcolm [graphic] : executed in Fleet Street, March the 7th 1733 for robbing [the] chambers of Mrs. Lydia Duncomb in [the] Temple, & murdering her, Eliz. Harrison, & Ann Price"
+    }
+  ]
+}]]></codeblock>
+        </li>
+        <li> Standalone <codeph>DigitalObject</codeph> [<yulbibid>12244893</yulbibid>] <codeblock><![CDATA[{
+  "id": "https://lux.collections.yale.edu/data/digital/0283cba8-169b-4950-bb88-5ba3cdd4ca1d",
+  "type": "DigitalObject",
+  "_label": "弘前藩庁日記ひろひよみ : 気象・災害等の記述を中心に. Vol.2, (1741年-1868年)",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300028566",
+      "type": "Type",
+      "_label": "Software Applications",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ]
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "QC990.J32 H576 2014 CD [Library Shelving Facility (LSF)]",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311706",
+          "type": "Type",
+          "_label": "Call Number"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Hirosaki hanchō nikki hiroiyomi : kishō saigai nado no kijutsu o chūshin ni. Vol.2, (1741-nen-1868-nen)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "弘前藩庁日記ひろひよみ : 気象・災害等の記述を中心に. Vol.2, (1741年-1868年)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ],
+      "language": [
+        {
+          "id": "https://lux.collections.yale.edu/data/concept/70cb6397-2b2f-400c-b887-70fd80969c8b",
+          "type": "Language",
+          "_label": "und"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Hirosaki hanchō nikki hiroiyomi : kishō saigai nado no kijutsu o chūshin ni. Vol.2, (1741-nen-1868-nen)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404672",
+          "type": "Type",
+          "_label": "Sorting Name"
+        }
+      ]
+    }
+  ]
+}]]></codeblock>
+        </li>
+      </ol>
+    </result>
+  </taskbody>
+</task>

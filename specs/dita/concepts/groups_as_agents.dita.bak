@@ -1,0 +1,165 @@
+<task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="groups_as_agents" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
+  <title>Groups as agents</title>
+  <shortdesc>Entities extracted from MARC 11X and 71X fields.</shortdesc>
+  <prolog>
+    <publisher conkeyref="metadata_common/publ_metadata"/>
+    <critdates conkeyref="metadata_common/dates_metadata">
+      <created date="2021-10-04"/>
+      <revised modified="2021-10-04"/>
+      <!--tt434-->
+      <revised modified="2021-11-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-27"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-28"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2021-11-29"/>
+    </critdates>
+    <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
+    <metadata>
+      <keywords>
+        <keyword>Assigned</keyword>
+        <keyword>Completed</keyword>
+        <keyword></keyword>
+      </keywords>
+    </metadata>
+    <data name="assigned" value="Yue"/>
+    <data name="completed" value="2021-12-08T00:00:00.000"/>
+    <data name="deployed" value=""/>
+  </prolog>
+  <taskbody>
+    <context>
+      <p>As agents, groups can contribute to creation activities or production activities. The table below summarizes the domain and properties used in activities involving group entities.</p>
+      <note>The role of the group entity is derived from <codeph>$e</codeph> or <codeph>$4</codeph> for MARC 110 and 710 and from <codeph>$j</codeph> or <codeph>$4</codeph> for MARC 111 and 711. When those subfields are absent, a generic role of <codeph>creator</codeph> is assigned when 11X is the source or <codeph>contributor</codeph> when 71X is the source.</note>
+      <table id="table_hzf_25j_3rb">
+        <tgroup cols="3">
+          <colspec colname="c1" colnum="1"/>
+          <colspec colname="c3" colnum="2"/>
+          <colspec colname="newCol3" colnum="3"/>
+          <thead>
+            <row>
+              <entry>Domains</entry>
+              <entry>Property path</entry>
+              <entry>Usage</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <codeph>LinguisticObject</codeph>
+                <codeph>VisualItem</codeph>
+              </entry>
+              <entry><codeph>created_by → part → carried_out_by</codeph></entry>
+              <entry/>
+            </row>
+            <row>
+              <entry><codeph>HumanMadeObject</codeph></entry>
+              <entry><codeph>produced_by → part → carried_out_by</codeph></entry>
+              <entry/>
+            </row>
+            <row>
+              <entry>
+                <codeph>Set</codeph>
+              </entry>
+              <entry><codeph>created_by → part → carried_out_by</codeph></entry>
+              <entry>Do not include agent references in nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+            </row>
+            <row>
+              <entry>
+                <codeph>DigitalObject</codeph>
+              </entry>
+              <entry><codeph>created_by → part → carried_out_by</codeph></entry>
+              <entry/>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </context>
+    <section>
+      <title>Source data</title>
+      <codeblock>---
+name: GroupsAsAgents
+sampleBibs:
+  - 7 # 710
+  - 9 # 710
+  - 11 # 110
+  - 19 # 111
+  - 38 # 110
+  - 127 # 111
+  - 426 # 711
+  - 947 # 711
+  - 5132502 # produced_by
+# Source data fields
+fieldSpec:
+  - 11001abcdeg
+  - 11101acdegjnqu
+  - 71001abcdeg
+  - 71101acdegjnqu
+trimPunctuation: true
+scriptInclusion: BOTH</codeblock>
+    </section>
+    <section>
+      <title>Processing steps and output</title>
+    </section>
+    <steps>
+      <step>
+        <cmd>After applying the instructions in <xref href="../tasks/concepts/simple_subject_headings.dita"/>, add an embedded reference to the group entity within the record-level resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Process creation activities.</cmd>
+            <stepresult>
+              <yulbibid>127</yulbibid>
+              <codeblock><![CDATA[{
+  "created_by": {
+    "type": "Creation",
+    "part": [
+      {
+        "type": "Creation",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/group/1bd89c27-47b9-40f0-8023-568af073edbd",
+            "type": "Group",
+            "_label": "International Congress for Logic, Methodology, and Philosophy of Science (3d : 1967 : Amsterdam)"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
+            "type": "Type",
+            "_label": "creator"
+          }
+        ]
+      }
+    ]
+  }
+}]]></codeblock>
+            </stepresult>
+          </substep>
+          <substep>
+            <cmd>Process production activities (domain: <codeph>HumanMadeObject → shows → VisualItem</codeph>).</cmd>
+            <stepresult>
+              <yulbibid>5132502</yulbibid>
+              <codeblock><![CDATA[{
+  "produced_by": {
+    "type": "Production",
+    "part": [
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/group/545215f9-7d4a-4d4e-904e-ec6acf6e78da",
+            "type": "Group",
+            "_label": "United States. Bureau of Alcohol, Tobacco, and Firearm"
+          }
+        ]
+      }
+    ]
+  }
+}]]></codeblock>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+  </taskbody>
+</task>
