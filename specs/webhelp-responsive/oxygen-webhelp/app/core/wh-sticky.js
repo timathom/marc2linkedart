@@ -13,6 +13,8 @@ define(["jquery"], function ($) {
       whIndexTerms.addClass("indexTerms-sticky");
       whIndexTerms.css({"top": header.outerHeight()});
       
+      $("html").css({"scroll-padding-top": header.outerHeight() + breadcrumb.outerHeight()});
+      
       /* 
        * WH-2778
        * Handle the URL with an anchor and the header is sticky. 

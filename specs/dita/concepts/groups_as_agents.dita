@@ -14,6 +14,8 @@
       <revised modified="2021-11-28"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-11-29"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-06-10"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
     <metadata>
@@ -62,7 +64,7 @@
                 <codeph>Set</codeph>
               </entry>
               <entry><codeph>created_by → part → carried_out_by</codeph></entry>
-              <entry>Do not include agent references in nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
+              <entry>Do not include agent references in nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
             </row>
             <row>
               <entry>
@@ -126,7 +128,7 @@ scriptInclusion: BOTH</codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }
@@ -136,7 +138,7 @@ scriptInclusion: BOTH</codeblock>
             </stepresult>
           </substep>
           <substep>
-            <cmd>Process production activities (domain: <codeph>HumanMadeObject → shows → VisualItem</codeph>).</cmd>
+            <cmd>Process production activities.</cmd>
             <stepresult>
               <yulbibid>5132502</yulbibid>
               <codeblock><![CDATA[{

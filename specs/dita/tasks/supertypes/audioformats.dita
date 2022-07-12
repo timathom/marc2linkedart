@@ -1,5 +1,5 @@
 <concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_AudioFormats" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
-  <title>Audio</title>
+  <title>Audio Works</title>
   <shortdesc/>
   <prolog>
     <publisher conkeyref="metadata_common/publ_metadata"/>

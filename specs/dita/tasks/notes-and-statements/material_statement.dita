@@ -1,12 +1,16 @@
 <task xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="material_statement" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:generalTask.xsd">
   <title>Medium of performance</title>
-  <shortdesc>Corresponds to the<codeph>382</codeph>field in MARC.</shortdesc>
+  <shortdesc>Corresponds to the <codeph>382</codeph> field in MARC.</shortdesc>
   <prolog>
     <critdates>
       <!--tt434-->
       <revised modified="2021-10-28"/>
       <!--tt434-->
       <revised modified="2021-11-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-23"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
     </critdates>
     <metadata>
       <keywords>
@@ -36,19 +40,13 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>

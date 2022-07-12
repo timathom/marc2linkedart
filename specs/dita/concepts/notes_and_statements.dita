@@ -15,7 +15,7 @@
     <data name="deployed" value=""/>
   </prolog>
   <conbody>
-    <p>Notes and descriptive statements are collected within a<codeph>referred_to_by</codeph>array.</p>
-    <p>Nineteen note and statement types are currently mapped for<ph keyref="lux"/>.</p>
+    <p>Notes and descriptive statements are collected within a <codeph>referred_to_by</codeph> array.</p>
+    <p>Nineteen note and statement types are currently mapped for <ph keyref="lux"/>.</p>
   </conbody>
 </concept>

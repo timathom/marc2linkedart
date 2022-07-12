@@ -1,6 +1,6 @@
 <concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="lux_entities" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
   <title>LUX top-level entities</title>
-  <shortdesc>Eleven top-level entities are required for use in<keyword keyref="lux"/>.</shortdesc>
+  <shortdesc>Eleven top-level entities are required for use in <keyword keyref="lux"/>.</shortdesc>
   <prolog>
     <publisher conkeyref="metadata_common/publ_metadata"/>
     <critdates conkeyref="metadata_common/dates_metadata">
@@ -16,7 +16,7 @@
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
   </prolog>
   <conbody>
-    <p>In<ph keyref="lux"/>, top-level entities can be divided into<i>record-level</i>entities, which correspond to resources held by the library (books, journals, databases, archival collections, etc.), and<i>related</i>entities, which correspond to the people, places, concepts, etc., connected to those resources through some standard relationship.</p>
+    <p>In <ph keyref="lux"/>, top-level entities can be divided into <i>record-level</i> entities, which correspond to resources held by the library (books, journals, databases, archival collections, etc.), and <i>related</i> entities, which correspond to the people, places, concepts, etc., connected to those resources through some standard relationship.</p>
   </conbody>
   <related-links>
     <linklist>

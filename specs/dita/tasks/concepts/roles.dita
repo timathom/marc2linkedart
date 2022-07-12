@@ -13,6 +13,12 @@
       <revised modified="2021-10-04"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2022-01-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-07"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-06-10"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
     <metadata>
@@ -41,10 +47,7 @@ fieldSpec:
   - 611j4
   - 700e4
   - 710e4
-  - 711j4
-  - 800e4
-  - 810e4
-  - 811j4
+  - 711j4 
 trimPunctuation: true
 scriptInclusion: NONE]]></codeblock>
     </section>
@@ -52,7 +55,8 @@ scriptInclusion: NONE]]></codeblock>
       <title>Processing steps and output</title>
     </section>
     <context>
-      <p>The role of an agent within an activity is derived from <codeph>$e</codeph> (relator term for organizations and persons), <codeph>$j</codeph> (relator term for conferences/meetings), or <codeph>$4</codeph> (relationship code for any entity type). When those subfields are absent, a generic role of <codeph>creator</codeph> is assigned when <codeph>1XX</codeph> is the source or <codeph>contributor</codeph> when <codeph>7XX</codeph> is the source.</p>
+      <p>The role of an agent within an activity is derived from <codeph>$e</codeph> (relator term for organizations and persons), <codeph>$j</codeph> (relator term for conferences/meetings), or <codeph>$4</codeph> (relationship code for any entity type). When those subfields are absent, a generic role of <codeph>Creator</codeph> is assigned when <codeph>1XX</codeph> is the source or <codeph>Contributor</codeph> when <codeph>7XX</codeph> is the source.</p>
+      <p>Roles are typically used in the context of an activity. However, entities referenced as subjects may also have role terms assigned to them.</p>
       <p>The mapping table below should be used to generate unique concept entities for role terms. For entries in the table with a type of <codeph>translations</codeph>, the <codeph>Target</codeph> column represents a reference to an <q>authorized</q> version of the term that appears later in the table. For all other entries, the <codeph>Target</codeph> column represents an <codeph>equivalent</codeph> IRI that should be included in the top-level resource description for the role concept.</p>
       <p>
         <table id="table_h12_q3j_dsb">
@@ -1820,13 +1824,297 @@ scriptInclusion: NONE]]></codeblock>
         </stepresult>
       </step>
       <step>
-        <cmd>For each <codeph>1XX</codeph>, <codeph>6XX</codeph>, <codeph>7XX</codeph>, or <codeph>8XX</codeph> field, inspect subfields <codeph>e</codeph> (all but <codeph>111</codeph>, <codeph>611</codeph>, <codeph>711</codeph>, and <codeph>811</codeph>), <codeph>j</codeph> (only <codeph>X11)</codeph>, and <codeph>4</codeph> (all) for a role term or code.</cmd>
+        <cmd>For each <codeph>1XX</codeph> or <codeph>7XX</codeph> field, inspect each subfield <codeph>e</codeph> (all but <codeph>111</codeph> or <codeph>711</codeph>), <codeph>j</codeph> (only <codeph>X11</codeph>), and <codeph>4</codeph> (all) for a role term or code.</cmd>
       </step>
       <step>
-        <cmd>Match role terms in <codeph>e</codeph> or <codeph>j</codeph> and role codes in <codeph>4</codeph> against the top-level entities corresponding to the terms and codes listed in the mapping table.</cmd>
+        <cmd><xref keyref="gloss-norm">Normalize</xref> and match role terms in <codeph>e</codeph> or <codeph>j</codeph> and role codes in <codeph>4</codeph> against the top-level entities corresponding to the terms and codes listed in the mapping table.</cmd>
       </step>
       <step>
-        <cmd>For each <codeph>part</codeph> of an activity in a record-level resource, add a <codeph>classified_as</codeph> reference to the corresponding role concept.</cmd>
+        <cmd>For each <codeph>part</codeph> of an activity in a record-level resource, add a <codeph>classified_as</codeph> reference for the corresponding role concept.</cmd>
+      </step>
+      <step>
+        <cmd>Inspect the <codeph>Type</codeph> column in the mapping table to determine the type of activity to be generated.</cmd>
+        <info>
+          <note id="note_aj4_5tf_vtb">Roles types still need further consideration and may be used to generate different mappings in a future version of the specification.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>If the role type is <codeph>production</codeph>, then generate a <codeph>Production</codeph> activity on the carrier-level resource (<codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>).</cmd>        
+        <stepresult>
+          <yulbibid>7647390</yulbibid>
+          <p>Domain: <codeph>HumanMadeObject</codeph></p>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/54f1fcae-4898-413f-91cd-806d9f4f9cb3",
+  "type": "HumanMadeObject",
+  "_label": "Illustrations of Shakespeare",            
+  "produced_by": {
+    "type": "Production",
+    "part": [
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/28a98ded-4a66-4c12-a175-20a3733428fa",
+            "type": "Person",
+            "_label": "Bunbury, Henry William, 1750-1811"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/a18e0571-0842-4f9c-86de-3229e64dc64d",
+            "type": "Person",
+            "_label": "Bartolozzi, Francesco, 1727-1815"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/ec100aa5-11c4-47af-8c42-f21af2cbea27",
+            "type": "Person",
+            "_label": "Benedetti, Michele, 1745-1810"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/644c3ba3-0320-4b41-b59b-d1fc902f5abb",
+            "type": "Person",
+            "_label": "Chapman, J. (John), active 1792-1823"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/514f84c1-8861-48b1-b3e9-5d5f00647c0b",
+            "type": "Person",
+            "_label": "Cheesman, Thomas, 1760-"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/61c133b7-ee19-45ad-a7c6-57216f7f349b",
+            "type": "Person",
+            "_label": "Coles, J."
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/e01c532d-8281-4be2-9911-7896a7c01065",
+            "type": "Person",
+            "_label": "Duterrau, Benjamin, 1767-1851"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/3082e61d-2a84-4cd8-9a85-58091df39bd5",
+            "type": "Person",
+            "_label": "Gardiner, W. N. (William Nelson), 1766-1814"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/8b303da9-5350-43be-9587-df56cd45b75f",
+            "type": "Person",
+            "_label": "Leney, William Satchwell, 1769-1831"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },    
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/61128e1b-2b5a-42ef-800d-8777052b3c5a",
+            "type": "Person",
+            "_label": "Meadows, Robert Mitchell"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/5ce84446-6e6a-433b-8364-f1ddfbf75ea1",
+            "type": "Person",
+            "_label": "Shenner"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/12b1555a-9e61-45d3-9a4d-200f15f908e9",
+            "type": "Person",
+            "_label": "Tomkins, Peltro William, 1759-1840"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      },
+      {
+        "type": "Production",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/82efbe04-d078-43a7-8351-b0ef3b8b7bea",
+            "type": "Person",
+            "_label": "Vandenbergh, Ignatius Joseph, 1752-1824"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
+        ]
+      }
+    ]
+  }
+}]]></codeblock>
+        </stepresult>
+      </step>      
+      <step>
+        <cmd>If the role type is <b>not</b> <codeph>production</codeph>, then generate a <codeph>Creation</codeph> activity on the content-level resource (<codeph>LinguisticObject</codeph>, <codeph>VisualItem</codeph>, or <codeph>Set</codeph>).</cmd>
+        <!--
+        <info>
+          <p>The following <codeph>provenance</codeph> roles should be processed as <codeph>Creation</codeph> activities: <table>
+              <tgroup cols="4">
+                <thead>
+                  <row>
+                    <entry>Type</entry>
+                    <entry>Source</entry>
+                    <entry>Code</entry>
+                    <entry>Target</entry>
+                  </row>
+                </thead>
+                <tbody>
+                  <row>
+                    <entry>provenance</entry>
+                    <entry>copyright holder</entry>
+                    <entry>cph</entry>
+                    <entry><xref format="html" href="http://id.loc.gov/vocabulary/relators/cph" scope="external"/></entry>
+                  </row>
+                  <row>
+                    <entry>provenance</entry>
+                    <entry>licensee</entry>
+                    <entry>lse</entry>
+                    <entry><xref format="html" href="http://id.loc.gov/vocabulary/relators/lse" scope="external"/></entry>
+                  </row>
+                  <row>
+                    <entry>provenance</entry>
+                    <entry>licensor</entry>
+                    <entry>lso</entry>
+                    <entry><xref format="html" href="http://id.loc.gov/vocabulary/relators/lso" scope="external"/></entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table></p>
+        </info>
+        -->
         <stepresult>
           <yulbibid>693</yulbibid>
           <p>Domain: <codeph>LinguisticObject</codeph></p>
@@ -1847,7 +2135,7 @@ scriptInclusion: NONE]]></codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/81b7e2c2-b7bb-4bcb-a806-9bfc1838e317",
             "type": "Type",
-            "_label": "author"
+            "_label": "Author"
           }
         ]
       },
@@ -1864,7 +2152,7 @@ scriptInclusion: NONE]]></codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/271d291f-0d42-4abf-bf43-070b241edc98",
             "type": "Type",
-            "_label": "translator"
+            "_label": "Translator"
           }
         ]
       },
@@ -1881,7 +2169,7 @@ scriptInclusion: NONE]]></codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
             "type": "Type",
-            "_label": "contributor"
+            "_label": "Contributor"
           }
         ]
       }
@@ -1889,8 +2177,73 @@ scriptInclusion: NONE]]></codeblock>
   }
 }]]></codeblock>
         </stepresult>
+      </step>      
+      <step>
+        <cmd>For each <codeph>6XX</codeph>, field, inspect each subfield <codeph>e</codeph> (all but <codeph>611</codeph>), <codeph>j</codeph> (only <codeph>611</codeph>), and <codeph>4</codeph> (all) for a role term or code.</cmd>
       </step>
-      
+      <step>
+        <cmd><xref keyref="gloss-norm">Normalize</xref> and match role terms in <codeph>e</codeph> or <codeph>j</codeph> and role codes in <codeph>4</codeph> against the top-level entities corresponding to the terms and codes listed in the mapping table.</cmd>
+      </step>
+      <step>
+        <cmd>If the role term in <codeph>$e</codeph> is <codeph>depicted</codeph> or the code in <codeph>$4</codeph> is <codeph>dpc</codeph>, then generate a reference using the <codeph>represents</codeph> property rather than <codeph>about</codeph>.</cmd>
+        <stepresult>
+          <yulbibid>4887522</yulbibid>
+          <codeblock><![CDATA[{
+  "represents": [
+    {
+      "id": "https://lux.collections.yale.edu/data/person/fbb6aff5-5c18-4653-8db8-8cff23988ca4",
+      "type": "Person",
+      "_label": "Broughton, Jack, 1704-1789"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>Else, for all other <codeph>6XX</codeph> role terms or codes, construct a complex subject heading (person/concept) with the agent entity and role term as facets.</cmd>
+        <substeps>
+          <substep>
+            <cmd>For embedded reference instructions, see <xref href="../../concepts/people_as_subjects.dita"/> or <xref href="../../concepts/groups_as_subjects.dita"/>.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>6146780</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/person/6e2bc024-ad8b-4906-95ab-83f441a1d306",
+  "type": "Type",
+  "_label": "Schrade, Paul -- Interviewee",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Schrade, Paul -- Interviewee",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "influenced_by": [
+      {
+        "id": "https://lux.collections.yale.edu/data/person/6e2bc024-ad8b-4906-95ab-83f441a1d306",
+        "type": "Person",
+        "_label": "Schrade, Paul"
+      },
+      {
+        "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
+        "type": "Type",
+        "_label": "Interviewee"
+      }
+    ]
+  }
+}]]></codeblock>
+        </stepresult>
+      </step>      
     </steps>
   </taskbody>
 </task>

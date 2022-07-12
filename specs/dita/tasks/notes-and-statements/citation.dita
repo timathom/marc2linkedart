@@ -9,6 +9,10 @@
       <revised modified="2021-10-28"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
     </critdates>
     <metadata>
       <keywords>
@@ -38,19 +42,13 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -94,7 +92,7 @@ scriptInclusion: NONE</codeblock>
     {
       "id": "https://lux.collections.yale.edu/data/text/citation1",
       "type": "LinguisticObject",
-      "_label": "Edizioni italiane del XVI secolo
+      "_label": "Edizioni italiane del XVI secolo"
     }
   ]
 }</codeblock>

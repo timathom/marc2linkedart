@@ -7,6 +7,8 @@
       <revised modified="2021-10-06"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-19"/>
     </critdates>
     <metadata>
       <keywords/>
@@ -16,7 +18,7 @@
     <data name="deployed" value=""/>
   </prolog>
   <conbody>
-    <p>Related <codeph>Set</codeph> entities are used to model membership in repository collections.</p>
-    <p>At present, all YUL holdings should be assigned to a single <codeph>Yale University Library</codeph> collection. Additional <codeph>Set</codeph> entities should be created to represent the Yale Center for British Art and the Yale University Art Gallery, both of which have some holdings represented in the library catalog.</p>
+    <p>Related <codeph>Set</codeph> entities are used to model membership in library collections.</p>
+    <p>Additional <codeph>Set</codeph> entities should be created to represent the Yale Center for British Art and the Yale University Art Gallery, both of which have some holdings represented in the library catalog.</p>
   </conbody>
 </concept>

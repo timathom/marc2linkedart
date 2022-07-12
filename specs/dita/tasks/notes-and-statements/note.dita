@@ -5,6 +5,10 @@
     <critdates>
       <!--tt434-->
       <revised modified="2021-11-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-19"/>
     </critdates>
     <metadata>
       <keywords>
@@ -32,18 +36,12 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry/>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph></entry>
-              <entry/>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -74,18 +72,6 @@ scriptInclusion: NONE</codeblock>
   "type": "LinguisticObject",
   "_label": "Die Streitkräfte der NATO auf dem Territorium der BRD",
   "classified_as": [
-    {
-      "id": "http://vocab.getty.edu/aat/300028051",
-      "type": "Type",
-      "_label": "Books",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300435443",
-          "type": "Type",
-          "_label": "Type of Work"
-        }
-      ]
-    },
     {
       "id": "https://lux.collections.yale.edu/data/concept/61d2655b-095d-4864-9d62-e04e55042baf",
       "type": "Type",

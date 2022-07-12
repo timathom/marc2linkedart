@@ -10,6 +10,8 @@
       <revised modified="2021-12-07"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-08"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-03"/>
     </critdates>
   </prolog>
   <taskbody>
@@ -17,13 +19,17 @@
       <p>Record-level resources can be part of a work cluster through a relationship to a work entity.</p>
       <p>These <codeph>part_of</codeph> relationships apply to the following source data fields: <sl>
           <sli><codeph>1XX</codeph> followed by <codeph>240</codeph></sli>
-          <sli><codeph>130</codeph>, <codeph>730</codeph>, and <codeph>830</codeph></sli>
-          <sli><codeph>700</codeph>, <codeph>710</codeph>, <codeph>711</codeph>, <codeph>800</codeph>, <codeph>810</codeph>, or <codeph>811</codeph> with subfield <codeph>t</codeph>.</sli>
+          <sli><codeph>130</codeph> and <codeph>830</codeph></sli>
+          <sli><codeph>800</codeph>, <codeph>810</codeph>, or <codeph>811</codeph> with subfield <codeph>t</codeph>.</sli>
         </sl></p>
+      <p>Record-level resource can also contain multiple work entity parts, in which case the relationship is reversed, and the <codeph>part_of</codeph> relationship points from a component work entity back to the record-level resource that contains it.</p>
+      <p>These reverse <codeph>part_of</codeph> relationships apply to the following source data fields: <sl>
+        <sli><codeph>700</codeph>, <codeph>710</codeph>, <codeph>711</codeph>, and <codeph>730</codeph>.</sli>
+      </sl></p>
     </context>
     <steps>
       <step>
-        <cmd>Add an embedded reference to the work entity within the record-level resource.</cmd>
+        <cmd>For the <codeph>record-level → part_of → container</codeph> case, add an embedded <codeph>part_of</codeph> reference to the work entity within the record-level resource.</cmd>
         <substeps>
           <substep>
             <cmd>As the <codeph>_label</codeph> of the work entity, take the value of the top-level entity label.</cmd>
@@ -66,7 +72,68 @@
           </substep>
         </substeps>
       </step>
+      <step>
+        <cmd>For the <codeph>component → part_of → record-level</codeph> case, add an embedded <codeph>part_of</codeph> reference to the record-level resource from the component resource.</cmd>
+        <substeps>
+          <substep>
+            <cmd>As the <codeph>_label</codeph> of the embedded record-level entity, take the value of the top-level entity label.</cmd>
+          </substep>
+          <substep>
+            <cmd>As the <codeph>type</codeph> of the embedded record-level entity, take the value of the record-level entity type.</cmd>
+          </substep>
+        </substeps>
+        <stepresult>
+          <yulbibid>11167715</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/text/dcbc799e-b227-4551-bf84-3583cf16cdac",
+  "type": "LinguisticObject",
+  "_label": "Almond trees",
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "Almond trees",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404670",
+          "type": "Type",
+          "_label": "Primary Name"
+        }
+      ]
+    }
+  ],
+  "part_of": [
+    {
+      "id": "https://lux.collections.yale.edu/data/text/b6c8d4c3-fe3d-4001-bb7a-d7fa83aac9c3",
+      "type": "LinguisticObject",
+      "_label": "Piano concerto and solo piano works [electronic resource]"
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "part": [
+      {
+        "type": "Creation",
+        "carried_out_by": [
+          {
+            "id": "https://lux.collections.yale.edu/data/person/bfda6041-031c-474e-8fdc-e21c9aeb674a",
+            "type": "Person",
+            "_label": "Ireland, John, 1879-1962"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/d9928fc0-fb8d-4bf4-980d-27856072334f",
+            "type": "Type",
+            "_label": "Creator"
+          }
+        ]
+      }
+    ]
+  }
+}]]></codeblock>
+        </stepresult>
+      </step>
     </steps>
-
   </taskbody>
 </task>

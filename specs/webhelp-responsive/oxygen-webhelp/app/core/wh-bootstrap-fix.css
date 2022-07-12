@@ -56,6 +56,7 @@ caption {
   color: inherit;
   padding-top: unset;
   caption-side: top;
+  white-space: nowrap;
 }
 
 /*
@@ -142,4 +143,9 @@ h6 {
 
 .navbar-nav.nav-list {
   display: block;
+}
+
+/* Fix for: Default bottom margin for paragraphs. */
+p {
+  margin-bottom: 1em;
 }

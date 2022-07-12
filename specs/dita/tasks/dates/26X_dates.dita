@@ -104,10 +104,6 @@ scriptInclusion: NONE</codeblock>
         <b>#1</b>
         <dl>
           <dlentry>
-            <dt>ID</dt>
-            <dd>1</dd>
-          </dlentry>
-          <dlentry>
             <dt>Type</dt>
             <dd>Publication or creation</dd>
           </dlentry>
@@ -128,10 +124,6 @@ scriptInclusion: NONE</codeblock>
       <p id="_2">
         <b>#2</b>
         <dl>
-          <dlentry>
-            <dt>ID</dt>
-            <dd>2</dd>
-          </dlentry>
           <dlentry>
             <dt>Type</dt>
             <dd>Copyright</dd>
@@ -154,10 +146,6 @@ scriptInclusion: NONE</codeblock>
         <b>#3</b>
         <dl>
           <dlentry>
-            <dt>ID</dt>
-            <dd>3</dd>
-          </dlentry>
-          <dlentry>
             <dt>Type</dt>
             <dd>Publication and copyright</dd>
           </dlentry>
@@ -178,10 +166,6 @@ scriptInclusion: NONE</codeblock>
       <p id="_4">
         <b>#4</b>
         <dl>
-          <dlentry>
-            <dt>ID</dt>
-            <dd>4</dd>
-          </dlentry>
           <dlentry>
             <dt>Type</dt>
             <dd>Publication and copyright</dd>
@@ -205,10 +189,6 @@ scriptInclusion: NONE</codeblock>
         <b>#5</b>
         <dl>
           <dlentry>
-            <dt>ID</dt>
-            <dd>5</dd>
-          </dlentry>
-          <dlentry>
             <dt>Type</dt>
             <dd>Imprecise publication or creation</dd>
           </dlentry>
@@ -229,10 +209,6 @@ scriptInclusion: NONE</codeblock>
       <p id="_6">
         <b>#6</b>
         <dl>
-          <dlentry>
-            <dt>ID</dt>
-            <dd>6</dd>
-          </dlentry>
           <dlentry>
             <dt>Type</dt>
             <dd>Uncertain publication or creation</dd>
@@ -255,10 +231,6 @@ scriptInclusion: NONE</codeblock>
         <b>#7</b>
         <dl>
           <dlentry>
-            <dt>ID</dt>
-            <dd>7</dd>
-          </dlentry>
-          <dlentry>
             <dt>Type</dt>
             <dd>Hyphenated publication or creation range (open)</dd>
           </dlentry>
@@ -279,10 +251,6 @@ scriptInclusion: NONE</codeblock>
       <p id="_8">
         <b>#8</b>
         <dl>
-          <dlentry>
-            <dt>ID</dt>
-            <dd>8</dd>
-          </dlentry>
           <dlentry>
             <dt>Type</dt>
             <dd>Imprecise hyphenated publication or creation range (open)</dd>
@@ -305,10 +273,6 @@ scriptInclusion: NONE</codeblock>
         <b>#9</b>
         <dl>
           <dlentry>
-            <dt>ID</dt>
-            <dd>9</dd>
-          </dlentry>
-          <dlentry>
             <dt>Type</dt>
             <dd>Hyphenated publication or creation range (closed)</dd>
           </dlentry>
@@ -330,10 +294,6 @@ scriptInclusion: NONE</codeblock>
         <b>#10</b>
         <dl>
           <dlentry>
-            <dt>ID</dt>
-            <dd>10</dd>
-          </dlentry>
-          <dlentry>
             <dt>Type</dt>
             <dd>Unhyphenated publication or creation range (closed)</dd>
           </dlentry>
@@ -354,10 +314,6 @@ scriptInclusion: NONE</codeblock>
       <p id="_11">
         <b>#11</b>
         <dl>
-          <dlentry>
-            <dt>ID</dt>
-            <dd>11</dd>
-          </dlentry>
           <dlentry>
             <dt>Type</dt>
             <dd>Manufacture (printing)</dd>
@@ -480,7 +436,7 @@ scriptInclusion: NONE</codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }
@@ -706,7 +662,7 @@ scriptInclusion: NONE</codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }
@@ -821,7 +777,7 @@ scriptInclusion: NONE</codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }

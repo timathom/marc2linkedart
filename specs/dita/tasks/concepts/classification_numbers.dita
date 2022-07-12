@@ -12,6 +12,12 @@
       <revised modified="2021-10-04"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-11-30"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-02-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-18"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-19"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
     <metadata>
@@ -61,10 +67,22 @@ scriptInclusion: NONE</codeblock>
           <substep>
             <cmd><xref keyref="gloss-norm">Normalize</xref> and match/merge each unique string value.</cmd>
           </substep>
+          <substep>
+            <cmd>After normalizing, use an appropriate regular expression to test the value of <codeph>050a</codeph> or <codeph>090a</codeph> to see whether it is an LC classification number.</cmd>
+            <stepxmp><codeph>[a-z]+[0-9]+([.][a-z]+[0-9]+)?</codeph></stepxmp>
+          </substep>
+          <substep>
+            <cmd>For values that match the test, add a <codeph>classified_as</codeph> for <codeph>Library of Congress classification</codeph>, as in the example below.</cmd>
+          </substep>
+          <substep>
+            <cmd>For now, skip any values that do not match the regular expression.</cmd>
+          </substep>
         </substeps>
         <stepresult>
-          <yulbibid>907498</yulbibid>
-          <codeblock>{
+          <ol>
+            <li>
+              <yulbibid>907498</yulbibid>
+              <codeblock><![CDATA[{
   "@context": "https://linked.art/ns/v1/linked-art.json",
   "id": "https://lux.collections.yale.edu/data/concept/f0c0c4d0-532d-4438-a26f-15c261fb4f6c",
   "type": "Type",
@@ -74,12 +92,44 @@ scriptInclusion: NONE</codeblock>
       "type": "Identifier",
       "content": "PT3818"
     }
+  ],
+  "classified_as": [
+    {
+      "id": "http://www.wikidata.org/entity/Q621080",
+      "type": "Type",
+      "_label": "Library of Congress classification"
+    }
   ]
-}</codeblock>
+}]]></codeblock>
+            </li>
+            <li>
+              <yulbibid>907498</yulbibid>
+              <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/concept/f0c0c4d0-532d-4438-a26f-15c261fb4f6c",
+  "type": "Type",
+  "_label": "PT3818",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "PT3818"
+    }
+  ],
+  "classified_as": [
+    {
+      "id": "http://www.wikidata.org/entity/Q621080",
+      "type": "Type",
+      "_label": "Library of Congress classification"
+    }
+  ]
+}]]></codeblock>
+            </li>
+          </ol>
+          
         </stepresult>
       </step>
       <step>
-        <cmd>In the referring record-level resource (<codeph>LinguisticObject</codeph>, <codeph>VisualItem</codeph>, or <codeph>DigitalObject</codeph>), add an embedded reference for each concept entity.</cmd>
+        <cmd>In the referring record-level resource (<codeph>LinguisticObject</codeph>, <codeph>Set</codeph>, <codeph>VisualItem</codeph>), add an embedded reference for each concept entity.</cmd>
         <substeps id="substeps_ym3_fvn_trb">
           <substep>
             <cmd>If there is more than concept entity, sort them by their string values in alphanumeric order.</cmd>
@@ -87,26 +137,14 @@ scriptInclusion: NONE</codeblock>
         </substeps>
         <info>
           <note>The embedded reference should follow the <indexterm>supertype</indexterm> classification of the resource in the same <codeph>classified_as</codeph> array.</note>
-        </info>        
+        </info>
         <stepresult>
           <yulbibid>11</yulbibid>
           <codeblock><![CDATA[{
   "id": "https://lux.collections.yale.edu/data/text/8697aefe-8ffa-4f73-bf3d-f4883a5c26dd",
   "type": "LinguisticObject",
   "_label": "Governmental accounting, auditing, and financial reporting",
-  "classified_as": [
-    {
-      "id": "http://vocab.getty.edu/aat/300028051",
-      "type": "Type",
-      "_label": "Books",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300226816",
-          "type": "Type",
-          "_label": "Form"
-        }
-      ]
-    },
+  "classified_as": [    
     {
       "id": "https://lux.collections.yale.edu/data/concept/090-1",
       "type": "Type",

@@ -1,4 +1,4 @@
-define(["require", "util"], function (require, util) {
+define(["require", "util", "dom-sanitizer"], function (require, util, domSanitizer) {
     $(document).ready(function () {
         // If we have a contextID, we must to redirect to the corresponding topic
         var contextId = util.getParameter('contextId');
@@ -12,7 +12,8 @@ define(["require", "util"], function (require, util) {
                         if (contextId == ctxt["appid"] && (appname == undefined || appname == ctxt["appname"])) {
                             var path = ctxt["path"];
                             if (path != undefined) {
-                                var sanitizedAnchor = util.sanitize(window.location.hash);
+                                var anchor = decodeURI(window.location.hash);
+                                var sanitizedAnchor = domSanitizer.sanitize(anchor);
                                 window.location = path + sanitizedAnchor;
                             }
                             break;

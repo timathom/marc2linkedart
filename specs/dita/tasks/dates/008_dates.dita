@@ -20,6 +20,14 @@
       <revised modified="2021-12-30"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-31"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-21"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-25"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-28"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
     </critdates>
     <metadata>
       <keywords>
@@ -71,15 +79,12 @@ scriptInclusion: NONE</codeblock>
             </ul> then the default <codeph>generic_date_type</codeph> is <codeph>creation</codeph>.</choice>
           <choice>Else, the default <codeph>generic_date_type</codeph> is <codeph>publication</codeph>.</choice>
         </choices>
+        <info>
+          <p>If the record-level resource contains more than one supertype, and one of the supertypes has a default <codeph>generic_date_type</codeph> of <codeph>creation</codeph>, then the default <codeph>generic_date_type</codeph> is <codeph>creation</codeph>.</p>
+        </info>
       </step>
       <step>
         <cmd>Save the <codeph>generic_date_type</codeph> value for subsequent processing.</cmd>
-      </step>
-      <step>
-        <cmd>Perform an additional check (<codeph>journal_test</codeph>) to test whether the supertype is <codeph>Journals</codeph>.</cmd>
-      </step>
-      <step>
-        <cmd>Save the <codeph>journal_test</codeph> as a boolean value for subsequent processing.</cmd>
       </step>
       <step>
         <cmd>Select the <codeph>specific_date_type</codeph> from <codeph>008[06]</codeph>.</cmd>
@@ -88,28 +93,45 @@ scriptInclusion: NONE</codeblock>
         <cmd>Save the <codeph>specific_date_type</codeph> for subsequent processing.</cmd>
       </step>
       <step>
-        <cmd>Process the date values in <codeph>008[07-10]</codeph> and <codeph>008[11-14]</codeph> to test for non-numeric characters (e.g., <codeph>\s</codeph> [whitespace], <codeph>u</codeph>, <codeph>x</codeph>, <codeph>\|</codeph> [pipe]).</cmd>
+        <cmd>Trim the date values in <codeph>008[07-10]</codeph> and <codeph>008[11-14]</codeph> to remove any trailing whitespace.</cmd>
       </step>
       <step>
-        <cmd>For each date value, replace the regular expression <codeph>[\sA-Za-z\|]</codeph> with <codeph>?</codeph>.</cmd>
+        <cmd>Process the date values in <codeph>008[07-10]</codeph> and <codeph>008[11-14]</codeph> to test for other non-numeric characters (e.g., internal whitespace, <codeph>u</codeph>, <codeph>x</codeph>, <codeph>\|</codeph> [pipe]).</cmd>
       </step>
       <step>
-        <cmd>Save the values as <codeph>date_1_temp</codeph> and <codeph>date_2_temp</codeph>.</cmd>
+        <cmd>For each date value, replace the regular expression <codeph>[\sA-Za-tvwxyz\|]</codeph> with <codeph>?</codeph>.</cmd>
       </step>
       <step>
-        <cmd>Process the first date value and save as <codeph>date_1_val</codeph>.</cmd>
-        <choices id="choices_nnx_jss_xrb">
-          <choice>If <codeph>date_1_temp</codeph> contains only <codeph>?</codeph> characters, <codeph>date_1_val</codeph> is <codeph>false</codeph>.</choice>
-          <choice>Else, replace the regular expression <codeph>\?</codeph> with <codeph>0</codeph> in <codeph>date_1_temp</codeph> as the value of <codeph>date_1_val</codeph>.</choice>
-        </choices>
+        <cmd>Save the values as <codeph>date_1_val</codeph> and <codeph>date_2_val</codeph>.</cmd>
       </step>
       <step>
-        <cmd>Process the second date value and save as <codeph>date_2_val</codeph>.</cmd>
-        <choices id="choices_if1_fts_xrb">
-          <choice>If <codeph>date_2_temp</codeph> contains only <codeph>?</codeph> characters, <codeph>date_2_val</codeph> is <codeph>false</codeph>.</choice>
-          <choice>Else, if <codeph>date_2_temp</codeph> is equal to <codeph>9999</codeph>, then set the value of <codeph>date_2_val</codeph> to <codeph>9999</codeph>.</choice>
-          <choice>Else, replace the regular expression <codeph>\?</codeph> in <codeph>date_2_temp</codeph> with <codeph>9</codeph> as the value of <codeph>date_2_val</codeph>.</choice>
-        </choices>
+        <cmd>If <codeph>date_1_val</codeph> contains only <codeph>?</codeph> characters, <codeph>date_1_val</codeph> is <codeph>false</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If <codeph>date_2_val</codeph> contains only <codeph>?</codeph> characters, <codeph>date_2_val</codeph> is <codeph>false</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If <codeph>date_2_val</codeph> is <codeph>false</codeph>, but <codeph>date_1_val</codeph> contains <codeph>u</codeph>, process <codeph>date_1_val</codeph> as a date range.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Copy the value of <codeph>date_1_val</codeph> to <codeph>date_2_val</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Replace the regular expression <codeph>[u\?]</codeph> in <codeph>date_1_val</codeph>with <codeph>0</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Replace the regular expression <codeph>[u\?]</codeph> in <codeph>date_2_val</codeph> with <codeph>9</codeph>.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Else, replace the regular expression <codeph>\?</codeph> with <codeph>0</codeph> in <codeph>date_1_val</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If <codeph>date_2_val</codeph> is equal to <codeph>9999</codeph>, continue.</cmd>
+      </step>
+      <step>
+        <cmd>Else, replace the regular expression <codeph>\?</codeph> in <codeph>date_2_val</codeph> with <codeph>9</codeph>.</cmd>
       </step>
       <step>
         <cmd>Construct a <codeph>TimeSpan</codeph> object to store the date values.</cmd>
@@ -132,30 +154,8 @@ scriptInclusion: NONE</codeblock>
                           <dd>castable as <codeph>integer</codeph></dd>
                         </dlentry>
                         <dlentry>
-                          <dt>OR</dt>
-                          <dd>
-                            <dl>
-                              <dlentry>
-                                <dt><codeph>specific_date_type</codeph></dt>
-                                <dd><codeph>e</codeph></dd>
-                              </dlentry>
-                              <dlentry>
-                                <dt>AND</dt>
-                                <dd>
-                                  <dl>
-                                    <dlentry>
-                                      <dt><codeph>specific_date_type</codeph></dt>
-                                      <dd><codeph>d</codeph></dd>
-                                    </dlentry>
-                                    <dlentry>
-                                      <dt><codeph>journal_test</codeph></dt>
-                                      <dd><codeph>false</codeph></dd>
-                                    </dlentry>
-                                  </dl>
-                                </dd>
-                              </dlentry>
-                            </dl>
-                          </dd>
+                          <dt><codeph>specific_date_type</codeph></dt>
+                          <dd><codeph>e</codeph></dd>
                         </dlentry>
                       </dl>
                     </dd>
@@ -165,14 +165,6 @@ scriptInclusion: NONE</codeblock>
             </dlentry>
           </dl>
         </info>
-        <stepxmp>
-          <codeblock>
-if ($date_1_val castable as integer and $date_2_val castable as integer)
-then
-  if ($generic_date_type == "e" or ($generic_date_type == "d" and $journal_test == false))
-    ...
-</codeblock>
-        </stepxmp>
         <substeps id="substeps_bpl_gdb_yrb">
           <substep>
             <cmd>Analyze <codeph>date_2_val</codeph> using the regular expression <codeph>.{2}</codeph>.</cmd>
@@ -190,14 +182,14 @@ then
             <cmd>Save the value as <codeph>content</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Construct a <codeph>dateTime</codeph> value by concatenating <codeph>date_1_val</codeph> with <codeph>-01-01T00:00:00Z</codeph>.</cmd>
+            <cmd>Construct a <codeph>dateTime</codeph> value by concatenating the value of <codeph>content</codeph> with <codeph>-01T00:00:00Z</codeph> if <codeph>content</codeph> contains a year-month value or <codeph>T00:00:00Z</codeph> if <codeph>content</codeph> contains a year-month-day value.</cmd>
           </substep>
           <substep>
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> by one and save the value as <codeph>end_of_the_end</codeph>.</cmd>
-            <stepresult>              
+            <cmd>Increment the month or day value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
+            <stepresult>
               <dl>
                 <dlentry>
                   <dt>008[06] (specific_date_type)</dt>
@@ -222,8 +214,8 @@ then
     "type": "Creation",    
     "timespan": {
       "type": "TimeSpan",
-      "begin_of_the_begin": "1794-01-01T00:00:00Z",
-      "end_of_the_end": "1795-01-01T00:00:00Z",
+      "begin_of_the_begin": "1794-06-01T00:00:00Z",
+      "end_of_the_end": "1794-06-30T23:59:59",
       "identified_by": [
         {
           "type": "Name",
@@ -244,6 +236,7 @@ then
           </substep>
         </substeps>
       </step>
+
       <step>
         <cmd>Construct a <codeph>TimeSpan</codeph> object to store the date values.</cmd>
         <info>
@@ -287,7 +280,7 @@ then
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> by one and save the value as <codeph>end_of_the_end</codeph>.</cmd>
+            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>Assign <codeph>date_1_val</codeph> to a publication activity.</cmd>
@@ -311,7 +304,7 @@ then
                 </dlentry>
               </dl>
               <yulbibid>12989258</yulbibid>
-              <codeblock>{
+              <codeblock><![CDATA[{
   "used_for": [
     {
       "type": "Activity",
@@ -331,7 +324,7 @@ then
       "timespan": {
         "type": "TimeSpan",
         "begin_of_the_begin": "2016-01-01T00:00:00Z",
-        "end_of_the_end": "2017-01-01T00:00:00Z",
+        "end_of_the_end": "2016-12-31T23:59:59",
         "identified_by": [
           {
             "type": "Name",
@@ -348,7 +341,7 @@ then
       }
     }
   ]
-}</codeblock>
+}]]></codeblock>
             </stepresult>
           </substep>
           <substep>
@@ -361,7 +354,7 @@ then
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> by one and save the value as <codeph>end_of_the_end</codeph>.</cmd>
+            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>Assign <codeph>date_2_val</codeph> to a <codeph>copyright</codeph> entity.</cmd>
@@ -401,7 +394,7 @@ then
         "timespan": {
           "type": "TimeSpan",
           "begin_of_the_begin": "2011-01-01T00:00:00Z",
-          "end_of_the_end": "2012-01-01T00:00:00Z",
+          "end_of_the_end": "2011-12-31T23:59:59",
           "identified_by": [
             {
               "type": "Name",
@@ -467,7 +460,7 @@ then
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> by one and save the value as <codeph>end_of_the_end</codeph>.</cmd>
+            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>Assign <codeph>date_1_val</codeph> to a <codeph>publishing</codeph> activity.</cmd>
@@ -511,7 +504,7 @@ then
       "timespan": {
         "type": "TimeSpan",
         "begin_of_the_begin": "1995-01-01T00:00:00Z",
-        "end_of_the_end": "1996-01-01T00:00:00Z",
+        "end_of_the_end": "1995-12-31T23:59:59",
         "identified_by": [
           {
             "type": "Name",
@@ -541,7 +534,7 @@ then
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> by one and save the value as <codeph>end_of_the_end</codeph>.</cmd>
+            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>For <codeph>date_2_val</codeph>, override the default value of generic_date_type and assign <codeph>date_2_val</codeph> to a <codeph>creation</codeph> activity.</cmd>
@@ -582,7 +575,7 @@ then
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }
@@ -590,7 +583,7 @@ then
     "timespan": {
       "type": "TimeSpan",
       "begin_of_the_begin": "1958-01-01T00:00:00Z",
-      "end_of_the_end": "1959-01-01T00:00:00Z",
+      "end_of_the_end": "1958-12-31T23:59:59",
       "identified_by": [
         {
           "type": "Name",
@@ -675,13 +668,13 @@ then
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> by one.</cmd>
+            <cmd>Increment the year value of <codeph>begin_of_the_begin</codeph> to one second before the next full value.</cmd>
           </substep>
           <substep>
             <cmd>Save the value as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
-            <cmd>Construct an <codeph>dateTime</codeph> value by concatenating <codeph>end_of_the_end</codeph> with <codeph>-01-01T00:00:00Z</codeph>.</cmd>
+            <cmd>Construct a <codeph>dateTime</codeph> value by concatenating <codeph>end_of_the_end</codeph> with <codeph>-12-31T23:59:59</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>If <codeph>generic_date_type</codeph> is <codeph>creation</codeph>, assign the dates to an <codeph>assembling</codeph> activity.</cmd>
@@ -719,7 +712,7 @@ then
       "timespan": {
         "type": "TimeSpan",
         "begin_of_the_begin": "1401-01-01T00:00:00Z",
-        "end_of_the_end": "1600-01-01T00:00:00Z",
+        "end_of_the_end": "1599-12-31T23:59:59",
         "identified_by": [
           {
             "type": "Name",
@@ -742,26 +735,87 @@ then
           <substep>
             <cmd>If <codeph>generic_date_type</codeph> is <codeph>publication</codeph>, assign the dates to a <codeph>publishing</codeph> activity.</cmd>
             <stepresult>
-              <dl>
-                <dlentry>
-                  <dt>008[06] (specific_date_type)</dt>
-                  <dd>q</dd>
-                </dlentry>
-                <dlentry>
-                  <dt>generic_date_type</dt>
-                  <dd>publication</dd>
-                </dlentry>
-                <dlentry>
-                  <dt>008[07-10]</dt>
-                  <dd><codeph>1820</codeph></dd>
-                </dlentry>
-                <dlentry>
-                  <dt>008[11-14]</dt>
-                  <dd><codeph>1829</codeph></dd>
-                </dlentry>
-              </dl>
-              <yulbibid>1260604</yulbibid>
-              <codeblock>{
+              <div>
+                <b>Example 1</b>
+                <dl>
+                  <dlentry>
+                    <dt>008[06] (specific_date_type)</dt>
+                    <dd>s</dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>generic_date_type</dt>
+                    <dd>publication</dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>008[07-10]</dt>
+                    <dd><codeph>19uu</codeph></dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>008[11-14]</dt>
+                    <dd><codeph>[none]</codeph></dd>
+                  </dlentry>
+                </dl>
+                <codeblock><![CDATA[{
+  "used_for": [
+    {
+      "type": "Activity",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300054686",
+          "type": "Type",
+          "_label": "Publishing"
+        }
+      ],
+      "took_place_at": [
+        {
+          "id": "https://lux.collections.yale.edu/data/place/9ebe78d5-0a21-427b-a9f1-b170e453d513",
+          "type": "Place"
+        }
+      ],
+      "timespan": {
+        "type": "TimeSpan",
+        "begin_of_the_begin": "1900-01-01T00:00:00Z",
+        "end_of_the_end": "1999-12-31T23:59:59",
+        "identified_by": [
+          {
+            "type": "Name",
+            "content": "1900-1999",
+            "classified_as": [
+              {
+                "id": "http://vocab.getty.edu/aat/300404669",
+                "type": "Type",
+                "_label": "Display Title"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}]]></codeblock>
+              </div>
+              <div>
+                <b>Example 2</b>
+                <dl>
+                  <dlentry>
+                    <dt>008[06] (specific_date_type)</dt>
+                    <dd>q</dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>generic_date_type</dt>
+                    <dd>publication</dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>008[07-10]</dt>
+                    <dd><codeph>1820</codeph></dd>
+                  </dlentry>
+                  <dlentry>
+                    <dt>008[11-14]</dt>
+                    <dd><codeph>1829</codeph></dd>
+                  </dlentry>
+                </dl>
+                <yulbibid>1260604</yulbibid>
+                <codeblock><![CDATA[{
   "used_for": [
     {
       "type": "Activity",
@@ -781,7 +835,7 @@ then
       "timespan": {
         "type": "TimeSpan",
         "begin_of_the_begin": "1820-01-01T00:00:00Z",
-        "end_of_the_end": "1830-01-01T00:00:00Z",
+        "end_of_the_end": "1829-12-31T23:59:59",
         "identified_by": [
           {
             "type": "Name",
@@ -798,7 +852,8 @@ then
       }
     }
   ]
-}</codeblock>
+}]]></codeblock>
+              </div>
             </stepresult>
           </substep>
         </substeps>
@@ -866,7 +921,7 @@ then
                 </dlentry>
                 <dlentry>
                   <dt>generic_date_type</dt>
-                  <dd>creation</dd>
+                  <dd>publication</dd>
                 </dlentry>
                 <dlentry>
                   <dt>008[07-10]</dt>
@@ -916,7 +971,7 @@ then
   ]
 }</codeblock>
             </stepresult>
-          </substep>        
+          </substep>
         </substeps>
       </step>
       <step>
@@ -937,7 +992,7 @@ then
                         </dlentry>
                         <dlentry>
                           <dt><codeph>data_2_val</codeph></dt>
-                          <dd><b>NOT</b> castable as <codeph>integer</codeph></dd>                          
+                          <dd><b>NOT</b> castable as <codeph>integer</codeph></dd>
                         </dlentry>
                         <dlentry>
                           <dt><codeph>generic_date_type</codeph></dt>
@@ -964,6 +1019,9 @@ then
           </substep>
           <substep>
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Increment the month or day value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>Assign the date to a <codeph>publishing</codeph> activity.</cmd>
@@ -1007,7 +1065,7 @@ then
       "timespan": {
         "type": "TimeSpan",
         "begin_of_the_begin": "1948-01-01T00:00:00Z",
-        "end_of_the_end": "1949-01-01T00:00:00Z",
+        "end_of_the_end": "1948-12-31T23:59:59",
         "identified_by": [
           {
             "type": "Name",
@@ -1026,7 +1084,7 @@ then
   ]
 }</codeblock>
             </stepresult>
-          </substep>                              
+          </substep>
         </substeps>
       </step>
       <step>
@@ -1047,7 +1105,7 @@ then
                         </dlentry>
                         <dlentry>
                           <dt><codeph>data_2_val</codeph></dt>
-                          <dd>castable as <codeph>integer</codeph></dd>                          
+                          <dd>castable as <codeph>integer</codeph></dd>
                         </dlentry>
                         <dlentry>
                           <dt><codeph>generic_date_type</codeph></dt>
@@ -1067,7 +1125,7 @@ then
         </info>
         <substeps>
           <substep>
-            <cmd>Concatenate <codeph>date_1_val</codeph> with a hyphen (<codeph>-</codeph>).</cmd>
+            <cmd>Concatenate <codeph>date_2_val</codeph> with a hyphen (<codeph>-</codeph>).</cmd>
           </substep>
           <substep>
             <cmd>Save the resulting value as <codeph>content</codeph>.</cmd>
@@ -1120,7 +1178,7 @@ then
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }
@@ -1145,7 +1203,7 @@ then
   }
 }</codeblock>
             </stepresult>
-          </substep>                              
+          </substep>
         </substeps>
       </step>
       <step>
@@ -1166,7 +1224,7 @@ then
                         </dlentry>
                         <dlentry>
                           <dt><codeph>data_2_val</codeph></dt>
-                          <dd>castable as <codeph>integer</codeph></dd>                          
+                          <dd>castable as <codeph>integer</codeph></dd>
                         </dlentry>
                         <dlentry>
                           <dt><codeph>generic_date_type</codeph></dt>
@@ -1194,6 +1252,9 @@ then
           </substep>
           <substep>
             <cmd>Save the result as <codeph>begin_of_the_begin</codeph>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Increment the month or day value of <codeph>begin_of_the_begin</codeph> to one second before the next full value and save the result as <codeph>end_of_the_end</codeph>.</cmd>
           </substep>
           <substep>
             <cmd>Assign the date to a <codeph>publishing</codeph> activity.</cmd>
@@ -1237,7 +1298,7 @@ then
       "timespan": {
         "type": "TimeSpan",
         "begin_of_the_begin": "1960-01-01T00:00:00Z",
-        "end_of_the_end": "1961-01-01T00:00:00Z",
+        "end_of_the_end": "1960-12-31T23:59:59",
         "identified_by": [
           {
             "type": "Name",
@@ -1256,7 +1317,7 @@ then
   ]
 }</codeblock>
             </stepresult>
-          </substep>                              
+          </substep>
         </substeps>
       </step>
     </steps>

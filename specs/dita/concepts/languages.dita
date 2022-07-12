@@ -10,6 +10,8 @@
       <revised modified="2022-01-04"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-24"/>
     </critdates>
     <metadata>
       <keywords>
@@ -132,7 +134,7 @@ scriptInclusion: NONE]]></codeblock>
         <cmd>Add an embedded reference to the language entity or entities within the record-level <codeph>LinguisticObject</codeph> resource.</cmd>
       </step>
       <step>
-        <cmd>If the language code extracted from <codeph>008[35-37]</codeph> is the same as a code extracted from <codeph>041</codeph>, deduplicate the language references in the record-level <codeph>LinguisticObject</codeph>.</cmd>
+        <cmd>If the language code extracted from <codeph>008[35-37]</codeph> is the same as a code extracted from <codeph>041</codeph>, deduplicate the language references in the record-level resource.</cmd>
         <stepresult>
           <yulbibid>97</yulbibid>
           <codeblock><![CDATA[{
@@ -146,6 +148,103 @@ scriptInclusion: NONE]]></codeblock>
       "id": "https://lux.collections.yale.edu/data/concept/33d2e19a-72bc-4042-8d06-04dbbf3907b3",
       "type": "Language",
       "_label": "English"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>
+      </step>
+      <step>
+        <cmd>For record-level resources with a base class of <codeph>LinguisticObject</codeph>, language information should be attached directly to the <codeph>LinguisticObject</codeph> resource.</cmd>
+      </step>
+      <step>
+        <cmd>For record-level resources with a base class of <codeph>VisualItem</codeph> (e.g., <xref href="../tasks/supertypes/posters.dita"/> or <xref href="../tasks/supertypes/prints.dita"/>) that have associated language information, that information should be attached to the related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph> using the <codeph>carries</codeph> (<codeph>HumanMadeObject</codeph>) or <codeph>digitally_carries</codeph> (<codeph>DigitalObject</codeph>) property.</cmd>
+        <stepresult>
+          <yulbibid>11221175</yulbibid>
+          <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://linked-art.library.yale.edu/node/7bcc5231-a43f-46b4-9529-0044b5235b7b",
+  "type": "HumanMadeObject",
+  "_label": "Jim Brown goes over the wall to flash with a million $ stash [graphic]. : the Slams",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "ils:yul:mfhd:11380011",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300435704",
+          "type": "Type",
+          "_label": "System-Assigned Number"
+        }
+      ],
+      "attributed_by": [
+        {
+          "type": "AttributeAssignment",
+          "carried_out_by": [
+            {
+              "id": "https://linked-art.library.yale.edu/node/0ed3ecaa-4483-4e4e-a015-a6d5ca448106",
+              "type": "Group",
+              "_label": "Yale University Library"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Identifier",
+      "content": "BrSides Double Folio 2013 17",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300311706",
+          "type": "Type",
+          "_label": "Call Number"
+        }
+      ]
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://linked-art.library.yale.edu/node/beinecke-library",
+      "type": "Set",
+      "_label": "Beinecke Library"
+    }
+  ],
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "content": "In the Library",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300133046",
+          "type": "Type",
+          "_label": "Access Statement",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shows": [
+    {
+      "id": "https://linked-art.library.yale.edu/node/70cab091-3bea-4a06-b9d6-273d3cf03aba",
+      "type": "VisualItem",
+      "_label": "Jim Brown goes over the wall to flash with a million $ stash [graphic]. : the Slams"
+    }
+  ],
+  "carries": [
+    {
+      "type": "LinguisticObject",
+      "language": [
+        {
+          "id": "https://lux.collections.yale.edu/data/concept/33d2e19a-72bc-4042-8d06-04dbbf3907b3",
+          "type": "Language",
+          "_label": "English"
+        }
+      ]
     }
   ]
 }]]></codeblock>

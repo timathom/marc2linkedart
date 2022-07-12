@@ -40,25 +40,19 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>Set</codeph>
               </entry>
-              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -73,13 +67,13 @@
     </section>
     <steps>
       <step>
-        <cmd>Skip if the source data field contains a<codeph>$z</codeph>(canceled/invalid control number).</cmd>
+        <cmd>Skip if the source data field contains a <codeph>$z</codeph> (canceled/invalid control number).</cmd>
       </step>
       <step>
-        <cmd>Get value of<codeph>$a</codeph>.</cmd>
+        <cmd>Get value of <codeph>$a</codeph>.</cmd>
         <substeps>
           <substep>
-            <cmd>If the value of<codeph>$a</codeph>after<codeph>(OCoLC)</codeph>(if present) starts with "oc", return the original value.</cmd>
+            <cmd>If the value of <codeph>$a</codeph> after <codeph>(OCoLC)</codeph> (if present) starts with "oc", return the original value.</cmd>
           </substep>
           <substep>
             <cmd>Else, skip the source data field.</cmd>

@@ -5,6 +5,8 @@
     <critdates>
       <!--tt434-->
       <revised modified="2021-10-25"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
     </critdates>
     <metadata>
       <keywords>
@@ -34,19 +36,13 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -68,10 +64,10 @@ scriptInclusion: NONE</codeblock>
     </section>
     <steps>
       <step>
-        <cmd>Process the arrangement note values (MARC<codeph>255abc</codeph>).</cmd>
+        <cmd>Process the arrangement note values (MARC <codeph>255abc</codeph>).</cmd>
         <choices>
           <choice>If two or more subfields (<codeph>255abc</codeph>) are present, join them with a whitespace character.</choice>
-          <choice>Else, output the string value of<codeph>255a</codeph>,<codeph>255b</codeph>, or<codeph>255c</codeph>.</choice>
+          <choice>Else, output the string value of <codeph>255a</codeph>, <codeph>255b</codeph>, or <codeph>255c</codeph>.</choice>
         </choices>
         <stepresult>
           <note>This example is meant to illustrate a cartographic statement and does not represent a complete JSON-LD document.</note>

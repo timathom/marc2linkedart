@@ -80,8 +80,6 @@
    <appContext helpID="complex_subject_headings"
                path="tasks/concepts/complex_subject_headings.html"/>
    <appContext helpID="citation_entities" path="tasks/citation_entities.html"/>
-   <appContext helpID="related_title_entities"
-               path="tasks/names-and-labels/related_title_entities.html"/>
    <appContext helpID="concept_entities" path="concepts/concepts.html"/>
    <appContext helpID="classification_numbers"
                path="tasks/concepts/classification_numbers.html"/>
@@ -94,12 +92,15 @@
    <appContext helpID="groups" path="concepts/groups.html"/>
    <appContext helpID="groups_as_agents" path="concepts/groups_as_agents.html"/>
    <appContext helpID="groups_as_subjects" path="concepts/groups_as_subjects.html"/>
+   <appContext helpID="individual_groups" path="concepts/individual_groups.html"/>
    <appContext helpID="people" path="concepts/people.html"/>
    <appContext helpID="people_as_agents" path="concepts/people_as_agents.html"/>
    <appContext helpID="people_as_subjects" path="concepts/people_as_subjects.html"/>
    <appContext helpID="places" path="concepts/places.html"/>
    <appContext helpID="top_level_place_entities"
                path="concepts/top_level_place_entities.html"/>
+   <appContext helpID="hierarchical_places"
+               path="tasks/concepts/hierarchical_places.html"/>
    <appContext helpID="places_as_agents" path="concepts/places_as_agents.html"/>
    <appContext helpID="places_as_subjects" path="concepts/places_as_subjects.html"/>
    <appContext helpID="associated_places" path="concepts/associated_places.html"/>
@@ -124,8 +125,12 @@
    <appContext helpID="digital_objects" path="concepts/digital_objects.html"/>
    <appContext helpID="digital_objects_asset_link"
                path="concepts/digital_objects_asset_link.html"/>
+   <appContext helpID="publication_activities"
+               path="concepts/publication_activities.html"/>
+   <appContext helpID="copyright_entity" path="concepts/copyright_entity.html"/>
    <appContext helpID="identifiers" path="concepts/identifiers.html"/>
    <appContext helpID="voyager_bib_id" path="tasks/identifiers/orbis_bib_id.html"/>
+   <appContext helpID="orbis_mfhd_id" path="tasks/identifiers/orbis_mfhd_id.html"/>
    <appContext helpID="library_of_congress_control_number_lccn"
                path="tasks/identifiers/library_of_congress_control_number_lccn.html"/>
    <appContext helpID="international_standard_book_number_isbn"
@@ -148,6 +153,8 @@
    <appContext helpID="root_label" path="tasks/names-and-labels/root_label.html"/>
    <appContext helpID="notes" path="concepts/notes_and_statements.html"/>
    <appContext helpID="abstract" path="tasks/notes-and-statements/abstract.html"/>
+   <appContext helpID="table_of_contents"
+               path="tasks/notes-and-statements/table_of_contents.html"/>
    <appContext helpID="arrangement_note"
                path="tasks/notes-and-statements/arrangement_note.html"/>
    <appContext helpID="attribution_statement"
@@ -171,6 +178,14 @@
    <appContext helpID="note" path="tasks/notes-and-statements/note.html"/>
    <appContext helpID="physical_statement"
                path="tasks/notes-and-statements/physical_statement.html"/>
+   <appContext helpID="summary_holdings"
+               path="tasks/notes-and-statements/summary_holdings.html"/>
+   <appContext helpID="summary_holdings_supplements"
+               path="tasks/notes-and-statements/summary_holdings_supplements.html"/>
+   <appContext helpID="summary_holdings_indexes"
+               path="tasks/notes-and-statements/summary_holdings_indexes.html"/>
+   <appContext helpID="number_of_parts"
+               path="tasks/notes-and-statements/number_of_parts.html"/>
    <appContext helpID="access_statement"
                path="tasks/notes-and-statements/access_statement.html"/>
    <appContext helpID="dimension_statement"
@@ -181,6 +196,8 @@
                path="tasks/notes-and-statements/provenance_statement.html"/>
    <appContext helpID="acquisition_statement"
                path="tasks/notes-and-statements/acquisition_statement.html"/>
+   <appContext helpID="copy_and_version_note"
+               path="tasks/notes-and-statements/copy_and_version_note.html"/>
    <appContext helpID="reproduction_statement"
                path="tasks/notes-and-statements/reproduction_statement.html"/>
    <appContext helpID="production_statement"
@@ -256,6 +273,9 @@
    <appContext helpID="entify" path="glossary/entification.html"/>
    <appContext helpID="normalization" path="glossary/normalization.html"/>
    <appContext helpID="frbr" path="glossary/frbr.html"/>
+   <appContext helpID="carrier_level_record" path="glossary/carrier_level_record.html"/>
+   <appContext helpID="content_level_record" path="glossary/content_level_record.html"/>
+   <appContext helpID="bound-with_resource" path="glossary/bound-with_resource.html"/>
    <appContext helpID="reference_bib_001_table_bib" path="tables/001_bib_table.html"/>
    <appContext helpID="reference_bib_010_table_bib" path="tables/010_bib_table.html"/>
    <appContext helpID="reference_020_table_bib" path="tables/020_bib_table.html"/>

@@ -4,6 +4,8 @@
   <prolog>
     <critdates>
       <created date="2021-11-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
     </critdates>
     <metadata>
       <keywords>
@@ -33,25 +35,19 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>Set</codeph>
               </entry>
-              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -73,13 +69,13 @@ scriptInclusion: NONE</codeblock>
     </section>
     <steps>
       <step>
-        <cmd>Process the acquisition statement values (MARC<codeph>545ab</codeph>).</cmd>
+        <cmd>Process the acquisition statement values (MARC <codeph>545ab</codeph>).</cmd>
         <substeps>
           <substep>
-            <cmd>If subfield<codeph>b</codeph>is present, join the string values of<codeph>545ab</codeph>with a whitespace character.</cmd>
+            <cmd>If subfield <codeph>b</codeph> is present, join the string values of <codeph>545ab</codeph> with a whitespace character.</cmd>
           </substep>
           <substep>
-            <cmd>Else, output the value of subfield<codeph>545a</codeph>.</cmd>
+            <cmd>Else, output the value of subfield <codeph>545a</codeph>.</cmd>
           </substep>
         </substeps>
         <stepresult>

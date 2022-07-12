@@ -35,7 +35,7 @@ scriptInclusion: NONE</codeblock>
     </section>
     <steps>
       <step>
-        <cmd>For each MARC <codeph>510</codeph>, if subfield<codeph>u</codeph> is present and includes a URI containing the string <codeph>wikidata.org</codeph> (e.g.,<xref format="html" href="http://www.wikidata.org/entity/Q107432855" scope="external"/>), generate a top-level citation entity with an <codeph>equivalent</codeph> reference to the Wikidata URI.</cmd>
+        <cmd>For each MARC <codeph>510</codeph>, if subfield <codeph>u</codeph> is present and includes a URI containing the string <codeph>wikidata.org</codeph> (e.g.,<xref format="html" href="http://www.wikidata.org/entity/Q107432855" scope="external"/>), generate a top-level citation entity with an <codeph>equivalent</codeph> reference to the Wikidata URI.</cmd>
         <substeps>
           <substep>
             <cmd>Use the Wikidata URI as a key for matching and merging citation entities.</cmd>

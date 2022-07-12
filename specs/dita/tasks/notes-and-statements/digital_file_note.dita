@@ -3,6 +3,10 @@
   <title>Digital file note</title>
   <shortdesc/>
   <prolog>
+    <critdates>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+    </critdates>
     <metadata>
       <keywords>
         <keyword>Assigned</keyword>
@@ -31,19 +35,13 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>

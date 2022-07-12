@@ -1,5 +1,5 @@
 <concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_CartographicFormats" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
-  <title>Cartography</title>
+  <title>Cartographic Works</title>
   <shortdesc>Any materials representing, in whole or part, the earth or any celestial body at any scale.</shortdesc>
   <prolog>
     <publisher conkeyref="metadata_common/publ_metadata"/>

@@ -8,6 +8,8 @@
       <revised modified="2021-11-30"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-01"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
     </critdates>
     <metadata>
       <keywords>
@@ -36,12 +38,14 @@
             <row>
               <entry>
                 <codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph>
               </entry>
               <entry>Do not repeat on related <codeph>LinguisticObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph>
               </entry>
               <entry>Do not repeat on related <codeph>VisualItem</codeph>.</entry>
             </row>

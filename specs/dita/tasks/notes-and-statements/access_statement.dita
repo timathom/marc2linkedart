@@ -36,14 +36,8 @@
           <tbody>
             <row>
               <entry>
-                <codeph>HumanMadeObject</codeph></entry>
+                <codeph>HumanMadeObject</codeph> <codeph>DigitalObject</codeph></entry>
               <entry>Do not repeat on related <codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
             </row>
             <row>
               <entry>

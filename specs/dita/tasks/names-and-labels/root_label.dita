@@ -14,12 +14,12 @@
   </prolog>
   <taskbody>
     <context>
-      <p>Each top-level entity must have a root<codeph>_label</codeph>property.</p>
-      <p>The root<codeph>_label</codeph>of a resource generally mirrors the<codeph>root → identified_by → Name → content</codeph>value.</p>
-      <note>For MARC<codeph>245</codeph>content, when a parallel<codeph>880</codeph>non-Latin script title is present, that title is used as the value of the root<codeph>_label</codeph>.</note>
+      <p>Each top-level entity must have a root <codeph>_label</codeph> property.</p>
+      <p>The root <codeph>_label</codeph> of a resource generally mirrors the <codeph>root → identified_by → Name → content</codeph> value.</p>
+      <note>For MARC <codeph>245</codeph> content, when a parallel <codeph>880</codeph> non-Latin script title is present, that title is used as the value of the root <codeph>_label</codeph>.</note>
     </context>
     <result>
-      <note>This example is meant to illustrate the root<codeph>_label</codeph>value and does not represent a complete JSON-LD document.</note>
+      <note>This example is meant to illustrate the root <codeph>_label</codeph> value and does not represent a complete JSON-LD document.</note>
       <codeblock>{
   "@context": "https://linked.art/ns/v1/linked-art.json",
   "id": "https://lux.collections.yale.edu/data/object/8e0bdbff-ebb1-4f9b-b98b-e97d64a01ff9",

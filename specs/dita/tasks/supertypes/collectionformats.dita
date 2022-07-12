@@ -1,7 +1,7 @@
 <concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="supertype_CollectionFormats" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
   <title>Collections</title>
   <shortdesc>
-    <q>Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval</q>(<xref scope="external" format="html" href="http://www.getty.edu/vow/AATFullDisplay?find=&amp;logic=AND&amp;note=&amp;subjectid=300025976">AAT</xref>).</shortdesc>
+    <q>Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval</q> (<xref scope="external" format="html" href="http://www.getty.edu/vow/AATFullDisplay?find=&amp;logic=AND&amp;note=&amp;subjectid=300025976">AAT</xref>).</shortdesc>
   <prolog>
     <publisher conkeyref="metadata_common/publ_metadata"/>
     <critdates conkeyref="metadata_common/dates_metadata">

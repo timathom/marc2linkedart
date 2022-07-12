@@ -6,6 +6,10 @@
     <author type="creator">timothy.thompson@yale.edu</author>
     <critdates>
       <created date="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-12"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-03"/>
     </critdates>
     <metadata>
       <keywords>
@@ -32,27 +36,15 @@
           <tbody>
             <row>
               <entry>
-                <codeph>LinguisticObject</codeph>
-              </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+                <codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph></entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph> of <codeph>VisualItem</codeph>.</entry>
             </row>
             <row>
               <entry>
-                <codeph>VisualItem</codeph>
+                <codeph>members_exemplified_by → HumanMadeObject</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>Set</codeph>
-              </entry>
-              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on containing <codeph>Set</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -65,8 +57,9 @@ name: DigitalObjectAsset
 sampleBibs:
   - 358058
 fieldSpec:  
-  - 856uy
-trimPunctuation: false
+  - 856|4*|uy
+  - mfhd856uyz
+trimPunctuation: true
 scriptInclusion: NONE</codeblock>
     </section>
     <section>
@@ -74,19 +67,120 @@ scriptInclusion: NONE</codeblock>
     </section>
     <steps>
       <step>
+        <cmd>Process <codeph>856</codeph> links in both bib and MFHD records.</cmd>
+      </step>      
+      <step>
         <cmd>Output a <codeph>DigitalObject</codeph> link to a related digital asset using the URI recorded in <codeph>856u</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>If <codeph>856y</codeph> is present, add it to the embedded reference using <codeph>identified_by</codeph>.</cmd>
         <stepresult>
           <yulbibid>358058</yulbibid>
           <codeblock><![CDATA[{
-  "referred_to_by": [
+  "subject_of": [
     {
-      "id": "http://hdl.handle.net/10079/4qrfjh5",
-      "type": "DigitalObject"
+      "type": "LinguisticObject",
+      "_label": "Text of Digital Asset Page",
+      "digitally_carried_by": [
+        {
+          "type": "DigitalObject",
+          "_label": "Digital Asset Page",
+          "identified_by": [
+            {
+              "type": "Name",
+              "content": "Full text",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300404669",
+                  "type": "Type",
+                  "_label": "Display Title"
+                }
+              ]
+            }
+          ],
+          "access_point": [
+            {
+              "id": "https://example.org/digital-asset1",
+              "type": "DigitalObject"
+            }
+          ]
+        }
+      ]
     }
   ]
 }]]></codeblock>
         </stepresult>
       </step>
+      <step>
+        <cmd>If <codeph>856z</codeph> is present, add it to the embedded reference using <codeph>referred_to_by</codeph>.</cmd>
+        <stepresult>
+          <yulmfhdid>13264701 [MFHD]</yulmfhdid><codeblock><![CDATA[{
+  "subject_of": [
+    {
+      "type": "LinguisticObject",
+      "_label": "Text of Digital Asset Page",
+      "digitally_carried_by": [
+        {
+          "type": "DigitalObject",
+          "_label": "Digital Asset Page",
+          "referred_to_by": [
+            {
+              "type": "LinguisticObject",
+              "content": "Click here for circulation status or to request this volume of George Steevens's collection of Hogarth prints.",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300027200",
+                  "type": "Type",
+                  "_label": "Note",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300418049",
+                      "type": "Type",
+                      "_label": "Brief Text"
+                    }
+                  ]
+                }
+              ],
+              "identified_by": [
+                {
+                  "type": "Name",
+                  "content": "Note",
+                  "classified_as": [
+                    {
+                      "id": "http://vocab.getty.edu/aat/300404669",
+                      "type": "Type",
+                      "_label": "Display Title"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "access_point": [
+            {
+              "id": "http://hdl.handle.net/10079/bibid/9559002",
+              "type": "DigitalObject"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]]></codeblock></stepresult>
+      </step>
+      <step>
+        <cmd>If <codeph>856|40|</codeph> and the record-level resource is a <codeph>DigitalObject</codeph>:</cmd>
+        <stepresult>          
+          <codeblock><![CDATA[{
+  "access_point": [
+    {
+      "id": "http://hdl.handle.net/example2",
+      "type": "DigitalObject"
+    }
+  ]
+}]]></codeblock>
+        </stepresult>  
+      </step>            
     </steps>
   </taskbody>
 </task>

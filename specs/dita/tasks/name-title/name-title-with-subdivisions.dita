@@ -12,6 +12,10 @@
       <revised modified="2021-10-06"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-08"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-21"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-18"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
   </prolog>
@@ -28,14 +32,14 @@
         </info>
       </step>
       <step>
-        <cmd>Join the  <codeph>agent value</codeph> and the <codeph>work value</codeph> as the <codeph>complex work reference</codeph>.</cmd>
+        <cmd>Join the <codeph>agent_value</codeph> and the <codeph>work_value</codeph> as the <codeph>complex_work_reference</codeph>.</cmd>
         <choices id="choices_tq5_slv_vrb">
-          <choice>If the <codeph>agent value</codeph> ends with a hyphen (<codeph>-</codeph>) or period (<codeph>.</codeph>), join the two values with a whitespace character.</choice>
+          <choice>If the <codeph>agent_value</codeph> ends with a hyphen (<codeph>-</codeph>) or period (<codeph>.</codeph>), join the two values with a whitespace character.</choice>
           <choice>Else, join the two values with a period and whitespace character.</choice>
         </choices>
       </step>
       <step>
-        <cmd>Join the <codeph>complex work reference</codeph> with the subdivision subfields using space-surrounded double hyphens (<codeph> -- </codeph>) to output the <codeph>_label</codeph> and <codeph>content</codeph> values of the full precoordinated heading.</cmd>
+        <cmd>Join the <codeph>complex_work_reference</codeph> with the subdivision subfields using space-surrounded double hyphens (<codeph> -- </codeph>) to output the <codeph>_label</codeph> and <codeph>content</codeph> values of the full precoordinated heading.</cmd>
         <stepresult>
           <yulbibid>908059</yulbibid>
           <codeblock><![CDATA[{

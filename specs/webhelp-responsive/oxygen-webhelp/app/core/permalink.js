@@ -1,4 +1,4 @@
-define(["jquery"], function ($) {
+define(["options", "jquery"], function (options, $) {
 
 
     var selectors = {
@@ -33,11 +33,15 @@ define(["jquery"], function ($) {
             var hash = '#' + id;
             e.preventDefault();
             history.replaceState({}, '', hash);
-
-            var toolsHeight = $(".wh_tools").parent().outerHeight(); 
-            var headerHeight = $(".wh_header").outerHeight();
+			if(options.getBoolean("webhelp.enable.sticky.header")) {
+				var toolsHeight = $(".wh_tools").parent().outerHeight(); 
+            	var headerHeight = $(".wh_header").outerHeight();
             
-            $('html, body').animate({scrollTop: $("[id='" + id + "']").offset().top - toolsHeight - headerHeight}, 1000);
+            	$('html, body').animate({scrollTop: $("[id='" + id + "']").offset().top - toolsHeight - headerHeight}, 1000);
+			} else {
+				$('html, body').animate({scrollTop: $("[id='" + id + "']").offset().top}, 1000);
+			}
+            
         });
     });
 });

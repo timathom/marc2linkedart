@@ -16,6 +16,8 @@
       <revised modified="2021-11-29"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-06"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-28"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
     <metadata>
@@ -55,23 +57,17 @@
               <entry/>
             </row>
             <row>
-              <entry><codeph>HumanMadeObject → shows → VisualItem</codeph></entry>
+              <entry><codeph>HumanMadeObject</codeph>
+                <codeph>DigitalObject</codeph></entry>
               <entry><codeph>produced_by → part → carried_out_by</codeph></entry>
-              <entry>Include <codeph>produced_by</codeph> reference if the <codeph>HumanMadeObject</codeph> points to a <codeph>VisualItem</codeph>, but not a <codeph>LinguisticObject</codeph>.</entry>
+              <entry/>
             </row>
             <row>
               <entry>
                 <codeph>Set</codeph>
               </entry>
               <entry><codeph>created_by → part → carried_out_by</codeph></entry>
-              <entry>Do not include agent references in nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry><codeph>created_by → part → carried_out_by</codeph></entry>
-              <entry/>
+              <entry>Do not include agent references in nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -120,7 +116,7 @@ scriptInclusion: BOTH</codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }
@@ -134,6 +130,10 @@ scriptInclusion: BOTH</codeblock>
             <stepresult>
               <yulbibid>7647390</yulbibid>
               <codeblock><![CDATA[{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://lux.collections.yale.edu/data/object/54f1fcae-4898-413f-91cd-806d9f4f9cb3",
+  "type": "HumanMadeObject",
+  "_label": "Illustrations of Shakespeare",               
   "produced_by": {
     "type": "Production",
     "part": [
@@ -145,6 +145,13 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Bunbury, Henry William, 1750-1811"
           }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
         ]
       },
       {
@@ -154,6 +161,13 @@ scriptInclusion: BOTH</codeblock>
             "id": "https://lux.collections.yale.edu/data/person/a18e0571-0842-4f9c-86de-3229e64dc64d",
             "type": "Person",
             "_label": "Bartolozzi, Francesco, 1727-1815"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
       },
@@ -165,6 +179,13 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Benedetti, Michele, 1745-1810"
           }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
         ]
       },
       {
@@ -174,6 +195,13 @@ scriptInclusion: BOTH</codeblock>
             "id": "https://lux.collections.yale.edu/data/person/644c3ba3-0320-4b41-b59b-d1fc902f5abb",
             "type": "Person",
             "_label": "Chapman, J. (John), active 1792-1823"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
       },
@@ -185,6 +213,13 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Cheesman, Thomas, 1760-"
           }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
         ]
       },
       {
@@ -194,6 +229,13 @@ scriptInclusion: BOTH</codeblock>
             "id": "https://lux.collections.yale.edu/data/person/61c133b7-ee19-45ad-a7c6-57216f7f349b",
             "type": "Person",
             "_label": "Coles, J."
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
       },
@@ -205,6 +247,13 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Duterrau, Benjamin, 1767-1851"
           }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
         ]
       },
       {
@@ -214,6 +263,13 @@ scriptInclusion: BOTH</codeblock>
             "id": "https://lux.collections.yale.edu/data/person/3082e61d-2a84-4cd8-9a85-58091df39bd5",
             "type": "Person",
             "_label": "Gardiner, W. N. (William Nelson), 1766-1814"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
       },
@@ -225,18 +281,15 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Leney, William Satchwell, 1769-1831"
           }
-        ]
-      },
-      {
-        "type": "Production",
-        "carried_out_by": [
+        ],
+        "classified_as": [
           {
-            "id": "https://lux.collections.yale.edu/data/person/d33e0bd3-5899-4dca-9b43-41465f08dd51",
-            "type": "Person",
-            "_label": "Macklin, Thomas"
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
-      },
+      },    
       {
         "type": "Production",
         "carried_out_by": [
@@ -244,6 +297,13 @@ scriptInclusion: BOTH</codeblock>
             "id": "https://lux.collections.yale.edu/data/person/61128e1b-2b5a-42ef-800d-8777052b3c5a",
             "type": "Person",
             "_label": "Meadows, Robert Mitchell"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
       },
@@ -255,6 +315,13 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Shenner"
           }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
         ]
       },
       {
@@ -265,6 +332,13 @@ scriptInclusion: BOTH</codeblock>
             "type": "Person",
             "_label": "Tomkins, Peltro William, 1759-1840"
           }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
+          }
         ]
       },
       {
@@ -274,6 +348,13 @@ scriptInclusion: BOTH</codeblock>
             "id": "https://lux.collections.yale.edu/data/person/82efbe04-d078-43a7-8351-b0ef3b8b7bea",
             "type": "Person",
             "_label": "Vandenbergh, Ignatius Joseph, 1752-1824"
+          }
+        ],
+        "classified_as": [
+          {
+            "id": "https://lux.collections.yale.edu/data/concept/printmaker-role",
+            "type": "Type",
+            "_label": "Printmaker"
           }
         ]
       }

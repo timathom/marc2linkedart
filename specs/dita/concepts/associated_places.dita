@@ -26,13 +26,13 @@
     <data name="deployed" value=""/>
   </prolog>
   <taskbody>
-    <section>
+    <section id="section_td5_5k4_fsb">
       <title>Processing steps and output</title>
     </section>
-    <steps>
+    <steps id="steps_ud5_5k4_fsb">
       <step>
-        <cmd>After applying the instructions in <xref href="../tasks/concepts/simple_subject_headings.dita"/> or <xref href="../tasks/concepts/complex_subject_headings.dita"/>, add an embedded reference to the associated place entity within the record-level resource.</cmd>
-        <substeps>
+        <cmd>After applying the instructions in <xref href="../tasks/concepts/simple_subject_headings.dita"/> or <xref href="../tasks/concepts/hierarchical_places.dita"/>, add an embedded reference to the associated place entity within the record-level resource.</cmd>
+        <substeps id="substeps_vd5_5k4_fsb">
           <substep>
             <cmd>The <codeph>_label</codeph> of the <codeph>attributed_by</codeph> structure should always be <codeph>associated place</codeph>.</cmd>
           </substep>
@@ -43,7 +43,7 @@
             <cmd>Process simple place references.</cmd>
             <stepresult>
               <yulbibid>1066178</yulbibid>
-              <codeblock><![CDATA[{
+              <codeblock id="codeblock_wd5_5k4_fsb"><![CDATA[{
   "attributed_by": [
     {
       "type": "AttributeAssignment",
@@ -58,11 +58,11 @@
 }]]></codeblock>
             </stepresult>
           </substep>
-          <substep>
+          <substep id="embedded_place_hierarchy">
             <cmd>Process complex place references.</cmd>
             <stepresult>
               <yulbibid>9564880</yulbibid>
-              <codeblock><![CDATA[{
+              <codeblock id="codeblock_xd5_5k4_fsb"><![CDATA[{
   "attributed_by": [
     {
       "type": "AttributeAssignment",

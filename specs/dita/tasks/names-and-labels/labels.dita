@@ -5,6 +5,8 @@
     <critdates>
       <!--tt434-->
       <revised modified="2021-10-14"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-07"/>
     </critdates>
     <metadata>
       <keywords/>
@@ -15,7 +17,7 @@
   </prolog>
   <taskbody>
     <context>
-      <p>The generic<codeph>_label</codeph>property is used to provide a human-readable label for a top-level or embedded resource.</p>
+      <p>The generic <codeph>_label</codeph> property is used to provide a human-readable label for a top-level or embedded resource.</p>
     </context>
     <result>
       <yulbibid>9447</yulbibid>
@@ -36,7 +38,7 @@
           {
             "id": "https://lux.collections.yale.edu/data/concept/e7e0a406-3b6c-4a89-b6c7-96536c08553c",
             "type": "Type",
-            "_label": "contributor"
+            "_label": "Contributor"
           }
         ]
       }

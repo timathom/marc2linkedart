@@ -14,6 +14,8 @@
       <revised modified="2021-12-01"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2021-12-15"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-07"/>
     </critdates>
     <metadata>
       <keywords>
@@ -129,7 +131,7 @@ scriptInclusion: NONE]]></codeblock>
           {
             "id": "https://lux.collections.yale.edu/data/concept/9d2c734e-afd3-44bd-972d-8cf441423edc",
             "type": "Type",
-            "_label": "creator"
+            "_label": "Creator"
           }
         ]
       }

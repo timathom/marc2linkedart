@@ -24,6 +24,8 @@
       <revised modified="2021-12-06"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-19"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
     <metadata>
@@ -96,19 +98,7 @@
   "id": "https://lux.collections.yale.edu/data/text/c3b75623-7203-4a73-8c5b-f7d442d11dc2",
   "type": "LinguisticObject",
   "_label": "Tšhukudu",
-  "classified_as": [
-    {
-      "id": "http://vocab.getty.edu/aat/300028051",
-      "type": "Type",
-      "_label": "Books",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300226816",
-          "type": "Type",
-          "_label": "Format"
-        }
-      ]
-    },
+  "classified_as": [    
     {
       "id": "https://lux.collections.yale.edu/data/concept/d3ce7f25-0650-4c92-be9e-01a17a4827ca",
       "type": "Type",
@@ -138,19 +128,7 @@
   "id": "https://lux.collections.yale.edu/data/text/810e7bed-875e-4a9b-baf3-5e8d8e5aabac",
   "type": "LinguisticObject",
   "_label": "Blue moon",
-  "classified_as": [
-    {
-      "id": "http://vocab.getty.edu/aat/300215390",
-      "type": "Type",
-      "_label": "Journals",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300226816",
-          "type": "Type",
-          "_label": "Format"
-        }
-      ]
-    },
+  "classified_as": [    
     {
       "id": "https://lux.collections.yale.edu/data/concept/c29adf17-ad5c-4925-8201-3f4c119ebeb7",
       "type": "Type",

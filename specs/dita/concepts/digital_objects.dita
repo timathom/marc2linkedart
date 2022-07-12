@@ -6,6 +6,8 @@
     <author type="creator">timothy.thompson@yale.edu</author>
     <critdates>
       <created date="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-03"/>
     </critdates>
     <metadata>
       <keywords>
@@ -33,14 +35,8 @@
             <row>
               <entry>
                 <codeph>HumanMadeObject</codeph>
-              </entry>
-              <entry>Do not repeat on related <codeph>LinguisticObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>HumanMadeObject</codeph>
-              </entry>
-              <entry>Do not repeat on related <codeph>VisualItem</codeph>.</entry>
+                <codeph>DigitalObject</codeph></entry>
+              <entry>Do not repeat on related <codeph>LinguisticObject</codeph> of <codeph>VisualItem</codeph>.</entry>
             </row>
             <row>
               <entry>
@@ -86,6 +82,13 @@ scriptInclusion: NONE]]></codeblock>
         {
           "type": "DigitalObject",
           "_label": "Repository Page",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300264578",
+              "type": "Type",
+              "_label": "Web Page"
+            }
+          ],
           "access_point": [
             {
               "id": "https://search.library.yale.edu/catalog/358058",

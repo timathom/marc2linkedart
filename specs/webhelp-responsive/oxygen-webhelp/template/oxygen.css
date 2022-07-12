@@ -467,7 +467,6 @@ Example:
 .related-links a,
 .related-links a:visited {
     color: #5185cb;
-    display:inline-block;
 }
 
 .filepath {

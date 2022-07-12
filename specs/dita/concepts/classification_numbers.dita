@@ -10,6 +10,8 @@
       <revised modified="2021-09-28"/>
       <!--tt434-->
       <revised modified="2021-10-03"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-18"/>
     </critdates>
     <metadata conkeyref="metadata_topic/keyword_metadata_entity"/>
     <metadata>
@@ -102,7 +104,7 @@ scriptInclusion: NONE</codeblock>
         </stepresult>
       </step>
       <step>
-        <cmd>In each referring record-level resource (<codeph>LinguisticObject</codeph>,<codeph>VisualItem</codeph>, or<codeph>DigitalObject</codeph>), add an embedded reference to the Concept entity.</cmd>
+        <cmd>In each referring record-level resource (<codeph>LinguisticObject</codeph> or <codeph>VisualItem</codeph>), add an embedded reference to the Concept entity.</cmd>
         <substeps>
           <substep>
             <cmd>The embedded reference should follow the<indexterm>supertype</indexterm>classification of the resource in the same<codeph>classified_as</codeph>array.</cmd>
@@ -145,9 +147,9 @@ scriptInclusion: NONE</codeblock>
       "_label": "Books",
       "classified_as": [
         {
-          "id": "http://vocab.getty.edu/aat/300226816",
+          "id": "http://vocab.getty.edu/aat/300435443",
           "type": "Type",
-          "_label": "Form"
+          "_label": "Type of Object"
         }
       ]
     },

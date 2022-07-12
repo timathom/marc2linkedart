@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <concept id="dates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:edu:library:yale:xsd:concept.xsd">
   <title>Dates</title>
-  <shortdesc>Date values from fixed field <codeph>008</codeph> and 26X fields.</shortdesc>
+  <shortdesc>Date values from fixed field <codeph>008</codeph> and <codeph>26X</codeph> fields.</shortdesc>
   <prolog>
     <author type="creator">timothy.thompson@yale.edu</author>
     <critdates>
@@ -24,6 +24,8 @@
       <revised modified="2022-01-03"/>
       <!--timothy.thompson@yale.edu-->
       <revised modified="2022-01-04"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-01-06"/>
     </critdates>
     <metadata>
       <keywords>

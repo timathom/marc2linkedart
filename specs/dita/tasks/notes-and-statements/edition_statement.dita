@@ -6,6 +6,10 @@
     <author type="creator">timothy.thompson@yale.edu</author>
     <critdates>
       <created date="2022-01-05"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-13"/>
+      <!--timothy.thompson@yale.edu-->
+      <revised modified="2022-05-16"/>
     </critdates>
     <metadata>
       <keywords>
@@ -33,25 +37,19 @@
               <entry>
                 <codeph>LinguisticObject</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>VisualItem</codeph>
               </entry>
-              <entry>Do not repeat on related<codeph>HumanMadeObject</codeph>.</entry>
+              <entry>Do not repeat on related <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>.</entry>
             </row>
             <row>
               <entry>
                 <codeph>Set</codeph>
               </entry>
-              <entry>Do not repeat on nested<codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
-            </row>
-            <row>
-              <entry>
-                <codeph>DigitalObject</codeph>
-              </entry>
-              <entry/>
+              <entry>Do not repeat on nested <codeph>members_exemplified_by → HumanMadeObject</codeph>.</entry>
             </row>
           </tbody>
         </tgroup>
@@ -60,7 +58,7 @@
     <section>
       <title>Source data</title>
       <codeblock><![CDATA[---
-name: ProductionStatement
+name: EditionStatement
 sampleBibs:
   - 3643333
 fieldSpec:
@@ -73,7 +71,7 @@ scriptInclusion: NONE]]></codeblock>
     </section>
     <steps>
       <step>
-        <cmd>Process the production statement values.</cmd>
+        <cmd>Process the edition statement values.</cmd>
         <substeps>
           <substep>
             <cmd>Do not trim punctuation from subfields.</cmd>
