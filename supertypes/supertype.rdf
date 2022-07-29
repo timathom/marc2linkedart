@@ -1,0 +1,739 @@
+<rdf:RDF xmlns:void="http://rdfs.org/ns/void#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:supertype="https://lux.collections.yale.edu/vocabularies/1.1/supertype/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:la="https://linked.art/ns/terms/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="https://lux.collections.yale.edu/vocabularies/1.1/supertype/">
+  <skos:ConceptScheme rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/">
+    <rdf:type rdf:resource="owl:Ontology"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+    <skos:prefLabel xml:lang="en">LUX: Yale Collections Discovery Supertype Vocabulary</skos:prefLabel>
+    <skos:definition xml:lang="en">The LUX Supertype Vocabulary is a controlled vocabulary used to classify record-level resources in the LUX discovery environment.</skos:definition>
+    <vann:preferredNamespacePrefix>supertype</vann:preferredNamespacePrefix>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/audioworks"/>    
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/cartographicworks"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collections"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/datasets"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/movingimages"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/scoresandnotation"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareandelectronicmedia"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textualworks"/>
+    <skos:hasTopConcept rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks"/>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/animals">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Animals</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/architecturalelements">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Architectural Elements</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/archivalandmanuscriptmaterials">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Archival and Manuscript Materials</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="collections"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300375748"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/armsandarmor">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Arms and Armor</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toolsandequipment"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/atlases">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Atlases</skos:prefLabel>
+    <skos:definition xml:lang="en">Volumes of maps, with or without descriptive text, which may be issued to supplement or accompany texts or be published independently.</skos:definition>
+    <skos:broader rdf:resource="cartographicworks"/>
+    <skos:broader rdf:resource="books"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028053"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/audioworks">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Audio Works</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/books">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Books</skos:prefLabel>
+    <skos:definition xml:lang="en">Long form texts, divided into sections and/or the physical, paged objects that carry them.</skos:definition>
+    <skos:broader rdf:resource="textualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028051"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/broadsides">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Broadsides</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="textualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026739"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/calligraphy">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Calligraphy</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/cartographicworks">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Cartographic Works</skos:prefLabel>
+    <skos:definition xml:lang="en">Any materials representing, in whole or part, the earth or any celestial body at any scale.</skos:definition>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/ceramics">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Ceramics</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sculptures"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collages">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Collages</skos:prefLabel>
+    <skos:definition xml:lang="en">Works in two dimensions or very low relief that were made by gluing paper, fabrics, photographs, or other materials onto a flat surface.</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300033963"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collections">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/Set"/>
+    <skos:prefLabel xml:lang="en">Collections</skos:prefLabel>
+    <skos:definition xml:lang="en">Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval.</skos:definition>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/containers">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Containers</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/costume">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Costume</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/dataandfiles">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Data and Files</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="datasets"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300312038"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/databases">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Databases</skos:prefLabel>
+    <skos:definition xml:lang="en">A dataset, structured according to a particular piece of software's requirements.</skos:definition>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareapplications"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028543"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/datasets">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Datasets</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/digital">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Digital</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/dissertationsandtheses">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Dissertations and Theses</skos:prefLabel>
+    <skos:definition xml:lang="en">Texts written for the purpose of fulfilling an academic requirement.</skos:definition>
+    <skos:broader rdf:resource="textualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028028"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/drawings">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Drawings</skos:prefLabel>
+    <skos:definition xml:lang="en">Visual works produced by drawing, typically by the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of color.</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300033973"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/HumanMadeObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
+    <skos:prefLabel xml:lang="en">E22 Human-Made Object</skos:prefLabel>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+    <skos:prefLabel xml:lang="en">E33 Linguistic Object</skos:prefLabel>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/VisualItem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"/>
+    <skos:prefLabel xml:lang="en">E36 Visual Item</skos:prefLabel>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/equipment">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Equipment</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toolsandequipment"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/flatware">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Flatware</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furnishings"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/fossils">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Fossils</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/frames">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Frames</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furnishings"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furnishings">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Furnishings</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furniture">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Furniture</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furnishings"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/geospatialdata">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Geospatial Data</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="cartographicworks"/>
+    <skos:broader rdf:resource="dataandfiles"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300380194"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/globes">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Globes</skos:prefLabel>
+    <skos:definition xml:lang="en">Representations of the Earth, heavens, or another planet in the form of a ball.</skos:definition>
+    <skos:broader rdf:resource="cartographicworks"/>
+    <skos:broader rdf:resource="objects"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028089"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/imagedata">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Image Data</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="dataandfiles"/>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300215302"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/installations">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Installations</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/jewelry">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Jewelry</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/costume"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/journalsandperiodicals">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Journals and Periodicals</skos:prefLabel>
+    <skos:definition xml:lang="en">Works published in pieces over time, typically at regular intervals.</skos:definition>
+    <skos:broader rdf:resource="textualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300215390"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/kits">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Kits</skos:prefLabel>
+    <skos:definition xml:lang="en">Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item..</skos:definition>
+    <skos:broader rdf:resource="collections"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300247921"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/lightingdevices">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Lighting Devices</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furnishings"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/maps">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Maps</skos:prefLabel>
+    <skos:definition xml:lang="en">Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen.</skos:definition>
+    <skos:broader rdf:resource="cartographicworks"/>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028094"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/masks">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Masks</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/costume"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/meteorites">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Meteorites</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/minerals">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Minerals</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/models">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Models</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="objects"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300247279"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/motionpictures">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Motion Pictures</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="movingimages"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300136900"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/movingimages">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Moving Images</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/music">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Music</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="audioworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054146"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/newspapers">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Newspapers</skos:prefLabel>
+    <skos:definition xml:lang="en">Serials published at stated, frequent intervals, such as daily or weekly, and containing news, editorials, features, advertisements, and other items of current interest.</skos:definition>
+    <skos:broader rdf:resource="journalsandperiodicals"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300026656"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/notatedmovement">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Notated Movement</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="scoresandnotation"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300417623"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/notatedmusic">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Notated Music</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="scoresandnotation"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300417622"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/numismatics">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Numismatics</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/HumanMadeObject"/>
+    <skos:prefLabel xml:lang="en">Objects</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/paintings">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Paintings</skos:prefLabel>
+    <skos:definition xml:lang="en">Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface.</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300033973"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/photographs">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Photographs</skos:prefLabel>
+    <skos:definition xml:lang="en">Refers to still images produced from radiation-sensitive materials generally by means of the chemical action of light on a sensitive film, paper, glass, or metal.</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300033973"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/pictures">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Pictures</skos:prefLabel>
+    <skos:definition xml:lang="en">Catch-all category for resources that contain some kind of pictorial content, but a more specific kind cannot be determined from the mapping.</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://id.loc.gov/vocabulary/marcgt/pic"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/plants">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Plants</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/posters">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Posters</skos:prefLabel>
+    <skos:definition xml:lang="en">Notices, usually decorative or pictorial, intended to be posted to advertise, promote, or publicize an activity, cause, product, or service; also, decorative, mass-produced prints intended for hanging. For small printed notices or advertisements intended for distribution by hand, use "handbills."</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300033973"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/prints">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Prints</skos:prefLabel>
+    <skos:definition xml:lang="en">Pictorial works produced by transferring images by means of a matrix such as a plate, block, or screen, using any of various printing processes.</skos:definition>
+    <skos:broader rdf:resource="visualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300041273"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/realia">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Realia</skos:prefLabel>
+    <skos:definition xml:lang="en">Three-dimensional items not covered by more specific terms (e.g., clothing, stitchery, fabrics, tools, utensils), and naturally occurring objects.</skos:definition>
+    <skos:broader rdf:resource="objects"/>
+    <skos:closeMatch rdf:resource="http://id.loc.gov/vocabulary/marcgt/rea"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/scoresandnotation">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Scores and Notation</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sculptures">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Sculptures</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/Set">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="https://linked.art/ns/terms/Set"/>
+    <skos:prefLabel xml:lang="en">Set</skos:prefLabel>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/slides">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Slides</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareapplications">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Software Applications</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareandelectronicmedia"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028566"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareandelectronicmedia">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Software and Electronic Media</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sound">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Sound</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="audioworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300056060"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sounddevices">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Sound Devices</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toolsandequipment"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Specimens</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textiles">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Textiles</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textualdata">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Textual Data</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="dataandfiles"/>
+    <skos:broader rdf:resource="textualworks"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300418050"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textualworks">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:prefLabel xml:lang="en">Textual Works</skos:prefLabel>
+    <skos:definition xml:lang="en">Content represented as words in a particular language, and/or the objects carrying that content.</skos:definition>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/timepieces">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Timepieces</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toolsandequipment">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Tools and Equipment</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toysandgames">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Toys and Games</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="objects"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300218781"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks">
+    <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/VisualItem"/>
+    <skos:prefLabel xml:lang="en">Visual Works</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <dcterms:issued>2021-10-11-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/walldrawings">
+    <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:prefLabel xml:lang="en">Wall Drawings</skos:prefLabel>
+    <skos:definition xml:lang="en"/>
+    <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/installations"/>
+    <dcterms:issued>2022-07-29-04:00</dcterms:issued>
+    <dcterms:modified>2022-07-29-04:00</dcterms:modified>
+  </skos:Concept>
+  <skos:Collection rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/coreclasses">
+    <skos:prefLabel>Core Classes (Linked Art)</skos:prefLabel>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/HumanMadeObject"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/Set"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/VisualItem"/>
+  </skos:Collection>
+  <skos:Collection rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/contenttypes">
+    <skos:prefLabel>Content Types</skos:prefLabel>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/audioworks"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/cartographicworks"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collections"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/datasets"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/movingimages"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/scoresandnotation"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareandelectronicmedia"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textualworks"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks"/>
+  </skos:Collection>
+  <skos:Collection rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/formattypes">
+    <skos:prefLabel>Format Types</skos:prefLabel>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/animals"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/architecturalelements"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/armsandarmor"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/calligraphy"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/ceramics"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/containers"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/costume"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/digital"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/equipment"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/flatware"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/fossils"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/frames"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furnishings"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/furniture"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/installations"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/jewelry"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/lightingdevices"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/masks"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/meteorites"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/minerals"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/numismatics"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/plants"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sculptures"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/slides"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sounddevices"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/specimens"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textiles"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/timepieces"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toolsandequipment"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/walldrawings"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/archivalandmanuscriptmaterials"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/atlases"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/books"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/broadsides"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collages"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/dataandfiles"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/databases"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/dissertationsandtheses"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/drawings"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/geospatialdata"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/globes"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/imagedata"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/journalsandperiodicals"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/kits"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/maps"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/models"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/motionpictures"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/music"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/newspapers"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/notatedmovement"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/notatedmusic"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/paintings"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/photographs"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/pictures"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/posters"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/prints"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/realia"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareapplications"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/sound"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textualdata"/>
+    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toysandgames"/>
+  </skos:Collection>
+</rdf:RDF>
