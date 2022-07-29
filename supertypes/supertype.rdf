@@ -703,7 +703,6 @@
     <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/timepieces"/>
     <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/toolsandequipment"/>
     <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/walldrawings"/>
-    <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/archivalandmanuscriptmaterials"/>
     <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/atlases"/>
     <skos:member rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/books"/>
