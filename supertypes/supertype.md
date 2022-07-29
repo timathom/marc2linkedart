@@ -71,7 +71,7 @@ Close Matches |[crm:E33_Linguistic_Object](http://www.cidoc-crm.org/cidoc-crm/E3
 ### Set
 Property | Value
 --- | ---
-URI | `https://lux.collections.yale.edu/vocabularies/1.1/:/Set`
+URI | `https://lux.collections.yale.edu/vocabularies/1.1/supertype/Set`
 Preferred Labels |Set (en)<br />
 Narrower Concepts |[Collections](#Collections) (con)<br />
 Close Matches |[la:Set](https://linked.art/ns/terms/Set) (con)<br />
