@@ -12,7 +12,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE)
   * 2021-10-11-04:00
 
 * **Taxonomy RDF**
-  * RDF ([supertype.rdf](xml))
+  * RDF ([supertype.rdf](supertype.rdf))
 ### Description
 The LUX Supertype Vocabulary is a controlled vocabulary used to classify record-level resources in the LUX discovery environment.
 
