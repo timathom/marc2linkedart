@@ -127,6 +127,7 @@ Preferred Labels |Audio Works (en)<br />
 Definitions |<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Sound](#Sound) (con)<br />[Music](#Music) (con)<br />
+Close Matches |[aat:300054562](http://vocab.getty.edu/aat/300054562) (con)<br />
 ### Books
 Property | Value
 --- | ---
@@ -159,6 +160,7 @@ Preferred Labels |Cartographic Works (en)<br />
 Definitions |Any materials representing, in whole or part, the earth or any celestial body at any scale.<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Maps](#Maps) (con)<br />[Geospatial Data](#GeospatialData) (con)<br />[Globes](#Globes) (con)<br />[Atlases](#Atlases) (con)<br />
+Close Matches |[aat:300028052](http://vocab.getty.edu/aat/300028052) (con)<br />
 ### Ceramics
 Property | Value
 --- | ---
@@ -182,6 +184,7 @@ Preferred Labels |Collections (en)<br />
 Definitions |Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval.<br />
 Broader Concepts |[Set](#Set) (con)<br />
 Narrower Concepts |[Kits](#Kits) (con)<br />[Archival and Manuscript Materials](#ArchivalandManuscriptMaterials) (con)<br />
+Close Matches |[aat:300025976](http://vocab.getty.edu/aat/300025976) (con)<br />
 ### Containers
 Property | Value
 --- | ---
@@ -222,6 +225,7 @@ Preferred Labels |Datasets (en)<br />
 Definitions |<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Data and Files](#DataandFiles) (con)<br />
+Close Matches |[aat:300266679](http://vocab.getty.edu/aat/300266679) (con)<br />
 ### Digital
 Property | Value
 --- | ---
@@ -404,6 +408,7 @@ Preferred Labels |Moving Images (en)<br />
 Definitions |<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Motion Pictures](#MotionPictures) (con)<br />
+Close Matches |[aat:300263857](http://vocab.getty.edu/aat/300263857) (con)<br />
 ### Music
 Property | Value
 --- | ---
@@ -451,6 +456,7 @@ Preferred Labels |Objects (en)<br />
 Definitions |<br />
 Broader Concepts |[E22 Human-Made Object](#E22Human-MadeObject) (con)<br />
 Narrower Concepts |[Timepieces](#Timepieces) (con)<br />[Tools and Equipment](#ToolsandEquipment) (con)<br />[Sculptures](#Sculptures) (con)<br />[Costume](#Costume) (con)<br />[Textiles](#Textiles) (con)<br />[Containers](#Containers) (con)<br />[Architectural Elements](#ArchitecturalElements) (con)<br />[Realia](#Realia) (con)<br />[Furnishings](#Furnishings) (con)<br />[Models](#Models) (con)<br />[Toys and Games](#ToysandGames) (con)<br />[Globes](#Globes) (con)<br />[Specimens](#Specimens) (con)<br />[Numismatics](#Numismatics) (con)<br />
+Close Matches |[aat:300010331](http://vocab.getty.edu/aat/300010331) (con)<br />
 ### Paintings
 Property | Value
 --- | ---
@@ -514,6 +520,7 @@ Preferred Labels |Scores and Notation (en)<br />
 Definitions |<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Notated Movement](#NotatedMovement) (con)<br />[Notated Music](#NotatedMusic) (con)<br />
+Close Matches |[aat:300417622](http://vocab.getty.edu/aat/300417622) (con)<br />
 ### Sculptures
 Property | Value
 --- | ---
@@ -537,6 +544,7 @@ Preferred Labels |Software and Electronic Media (en)<br />
 Definitions |<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Software Applications](#SoftwareApplications) (con)<br />
+Close Matches |[aat:300028566](http://vocab.getty.edu/aat/300028566) (con)<br />
 ### Software Applications
 Property | Value
 --- | ---
@@ -592,6 +600,7 @@ Preferred Labels |Textual Works (en)<br />
 Definitions |Content represented as words in a particular language, and/or the objects carrying that content.<br />
 Broader Concepts |[E33 Linguistic Object](#E33LinguisticObject) (con)<br />
 Narrower Concepts |[Books](#Books) (con)<br />[Textual Data](#TextualData) (con)<br />[Broadsides](#Broadsides) (con)<br />[Dissertations and Theses](#DissertationsandTheses) (con)<br />[Journals and Periodicals](#JournalsandPeriodicals) (con)<br />
+Close Matches |[aat:300263751](http://vocab.getty.edu/aat/300263751) (con)<br />
 ### Timepieces
 Property | Value
 --- | ---
@@ -623,6 +632,7 @@ Preferred Labels |Visual Works (en)<br />
 Definitions |<br />
 Broader Concepts |[E36 Visual Item](#E36VisualItem) (con)<br />
 Narrower Concepts |[Collages](#Collages) (con)<br />[Maps](#Maps) (con)<br />[Image Data](#ImageData) (con)<br />[Posters](#Posters) (con)<br />[Slides](#Slides) (con)<br />[Pictures](#Pictures) (con)<br />[Digital](#Digital) (con)<br />[Installations](#Installations) (con)<br />[Drawings](#Drawings) (con)<br />[Calligraphy](#Calligraphy) (con)<br />[Paintings](#Paintings) (con)<br />[Prints](#Prints) (con)<br />[Photographs](#Photographs) (con)<br />
+Close Matches |[aat:300191086](http://vocab.getty.edu/aat/300191086) (con)<br />
 ### Wall Drawings
 Property | Value
 --- | ---
