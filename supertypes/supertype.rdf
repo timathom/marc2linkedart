@@ -63,6 +63,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/audioworks">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054562"/>
     <skos:prefLabel xml:lang="en">Audio Works</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -97,6 +98,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/cartographicworks">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028052"/>
     <skos:prefLabel xml:lang="en">Cartographic Works</skos:prefLabel>
     <skos:definition xml:lang="en">Any materials representing, in whole or part, the earth or any celestial body at any scale.</skos:definition>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -122,6 +124,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collections">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/Set"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300025976"/>
     <skos:prefLabel xml:lang="en">Collections</skos:prefLabel>
     <skos:definition xml:lang="en">Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval.</skos:definition>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -164,6 +167,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/datasets">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300266679"/>
     <skos:prefLabel xml:lang="en">Datasets</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -392,6 +396,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/movingimages">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300263857"/>
     <skos:prefLabel xml:lang="en">Moving Images</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -444,6 +449,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/objects">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/HumanMadeObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300010331"/>
     <skos:prefLabel xml:lang="en">Objects</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -514,6 +520,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/scoresandnotation">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300417622"/>
     <skos:prefLabel xml:lang="en">Scores and Notation</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -554,6 +561,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/softwareandelectronicmedia">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028566"/>
     <skos:prefLabel xml:lang="en">Software and Electronic Media</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -605,6 +613,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/textualworks">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300263751"/>
     <skos:prefLabel xml:lang="en">Textual Works</skos:prefLabel>
     <skos:definition xml:lang="en">Content represented as words in a particular language, and/or the objects carrying that content.</skos:definition>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
@@ -638,6 +647,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/visualworks">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/VisualItem"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300191086"/>
     <skos:prefLabel xml:lang="en">Visual Works</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
