@@ -327,7 +327,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/kits">
     <skos:inScheme rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:prefLabel xml:lang="en">Kits</skos:prefLabel>
-    <skos:definition xml:lang="en">Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item..</skos:definition>
+    <skos:definition xml:lang="en">Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item.</skos:definition>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/collections"/>
     <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300247921"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
