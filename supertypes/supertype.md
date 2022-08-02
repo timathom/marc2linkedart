@@ -345,7 +345,7 @@ Property | Value
 --- | ---
 URI | `https://lux.collections.yale.edu/vocabularies/1.1/supertype/kits`
 Preferred Labels |Kits (en)<br />
-Definitions |Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item..<br />
+Definitions |Mixture of various components issued as a unit and intended primarily for instructional purposes. No one component is identifiable as the predominant component of the item.<br />
 Broader Concepts |[Collections](#Collections) (con)<br />
 Close Matches |[aat:300247921](http://vocab.getty.edu/aat/300247921) (con)<br />
 ### Lighting Devices
