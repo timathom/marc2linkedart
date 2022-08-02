@@ -63,7 +63,7 @@
   <skos:Concept rdf:about="https://lux.collections.yale.edu/vocabularies/1.1/supertype/audioworks">
     <skos:topConceptOf rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/"/>
     <skos:broader rdf:resource="https://lux.collections.yale.edu/vocabularies/1.1/supertype/LinguisticObject"/>
-    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300054562"/>
+    <skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300028633"/>
     <skos:prefLabel xml:lang="en">Audio Works</skos:prefLabel>
     <skos:definition xml:lang="en"/>
     <dcterms:issued>2021-10-11-04:00</dcterms:issued>
