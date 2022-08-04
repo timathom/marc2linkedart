@@ -1,6 +1,6 @@
 Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 
 
-# LUX: Yale Collections Discovery Supertype Vocabulary
+# LUX: Yale Collections Discovery Supertype Taxonomy
 ### A taxonomy
 
 ## Metadata
@@ -14,7 +14,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE)
 * **Taxonomy RDF**
   * RDF ([supertype.rdf](supertype.rdf))
 ### Description
-The LUX Supertype Vocabulary is a controlled vocabulary used to classify record-level resources in the LUX discovery environment.
+The LUX Supertype Taxonomy is a controlled vocabulary used to classify record-level resources in the LUX discovery environment.
 
 
 ## Table of Contents
