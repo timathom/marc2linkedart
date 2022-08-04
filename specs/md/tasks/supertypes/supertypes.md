@@ -25,6 +25,7 @@ The supertype of a resource is used to determine its base class or document type
 |LinguisticObject|Datasets|[Data and Files](dataandfiles.md)|[Textual Data](textualdata.md)|
 |LinguisticObject|Moving Images|[Motion Pictures](motionpictures.md)| |
 |LinguisticObject|Objects|[Globes](globes.md)| |
+|LinguisticObject **\[primary\]**|Objects|[Kits](kits.md)| |
 |LinguisticObject|Objects|[Models](models.md)| |
 |LinguisticObject|Objects|[Realia](realia.md)| |
 |LinguisticObject|Objects|[Toys and Games](toysandgames.md)| |

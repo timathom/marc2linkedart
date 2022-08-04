@@ -1,6 +1,8 @@
-<concept id="supertypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
+<concept id="supertypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:concept.xsd">
   <title>LUX supertype taxonomy</title>
-  <shortdesc>Taxonomy of content types and related formats for classifying record-level resources in LUX.</shortdesc>
+  <shortdesc>Taxonomy of content types and related formats for classifying record-level resources in
+    LUX.</shortdesc>
   <prolog>
     <critdates>
       <!--timothy.thompson@yale.edu-->
@@ -28,9 +30,14 @@
     <data name="deployed" value=""/>
   </prolog>
   <conbody>
-    <p>MARC-to-Linked Art supertype mappings are done at the level of the most specific format, with type and broader format relations inferred from the hierarchy.</p>
-    <p>The supertype of a resource is used to determine its base class or document type in the Linked Art model. <b>However, supertype classification should always be assigned to the corresponding <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph> resource(s).</b></p>
-    <note>For supertypes that map to more than one base class, the primary class is indicated as <b>primary</b> in the base class column.</note>
+    <p>MARC-to-Linked Art supertype mappings are done at the level of the most specific format, with
+      type and broader format relations inferred from the hierarchy.</p>
+    <p>The supertype of a resource is used to determine its base class or document type in the
+      Linked Art model. <b>However, supertype classification should always be assigned to the
+        corresponding <codeph>HumanMadeObject</codeph> or <codeph>DigitalObject</codeph>
+        resource(s).</b></p>
+    <note>For supertypes that map to more than one base class, the primary class is indicated as
+        <b>primary</b> in the base class column.</note>
     <table id="table_wmw_tjc_5rb">
       <title>Linked Art base class to supertype mapping</title>
       <tgroup cols="4">
@@ -114,6 +121,12 @@
             <entry/>
           </row>
           <row>
+            <entry>LinguisticObject <b>[primary]</b></entry>
+            <entry>Objects</entry>
+            <entry><xref href="kits.dita">Kits</xref></entry>
+            <entry/>
+          </row>
+          <row>
             <entry>LinguisticObject</entry>
             <entry>Objects</entry>
             <entry><xref href="models.dita">Models</xref></entry>
@@ -130,7 +143,7 @@
             <entry>Objects</entry>
             <entry><xref href="toysandgames.dita">Toys and Games</xref></entry>
             <entry/>
-          </row>                  
+          </row>
           <row>
             <entry>LinguisticObject</entry>
             <entry>Scores and Notation</entry>
@@ -178,11 +191,12 @@
             <entry>Textual Works</entry>
             <entry><xref href="textualdata.dita">Textual Data</xref></entry>
             <entry/>
-          </row>          
+          </row>
           <row>
             <entry>Set</entry>
             <entry>Collections</entry>
-            <entry><xref href="archivalandmanuscriptmaterials.dita">Archival and Manuscript Materials</xref></entry>
+            <entry><xref href="archivalandmanuscriptmaterials.dita">Archival and Manuscript
+                Materials</xref></entry>
             <entry/>
           </row>
           <row>
@@ -255,62 +269,36 @@
       </tgroup>
     </table>
     <p>
-      <foreign outputclass="embed-plant-uml">@startmindmap
-* LUX
-** DigitalObject
-*** Datasets
-**** [[dataandfiles.html{Data and Files format} Data and Files]]
-***** [[geospatialdata.html{Geospatial Data format} Geospatial Data]]
-***** [[imagedata.html{Image Data format} Image Data]]
-***** [[textualdata.html{Textual Data format} Textual Data]]
-*** Software and Electronic Media
-**** [[softwareapplications.html{Software Applications format} Software Applications]]
-***** [[databases.html{Databases format} Databases]]
-** HumanMadeObject
-*** Objects
-**** [[globes.html{Globes format} Globes]]
-**** [[models.html{Models format} Models]]
-**** [[realia.html{Realia format} Realia]]
-**** [[toysandgames.html{Toys and Games format} Toys and Games]]
-** LinguisticObject
-*** Audio Works
-**** [[music.html{Music format} Music]]
-**** [[sound.html{Sound format} Sound]]
-*** Moving Images
-**** [[motionpictures.html{Motion Pictures format} Motion Pictures]]
-*** Scores and Notation
-**** [[notatedmovement.html{Notated Movement format} Notated Movement]]
-**** [[notatedmusic.html{Notated Music format} Notated Music]]
-*** Textual Works
-**** [[books.html{Books format} Books]]
-***** [[atlases.html{Atlases format} Atlases]]
-**** [[broadsides.html{Broadsides format} Broadsides]]
-**** [[dissertationsandtheses.html{Dissertations and Theses format} Dissertations and Theses]]
-**** [[journalsandperiodicals.html{Journals and Periodicals format} Journals and Periodicals]]
-***** [[newspapers.html{Newspapers format} Newspapers]]
-**** [[textualdata.html{Textual Data format} Textual Data]]
-** Set
-*** Collections
-**** [[archivalandmanuscriptmaterials.html{Archival and Manuscript Materials format} Archival and Manuscript Materials]]
-**** [[kits.html{Kits format} Kits]]
-** VisualItem
-*** Cartographic Works
-**** [[atlases.html{Atlases format} Atlases]]
-**** [[geospatialdata.html{Geospatial Data format} Geospatial Data]]
-**** [[globes.html{Globes format} Globes]]
-**** [[maps.html{Maps format} Maps]]
-*** Visual Works
-**** [[collages.html{Collages format} Collages]]
-**** [[drawings.html{Drawings format} Drawings]]
-**** [[imagedata.html{Image Data format} Image Data]]
-**** [[maps.html{Maps format} Maps]]
-**** [[paintings.html{Paintings format} Paintings]]
-**** [[photographs.html{Photographs format} Photographs]]
-**** [[pictures.html{Pictures format} Pictures]]
-**** [[posters.html{Posters format} Posters]]
-**** [[prints.html{Prints format} Prints]]
-**** [[slides.html{Slides format} Slides]]
-@endmindmap</foreign>
+      <foreign outputclass="embed-plant-uml">@startmindmap * LUX ** DigitalObject *** Datasets ****
+        [[dataandfiles.html{Data and Files format} Data and Files]] *****
+        [[geospatialdata.html{Geospatial Data format} Geospatial Data]] ***** [[imagedata.html{Image
+        Data format} Image Data]] ***** [[textualdata.html{Textual Data format} Textual Data]] ***
+        Software and Electronic Media **** [[softwareapplications.html{Software Applications format}
+        Software Applications]] ***** [[databases.html{Databases format} Databases]] **
+        HumanMadeObject *** Objects **** [[globes.html{Globes format} Globes]] ****
+        [[models.html{Models format} Models]] **** [[realia.html{Realia format} Realia]] ****
+        [[toysandgames.html{Toys and Games format} Toys and Games]] ** LinguisticObject *** Audio
+        Works **** [[music.html{Music format} Music]] **** [[sound.html{Sound format} Sound]] ***
+        Moving Images **** [[motionpictures.html{Motion Pictures format} Motion Pictures]] ***
+        Scores and Notation **** [[notatedmovement.html{Notated Movement format} Notated Movement]]
+        **** [[notatedmusic.html{Notated Music format} Notated Music]] *** Textual Works ****
+        [[books.html{Books format} Books]] ***** [[atlases.html{Atlases format} Atlases]] ****
+        [[broadsides.html{Broadsides format} Broadsides]] ****
+        [[dissertationsandtheses.html{Dissertations and Theses format} Dissertations and Theses]]
+        **** [[journalsandperiodicals.html{Journals and Periodicals format} Journals and
+        Periodicals]] ***** [[newspapers.html{Newspapers format} Newspapers]] ****
+        [[textualdata.html{Textual Data format} Textual Data]] ** Set *** Collections ****
+        [[archivalandmanuscriptmaterials.html{Archival and Manuscript Materials format} Archival and
+        Manuscript Materials]] **** [[kits.html{Kits format} Kits]] ** VisualItem *** Cartographic
+        Works **** [[atlases.html{Atlases format} Atlases]] **** [[geospatialdata.html{Geospatial
+        Data format} Geospatial Data]] **** [[globes.html{Globes format} Globes]] ****
+        [[maps.html{Maps format} Maps]] *** Visual Works **** [[collages.html{Collages format}
+        Collages]] **** [[drawings.html{Drawings format} Drawings]] **** [[imagedata.html{Image Data
+        format} Image Data]] **** [[maps.html{Maps format} Maps]] **** [[paintings.html{Paintings
+        format} Paintings]] **** [[photographs.html{Photographs format} Photographs]] ****
+        [[pictures.html{Pictures format} Pictures]] **** [[posters.html{Posters format} Posters]]
+        **** [[prints.html{Prints format} Prints]] **** [[slides.html{Slides format} Slides]]
+        @endmindmap</foreign>
     </p>
   </conbody>
 </concept>
