@@ -50,7 +50,7 @@ The supertype of a resource is used to determine its base class or document type
 |VisualItem|Visual Works|[Prints](prints.md)| |
 |VisualItem|Visual Works|[Slides](slides.md)| |
 
-
+![Mental map illustrating the hierarchical structure of the LUX Supertype Taxonomy.](supertypes.svg "LUX Supertype Taxonomy")
 
 -   **[Collections](../../tasks/supertypes/collectionformats.md)**  
  “Accumulated groups of objects or materials having a focal characteristic and that have been brought together by an individual or organization. A collection comprises multiple items that are conceptually or physically arranged together for the purpose of cataloging or retrieval” \([AAT](http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300025976)\).
