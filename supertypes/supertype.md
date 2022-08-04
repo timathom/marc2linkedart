@@ -1,6 +1,6 @@
 Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 
 
-# LUX: Yale Collections Discovery Supertype Taxonomy
+# _LUX: Yale Collections Discovery_ Supertype Taxonomy
 ### A taxonomy
 
 ## Metadata
